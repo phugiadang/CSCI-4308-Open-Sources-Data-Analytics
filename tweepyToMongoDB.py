@@ -34,7 +34,8 @@ client = MongoClient('localhost',27017) #default port
 db = client['test-database'] #name of database
 results = [status._json for status in tweepy.Cursor(api.search,  q=("#turnt")).items(tweetCount)] #convert tweepy to json
 
-resultDB = db.tweets.insert_many(results) #insert into collection called tweets
+#insert into collection called tweets, data stored for me in "/var/lib/mongodb/"
+resultDB = db.tweets.insert_many(results) 
 
 print resultDB.inserted_ids
 
