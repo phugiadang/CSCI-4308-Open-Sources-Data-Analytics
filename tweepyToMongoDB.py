@@ -35,7 +35,6 @@ db = client['test-database'] #name of database
 results = [status._json for status in tweepy.Cursor(api.search,  q=("#turnt")).items(tweetCount)] #convert tweepy to json
 
 #insert into collection called tweets, data stored for me in "/var/lib/mongodb/"
-#large size (1000 tweets was around 3.6 GB!!)
 resultDB = db.tweets.insert_many(results) 
 
 print resultDB.inserted_ids
