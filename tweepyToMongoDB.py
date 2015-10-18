@@ -27,7 +27,7 @@ api = tweepy.API(auth)
 
 #Change count to change the number of tweets returned
 
-tweetCount = 100
+tweetCount = 10
 tweets = []
 ticker = ""
 client = MongoClient('localhost',27017) #default port
@@ -37,5 +37,5 @@ results = [status._json for status in tweepy.Cursor(api.search,  q=("#turnt")).i
 #insert into collection called tweets, data stored for me in "/var/lib/mongodb/"
 resultDB = db.tweets.insert_many(results) 
 
-print resultDB.inserted_ids
+print results
 
