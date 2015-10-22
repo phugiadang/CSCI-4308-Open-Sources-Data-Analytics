@@ -35,19 +35,33 @@ from pymongo import MongoClient
 def goldsteinByContinent():
 	client = MongoClient()
 	db = client.GDELT_database
-	USA = db.posts.find({'actor1Code': '$in: [USA, '})
+	USA = db.posts.find({'actor1Code':{'$in': ['USA']}})
 	USAgoldstein = 0
 	USAdocsFound = 0
+	Europe = db.posts.find({'actor1Code':{'$in':['BLK', 'CAU' 'CEU', 'EEU', 'EUR', 'MDT', 'SCN', '']}})
+	EuropeGoldstein = 0
+	EuropeDocsFound = 0
+	
 	for document in USA:
 		USAgoldstein += float(document['goldsteinScale'])
 		USAdocsFound += 1
-		print(document['goldsteinScale'])
+		#print(document['goldsteinScale'])
 
 	if(USAdocsFound == 0):
-		print("ZERO DOCUMENTS FOUND")
-		USAgoldstein = 
+		print("ZERO USA DOCUMENTS FOUND")
 	else:
 		USAgoldstein = USAgoldstein/USAdocsFound
 	print(USAgoldstein)
+	
+	for document in Europe:
+		EuropeGoldstein += float(document['goldsteinScale'])
+		EuropeDocsFound += 1
+
+	if(EuropeDocsFound == 0):
+		print("ZERO EUROPE DOCS FOUND")
+	else:
+		EuropeGoldstein = EuropeGoldstein/EuropeDocsFound
+	print(EuropeGoldstein)
+
 
 goldsteinByContinent()
