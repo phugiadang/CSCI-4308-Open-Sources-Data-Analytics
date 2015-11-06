@@ -6,15 +6,16 @@ pollster = Pollster()
 
 def pollByTopic(name):
 	for x in pollster.charts(topic = name):
-		print ('Poll Category:\n')
-		for y in x.estimates_by_date():
-			print y
+		print x
+		# print ('Poll Category:\n')
+		# for y in x.estimates_by_date():
+		# 	print y
 
 
 
 if(len(sys.argv) != 2):
 	print 'Usage: python PollByTopic.py <poll_topic>'
-	print 'Use flag -showall in place of <poll_topic> to see all topics'
+	print 'Use \"python PollByTopic.py -showall\" to see all topics'
 elif(sys.argv[1] == '-showall'):
 	print 'All topics:'
 	print 'obama-job-approval'

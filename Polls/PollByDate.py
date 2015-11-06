@@ -14,10 +14,10 @@ def presPollsByDate(start, end):
 		print 'Date could not be parsed correctly'
 		print 'Make sure it is in the format YYYY-MM-DD'
 		return
-	
-	for x in range(1, len(pollster.charts()[0].estimates_by_date())):
-		poll = pollster.charts()[0].estimates_by_date()[x]
-		pollDate = pollster.charts()[0].estimates_by_date()[x]['date'].split('-', 2)
+	pollCat = pollster.charts()[0].estimates_by_date()
+	for x in range(1, len(pollCat)):
+		poll = pollCat[x]
+		pollDate = poll['date'].split('-', 2)
 		pollDate = date(int(pollDate[0]), int(pollDate[1]), int(pollDate[2]))
 		if(pollDate > start and pollDate < end):
 			#print '\nPoll:\n' + str(poll) + '\n'
@@ -25,11 +25,11 @@ def presPollsByDate(start, end):
 			highestVal = 0
 			winner = ''
 			print 'Poll Values:'
-			for x in poll['estimates']:
-				print x
-				if(x['value'] > highestVal):
-					highestVal = x['value']
-					winner = x['choice']
+			for y in poll['estimates']:
+				print y
+				if(y['value'] > highestVal):
+					highestVal = y['value']
+					winner = y['choice']
 			print('Winner: ' + winner)
 
 
