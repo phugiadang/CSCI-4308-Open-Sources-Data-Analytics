@@ -34,7 +34,7 @@ python PollStructure.py
 
 eg: `<Chart: 2012 Iowa GOP Primary>, <Chart: 2012 New Hampshire GOP Primary>, <Chart: 2012 South Carolina GOP Primary>, ...`
 
-`pollster.charts(topic = <topic>)` will narrow down the list of returned charts to only includes items relevant to the topic. A list of valid topics is included in the usage message of the PollByTopic.py file.
+`pollster.charts(topic = <topic>)` will narrow down the list of returned charts to only includes items relevant to the topic. A list of valid topics is included in the usage message of the `PollByTopic.py` file.
 
 eg: setting topic to 'obama-job-approval' returns
 `<Chart: Obama Job Approval>, <Chart: Obama Job Approval - Economy>, <Chart: Obama Job Approval - Health>, ...`
@@ -43,6 +43,6 @@ eg: setting topic to 'obama-job-approval' returns
 
 eg: `{u'first_name': u'Mitt', u'last_name': u'Romney', u'value': 22.5, u'choice': u'Romney', u'incumbent': False, u'party': u'Rep', u'lead_confidence': None}, ...`
 
-`pollster.charts()[0].estimates_by_date` returns all of the individual polls that 'pollster.cahrts()[0].estimates' averages, along with the date of the poll.
+`pollster.charts()[0].estimates_by_date` returns all of the individual polls that `pollster.charts()[0].estimates` averages, along with the date of the poll.
 
 eg: `{u'date': u'2011-12-30', u'estimates': [{u'value': 13.6, u'choice': u'Gingrich'}, {u'value': 3.6, u'choice': u'Huntsman'}, ...`
