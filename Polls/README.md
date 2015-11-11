@@ -19,22 +19,16 @@ QueryPolls.py <queryType> <arguments>
 ```
 The three options for `<queryType>` are `pollster`, `date` and `topic`.
 
-	`python QueryPolls.py pollster <arguments>`
+	python QueryPolls.py pollster <arguments>
 
-	```
 	python QueryPolls.py date <startDate> <endDate>
 	Date format: YYYY-MM-DD
-	```
 
-	```
 	python QueryPolls.py topic <topic>
 	Use "python QueryPolls.py -showall" to see all topics
-	```
 
-	```
 	python QueryPolls.py pollster <pollster>
 	See Pollsters.txt or scroll down to see the complete list of pollsters
-	```
 `FindAllPollsters.py` is use to print out the complete list of pollsters. The results are is Pollsters.txt
 
 ###To See Structure:
