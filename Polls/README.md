@@ -19,8 +19,6 @@ QueryPolls.py <queryType> <arguments>
 ```
 The three options for `<queryType>` are `pollster`, `date` and `topic`.
 
-	python QueryPolls.py pollster <arguments>
-
 	python QueryPolls.py date <startDate> <endDate>
 	Date format: YYYY-MM-DD
 
