@@ -28,9 +28,18 @@ if [ $b -ne $nm ]
 	good=good-1
 fi
 
+#check on tweet streaming
+c=$(ps aux | grep trump.py | wc | cut -d ' ' -f 7)
+if [ $c -eq 1 ]
+then
+	echo "bad!!!"
+	echo "Tweet streaming is stopped, better restart it!" | mail -s "Tweet Streaming Stopped!" ${listOfUsers}
+	good=good-1
+fi
 
+#If all tests pass!
 if [ $good -eq 0 ]
    then
-	echo "All OpenStack tests pass, everything looks good!" | mail -s "All OpenStack tests PASS!" ${listOfUsers}
+	echo "All OpenStack operations are normal, everything looks good!" | mail -s "OpenStack Machine 1 Status: OK!" ${listOfUsers}
 fi
 
