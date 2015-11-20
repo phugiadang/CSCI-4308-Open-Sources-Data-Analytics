@@ -1,5 +1,7 @@
 #1. Analysis Updates
 ---
+##Number of tweets about Trump: 
+---
 ##Latest Update:
 ---
 ####Test run 1: Recieved 17,837 tweets before program was killed
