@@ -2,6 +2,7 @@
 
 ##1. Use a keyspace
 ###   USE name_of_keyspace
+---
 
 ##2. Print out rows in a table
 ###   SELECT * from name_of_table
