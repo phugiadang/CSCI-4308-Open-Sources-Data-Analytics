@@ -1,1 +1,1 @@
-#Number of Trump Tweets: 1317
+#Number of Trump Tweets: 2023
