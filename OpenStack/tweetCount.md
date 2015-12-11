@@ -1,1 +1,1 @@
-#Number of Trump Tweets: 2024
+#Number of Trump Tweets: 71
