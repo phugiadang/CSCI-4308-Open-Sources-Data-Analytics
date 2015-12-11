@@ -1,1 +1,1 @@
-#Number of Trump Tweets: 1928
+#Number of Trump Tweets: 1992
