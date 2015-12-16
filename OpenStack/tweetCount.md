@@ -1,1 +1,1 @@
-#Number of Trump Tweets: 2363620
+#Number of Trump Tweets: 2363927
