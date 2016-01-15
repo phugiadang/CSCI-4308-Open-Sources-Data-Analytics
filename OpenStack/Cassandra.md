@@ -3,7 +3,8 @@
 #1. Info about our Database:
 ---
 ##We have a table for each candidate. The primary key name for each table is tweet_id, and the value name for each table is tweet (this is the tweet's text field).
-/0
+
+
 ---
 #2. Example interaction with our databases:
 ---
