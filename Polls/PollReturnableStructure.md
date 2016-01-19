@@ -2,10 +2,10 @@ Below is the structure of the data returned by running the queryPolls and then g
 
 For example...
 ```
-pg = pollGrabber('2016-president-dem-primary', '2014-01-01', '2016-12-31')
+pg = PollGrabber('2016-president-dem-primary', '2014-01-01', '2016-12-31')
 pg.queryPolls
 pg.getPolls
-```python
+```
 
 ...will return data with the following structure, complete with example data:
 
