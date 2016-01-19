@@ -16,18 +16,10 @@ sudo easy_install pollster
 ###Programs:
 
 ```
-QueryPolls.py <queryType> <arguments>
+QueryPolls.py <topic> <start_date> <end_date>
+Date format: YYYY-MM-DD
 ```
-The three options for `<queryType>` are `pollster`, `date` and `topic`.
 
-	python QueryPolls.py date <startDate> <endDate>
-	Date format: YYYY-MM-DD
-
-	python QueryPolls.py topic <topic>
-	Use "python QueryPolls.py -showall" to see all topics
-
-	python QueryPolls.py pollster <pollster>
-	See Pollsters.txt or scroll down to see the complete list of pollsters
 `FindAllPollsters.py` is use to print out the complete list of pollsters. The results are is Pollsters.txt
 
 ###To See Structure:
