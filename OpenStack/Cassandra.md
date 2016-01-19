@@ -1,3 +1,5 @@
+#For info about connecting to Cassandra within python, visit https://pypi.python.org/pypi/cql/1.4.0
+---
 #1. Info about our Database:
 ---
 ##We have a table for each candidate. The primary key name for each table is tweet_id, and the value name for each table is tweet (this is the tweet's text field).
