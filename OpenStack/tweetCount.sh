@@ -18,12 +18,13 @@ password=$(python hash.py)
 #tweetcount=$(echo "USE junk; select count(*) from trump;" | /home/centos/dse-4.8.1/bin/cqlsh 128.138.202.117 | tail -n 3 | head -n 1 | cut -d ' ' -f 2)
 
 tweetcount=$(cat /home/centos/spark-1.5.1-bin-hadoop2.6/trumpTweetCount.txt)
+totalTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/totalTweetCount.txt)
+
+#b=$"\#Total Tweets: $totalTweetCount \n\nNumber of Trump Tweets: $tweetcount"
 
 
-b="\#Number of Trump Tweets: $tweetcount"
-
-
-sudo sh -c "echo $b > tweetCount.md"
+#sudo sh -c "echo $b > tweetCount.md"
+sudo sh -c "printf \"Total Tweets: $totalTweetCount \n\nNumber of Trump Tweets: $tweetcount\" > tweetCount.md" 
 git add tweetCount.md &> /dev/null
 git commit -m "updated tweet count" &> /dev/null
 sudo git push https://CommandoScorch16:dogworm16@github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics
