@@ -24,8 +24,8 @@ totalTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/totalTw
 
 
 #sudo sh -c "echo $b > tweetCount.md"
-sudo sh -c "printf \"Total Tweets: $totalTweetCount \n\nNumber of Trump Tweets: $tweetcount\" > tweetCount.md" 
-sudo git add *#tweetCount.md &> /dev/null
+sudo sh -c "printf \"#Total Tweets: $totalTweetCount \n---\n#Number of Trump Tweets: $tweetcount\" > tweetCount.md" 
+sudo git add tweetCount.md &> /dev/null
 sudo git commit -m "updated tweet count" &> /dev/null
 sudo git push https://CommandoScorch16:dogworm16@github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics
 #git config credential.helper store
