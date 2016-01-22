@@ -70,7 +70,7 @@ class pollGrabber:
 				tempName = polls['name']
 				tempObservations = polls['observations']
 				tempResponses = polls['responses']
-				
+
 				session.execute("INSERT INTO polls (pollster, startDate, endDate, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s)", (tempPollster, tempStartDate, tempEndDate, tempName, tempObservations, tempResponses))
 				print "Inserted a poll"
 
@@ -112,6 +112,7 @@ def main():
 		pg = pollGrabber(sys.argv[1], sys.argv[2], sys.argv[3])
 		pg.queryPolls()
 		pg.getPolls()
+		pg.pushToCassandra()
 
 if __name__ == "__main__":
     main()
