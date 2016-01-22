@@ -1,6 +1,10 @@
 from pollster import Pollster 
 from datetime import date
+from cassandra.cluster import Cluster
 import sys
+
+cluster = Cluster(['128.138.202.110', '128.138.202.117'])
+session = cluster.connect('junk')
 
 pollster = Pollster()
 
@@ -56,7 +60,19 @@ class pollGrabber:
 			return self.allPolls
 
 	def pushToCassandra(self):
-		print "This doesn't do anything yet"
+		if(self.allPolls == []):
+			print "self.allPolls has not been populated. Run queryPolls first!"
+		else:
+			for poll in allPolls:
+				tempPollster = polls['pollster']
+				tempStartDate = polls['startDate']
+				tempEndDate = polls['endDate']
+				tempName = polls['name']
+				tempObservations = polls['observations']
+				tempResponses = polls['responses']
+				
+				session.execute("INSERT INTO polls (pollster, startDate, endDate, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s)", (tempPollster, tempStartDate, tempEndDate, tempName, tempObservations, tempResponses))
+				print "Inserted a poll"
 
 def main():
 	#usage message if there are no arguments

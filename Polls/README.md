@@ -16,7 +16,7 @@ sudo easy_install pollster
 ###Programs:
 
 ```
-QueryPolls.py <topic> <start_date> <end_date>
+PollGrabber.py <topic> <start_date> <end_date>
 Date format: YYYY-MM-DD
 ```
 
