@@ -41,7 +41,8 @@ class StreamListener(tweepy.StreamListener):
     def on_data(self, data):
         #print self.keyword, data
         #print 'Ok, this is actually running'
-        
+        if self.keyword[0] == 'Sanderasdfasdfs':
+            print 'feel the bern!!!!!'
         global tweetCount
         tweetCount += 1 
         prepStep = session.prepare("INSERT INTO bernie(tweet_id, tweet) VALUES (?,?)")
@@ -58,7 +59,7 @@ def start_stream(auth, track):
     tweepy.Stream(auth=auth, listener=StreamListener(track)).filter(track=[track])
     
 def start_streamList(auth, listTrack):
-    tweepy.Stream(auth=auth, listener=StreamListener(track)).filter(track=[listTrack[0],listTrack[1],listTrack[2],listTrack[3]])
+    tweepy.Stream(auth=auth, listener=StreamListener(listTrack)).filter(track=[listTrack[0],listTrack[1],listTrack[2],listTrack[3]])
     
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -78,7 +79,7 @@ track = ['clinton', 'bush', 'python']
 i=0
 
 for item in listOfLists:
-    thread = Thread(target=start_streamList, args=(auth, listOfLists[0]))
+    thread = Thread(target=start_streamList, args=(auth, item))
     thread.start()
     i = i + 1
 
