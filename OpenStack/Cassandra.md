@@ -26,3 +26,14 @@
 ##3. Count number of rows in table
 ###   SELECT COUNT(*) from name_of_table;
 
+##4. Create table Bernie3
+CREATE TABLE bernie3 (
+  created_at text PRIMARY KEY,
+  tweet_id bigint,
+  coordinates list<float>,
+  retweet_count int,
+  favorite_count int,
+  hashtags list<text>,
+  lang text,
+  quoted_status_id bigint
+);
