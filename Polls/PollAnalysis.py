@@ -26,8 +26,11 @@ session = cluster.connect('junk')
 # 		print row
 # except:
 # 	print "This throws an error because we're restricting part of the primary key without restricting a previous part. The primary key is (startDate, endDate, name) so we have to restrict them in that order."
-cql = "SELECT responses FROM junk.polls WHERE startDate = '2012-01-10'"
+cql = "SELECT responses FROM junk.polls WHERE startDate = '2014-01-10'"
 rows = session.execute(cql)
-for row in rows
-	for item in row
-		print item
+for row in rows:
+        for item in row:
+                #eval() turns the string back into the nested list and dictionary
+                #There's probably a more efficient way to do this... eg saving the values as something other than a string
+		evaluated =  eval(item)
+                print evaluated[0]['first_name']
