@@ -47,8 +47,8 @@ class pollGrabber:
 					new['startDate'] = poll.start_date
 					new['endDate'] = poll.end_date
 					new['name'] = poll.questions[0]['name']
-					new['observations'] = poll.questions[0]['subpopulations'][0]['observations']
-					new['responses'] = poll.questions[0]['subpopulations'][0]['responses']
+					new['observations'] = str(poll.questions[0]['subpopulations'][0]['observations'])
+					new['responses'] = str(poll.questions[0]['subpopulations'][0]['responses'])
 					self.allPolls.append(new)
 
 	def getPolls(self):
@@ -70,8 +70,13 @@ class pollGrabber:
 				tempName = poll['name']
 				tempObservations = str(poll['observations'])
 				tempResponses = poll['responses']
+<<<<<<< HEAD
 
 				cql = "INSERT INTO polls (pollster, startDate, endDate, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s)"
+=======
+                                
+                                cql = "INSERT INTO polls (pollster, startDate, endDate, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s)"
+>>>>>>> 24f7acb344c77b1c6b0f86cb9ea7a2cdd9915353
 				session.execute(cql, (tempPollster, tempStartDate, tempEndDate, tempName, tempObservations, tempResponses))
 				print "Inserted a poll"
 

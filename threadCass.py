@@ -4,8 +4,9 @@
 from threading import Thread
 from cassandra.cluster import Cluster
 import tweepy
+import json
 
-keyspace = 'junk'
+keyspace = 'candidates'
 cluster = Cluster(
 	contact_points=['128.138.202.110','128.138.202.117'],)
 #connect to our Cassandra Keyspace
@@ -41,12 +42,14 @@ class StreamListener(tweepy.StreamListener):
     def on_data(self, data):
         #print self.keyword, data
         #print 'Ok, this is actually running'
-        if self.keyword[0] == 'Sanderasdfasdfs':
-            print 'feel the bern!!!!!'
         global tweetCount
         tweetCount += 1 
-        prepStep = session.prepare("INSERT INTO bernie(tweet_id, tweet) VALUES (?,?)")
-        bindStep = prepStep.bind([str(tweetCount),data])
+        
+        #convert the tweet to json
+        d = json.loads(data)
+        print d
+        prepStep = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, is_quote_status, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
+        bindStep = prepStep.bind([d["created_at"], d["coordinates"], d["favorite_count"], d["entities"]["hashtags"], d["lang"], d["is_quote_status"], d["retweet_count"], d["tweet_id"]])
         finalStep = session.execute(bindStep)
 
         file1=open("totalTweetCount.txt",'w')
