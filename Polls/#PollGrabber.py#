@@ -48,7 +48,7 @@ class pollGrabber:
 					new['endDate'] = poll.end_date
 					new['name'] = poll.questions[0]['name']
 					new['observations'] = str(poll.questions[0]['subpopulations'][0]['observations'])
-					new['responses'] = str(poll.questions[0]['subpopulations'][0]['responses'])
+					new['responses'] = poll.questions[0]['subpopulations'][0]['responses']
 					self.allPolls.append(new)
 
 	def getPolls(self):
