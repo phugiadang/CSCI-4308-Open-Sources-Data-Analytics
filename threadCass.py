@@ -5,6 +5,7 @@ from threading import Thread
 from cassandra.cluster import Cluster
 import tweepy
 import json
+import os
 
 keyspace = 'candidates'
 cluster = Cluster(
@@ -21,10 +22,43 @@ access_token_secret = "lQYcmiMlFdic9KSdmd6PClGQ3Swq8y9BgvVPOmqwhHjV2"
 
 
 
-file11=open("totalTweetCount.txt",'r')
-lines = file11.read()
-lines = lines.splitlines()
-tweetCount = int(lines[0])
+file11=open("totalTweetCount.txt",'r+')
+lines1 = file11.read()
+lines1 = lines1.splitlines()
+
+file12=open("trumpTweetCount.txt",'r+')
+lines2 = file12.read()
+lines2 = lines2.splitlines()
+
+file13=open("rubioTweetCount.txt",'r+')
+lines3 = file13.read()
+lines3 = lines3.splitlines()
+
+file14=open("carsonTweetCount.txt",'r+')
+lines4 = file14.read()
+lines4 = lines4.splitlines()
+
+file15=open("sandersTweetCount.txt",'r+')
+lines5 = file15.read()
+lines5 = lines5.splitlines()
+
+
+file16=open("clintonTweetCount.txt",'r+')
+lines6 = file16.read()
+lines6 = lines6.splitlines()
+
+file17=open("bushTweetCount.txt",'r+')
+lines7 = file17.read()
+lines7 = lines7.splitlines()
+
+
+
+
+
+tweetCount = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "bush": {int(lines7[0]): [file17,"bushTweetCount.txt"]}}
+
+totalTweetCount = tweetCount["total"]
+
 
 
 class StreamListener(tweepy.StreamListener):
@@ -37,13 +71,17 @@ class StreamListener(tweepy.StreamListener):
 
     def on_error(self, status_code):
         print 'Error: ' + repr(status_code)
+        os._exit(1)
         return False
 
     def on_data(self, data):
         #print self.keyword, data
         #print 'Ok, this is actually running'
+        global totalTweetCount
+        totalTweetCount += 1 
+        
         global tweetCount
-        tweetCount += 1 
+        junkList = list(tweetCount[self.keyword[1]])
         
         #convert the tweet to json
         d = json.loads(data)
@@ -62,9 +100,28 @@ class StreamListener(tweepy.StreamListener):
         finalStep = session.execute(bindStep)
 
         file1=open("totalTweetCount.txt",'w')
-        file1.write(str(tweetCount))
-        file11.close()
-        file1.close()
+        
+       
+        
+        
+        file1.write(str(totalTweetCount))
+        file1.close        
+
+        badList = tweetCount[self.keyword[1]].itervalues().next()
+        filth = badList[0]
+        filth.close()
+        fil=open(badList[1], "r")
+        lin = fil.read()
+        lin = lin.splitlines()
+        curCount1 = int(lin[0])
+        fil.close()
+        curCount1+=1
+        fil=open(badList[1], "w")
+        fil.write(str(curCount1))
+        print '%s has %d\n' % (self.keyword[1], curCount1) 
+        fil.close()
+        
+        
 
 
 def start_stream(auth, track):
