@@ -1,5 +1,5 @@
-from pollster import Pollster 
-from datetime import date
+#from pollster import Pollster 
+#from datetime import date
 from cassandra.cluster import Cluster
 import sys
 
@@ -26,8 +26,25 @@ session = cluster.connect('junk')
 # 		print row
 # except:
 # 	print "This throws an error because we're restricting part of the primary key without restricting a previous part. The primary key is (startDate, endDate, name) so we have to restrict them in that order."
-cql = "SELECT responses FROM junk.polls WHERE startDate = '2012-01-10'"
+
+allResponses = []
+averageResponses = {}
+numResponses = {}
+
+cql = "SELECT responses FROM junk.polls"
 rows = session.execute(cql)
+numRows = 0
 for row in rows
+	numRows += 1
 	for item in row
-		print item
+		response = eval(item)
+		allResponses.append(response)
+
+for response in allResponses:
+	for candidate in response:
+		if(candidate['choice'] not in averageResponses):
+			averageResponses.append(candidate['choice']: candidate['value'])
+			numResponses.append(candidate['choice']: 1)
+		else:
+			averageResponses[candidate['choice'] += candidate['value']]
+			numResponses[candidate['choice'] += 1
