@@ -1,3 +1,3 @@
-#Total Tweets: 1643601 
+#Total Tweets: {'sanders': {0: <open file 'sandersTweetCount.txt', mode 'r' at 0x7fcfe403cdb0>}, 'clinton': {0: <open file 'clintonTweetCount.txt', mode 'r' at 0x7fcfe403ce40>}, 'trump': {0: <open file 'trumpTweetCount.txt', mode 'r' at 0x7fcfe403cc00>}, 'bush': {0: <open file 'bushTweetCount.txt', mode 'r' at 0x7fcfe403ced0>}, 'carson': {0: <open file 'carsonTweetCount.txt', mode 'r' at 0x7fcfe403cd20>}, 'rubio': {0: <open file 'rubioTweetCount.txt', mode 'r' at 0x7fcfe403cc90>}, 'total': 1643588} 
 ---
 #Number of Trump Tweets: 5181651
