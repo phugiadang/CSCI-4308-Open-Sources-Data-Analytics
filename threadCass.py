@@ -47,9 +47,18 @@ class StreamListener(tweepy.StreamListener):
         
         #convert the tweet to json
         d = json.loads(data)
-        print d
-        prepStep = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, is_quote_status, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
-        bindStep = prepStep.bind([d["created_at"], d["coordinates"], d["favorite_count"], d["entities"]["hashtags"], d["lang"], d["is_quote_status"], d["retweet_count"], d["tweet_id"]])
+        hashTags = []
+        for element in d["entities"]["hashtags"]:
+             #uncomment next line to print all hashtags
+             #print element["text"]
+             hashTags.append(element["text"])
+        print 'coordinates is: \n'
+        
+        coord = []
+        if (d["coordinates"] != None):
+            coord = d["coordinates"]["coordinates"]
+        prepStep = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
+        bindStep = prepStep.bind([d["created_at"], coord, d["favorite_count"], hashTags, d["lang"], int(d["is_quote_status"]), d["retweet_count"], d["id_str"]])
         finalStep = session.execute(bindStep)
 
         file1=open("totalTweetCount.txt",'w')

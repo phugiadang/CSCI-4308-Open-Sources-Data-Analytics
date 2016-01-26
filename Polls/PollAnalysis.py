@@ -26,7 +26,6 @@ session = cluster.connect('junk')
 # 		print row
 # except:
 # 	print "This throws an error because we're restricting part of the primary key without restricting a previous part. The primary key is (startDate, endDate, name) so we have to restrict them in that order."
-<<<<<<< HEAD
 
 allResponses = []
 averageResponses = {}
@@ -35,27 +34,34 @@ numResponses = {}
 cql = "SELECT responses FROM junk.polls"
 rows = session.execute(cql)
 numRows = 0
-for row in rows
+for row in rows:
 	numRows += 1
-	for item in row
+	for item in row:
 		response = eval(item)
 		allResponses.append(response)
 
 for response in allResponses:
 	for candidate in response:
 		if(candidate['choice'] not in averageResponses):
-			averageResponses.append(candidate['choice']: candidate['value'])
-			numResponses.append(candidate['choice']: 1)
+			averageResponses[candidate['choice']] = candidate['value']
+			numResponses[candidate['choice']] = 1
 		else:
-			averageResponses[candidate['choice'] += candidate['value']]
-			numResponses[candidate['choice'] += 1
-=======
-cql = "SELECT responses FROM junk.polls WHERE startDate = '2014-01-10'"
-rows = session.execute(cql)
-for row in rows:
-        for item in row:
+			averageResponses[candidate['choice']] += candidate['value']
+			numResponses[candidate['choice']] += 1
+
+#divide the values in averageResponses (currently the sum of responses) by the
+#actual number of responses about the candidate to get the average
+
+for candidate in averageResponses:
+        averageResponses[candidate] = averageResponses[candidate]/numResponses[candidate]
+
+print averageResponses
+
+#cql = "SELECT responses FROM junk.polls WHERE startDate = '2014-01-10'"
+#rows = session.execute(cql)
+#for row in rows:
+#        for item in row:
                 #eval() turns the string back into the nested list and dictionary
                 #There's probably a more efficient way to do this... eg saving the values as something other than a string
-		evaluated =  eval(item)
-                print evaluated[0]['first_name']
->>>>>>> ec960609dd306578f19624abaef2f688e94f65d2
+#		evaluated =  eval(item)
+#                print evaluated[0]['first_name']
