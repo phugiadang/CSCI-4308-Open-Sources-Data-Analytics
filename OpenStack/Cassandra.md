@@ -1,3 +1,7 @@
+#How to launch CQLSH (Cassandra Quey Language Shell) on the OpenStack
+##1. cd /home/centos/dse-4.8.1/bin
+##2. sudo ./cqlsh 128.138.202.110
+---
 #For info about connecting to Cassandra within python, visit https://pypi.python.org/pypi/cql/1.4.0
 ---
 #1. Info about our Database:
