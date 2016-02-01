@@ -55,9 +55,9 @@ lines7 = lines7.splitlines()
 
 
 
-tweetCount = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "bush": {int(lines7[0]): [file17,"bushTweetCount.txt"]}}
+tweet_count = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "bush": {int(lines7[0]): [file17,"bushTweetCount.txt"]}}
 
-totalTweetCount = tweetCount["total"]
+total_tweet_count = tweet_count["total"]
 
 
 
@@ -77,26 +77,26 @@ class StreamListener(tweepy.StreamListener):
     def on_data(self, data):
         #print self.keyword, data
         #print 'Ok, this is actually running'
-        global totalTweetCount
-        totalTweetCount += 1 
-        
-        global tweetCount
-        junkList = list(tweetCount[self.keyword[1]])
+        global total_tweet_count, tweet_count
+        #global tweet_count
+        total_tweet_count += 1
+
         
         #convert the tweet to json
         d = json.loads(data)
-        hashTags = []
+        hash_tags = []
         for element in d["entities"]["hashtags"]:
              #uncomment next line to print all hashtags
              #print element["text"]
-             hashTags.append(element["text"])
+             hash_tags.append(element["text"])
         print 'coordinates is: \n'
         
         coord = []
         if (d["coordinates"] != None):
             coord = d["coordinates"]["coordinates"]
+
         prepStep = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
-        bindStep = prepStep.bind([d["created_at"], coord, d["favorite_count"], hashTags, d["lang"], int(d["is_quote_status"]), d["retweet_count"], d["id_str"]])
+        bindStep = prepStep.bind([d["created_at"], coord, d["favorite_count"], hash_tags, d["lang"], int(d["is_quote_status"]), d["retweet_count"], d["id_str"]])
         finalStep = session.execute(bindStep)
 
         file1=open("totalTweetCount.txt",'w')
@@ -104,10 +104,10 @@ class StreamListener(tweepy.StreamListener):
        
         
         
-        file1.write(str(totalTweetCount))
+        file1.write(str(total_tweet_count))
         file1.close        
 
-        badList = tweetCount[self.keyword[1]].itervalues().next()
+        badList = tweet_count[self.keyword[1]].itervalues().next()
         filth = badList[0]
         filth.close()
         fil=open(badList[1], "r")
@@ -127,29 +127,30 @@ class StreamListener(tweepy.StreamListener):
 def start_stream(auth, track):
     tweepy.Stream(auth=auth, listener=StreamListener(track)).filter(track=[track])
     
-def start_streamList(auth, listTrack):
-    tweepy.Stream(auth=auth, listener=StreamListener(listTrack)).filter(track=[listTrack[0],listTrack[1],listTrack[2],listTrack[3]])
+def start_streamList(auth, list_track):
+    tweepy.Stream(auth=auth, listener=StreamListener(list_track)).filter(track=[list_track[0],list_track[1],list_track[2],list_track[3]])
     
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 
-listTrump = ['Trump', 'trump','Donald Trump','the Donald']
-listRubio = ['Rubio', 'rubio','Marco Rubio','Marco Antonio Rubio']
-listSanders=['Sanders', 'sanders', 'Bernie Sanders','feel the bern']
-listCarson =['Carson', 'carson', 'Ben Carson','Dr. Ben Carson']
-listBush =  ['Bush', 'bush', 'Jeb', 'Jeb Bush']
-listClinton = ['Clinton','clinton','Hillary','Hillary Clinton']
+list_trump = ['Trump', 'trump','Donald Trump','the Donald']
+list_rubio = ['Rubio', 'rubio','Marco Rubio','Marco Antonio Rubio']
+list_sanders=['Sanders', 'sanders', 'Bernie Sanders','feel the bern']
+list_carson =['Carson', 'carson', 'Ben Carson','Dr. Ben Carson']
+list_bush =  ['Bush', 'bush', 'Jeb', 'Jeb Bush']
+list_clinton = ['Clinton','clinton','Hillary','Hillary Clinton']
 
-listOfLists = [listTrump,listRubio,listSanders,listCarson,listBush,listClinton]
-
+list_of_lists = [list_trump,list_rubio,list_sanders,list_carson,list_bush,list_clinton]
+list_of_items1 = [list_of_lists]
 track = ['clinton', 'bush', 'python']
 
 i=0
 
-for item in listOfLists:
-    thread = Thread(target=start_streamList, args=(auth, item))
-    thread.start()
+for item in list_of_lists:
+    if ((i == 0)):
+    	thread = Thread(target=start_streamList, args=(auth, item))
+    	thread.start()
     i = i + 1
 
 
