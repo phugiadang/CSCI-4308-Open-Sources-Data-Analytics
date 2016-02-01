@@ -12,3 +12,8 @@
 ##Our variables bear all lower case letters, with an underscore seperating each word.
 ##Ex. sample_variable = 1
 ##Ex. total_tweet_count = 587
+---
+#Functions:
+##Our functions have names with the first word starting with a lower case letter, and then all subsequent words begin with a capital letter.
+##Ex. updateTweetCount(38)
+##Ex. shout('hello world')
