@@ -14,11 +14,11 @@ cluster = Cluster(
 session = cluster.connect(keyspace)
 
 
-consumer_key = "43b4urzsW8nMY3oGzB5tIIM8B"
-consumer_secret = "fbGLMhkFyipYbTAz0s0S6yrN6cDGGWnEMmNaciceYjr4sgEdP2"
+consumer_key = "SNzrQmsgZl3Y1obF5U0VzfJR3"
+consumer_secret = "JTGc0f7lznwXLjWEwQPe6XKY1lLrS4kbinCvloZdkTi5Zs7GM8"
 
-access_token = "2990432317-eYMpYm2Ck2G1YBPvWEq7Mf9wdgzBlOydabaxmzN"
-access_token_secret = "lQYcmiMlFdic9KSdmd6PClGQ3Swq8y9BgvVPOmqwhHjV2"
+access_token = "3298946066-MnUVaCoTJQgxKuKL2NCqtb5cWImgxTrZAVKRCxp"
+access_token_secret = "LR0igd7X609r3N0fdR5tWZCTF0TLOQqcArpWNAmL45ozN"
 
 
 
@@ -86,11 +86,13 @@ class StreamListener(tweepy.StreamListener):
         #convert the tweet to json
         d = json.loads(data)
         hashTags = []
-        for element in d["entities"]["hashtags"]:
-             #uncomment next line to print all hashtags
-             #print element["text"]
-             hashTags.append(element["text"])
-        print 'coordinates is: \n'
+        try:
+            for element in d["entities"]["hashtags"]:
+                 #uncomment next line to print all hashtags
+                 #print element["text"]
+                 hashTags.append(element["text"])
+        except:
+	    print 'Tweet does not contain an entities field!'
         
         coord = []
         if (d["coordinates"] != None):
@@ -118,7 +120,9 @@ class StreamListener(tweepy.StreamListener):
         curCount1+=1
         fil=open(badList[1], "w")
         fil.write(str(curCount1))
-        print '%s has %d\n' % (self.keyword[1], curCount1) 
+        #print '%s has %d\n' % (self.keyword[1], curCount1)
+	if (self.keyword[1] == 'trump'):
+		print 'trump' 
         fil.close()
         
         
@@ -130,8 +134,8 @@ def start_stream(auth, track):
 def start_streamList(auth, listTrack):
     tweepy.Stream(auth=auth, listener=StreamListener(listTrack)).filter(track=[listTrack[0],listTrack[1],listTrack[2],listTrack[3]])
     
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
+#auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+#auth.set_access_token(access_token, access_token_secret)
 
 
 listTrump = ['Trump', 'trump','Donald Trump','the Donald']
@@ -147,7 +151,35 @@ track = ['clinton', 'bush', 'python']
 
 i=0
 
+consumer = []
+consumer_secret = []
+access_token = []
+access_token_secret = []
+
+line_count = 0
+
+key_list = []
+
+with open('/home/centos/CSCI-4308-Open-Sources-Data-Analytics/keys.txt', 'r') as key_text:
+	for each_key in key_text:
+ 		key_list.append(str(each_key).rstrip('\n'))
+
+c = 0
+for x in range(0, 6):
+
+    consumer.append(key_list[0+c])
+
+    consumer_secret.append(key_list[1+c])
+
+    access_token.append(key_list[2+c])
+
+    access_token_secret.append(key_list[3+c])
+    c = c+4
+
+
 for item in listOfLists:
+    auth = tweepy.OAuthHandler(consumer[i], consumer_secret[i])
+    auth.set_access_token(access_token[i], access_token_secret[i])
     thread = Thread(target=start_streamList, args=(auth, item))
     thread.start()
     i = i + 1
