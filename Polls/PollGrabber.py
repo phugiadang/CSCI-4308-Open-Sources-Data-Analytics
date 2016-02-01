@@ -31,7 +31,6 @@ class pollGrabber:
 		for chart in charts:
 
 			#grab all the polls in the current chart
-			# pollsByDate = chart.estimates_by_date()
 			polls = chart.polls()
 			for poll in polls:
 
@@ -51,7 +50,7 @@ class pollGrabber:
 					new['responses'] = str(poll.questions[0]['subpopulations'][0]['responses'])
 					self.allPolls.append(new)
 
-	def getPolls(self):
+	def dumpPolls(self):
 		if(self.allPolls == []):
 			print "self.allPolls has not been populated. Run queryPolls first!"
 		else:
@@ -70,13 +69,8 @@ class pollGrabber:
 				tempName = poll['name']
 				tempObservations = str(poll['observations'])
 				tempResponses = poll['responses']
-<<<<<<< HEAD
-
-				cql = "INSERT INTO polls (pollster, startDate, endDate, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s)"
-=======
-                                
-                                cql = "INSERT INTO polls (pollster, startDate, endDate, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s)"
->>>>>>> 24f7acb344c77b1c6b0f86cb9ea7a2cdd9915353
+                
+                cql = "INSERT INTO polls (pollster, startDate, endDate, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s)"
 				session.execute(cql, (tempPollster, tempStartDate, tempEndDate, tempName, tempObservations, tempResponses))
 				print "Inserted a poll"
 
