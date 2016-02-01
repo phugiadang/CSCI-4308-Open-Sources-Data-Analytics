@@ -14,11 +14,11 @@ cluster = Cluster(
 session = cluster.connect(keyspace)
 
 
-consumer_key = "43b4urzsW8nMY3oGzB5tIIM8B"
-consumer_secret = "fbGLMhkFyipYbTAz0s0S6yrN6cDGGWnEMmNaciceYjr4sgEdP2"
+consumer_key = "SNzrQmsgZl3Y1obF5U0VzfJR3"
+consumer_secret = "JTGc0f7lznwXLjWEwQPe6XKY1lLrS4kbinCvloZdkTi5Zs7GM8"
 
-access_token = "2990432317-eYMpYm2Ck2G1YBPvWEq7Mf9wdgzBlOydabaxmzN"
-access_token_secret = "lQYcmiMlFdic9KSdmd6PClGQ3Swq8y9BgvVPOmqwhHjV2"
+access_token = "3298946066-MnUVaCoTJQgxKuKL2NCqtb5cWImgxTrZAVKRCxp"
+access_token_secret = "LR0igd7X609r3N0fdR5tWZCTF0TLOQqcArpWNAmL45ozN"
 
 
 
@@ -55,9 +55,9 @@ lines7 = lines7.splitlines()
 
 
 
-tweet_count = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "bush": {int(lines7[0]): [file17,"bushTweetCount.txt"]}}
+tweetCount = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "bush": {int(lines7[0]): [file17,"bushTweetCount.txt"]}}
 
-total_tweet_count = tweet_count["total"]
+totalTweetCount = tweetCount["total"]
 
 
 
@@ -77,26 +77,28 @@ class StreamListener(tweepy.StreamListener):
     def on_data(self, data):
         #print self.keyword, data
         #print 'Ok, this is actually running'
-        global total_tweet_count, tweet_count
-        #global tweet_count
-        total_tweet_count += 1
-
+        global totalTweetCount
+        totalTweetCount += 1 
+        
+        global tweetCount
+        junkList = list(tweetCount[self.keyword[1]])
         
         #convert the tweet to json
         d = json.loads(data)
-        hash_tags = []
-        for element in d["entities"]["hashtags"]:
-             #uncomment next line to print all hashtags
-             #print element["text"]
-             hash_tags.append(element["text"])
-        print 'coordinates is: \n'
+        hashTags = []
+        try:
+            for element in d["entities"]["hashtags"]:
+                 #uncomment next line to print all hashtags
+                 #print element["text"]
+                 hashTags.append(element["text"])
+        except:
+	    print 'Tweet does not contain an entities field!'
         
         coord = []
         if (d["coordinates"] != None):
             coord = d["coordinates"]["coordinates"]
-
         prepStep = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
-        bindStep = prepStep.bind([d["created_at"], coord, d["favorite_count"], hash_tags, d["lang"], int(d["is_quote_status"]), d["retweet_count"], d["id_str"]])
+        bindStep = prepStep.bind([d["created_at"], coord, d["favorite_count"], hashTags, d["lang"], int(d["is_quote_status"]), d["retweet_count"], d["id_str"]])
         finalStep = session.execute(bindStep)
 
         file1=open("totalTweetCount.txt",'w')
@@ -104,10 +106,10 @@ class StreamListener(tweepy.StreamListener):
        
         
         
-        file1.write(str(total_tweet_count))
+        file1.write(str(totalTweetCount))
         file1.close        
 
-        badList = tweet_count[self.keyword[1]].itervalues().next()
+        badList = tweetCount[self.keyword[1]].itervalues().next()
         filth = badList[0]
         filth.close()
         fil=open(badList[1], "r")
@@ -118,7 +120,9 @@ class StreamListener(tweepy.StreamListener):
         curCount1+=1
         fil=open(badList[1], "w")
         fil.write(str(curCount1))
-        print '%s has %d\n' % (self.keyword[1], curCount1) 
+        #print '%s has %d\n' % (self.keyword[1], curCount1)
+	if (self.keyword[1] == 'trump'):
+		print 'trump' 
         fil.close()
         
         
@@ -127,30 +131,57 @@ class StreamListener(tweepy.StreamListener):
 def start_stream(auth, track):
     tweepy.Stream(auth=auth, listener=StreamListener(track)).filter(track=[track])
     
-def start_streamList(auth, list_track):
-    tweepy.Stream(auth=auth, listener=StreamListener(list_track)).filter(track=[list_track[0],list_track[1],list_track[2],list_track[3]])
+def start_streamList(auth, listTrack):
+    tweepy.Stream(auth=auth, listener=StreamListener(listTrack)).filter(track=[listTrack[0],listTrack[1],listTrack[2],listTrack[3]])
     
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
+#auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+#auth.set_access_token(access_token, access_token_secret)
 
 
-list_trump = ['Trump', 'trump','Donald Trump','the Donald']
-list_rubio = ['Rubio', 'rubio','Marco Rubio','Marco Antonio Rubio']
-list_sanders=['Sanders', 'sanders', 'Bernie Sanders','feel the bern']
-list_carson =['Carson', 'carson', 'Ben Carson','Dr. Ben Carson']
-list_bush =  ['Bush', 'bush', 'Jeb', 'Jeb Bush']
-list_clinton = ['Clinton','clinton','Hillary','Hillary Clinton']
+listTrump = ['Trump', 'trump','Donald Trump','the Donald']
+listRubio = ['Rubio', 'rubio','Marco Rubio','Marco Antonio Rubio']
+listSanders=['Sanders', 'sanders', 'Bernie Sanders','feel the bern']
+listCarson =['Carson', 'carson', 'Ben Carson','Dr. Ben Carson']
+listBush =  ['Bush', 'bush', 'Jeb', 'Jeb Bush']
+listClinton = ['Clinton','clinton','Hillary','Hillary Clinton']
 
-list_of_lists = [list_trump,list_rubio,list_sanders,list_carson,list_bush,list_clinton]
-list_of_items1 = [list_of_lists]
+listOfLists = [listTrump,listRubio,listSanders,listCarson,listBush,listClinton]
+
 track = ['clinton', 'bush', 'python']
 
 i=0
 
-for item in list_of_lists:
-    if ((i == 0)):
-    	thread = Thread(target=start_streamList, args=(auth, item))
-    	thread.start()
+consumer = []
+consumer_secret = []
+access_token = []
+access_token_secret = []
+
+line_count = 0
+
+key_list = []
+
+with open('/home/centos/CSCI-4308-Open-Sources-Data-Analytics/keys.txt', 'r') as key_text:
+	for each_key in key_text:
+ 		key_list.append(str(each_key).rstrip('\n'))
+
+c = 0
+for x in range(0, 6):
+
+    consumer.append(key_list[0+c])
+
+    consumer_secret.append(key_list[1+c])
+
+    access_token.append(key_list[2+c])
+
+    access_token_secret.append(key_list[3+c])
+    c = c+4
+
+
+for item in listOfLists:
+    auth = tweepy.OAuthHandler(consumer[i], consumer_secret[i])
+    auth.set_access_token(access_token[i], access_token_secret[i])
+    thread = Thread(target=start_streamList, args=(auth, item))
+    thread.start()
     i = i + 1
 
 
