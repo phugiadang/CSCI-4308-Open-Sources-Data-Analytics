@@ -1,6 +1,6 @@
 #Total Tweets: 0 
 ---
-#Number of Trump Tweets: 7014
+#Number of Trump Tweets: 0
 #Number of Sanders Tweets: 0
 #Number of Bush Tweets: 0
 #Number of Clinton Tweets: 0
