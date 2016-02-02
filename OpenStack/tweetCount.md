@@ -1,6 +1,6 @@
-#Total Tweets: 73903 
+#Total Tweets: 74744 
 ---
-#Number of Trump Tweets: 35848
+#Number of Trump Tweets: 36689
 #Number of Sanders Tweets: 10073
 #Number of Bush Tweets: 2349
 #Number of Clinton Tweets: 14887
