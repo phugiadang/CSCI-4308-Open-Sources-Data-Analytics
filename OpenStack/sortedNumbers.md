@@ -1,8 +1,8 @@
-#Total Number of Tweets: 2002177 
-#Number of Trump Tweets: 921864
-#Number of Clinton Tweets: 596664
-#Number of Sanders Tweets: 254050
-#Number of Rubio Tweets: 251278
-#Number of Carson Tweets: 158497
-#Number of Bush Tweets: 111113
+#Total Number of Tweets: 2003664 
+#Number of Trump Tweets: 922389
+#Number of Clinton Tweets: 596955
+#Number of Sanders Tweets: 254228
+#Number of Rubio Tweets: 251496
+#Number of Carson Tweets: 158668
+#Number of Bush Tweets: 111217
 ---
