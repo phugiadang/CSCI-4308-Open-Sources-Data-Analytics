@@ -63,9 +63,8 @@ class pollGrabber:
 			print "self.all_polls has not been populated. Run queryPolls first!"
 		else:
 			#grab the last unique ID to increment it for the primary key
-			f = open('PollID_DONOTTOUCH', 'r+')
+			f = open('PollID_DONOTTOUCH.txt', 'r+')
 			ID = int(f.read())
-			ID += 1
 
 			for poll in self.all_polls:
 				temp_pollster = poll['pollster']
@@ -75,12 +74,14 @@ class pollGrabber:
 				temp_observations = poll['observations']
 				temp_responses = poll['responses']
                 
-                #cql = "INSERT INTO polls (id, pollster, start_date, end_date, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s)"
-				#session.execute(cql, (ID, temp_pollster, temp_start_date, temp_end_date, temp_name, temp_observations, temp_responses))
+                                cql = "INSERT INTO polls (id, pollster, start_date, end_date, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+				session.execute(cql, (ID, temp_pollster, temp_start_date, temp_end_date, temp_name, temp_observations, temp_responses))
 				print ID
 				ID += 1
 				print "Inserted a poll"
-
+                        f.seek(0)
+                        f.write(str(ID))
+                        print('Length of self.all_polls: ' + str(len(self.all_polls)))
 def main():
 	#usage message if there are no arguments
 	if(len(sys.argv) < 4 or len(sys.argv) > 4):
@@ -118,7 +119,7 @@ def main():
 	else:
 		pg = pollGrabber(sys.argv[1], sys.argv[2], sys.argv[3])
 		pg.queryPolls()
-		pg.getPolls()
+		#pg.getPolls()
 		pg.pushToCassandra()
 
 if __name__ == "__main__":

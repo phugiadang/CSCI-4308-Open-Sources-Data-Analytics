@@ -7,7 +7,7 @@ import tweepy
 import json
 import os
 
-keyspace = 'candidates'
+keyspace = 'junk'
 cluster = Cluster(
 	contact_points=['128.138.202.110','128.138.202.117'],)
 #connect to our Cassandra Keyspace
@@ -47,7 +47,7 @@ file16=open("clintonTweetCount.txt",'r+')
 lines6 = file16.read()
 lines6 = lines6.splitlines()
 
-file17=open("cruzTweetCount.txt",'r+')
+file17=open("bushTweetCount.txt",'r+')
 lines7 = file17.read()
 lines7 = lines7.splitlines()
 
@@ -55,7 +55,7 @@ lines7 = lines7.splitlines()
 
 
 
-tweetCount = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "cruz": {int(lines7[0]): [file17,"cruzTweetCount.txt"]}}
+tweetCount = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "bush": {int(lines7[0]): [file17,"bushTweetCount.txt"]}}
 
 totalTweetCount = tweetCount["total"]
 
@@ -103,10 +103,9 @@ class StreamListener(tweepy.StreamListener):
         except:
     	    print 'Tweet for %s does not contain a coordinates field!' % (self.keyword[1])
 
-        a9,c9,f9,text_field = 'NULL', 'NULL', 'NULL', 'NULL'
+        a9,c9,f9 = 'NULL', 'NULL','NULL'
         b9,d9,e9 = 0,0,0
-        
-             
+               
 
         try:
             a9 = d["created_at"]
@@ -115,18 +114,18 @@ class StreamListener(tweepy.StreamListener):
             d9 = int(d["is_quote_status"])
             e9 = d["retweet_count"]
             f9 = d["id_str"]
-            text_field = d["text"]
 
         except:
 	    print 'Tweet for %s is missing a field!' % (self.keyword[1])
 
-        #prepStep = session.execute_async("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
- 	#global prepDict
+        #prepStep = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
+ 	global prepDict
         #bindStep = prepDict[self.keyword[1]].bind([a9, coord, b9, hashTags, c9, d9, e9, f9])
         #finalStep = session.execute_async(bindStep)
-        finalStep = session.execute_async('insert into ' + self.keyword[1] + '(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,a9,b9,hashTags,c9,d9,e9,text_field))
-        #finalStep = session.execute_async('insert into trump(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)', (str(totalTweetCount),[],0,[],'',0,0,''))
-	
+        try:
+	    finalStep = session.execute('insert into bernie1(tweet_id, tweet) VALUES (%s, %s)', (str(totalTweetcount),d["text"]))
+        except:
+	    print 'woops!'
         try:
             print '\nyay!!!\n'
             print finalStep.result()
@@ -172,10 +171,10 @@ listTrump = ['Trump', 'trump','Donald Trump','the Donald']
 listRubio = ['Rubio', 'rubio','Marco Rubio','Marco Antonio Rubio']
 listSanders=['Sanders', 'sanders', 'Bernie Sanders','feel the bern']
 listCarson =['Carson', 'carson', 'Ben Carson','Dr. Ben Carson']
-listCruz =  ['Cruz', 'cruz', 'CruzCrew', 'TrusTED']
+listBush =  ['Bush', 'bush', 'Jeb', 'Jeb Bush']
 listClinton = ['Clinton','clinton','Hillary','Hillary Clinton']
 
-listOfLists = [listTrump,listRubio,listSanders,listCarson,listCruz,listClinton]
+listOfLists = [listTrump,listRubio,listSanders,listCarson,listBush,listClinton]
 
 track = ['clinton', 'bush', 'python']
 
@@ -209,12 +208,13 @@ for x in range(0, 6):
 
 for item in listOfLists:
     #global prepDict
-
-    auth = tweepy.OAuthHandler(consumer[i], consumer_secret[i])
-    auth.set_access_token(access_token[i], access_token_secret[i])
-    thread = Thread(target=start_streamList, args=(auth, item))
-    #prepDict[item[1]] = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (item[1]))
-    thread.start()
+    if ( i == 0):
+    	auth = tweepy.OAuthHandler(consumer[i], consumer_secret[i])
+    	auth.set_access_token(access_token[i], access_token_secret[i])
+    	#thread = Thread(target=start_streamList, args=(auth, item))
+    	#prepDict[item[1]] = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (item[1]))
+    	#thread.start()
+        start_streamList(auth, item)
     i = i + 1
 
 
