@@ -6,7 +6,7 @@
 **Details** _(setup, step-by-step explanation so test can be recreated)_:   
 1. Manually create Cassandra table on OpenStack  
 2. Run PollGrabber.py: `python PollGrabber.py <any topic> <any start date> <any end date>`  
-3. Log back into cqlsh, run `SELECT * FROM junk.polls'  
+3. Log back into cqlsh, run `SELECT * FROM junk.polls`  
 4. See all that wonderful data  
 **Pass/Fail?:** PASS  
 ______________________________________________________________________________
