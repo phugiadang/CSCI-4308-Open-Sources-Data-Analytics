@@ -21,7 +21,7 @@ tweetcount=$(cat /home/centos/spark-1.5.1-bin-hadoop2.6/trumpTweetCount.txt)
 totalTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/totalTweetCount.txt)
 trumpTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/trumpTweetCount.txt)
 sandersTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/sandersTweetCount.txt)
-bushTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/bushTweetCount.txt)
+cruzTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/cruzTweetCount.txt)
 clintonTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/clintonTweetCount.txt)
 rubioTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/rubioTweetCount.txt)
 carsonTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/carsonTweetCount.txt)
@@ -32,7 +32,7 @@ carsonTweetCount=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/carson
 
 
 #sudo sh -c "echo $b > tweetCount.md"
-sudo sh -c "printf \"#Total Number of Tweets: $totalTweetCount \n---\n---\n#Number of Trump Tweets: $trumpTweetCount\n#Number of Sanders Tweets: $sandersTweetCount\n#Number of Bush Tweets: $bushTweetCount\n#Number of Clinton Tweets: $clintonTweetCount\n#Number of Rubio Tweets: $rubioTweetCount\n#Number of Carson Tweets: $carsonTweetCount\" > sortedNumbers.txt" 
+sudo sh -c "printf \"#Total Number of Tweets: $totalTweetCount \n---\n---\n#Number of Trump Tweets: $trumpTweetCount\n#Number of Sanders Tweets: $sandersTweetCount\n#Number of Cruz Tweets: $cruzTweetCount\n#Number of Clinton Tweets: $clintonTweetCount\n#Number of Rubio Tweets: $rubioTweetCount\n#Number of Carson Tweets: $carsonTweetCount\" > sortedNumbers.txt" 
 
 sudo sh -c 'cat sortedNumbers.txt | sort -nrk5 > sortedNumbers.md'
 
