@@ -49,25 +49,25 @@
 ##11. Now, save and exit
 
 
-##17. ```source /etc/profile```
+##12. ```source /etc/profile```
 
 
-##18. ```java -version```
+##13. ```java -version```
 
 
-##19. ```wget -O /home/centos/scala.tgz "http://downloads.typesafe.com/scala/2.10.6/scala-2.10.6.tgz?_ga=1.170409123.2032133767.1444195421"```
+##14. ```wget -O /home/centos/scala.tgz "http://downloads.typesafe.com/scala/2.10.6/scala-2.10.6.tgz?_ga=1.170409123.2032133767.1444195421"```
 
 
-##20. ```tar zfx scala.tgz```
+##15. ```tar zfx scala.tgz```
 
 
-##21. ```sudo mv scala-2.10.6 /usr/lib```
+##16. ```sudo mv scala-2.10.6 /usr/lib```
 
 
-##22. ```sudo vim /etc/profile```
+##17. ```sudo vim /etc/profile```
 
 
-##23. Now, add the following lines at the end
+##18. Now, add the following lines at the end
 
 
 ###a) ```export SCALA_HOME=/usr/lib/scala-2.10.6```
@@ -76,9 +76,9 @@
 ###b) ```export PATH=$PATH:$SCALA_HOME/bin```
 
 
-##24. Now, Save and exit
+##19. Now, Save and exit
 
 
-##25. ```source /etc/profile```
+##20. ```source /etc/profile```
 
 
