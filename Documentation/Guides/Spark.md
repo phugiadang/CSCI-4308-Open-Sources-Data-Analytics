@@ -1,7 +1,7 @@
 #A Guide for Setting up a Spark Cluster on Multiple Machines
 ---
 ---
-1. ```sudo yum install wget```
+#1. ```sudo yum install wget```
 
 
 2.wget -O /home/centos/spark.tar‘http://d3kbcqa49mib13.cloudfront.net/spark-1.5.1-bin-hadoop2.6.tgz’ 
