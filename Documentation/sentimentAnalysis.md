@@ -3,8 +3,8 @@
 1. Clone this repository: https://github.com/japerk/nltk-trainer
 
 2. Run python from bash "python"
->>> import nltk
->>> nltk.download
+import nltk
+nltk.download
 Downloader> d
 Identifier> movie_reviews
 Downloader> d
