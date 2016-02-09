@@ -5,7 +5,7 @@
 #Number of Clinton Tweets: 9263
 #Number of Sanders Tweets: 8255
 #Number of Carson Tweets: 1675
-#Current Stream Started at Tue Feb  9 03:31:54
+#Current Stream Started at Tue Feb  9 03:57:54
 ---
 ---
 ---
