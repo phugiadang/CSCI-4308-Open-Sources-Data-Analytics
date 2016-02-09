@@ -29,7 +29,7 @@ if [ $b -ne $nm ]
 fi
 
 #check on tweet streaming
-c=$(ps aux | grep trump.py | wc | cut -d ' ' -f 7)
+c=$(ps aux | grep 'python threadCass.py' | wc | cut -d ' ' -f 7)
 if [ $c -eq 1 ]
 then
 	echo "bad!!!"

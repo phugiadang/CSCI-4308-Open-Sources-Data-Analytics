@@ -3,6 +3,7 @@
 #
 from threading import Thread
 from cassandra.cluster import Cluster
+from subprocess import call
 import tweepy
 import json
 import os
@@ -52,16 +53,40 @@ lines7 = file17.read()
 lines7 = lines7.splitlines()
 
 
+call("sudo sh -c \"date | cut -d ' ' -f 1-5 > startTime.txt\"", shell=True)
 
 
+tweet_count = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "cruz": {int(lines7[0]): [file17,"cruzTweetCount.txt"]}}
 
-tweetCount = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "cruz": {int(lines7[0]): [file17,"cruzTweetCount.txt"]}}
+total_tweet_count = tweet_count["total"]
 
-totalTweetCount = tweetCount["total"]
 
-#prepStep = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
+month_dict = {'Jan' : '01', 'Feb' : '02', 'Mar' : '03', 'Apr' : '04', 'May' : '05', 'Jun' : '06', 'Jul' : '07', 'Aug' : '08', 'Sep' : '09', 'Oct' : '10', 'Nov' : '11', 'Dec' : '12'}
 
-prepDict = {}
+def numerizeDate(real_date):
+    if (real_date == -1):
+        return real_date
+    numerical_date = ''
+    current_word = ''
+    word_num = 1
+    character_count = 0
+    for character in real_date:
+	character_count += 1
+	if (character_count == len(real_date)):
+	    current_word += character
+	    numerical_date = current_word+numerical_date
+            return numerical_date.replace(':','')
+        elif (character != ' '):
+            current_word += character
+	else:
+	    if (word_num == 2):
+		numerical_date = month_dict[current_word]+numerical_date
+	    elif ((word_num == 3) or (word_num == 4)):
+		numerical_date += current_word
+ 
+            current_word = ''
+            word_num += 1
+	    		
 
 class StreamListener(tweepy.StreamListener):
     def __init__(self, keyword, api=None):
@@ -77,22 +102,18 @@ class StreamListener(tweepy.StreamListener):
         return False
 
     def on_data(self, data):
-        #print self.keyword, data
-        #print 'Ok, this is actually running'
-        global totalTweetCount
-        totalTweetCount += 1 
         
-        global tweetCount
-        junkList = list(tweetCount[self.keyword[1]])
-        
+        global tweet_count, total_tweet_count
+        total_tweet_count += 1 
+           
         #convert the tweet to json
         d = json.loads(data)
-        hashTags = []
+        hash_tags = []
         try:
             for element in d["entities"]["hashtags"]:
                  #uncomment next line to print all hashtags
                  #print element["text"]
-                 hashTags.append(element["text"])
+                 hash_tags.append(element["text"])
         except:
 	    print 'Tweet for %s does not contain an entities field!' % (self.keyword[1])
       
@@ -103,11 +124,11 @@ class StreamListener(tweepy.StreamListener):
         except:
     	    print 'Tweet for %s does not contain a coordinates field!' % (self.keyword[1])
 
-        a9,c9,f9,text_field = 'NULL', 'NULL', 'NULL', 'NULL'
-        b9,d9,e9 = 0,0,0
-        
-             
 
+        c9,text_field = 'NULL', 'NULL'
+        b9,d9,e9 = 0,0,0
+	a9, f9 = -1, -1
+        
         try:
             a9 = d["created_at"]
             b9 = d["favorite_count"]        
@@ -120,38 +141,38 @@ class StreamListener(tweepy.StreamListener):
         except:
 	    print 'Tweet for %s is missing a field!' % (self.keyword[1])
 
-        #prepStep = session.execute_async("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (self.keyword[1]))
- 	#global prepDict
-        #bindStep = prepDict[self.keyword[1]].bind([a9, coord, b9, hashTags, c9, d9, e9, f9])
-        #finalStep = session.execute_async(bindStep)
-        finalStep = session.execute_async('insert into ' + self.keyword[1] + '(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,a9,b9,hashTags,c9,d9,e9,text_field))
-        #finalStep = session.execute_async('insert into trump(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)', (str(totalTweetCount),[],0,[],'',0,0,''))
+        
+	numerical_date = numerizeDate(a9)	
+	#if (numerical_date != 'NULL'):
+	#    f9 = int(numerical_date + str(f9))
+	    
+        final_step = session.execute_async('insert into ' + self.keyword[1] + '(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (f9,coord,int(numerical_date),b9,hash_tags,c9,d9,e9,text_field))
+
+        #final_step = session.execute_async('insert into mess(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,a9,b9,hash_tags,c9,int(numerical_date),e9,text_field))
+
 	
-        try:
-            print '\nyay!!!\n'
-            print finalStep.result()
-        except:
- 	    print 'fail\n'
+        #try:
+            #if this prints a cassandra.cluster.ResultSet object, it was successfully stored in the database
+            #print final_step.result()
+        #except:
+	    
+ 	    #print 'fail\n'
         file1=open("totalTweetCount.txt",'w')
-        
-       
-        
-        
-        file1.write(str(totalTweetCount))
+         
+        file1.write(str(total_tweet_count))
         file1.close        
 
-        badList = tweetCount[self.keyword[1]].itervalues().next()
-        filth = badList[0]
+        bad_list = tweet_count[self.keyword[1]].itervalues().next()
+        filth = bad_list[0]
         filth.close()
-        fil=open(badList[1], "r")
-        lin = fil.read()
-        lin = lin.splitlines()
-        curCount1 = int(lin[0])
+        fil=open(bad_list[1], "r")
+        lin = fil.read().splitlines()
+        cur_count1 = int(lin[0])
         fil.close()
-        curCount1+=1
-        fil=open(badList[1], "w")
-        fil.write(str(curCount1))
-        print '%s has %d\n' % (self.keyword[1], curCount1)
+        cur_count1+=1
+        fil=open(bad_list[1], "w")
+        fil.write(str(cur_count1))
+        #print '%s has %d tweets\n' % (self.keyword[1], cur_count1)
 	 
         fil.close()
         
@@ -161,21 +182,21 @@ class StreamListener(tweepy.StreamListener):
 def start_stream(auth, track):
     tweepy.Stream(auth=auth, listener=StreamListener(track)).filter(track=[track])
     
-def start_streamList(auth, listTrack):
-    tweepy.Stream(auth=auth, listener=StreamListener(listTrack)).filter(track=[listTrack[0],listTrack[1],listTrack[2],listTrack[3]])
+def start_streamList(auth, list_track):
+    tweepy.Stream(auth=auth, listener=StreamListener(list_track)).filter(track=[list_track[0],list_track[1],list_track[2],list_track[3]])
     
 #auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 #auth.set_access_token(access_token, access_token_secret)
 
 
-listTrump = ['Trump', 'trump','Donald Trump','the Donald']
-listRubio = ['Rubio', 'rubio','Marco Rubio','Marco Antonio Rubio']
-listSanders=['Sanders', 'sanders', 'Bernie Sanders','feel the bern']
-listCarson =['Carson', 'carson', 'Ben Carson','Dr. Ben Carson']
-listCruz =  ['Cruz', 'cruz', 'CruzCrew', 'TrusTED']
-listClinton = ['Clinton','clinton','Hillary','Hillary Clinton']
+list_trump = ['Trump', 'trump','Donald Trump','the Donald']
+list_rubio = ['Rubio', 'rubio','Marco Rubio','Marco Antonio Rubio']
+list_sanders=['Sanders', 'sanders', 'Bernie Sanders','feel the bern']
+list_carson =['Carson', 'carson', 'Ben Carson','Dr. Ben Carson']
+list_cruz =  ['Cruz', 'cruz', 'CruzCrew', 'TrusTED']
+list_clinton = ['Clinton','clinton','Hillary','Hillary Clinton']
 
-listOfLists = [listTrump,listRubio,listSanders,listCarson,listCruz,listClinton]
+list_of_lists = [list_trump,list_rubio,list_sanders,list_carson,list_cruz,list_clinton]
 
 track = ['clinton', 'bush', 'python']
 
@@ -207,17 +228,10 @@ for x in range(0, 6):
     c = c+4
 
 
-for item in listOfLists:
-    #global prepDict
+for item in list_of_lists:
 
     auth = tweepy.OAuthHandler(consumer[i], consumer_secret[i])
     auth.set_access_token(access_token[i], access_token_secret[i])
     thread = Thread(target=start_streamList, args=(auth, item))
-    #prepDict[item[1]] = session.prepare("INSERT INTO %s(created_at, coordinates, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_id) VALUES (?,?,?,?,?,?,?,?)" % (item[1]))
     thread.start()
     i = i + 1
-
-
-#for item in track:
-#    thread = Thread(target=start_stream, args=(auth, item))
-#    thread.start()
