@@ -3,7 +3,7 @@
 1. Clone this repository: https://github.com/japerk/nltk-trainer
 
 2. Run python from bash "python"
-3. ```
+```
 import nltk
 nltk.download
 Downloader> d
