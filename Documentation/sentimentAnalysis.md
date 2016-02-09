@@ -3,12 +3,14 @@
 1. Clone this repository: https://github.com/japerk/nltk-trainer
 
 2. Run python from bash "python"
+3. ```
 import nltk
 nltk.download
 Downloader> d
 Identifier> movie_reviews
 Downloader> d
 Identifier> twitter_samples
+```
 
 3. go to nltk_data/corpora/movie_reviews/ directory
 
