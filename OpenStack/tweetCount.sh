@@ -41,9 +41,9 @@ sudo sh -c 'cat sortedNumbers.txt | sort -nrk5 > tweetCount.md'
 #sudo sh -c "printf \"#Total Tweets: $totalTweetCount \n---\n#Number of Trump Tweets: $trumpTweetCount\n#Number of Sanders Tweets: $sandersTweetCount\n#Number of Bush Tweets: $bushTweetCount\n#Number of Clinton Tweets: $clintonTweetCount\n#Number of Rubio Tweets: $rubioTweetCount\n#Number of Carson Tweets: $carsonTweetCount\" > tweetCount.md"
 
 
-sudo git add sortedNumbers.md &> /dev/null
+sudo git add * &> /dev/null #sortedNumbers.md &> /dev/null
 sudo git commit -m "Updated candidate tweet count" &> /dev/null
-sudo git push https://CommandoScorch16:dogworm16@github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics
+sudo git push #https://CommandoScorch16:dogworm16@github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics
 #git config credential.helper store
 #git push &> /dev/null
 #"Username for 'https://github.com': "
