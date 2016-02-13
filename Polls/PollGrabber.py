@@ -43,8 +43,8 @@ class pollGrabber:
 				if(poll_end < end and poll_start > start):
 					new = {'pollster': '', 'start_date': '', 'end_date': '', 'name': '', 'observations': '', 'responses': []}
 					new['pollster'] = poll.pollster
-					new['startDate'] = poll.start_date
-					new['endDate'] = poll.end_date
+					new['startDate'] = int(poll.start_date.replace('-', ''))
+					new['endDate'] = int(poll.end_date.replace('-', ''))
 					new['name'] = poll.questions[0]['name']
 					new['observations'] = poll.questions[0]['subpopulations'][0]['observations']
 					new['responses'] = str(poll.questions[0]['subpopulations'][0]['responses'])
@@ -76,12 +76,10 @@ class pollGrabber:
                 
                                 cql = "INSERT INTO polls (id, pollster, start_date, end_date, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s, %s)"
 				session.execute(cql, (ID, temp_pollster, temp_start_date, temp_end_date, temp_name, temp_observations, temp_responses))
-				print ID
+				
 				ID += 1
-				print "Inserted a poll"
-                        f.seek(0)
-                        f.write(str(ID))
-                        print('Length of self.all_polls: ' + str(len(self.all_polls)))
+                f.seek(0)
+                f.write(str(ID))
 def main():
 	#usage message if there are no arguments
 	if(len(sys.argv) < 4 or len(sys.argv) > 4):
@@ -120,7 +118,7 @@ def main():
 		pg = pollGrabber(sys.argv[1], sys.argv[2], sys.argv[3])
 		pg.queryPolls()
 		#pg.getPolls()
-		pg.pushToCassandra()
+		#pg.pushToCassandra()
 
 if __name__ == "__main__":
     main()
