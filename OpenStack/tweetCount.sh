@@ -25,6 +25,8 @@ cruz_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/cruzTw
 clinton_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/clintonTweetCount.txt)
 rubio_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/rubioTweetCount.txt)
 carson_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/carsonTweetCount.txt)
+kasich_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/kasichTweetCount.txt)
+bush_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/bushTweetCount.txt)
 
 current_date=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/startTime.txt)
 
