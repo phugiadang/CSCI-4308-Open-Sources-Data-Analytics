@@ -40,7 +40,7 @@ sudo sh -c "printf \"#Current Stream Started at $current_date\n---\n#Total Numbe
 sudo sh -c 'cat sortedNumbers.txt | sort -nrk5 > tweetCount.md'
 
 
-#sudo sh -c "printf \"#Total Tweets: $totalTweetCount \n---\n#Number of Trump Tweets: $trumpTweetCount\n#Number of Sanders Tweets: $sandersTweetCount\n#Number of Bush Tweets: $bushTweetCount\n#Number of Clinton Tweets: $clintonTweetCount\n#Number of Rubio Tweets: $rubioTweetCount\n#Number of Carson Tweets: $carsonTweetCount\" > tweetCount.md"
+#sudo sh -c "printf \"#Total Tweets: $totalTweetCount \n---\n#Number of Trump Tweets: $trumpTweetCount\n#Number of Sanders Tweets: $sandersTweetCount\n#Number of Bush Tweets: $bushTweetCount\n#Number of Clinton Tweets: $clintonTweetCount\n#Number of Rubio Tweets: $rubioTweetCount\n#Number of Carson Tweets: $carsonTweetCount\n#Number of Kasich Tweets: $kasichTweetCount\n#Number of Jeb! Tweets: $bushTweetCount\" > tweetCount.md"
 
 
 sudo git add * &> /dev/null #sortedNumbers.md &> /dev/null
