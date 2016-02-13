@@ -7,3 +7,5 @@ echo 0 > clintonTweetCount.txt
 echo 0 > carsonTweetCount.txt
 echo 0 > cruzTweetCount.txt
 echo 0 > rubioTweetCount.txt
+echo 0 > kasickTweetCount.txt
+echo 0 > bushTweetCount.txt

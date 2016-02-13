@@ -52,11 +52,18 @@ file17=open("cruzTweetCount.txt",'r+')
 lines7 = file17.read()
 lines7 = lines7.splitlines()
 
+file18=open("kasichTweetCount.txt",'r+')
+lines8 = file18.read()
+lines8 = lines8.splitlines()
+
+file19=open("bushTweetCount.txt",'r+')
+lines9 = file19.read()
+lines9 = lines9.splitlines()
 
 call("sudo sh -c \"date | cut -d ' ' -f 1-5 > startTime.txt\"", shell=True)
 
 
-tweet_count = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "cruz": {int(lines7[0]): [file17,"cruzTweetCount.txt"]}}
+tweet_count = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "cruz": {int(lines7[0]): [file17,"cruzTweetCount.txt"]}, "kasich": {int(lines8[0]): [file18, "kasichTweetCount.txt"]}, "bush": {int(lines9[0]): [file19, "bushTweetCount.txt"]}}
 
 total_tweet_count = tweet_count["total"]
 
@@ -146,14 +153,14 @@ class StreamListener(tweepy.StreamListener):
 	#if (numerical_date != 'NULL'):
 	#    f9 = int(numerical_date + str(f9))
 	    
-        final_step = session.execute_async('insert into ' + self.keyword[1] + '(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (f9,coord,int(numerical_date),b9,hash_tags,c9,d9,e9,text_field))
+        final_step = session.execute_async('insert into ' + self.keyword[1] + '(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,int(numerical_date),b9,hash_tags,c9,d9,e9,text_field))
 
         #final_step = session.execute_async('insert into mess(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,a9,b9,hash_tags,c9,int(numerical_date),e9,text_field))
 
 	
         #try:
             #if this prints a cassandra.cluster.ResultSet object, it was successfully stored in the database
-            #print final_step.result()
+        #    print final_step.result()
         #except:
 	    
  	    #print 'fail\n'
@@ -194,9 +201,11 @@ list_rubio = ['Rubio', 'rubio','Marco Rubio','Marco Antonio Rubio']
 list_sanders=['Sanders', 'sanders', 'Bernie Sanders','feel the bern']
 list_carson =['Carson', 'carson', 'Ben Carson','Dr. Ben Carson']
 list_cruz =  ['Cruz', 'cruz', 'CruzCrew', 'TrusTED']
-list_clinton = ['Clinton','clinton','Hillary','Hillary Clinton']
+list_clinton = ['Clinton', 'clinton', 'Hillary', 'Hillary Clinton']
+list_kasich = ['Kasich', 'kasich', 'John Kasich', 'Kasich4Us']
+list_bush = ['Jeb!', 'bush', 'Jeb Bush', 'Bush']
 
-list_of_lists = [list_trump,list_rubio,list_sanders,list_carson,list_cruz,list_clinton]
+list_of_lists = [list_trump,list_rubio,list_sanders,list_carson,list_cruz,list_clinton,list_kasich,list_bush]
 
 track = ['clinton', 'bush', 'python']
 
@@ -216,7 +225,7 @@ with open('/home/centos/CSCI-4308-Open-Sources-Data-Analytics/keys.txt', 'r') as
  		key_list.append(str(each_key).rstrip('\n'))
 
 c = 0
-for x in range(0, 6):
+for x in range(0, 8):
 
     consumer.append(key_list[0+c])
 
