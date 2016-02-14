@@ -35,4 +35,5 @@ with open("date.txt", "r+") as date_file:
   	full_date = current_word+full_date
         
 
+full_date = full_date.replace("MST", "").replace(":", "").replace("\n","")
 print "Full date is %s" % (full_date)
