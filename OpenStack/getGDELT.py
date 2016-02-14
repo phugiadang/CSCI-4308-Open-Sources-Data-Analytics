@@ -31,5 +31,8 @@ with open("date.txt", "r+") as date_file:
                 current_word_number = res[1]
 
   	res = updateData(current_word, current_word_number)
+        
+
+print "Full date is %s" % (full_date)
 		
 
