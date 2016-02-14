@@ -9,7 +9,9 @@ date_dictionary = {"Jan" : "01", "Feb" : "02", "Mar" : "03", "Apr" : "04", "May"
 #Feb 14 15:09:30
 
 full_date = ''
+
 def updateData(current_word, current_word_number):
+    global full_date
     full_date += current_word
     return '', current_word_number+1
 
