@@ -36,4 +36,9 @@ with open("date.txt", "r+") as date_file:
         
 
 full_date = full_date.replace("MST", "").replace(":", "").replace("\n","")
-print full_date
+
+less_date = ''
+for x in range(0,8):
+    less_date += full_date[x]
+
+print less_date
