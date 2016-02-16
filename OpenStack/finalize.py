@@ -10,7 +10,7 @@ with open("tempFiles.txt", "r+") as number_file:
  
         elif (line_number != 0 and line_number <= len(pos_dict)):
             new_line = line.replace("#","")
-            new_line = new_line.replace(":", "-")
+            new_line = new_line.replace(":", " -")
             new_line = new_line.replace("Number of ", "")
             new_line = "#"+pos_dict[line_number] + " Place: " + new_line
             last.write(new_line)
