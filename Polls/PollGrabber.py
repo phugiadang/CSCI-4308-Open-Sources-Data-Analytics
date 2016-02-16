@@ -43,8 +43,8 @@ class pollGrabber:
 				if(poll_end < end and poll_start > start):
 					new = {'pollster': '', 'start_date': '', 'end_date': '', 'name': '', 'observations': '', 'responses': []}
 					new['pollster'] = poll.pollster
-					new['startDate'] = int(poll.start_date.replace('-', ''))
-					new['endDate'] = int(poll.end_date.replace('-', ''))
+					new['start_date'] = int(poll.start_date.replace('-', ''))
+					new['end_date'] = int(poll.end_date.replace('-', ''))
 					new['name'] = poll.questions[0]['name']
 					new['observations'] = poll.questions[0]['subpopulations'][0]['observations']
 					new['responses'] = str(poll.questions[0]['subpopulations'][0]['responses'])
@@ -63,13 +63,19 @@ class pollGrabber:
 			print "self.all_polls has not been populated. Run queryPolls first!"
 		else:
 			#grab the last unique ID to increment it for the primary key
-			f = open('PollID_DONOTTOUCH.txt', 'r+')
-			ID = int(f.read())
-
+			#f = open('PollID_DONOTTOUCH.txt', 'r+')
+			#ID = int(f.read())
+                        IDlist = list(session.execute("SELECT id FROM polls"))
+                        if(IDlist == []):
+                                ID = 0
+                        else:
+                                ID = IDlist.sort().reverse()[0] + 1
+                        print("last ID: " + str(ID - 1))
+                        
 			for poll in self.all_polls:
 				temp_pollster = poll['pollster']
-				temp_start_date = poll['startDate']
-				temp_end_date = poll['endDate']
+				temp_start_date = poll['start_date']
+				temp_end_date = poll['end_date']
 				temp_name = poll['name']
 				temp_observations = poll['observations']
 				temp_responses = poll['responses']
@@ -78,8 +84,8 @@ class pollGrabber:
 				session.execute(cql, (ID, temp_pollster, temp_start_date, temp_end_date, temp_name, temp_observations, temp_responses))
 				
 				ID += 1
-                f.seek(0)
-                f.write(str(ID))
+                #f.seek(0)
+                #f.write(str(ID))
 def main():
 	#usage message if there are no arguments
 	if(len(sys.argv) < 4 or len(sys.argv) > 4):
@@ -118,7 +124,7 @@ def main():
 		pg = pollGrabber(sys.argv[1], sys.argv[2], sys.argv[3])
 		pg.queryPolls()
 		#pg.getPolls()
-		#pg.pushToCassandra()
+		pg.pushToCassandra()
 
 if __name__ == "__main__":
     main()

@@ -60,7 +60,7 @@ file19=open("bushTweetCount.txt",'r+')
 lines9 = file19.read()
 lines9 = lines9.splitlines()
 
-call("sudo sh -c \"date | cut -d ' ' -f 1-5 > startTime.txt\"", shell=True)
+#call("sudo sh -c \"date | cut -d ' ' -f 1-5 > startTime.txt\"", shell=True)
 
 
 tweet_count = {"total": int(lines1[0]), "trump": {int(lines2[0]): [file12, "trumpTweetCount.txt"]}, "rubio": {int(lines3[0]): [file13, "rubioTweetCount.txt"]}, "carson": {int(lines4[0]): [file14,"carsonTweetCount.txt"]}, "sanders": {int(lines5[0]): [file15,"sandersTweetCount.txt"]}, "clinton": {int(lines6[0]): [file16,"clintonTweetCount.txt"]}, "cruz": {int(lines7[0]): [file17,"cruzTweetCount.txt"]}, "kasich": {int(lines8[0]): [file18, "kasichTweetCount.txt"]}, "bush": {int(lines9[0]): [file19, "bushTweetCount.txt"]}}
@@ -70,6 +70,13 @@ total_tweet_count = tweet_count["total"]
 
 month_dict = {'Jan' : '01', 'Feb' : '02', 'Mar' : '03', 'Apr' : '04', 'May' : '05', 'Jun' : '06', 'Jul' : '07', 'Aug' : '08', 'Sep' : '09', 'Oct' : '10', 'Nov' : '11', 'Dec' : '12'}
 
+
+#This function converts a standard date to a date used by our database
+#
+#Ex.
+#Input = "Feb 16 05:11:06 2016"
+#Output = 20160216051106
+#
 def numerizeDate(real_date):
     if (real_date == -1):
         return real_date
@@ -117,6 +124,7 @@ class StreamListener(tweepy.StreamListener):
         d = json.loads(data)
         hash_tags = []
         try:
+            #If tweet has an entities field, append all hashtags to the list
             for element in d["entities"]["hashtags"]:
                  #uncomment next line to print all hashtags
                  #print element["text"]
@@ -134,9 +142,11 @@ class StreamListener(tweepy.StreamListener):
 
         c9,text_field = 'NULL', 'NULL'
         b9,d9,e9 = 0,0,0
-	a9, f9 = -1, -1
-        
+	a9, f9, utc = -1, -1, -1
+                
         try:
+            #Make sure tweet has all needed fields
+            utc = d["user"]["utc_offset"]
             a9 = d["created_at"]
             b9 = d["favorite_count"]        
             c9 = d["lang"]
@@ -144,19 +154,30 @@ class StreamListener(tweepy.StreamListener):
             e9 = d["retweet_count"]
             f9 = d["id_str"]
             text_field = d["text"]
-
+            
+                     
         except:
 	    print 'Tweet for %s is missing a field!' % (self.keyword[1])
 
-        
-	numerical_date = numerizeDate(a9)	
+        #Convert date into usable format
+        numerical_date = numerizeDate(a9)
+         
+      
+        if (utc != None):
+            #Convert tweet time to user local time
+            utc = int(utc)/3600
+            actual_date = int(numerical_date) + utc
+            
+	
 	#if (numerical_date != 'NULL'):
 	#    f9 = int(numerical_date + str(f9))
-	    
+
+        #Execute the Cassandra command to store the tweet fields into the database	    
         final_step = session.execute_async('insert into ' + self.keyword[1] + '(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,int(numerical_date),b9,hash_tags,c9,d9,e9,text_field))
 
-        #final_step = session.execute_async('insert into mess(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,a9,b9,hash_tags,c9,int(numerical_date),e9,text_field))
 
+
+        #Uncomment this try/except block if you want to see if the tweet fields are getting stored properly
 	
         #try:
             #if this prints a cassandra.cluster.ResultSet object, it was successfully stored in the database
@@ -164,11 +185,14 @@ class StreamListener(tweepy.StreamListener):
         #except:
 	    
  	    #print 'fail\n'
+
+
         file1=open("totalTweetCount.txt",'w')
          
         file1.write(str(total_tweet_count))
         file1.close        
 
+        #Read and update the candidate's tweet count and write to file
         bad_list = tweet_count[self.keyword[1]].itervalues().next()
         filth = bad_list[0]
         filth.close()
@@ -225,6 +249,8 @@ with open('/home/centos/CSCI-4308-Open-Sources-Data-Analytics/keys.txt', 'r') as
  		key_list.append(str(each_key).rstrip('\n'))
 
 c = 0
+
+#Append each key to its appropriate list for each of the 8 candidates
 for x in range(0, 8):
 
     consumer.append(key_list[0+c])
@@ -237,6 +263,7 @@ for x in range(0, 8):
     c = c+4
 
 
+#Spawn a new thread for each of the 8 candidates 
 for item in list_of_lists:
 
     auth = tweepy.OAuthHandler(consumer[i], consumer_secret[i])
