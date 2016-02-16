@@ -38,9 +38,8 @@ total_tweet_count=$(($bush_tweet_count + $kasich_tweet_count + $sanders_tweet_co
 #sudo sh -c "echo $b > tweetCount.md"
 sudo sh -c "printf \"#Current Stream Started at $current_date\n---\n---\n#Total Number of Tweets: $total_tweet_count \n---\n---\n#Number of Trump Tweets: $trump_tweet_count\n#Number of Sanders Tweets: $sanders_tweet_count\n#Number of Cruz Tweets: $cruz_tweet_count\n#Number of Clinton Tweets: $clinton_tweet_count\n#Number of Rubio Tweets: $rubio_tweet_count\n#Number of Carson Tweets: $carson_tweet_count\n#Number of Kasich Tweets: $kasich_tweet_count\n#Number of Jeb! Tweets: $bush_tweet_count\" > sortedNumbers.txt" 
 
-python finalize.py
 
-sudo sh -c 'cat sortedNumbers.txt | sort -nrk5 > tweetCount.md'
+sudo sh -c 'cat sortedNumbers.txt | sort -nrk5 > tempFiles.txt'
 
 
 #sudo sh -c "printf \"#Total Tweets: $totalTweetCount \n---\n#Number of Trump Tweets: $trumpTweetCount\n#Number of Sanders Tweets: $sandersTweetCount\n#Number of Bush Tweets: $bushTweetCount\n#Number of Clinton Tweets: $clintonTweetCount\n#Number of Rubio Tweets: $rubioTweetCount\n#Number of Carson Tweets: $carsonTweetCount\n#Number of Kasich Tweets: $kasichTweetCount\n#Number of Jeb! Tweets: $bushTweetCount\" > tweetCount.md"
