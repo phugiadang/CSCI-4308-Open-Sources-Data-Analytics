@@ -1,7 +1,8 @@
-#First Place: #Number of Trump Tweets: 1995261
-#Second Place: #Number of Cruz Tweets: 852565
-#Third Place: #Number of Clinton Tweets: 569762
-#Fourth Place: #Number of Rubio Tweets: 506904
-#Fifth Place: #Number of Jeb! Tweets: 451136
-#Sixth Place: #Number of Sanders Tweets: 327247
-#Seventh Place: #Number of Carson Tweets: 153254
+#First Place: #Number of Trump Tweets: 1995508
+#Second Place: #Number of Cruz Tweets: 852682
+#Third Place: #Number of Clinton Tweets: 569879
+#Fourth Place: #Number of Rubio Tweets: 506956
+#Fifth Place: #Number of Jeb! Tweets: 451204
+#Sixth Place: #Number of Sanders Tweets: 327300
+#Seventh Place: #Number of Carson Tweets: 153263
+#Last Place: #Number of Kasich Tweets: 136999
