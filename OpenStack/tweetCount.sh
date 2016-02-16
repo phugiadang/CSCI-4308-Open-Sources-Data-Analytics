@@ -34,7 +34,7 @@ current_date=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/startTime.
 #b=$"\#Total Tweets: $totalTweetCount \n\nNumber of Trump Tweets: $tweetcount"
 
 aaa=$bush_tweet_count+$kasich_tweet_count
-echo aaa
+echo $aaa
 #sudo sh -c "echo $b > tweetCount.md"
 sudo sh -c "printf \"#Current Stream Started at $current_date\n---\n#Total Number of Tweets: $total_tweet_count \n---\n---\n#Number of Trump Tweets: $trump_tweet_count\n#Number of Sanders Tweets: $sanders_tweet_count\n#Number of Cruz Tweets: $cruz_tweet_count\n#Number of Clinton Tweets: $clinton_tweet_count\n#Number of Rubio Tweets: $rubio_tweet_count\n#Number of Carson Tweets: $carson_tweet_count\n#Number of Kasich Tweets: $kasich_tweet_count\n#Number of Jeb! Tweets: $bush_tweet_count\" > sortedNumbers.txt" 
 
