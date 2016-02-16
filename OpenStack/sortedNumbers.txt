@@ -3,11 +3,11 @@
 #Total Number of Tweets:  
 ---
 ---
-#Number of Trump Tweets: 1794611
-#Number of Sanders Tweets: 283313
-#Number of Cruz Tweets: 747685
-#Number of Clinton Tweets: 495927
-#Number of Rubio Tweets: 464458
-#Number of Carson Tweets: 143907
-#Number of Kasich Tweets: 129114
-#Number of Jeb! Tweets: 382964
+#Number of Trump Tweets: 1795326
+#Number of Sanders Tweets: 283422
+#Number of Cruz Tweets: 748052
+#Number of Clinton Tweets: 496139
+#Number of Rubio Tweets: 464575
+#Number of Carson Tweets: 143929
+#Number of Kasich Tweets: 129145
+#Number of Jeb! Tweets: 383239
