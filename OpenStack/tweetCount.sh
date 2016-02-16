@@ -40,7 +40,7 @@ sudo sh -c "printf \"#Current Stream Started at $current_date\n---\n---\n#Total 
 
 python finalize.py
 
-sudo sh -c 'cat finalNumbers.md | sort -nrk5 > tweetCount.md'
+sudo sh -c 'cat sortedNumbers.md | sort -nrk5 > tweetCount.md'
 
 
 #sudo sh -c "printf \"#Total Tweets: $totalTweetCount \n---\n#Number of Trump Tweets: $trumpTweetCount\n#Number of Sanders Tweets: $sandersTweetCount\n#Number of Bush Tweets: $bushTweetCount\n#Number of Clinton Tweets: $clintonTweetCount\n#Number of Rubio Tweets: $rubioTweetCount\n#Number of Carson Tweets: $carsonTweetCount\n#Number of Kasich Tweets: $kasichTweetCount\n#Number of Jeb! Tweets: $bushTweetCount\" > tweetCount.md"
