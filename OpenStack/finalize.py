@@ -6,7 +6,7 @@ with open("tweetCount.md", "r+") as number_file:
     line_number = 0
     for line in number_file:
         if (line_number == 0):
-            last.write(line+"\n---\n")
+            last.write(line+"---\n")
  
         elif (line_number != 0 and line_number <= len(pos_dict)):
             new_line = line.replace("#","")
