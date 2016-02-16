@@ -18,7 +18,7 @@ password=$(python hash.py)
 #tweetcount=$(echo "USE junk; select count(*) from trump;" | /home/centos/dse-4.8.1/bin/cqlsh 128.138.202.117 | tail -n 3 | head -n 1 | cut -d ' ' -f 2)
 
 tweet_count=$(cat /home/centos/spark-1.5.1-bin-hadoop2.6/trumpTweetCount.txt)
-total_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/totalTweetCount.txt)
+#total_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/totalTweetCount.txt)
 trump_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/trumpTweetCount.txt)
 sanders_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/sandersTweetCount.txt)
 cruz_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/cruzTweetCount.txt)
@@ -33,6 +33,7 @@ current_date=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/startTime.
 
 #b=$"\#Total Tweets: $totalTweetCount \n\nNumber of Trump Tweets: $tweetcount"
 
+echo bush_tweet_count + kasich_tweet_count
 
 #sudo sh -c "echo $b > tweetCount.md"
 sudo sh -c "printf \"#Current Stream Started at $current_date\n---\n#Total Number of Tweets: $total_tweet_count \n---\n---\n#Number of Trump Tweets: $trump_tweet_count\n#Number of Sanders Tweets: $sanders_tweet_count\n#Number of Cruz Tweets: $cruz_tweet_count\n#Number of Clinton Tweets: $clinton_tweet_count\n#Number of Rubio Tweets: $rubio_tweet_count\n#Number of Carson Tweets: $carson_tweet_count\n#Number of Kasich Tweets: $kasich_tweet_count\n#Number of Jeb! Tweets: $bush_tweet_count\" > sortedNumbers.txt" 
