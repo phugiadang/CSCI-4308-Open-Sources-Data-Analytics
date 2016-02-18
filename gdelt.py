@@ -9,7 +9,6 @@
 #  Phu Dang
 #  
 #  
-
 import argparse
 import requests
 import lxml.html as lh
@@ -105,7 +104,6 @@ def turnToPandas():
 		for active_file in files:
 			os.remove(active_file)
 	
-
 def main():
 	parser = argparse.ArgumentParser(description='Senior project')
 	#flag n: name of candidate
@@ -116,7 +114,6 @@ def main():
 	setKeyword(args.n)
 	prepareData(args.e)
 	
-
 	
 if __name__ == '__main__':
 	main()
