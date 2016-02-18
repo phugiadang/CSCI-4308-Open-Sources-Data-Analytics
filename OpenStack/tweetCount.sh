@@ -48,7 +48,7 @@ sudo python finalize.py
 
 sudo git add * &> /dev/null #sortedNumbers.md &> /dev/null
 sudo git commit -m "Updated candidate tweet count" &> /dev/null
-sudo git push https://CommandoScorch16:dogworm16@github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics/master
+sudo git push https://CommandoScorch16:dogworm16@github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics/master.git
 #git config credential.helper store
 #git push &> /dev/null
 #"Username for 'https://github.com': "
