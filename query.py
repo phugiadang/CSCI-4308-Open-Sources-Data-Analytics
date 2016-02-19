@@ -89,13 +89,16 @@ if (quantity == 'hourly'):
         #print result_string[0]
         done_sorted = sorted(list_of_dates.items(), key=operator.itemgetter(sort_type))
         
-        print "\"seriesname:\"" + "\"" + name + "\",\n\"data\": [\n"
+       
+        print "\"dataset\" : [\n{\n\"seriesname:\"" + "\"" + name + "\",\n\"data\": [\n"
 
         for x in done_sorted:
             print candidate + ": " + str(x) + "\n"
             
 
-
+        print "]\n"
+        print "},\n"
+        print "]"
 
 
 
