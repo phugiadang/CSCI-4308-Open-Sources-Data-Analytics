@@ -22,10 +22,41 @@ ______________________________________________________________________________
 **Pass/Fail?:** PASS  
 ______________________________________________________________________________
 **_Test #3_**  
-**File(s):**   
-**Purpose:**   
+**File(s):** PollGrabber.py
+**Purpose:** Ensure polls are now being ordered by end_date
 **Details** _(setup, step-by-step explanation so test can be recreated)_:   
-1.   
-2.   
-3.  
-**Pass/Fail?:**   
+1. used print statement in a for loop to print all end_date values of self.all_polls
+2. observed in terminal that end_date values were in increasing rder (older polls first)
+**Pass/Fail?:** PASS  
+______________________________________________________________________________
+**_Test #3_**  
+**File(s):** PollGrabber.py  
+**Purpose:** Ensure polls are now being ordered by end_date  
+**Details** _(setup, step-by-step explanation so test can be recreated)_:   
+1. used print statement in a for loop to print all end_date values of self.all_polls  
+2. observed in terminal that end_date values were in increasing rder (older polls first)  
+**Pass/Fail?:** PASS  
+______________________________________________________________________________
+**_Test #4_**  
+**File(s):** query.py  
+**Purpose:** test if dates are being interpreted correctly  
+**Details** _(setup, step-by-step explanation so test can be recreated)_:  
+1. ran file with 20160101 and 20160102 as the start/end date arguments  
+2. observed that counts were 0, realized incorrect date format was used as input  
+**Pass/Fail?:** FAIL  
+______________________________________________________________________________
+**_Test #5_**  
+**File(s):** tweetsBetweenPolls.py  
+**Purpose:** functionality test - ran program when it seemed to be finished  
+**Details** _(setup, step-by-step explanation so test can be recreated)_:  
+1. the two newest polls had the same end date
+2. ran the program, error was thrown because the two dates it checked for tweets between were the same date
+**Pass/Fail?:** FAIL  
+______________________________________________________________________________
+**_Test #6_**  
+**File(s):** tweetsBetweenPolls.py  
+**Purpose:** check if error in previous test was corrected  
+**Details** _(setup, step-by-step explanation so test can be recreated)_:  
+1. re-wrote program so that if the two newest polls have the same date, an older poll will be used as the starting date  
+2. ran the program normally  
+**Pass/Fail?:** PASS

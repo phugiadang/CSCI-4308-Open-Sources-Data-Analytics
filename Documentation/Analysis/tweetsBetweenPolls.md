@@ -1,0 +1,5 @@
+**RUNNING THE PROGRAM: **  
+python tweetsBetweenPolls.py  
+
+**DESCRIPTION: **  
+This program checks the polls in the database and if a new poll has been added since that last time the program was run, it grabs tweet counts for the date range between these two most recent polls. For example, if the newest poll in the database ended on February 12th, 2016, and then a new one is added on February 14th, 2016, running this program would return a count of all the tweets about each of the tracked presidential candidates from February 12th to 14th.

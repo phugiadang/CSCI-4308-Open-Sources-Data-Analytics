@@ -1,10 +1,11 @@
 from pollster import Pollster 
 from datetime import date
 from cassandra.cluster import Cluster
+from operator import itemgetter
 import sys
 
 cluster = Cluster(['128.138.202.110', '128.138.202.117'])
-session = cluster.connect('junk')
+session = cluster.connect('polls')
 
 pollster = Pollster()
 
@@ -49,7 +50,9 @@ class pollGrabber:
 					new['observations'] = poll.questions[0]['subpopulations'][0]['observations']
 					new['responses'] = str(poll.questions[0]['subpopulations'][0]['responses'])
 					self.all_polls.append(new)
-
+                #sort all_polls on the end_date before putting them in cassandra
+                self.all_polls = sorted(self.all_polls, key=itemgetter('end_date'))
+                
 	def dumpPolls(self):
 		if(self.all_polls == []):
 			print "self.all_polls has not been populated. Run queryPolls first!"
@@ -65,7 +68,7 @@ class pollGrabber:
 			#grab the last unique ID to increment it for the primary key
 			#f = open('PollID_DONOTTOUCH.txt', 'r+')
 			#ID = int(f.read())
-                        IDlist = list(session.execute("SELECT id FROM polls"))
+                        IDlist = list(session.execute("SELECT id FROM president"))
                         if(IDlist == []):
                                 ID = 0
                         else:
@@ -79,9 +82,9 @@ class pollGrabber:
 				temp_name = poll['name']
 				temp_observations = poll['observations']
 				temp_responses = poll['responses']
-                
-                                cql = "INSERT INTO polls (id, pollster, start_date, end_date, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-				session.execute(cql, (ID, temp_pollster, temp_start_date, temp_end_date, temp_name, temp_observations, temp_responses))
+                                
+                                cql = "INSERT INTO president (pollster, id, start_date, end_date, name, observations, responses) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+				session.execute(cql, (temp_pollster, ID, temp_start_date, temp_end_date, temp_name, temp_observations, temp_responses))
 				
 				ID += 1
                 #f.seek(0)
@@ -123,7 +126,7 @@ def main():
 	else:
 		pg = pollGrabber(sys.argv[1], sys.argv[2], sys.argv[3])
 		pg.queryPolls()
-		#pg.getPolls()
+		#pg.dumpPolls()
 		pg.pushToCassandra()
 
 if __name__ == "__main__":

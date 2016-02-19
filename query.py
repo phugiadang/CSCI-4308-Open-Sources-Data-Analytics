@@ -57,11 +57,14 @@ if (quantity == 'hourly'):
         
         #junk = sorted(list_of_counts["bush"].items(), key=operator.itemgetter(0))
         #print junk
+
+        
+        
         for i in range (0, len(list_of_candidates)):
             junk = sorted(list_of_counts[list_of_candidates[i]].items(), key=operator.itemgetter(sort_type))
 
             print list_of_candidates[i] + ": " + str(junk) + "\n\n"
-
+            
     else:
         #The user wants counts from a specific candidate on an hour by hour basis
         list_of_dates = {}
@@ -85,9 +88,12 @@ if (quantity == 'hourly'):
         #print candidate + str(sorted(list_of_dates.items(), key=operator.itemgetter(sort_type)))
         #print result_string[0]
         done_sorted = sorted(list_of_dates.items(), key=operator.itemgetter(sort_type))
+        
+        print "\"seriesname:\"" + "\"" + name + "\",\n\"data\": [\n"
+
         for x in done_sorted:
             print candidate + ": " + str(x) + "\n"
- 
+            
 
 
 

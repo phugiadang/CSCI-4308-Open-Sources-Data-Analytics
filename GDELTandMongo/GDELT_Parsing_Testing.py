@@ -62,8 +62,8 @@ def printIncreaseMilitaryAlertness():
 				eventsFound += 1
 		print('Average Goldstein Rating of Events: ' + str(goldstein/eventsFound))
 
-# printRiots()
+#printRiots()
 # print patriotismSimulator()
 # printUSRiots()
 # printIncreasePoliceAlertness()
-printIncreaseMilitaryAlertness()
+#printIncreaseMilitaryAlertness()
