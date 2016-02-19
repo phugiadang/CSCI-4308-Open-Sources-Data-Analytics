@@ -1,6 +1,6 @@
-#Total Number of Tweets: 1624131 
+#Total Number of Tweets: 1624132 
 #Number of Trump Tweets: 623249
-#Number of Clinton Tweets: 332264
+#Number of Clinton Tweets: 332265
 #Number of Cruz Tweets: 242584
 #Number of Sanders Tweets: 180336
 #Number of Rubio Tweets: 101741
