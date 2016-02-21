@@ -1,5 +1,5 @@
-#Total Number of Tweets: 619181 
-#Number of Trump Tweets: 211354
+#Total Number of Tweets: 619182 
+#Number of Trump Tweets: 211355
 #Number of Clinton Tweets: 96200
 #Number of Jeb! Tweets: 89257
 #Number of Cruz Tweets: 87305
