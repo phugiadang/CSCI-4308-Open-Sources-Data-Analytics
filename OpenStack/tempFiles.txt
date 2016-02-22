@@ -1,12 +1,12 @@
 #Total Number of Tweets:  
-#Number of Trump Tweets: 
-#Number of Sanders Tweets: 
-#Number of Rubio Tweets: 
-#Number of Kasich Tweets: 
-#Number of Jeb! Tweets: 
-#Number of Cruz Tweets: 
-#Number of Clinton Tweets: 
-#Number of Carson Tweets: 
+#Number of Trump Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f8f,831,b90,c0>
+#Number of Sanders Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,fe7,9fd,690,c0>
+#Number of Rubio Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,fb7,0e0,2a0,c0>
+#Number of Kasich Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f9c,e5a,e60,c0>
+#Number of Jeb! Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f4c,577,010,c0>
+#Number of Cruz Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f79,82f,ef0,c0>
+#Number of Clinton Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f53,e4c,5f0,c0>
+#Number of Carson Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f88,6c8,250,c0>
 #Current Stream Started at Sun Feb 14 17:43:35 MST
 ---
 ---
