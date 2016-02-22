@@ -1,7 +1,9 @@
 import sys
 
 def commify():
-	a = str(sys.stdin[0])
+	for line in sys.stdin:
+            a = line
+            break
 	b=''
 	for x in range(1,len(a)+1):
 	    if (x %3 == 0):
