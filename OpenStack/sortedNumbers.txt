@@ -4,11 +4,11 @@
 #Total Number of Tweets:  
 ---
 ---
-#Number of Trump Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f30,ab7,090,c0>
-#Number of Sanders Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f5b,690,5a0,c0>
-#Number of Cruz Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f87,6f3,4f0,c0>
-#Number of Clinton Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,fd1,262,df0,c0>
-#Number of Rubio Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,fe4,e01,090,c0>
-#Number of Carson Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f8f,302,e60,c0>
-#Number of Kasich Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f1a,286,340,c0>
-#Number of Jeb! Tweets: <,ope,n f,ile, '<,std,in>,', ,mod,e ',r' ,at ,0x7,f6e,6b8,9c0,c0>
+#Number of Trump Tweets: 
+#Number of Sanders Tweets: 
+#Number of Cruz Tweets: 
+#Number of Clinton Tweets: 
+#Number of Rubio Tweets: 
+#Number of Carson Tweets: 
+#Number of Kasich Tweets: 
+#Number of Jeb! Tweets: 
