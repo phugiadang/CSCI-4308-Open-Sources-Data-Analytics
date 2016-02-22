@@ -3,6 +3,7 @@ from datetime import date
 from cassandra.cluster import Cluster
 from operator import itemgetter
 import sys
+import time
 
 cluster = Cluster(['128.138.202.110', '128.138.202.117'])
 session = cluster.connect('polls')
@@ -40,8 +41,9 @@ class pollGrabber:
 		 		poll_start = date(int(poll_start[0]), int(poll_start[1]), int(poll_start[2]))
 		 		poll_end = poll.end_date.split('-', 2)
 		 		poll_end = date(int(poll_end[0]), int(poll_end[1]), int(poll_end[2]))
+                                
 				#check if it's in the date range
-				if(poll_end < end and poll_start > start):
+				if(poll_end < end and poll_end >= start):
 					new = {'pollster': '', 'start_date': '', 'end_date': '', 'name': '', 'observations': '', 'responses': []}
 					new['pollster'] = poll.pollster
 					new['start_date'] = int(poll.start_date.replace('-', ''))
@@ -68,8 +70,10 @@ class pollGrabber:
 			#grab the last unique ID to increment it for the primary key
 			#f = open('PollID_DONOTTOUCH.txt', 'r+')
 			#ID = int(f.read())
-                        IDlist = list(session.execute("SELECT id FROM president"))
-                        if(IDlist == []):
+                        tempIDlist = list(session.execute("SELECT id FROM president"))
+                        IDlist = []
+                        for row in tempIDlist: IDlist.append(row.id)
+                        if(len(IDlist) == 0):
                                 ID = 0
                         else:
                                 ID = IDlist.sort().reverse()[0] + 1
@@ -91,7 +95,7 @@ class pollGrabber:
                 #f.write(str(ID))
 def main():
 	#usage message if there are no arguments
-	if(len(sys.argv) < 4 or len(sys.argv) > 4):
+	if(len(sys.argv) != 4 and len(sys.argv) != 2):
 		print 'Usage: python QueryPolls.py <topic> <start_date> <end_date>'
 		print 'Date format: YYYY-MM-DD'
 		print 'All topics:'
@@ -122,9 +126,17 @@ def main():
 		print '2012-governor-dem-primary'
 		print '2012-governor'
 
-
+        elif(len(sys.argv) == 2 and sys.argv[1] == 'day'):
+                #just check for polls during the last day
+                #today = int(time.strftime('%Y%m%d') + '000000')
+                yesterday = today - 1000000
+                pg = pollGrabber(sys.argv[1], yesterday, 99999999999999)
+                pg.queryPolls()
+                pg.pushToCassandra()
 	else:
-		pg = pollGrabber(sys.argv[1], sys.argv[2], sys.argv[3])
+		#get the current date so we can pass in yesterday's as the end date
+                
+                pg = pollGrabber(sys.argv[1], sys.argv[2], sys.argv[3])
 		pg.queryPolls()
 		#pg.dumpPolls()
 		pg.pushToCassandra()

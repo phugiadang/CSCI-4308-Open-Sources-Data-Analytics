@@ -2,13 +2,15 @@ from sys import argv
 from cassandra.cluster import Cluster
 from subprocess import call
 import operator
+import calculateDate
 
+addMinute = calculateDate.changeMinute
 keyspace = 'candidates'
 cluster = Cluster(
         contact_points=['128.138.202.110','128.138.202.117'],)
 #connect to our Cassandra Keyspace
 session = cluster.connect(keyspace)
-session.default_timeout = 30
+session.default_timeout = 60
 
 candidate = argv[1]
 start_date = argv[2]
@@ -90,11 +92,18 @@ if (quantity == 'hourly'):
         done_sorted = sorted(list_of_dates.items(), key=operator.itemgetter(sort_type))
         
        
-        print "\"dataset\" : [\n{\n\"seriesname: \"" + "\"" + candidate + "\",\n\"data\": [\n"
+        print "\"dataset\": [\n{\n\"seriesname: \"" + candidate + "\",\n\"data\": [\n"
 
+        count111 = 0
         for x in done_sorted:
-            print candidate + ": " + str(x[0]) + "\n"
-            
+            #junk1 = str(x).replace("\n", "")
+            #junk2 = str(x)[0]
+            count111 += 1
+            if (count111 != len(done_sorted)):
+                print "{ \"" + str(x[0]) + "\": \"" + str(x[1]) + "\" },\n"
+            else:
+                print "{ \"" + str(x[0]) + "\": \"" + str(x[1]) + "\" }\n" 
+        
 
         print "]\n"
         print "},\n"
