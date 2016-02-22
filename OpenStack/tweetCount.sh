@@ -18,7 +18,7 @@ password=$(python hash.py)
 #tweetcount=$(echo "USE junk; select count(*) from trump;" | /home/centos/dse-4.8.1/bin/cqlsh 128.138.202.117 | tail -n 3 | head -n 1 | cut -d ' ' -f 2)
 
 #tweet_count=$(cat /home/centos/spark-1.5.1-bin-hadoop2.6/trumpTweetCount.txt)
-total_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/totalTweetCount.txt)
+total_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/totalTweetCount.txt | python commas.py)
 trump_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/trumpTweetCount.txt | python commas.py)
 sanders_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/sandersTweetCount.txt | python commas.py)
 cruz_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/cruzTweetCount.txt | python commas.py)
