@@ -30,6 +30,7 @@ bush_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/bushTw
 
 current_date=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/startTime.txt)
 
+clinton_tweet_count=$(python commas.py $clinton_tweet_count)
 
 #b=$"\#Total Tweets: $totalTweetCount \n\nNumber of Trump Tweets: $tweetcount"
 

@@ -14,7 +14,7 @@ def commify():
 	print b
 
 
-
+commify()
 	
 
 
