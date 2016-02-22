@@ -1,12 +1,12 @@
-#Number of Trump Tweets: 557,921
-#Number of Cruz Tweets: 227,941
-#Number of Clinton Tweets: 197,165
-#Number of Rubio Tweets: 186,547
-#Number of Sanders Tweets: 118,092
-#Number of Jeb! Tweets: 81,032
-#Number of Kasich Tweets: 44,071
-#Number of Carson Tweets: 21,863
-#Total Number of Tweets:  
+#Total Number of Tweets: 1,437,346 
+#Number of Trump Tweets: 558,595
+#Number of Cruz Tweets: 228,820
+#Number of Clinton Tweets: 197,397
+#Number of Rubio Tweets: 187,047
+#Number of Sanders Tweets: 118,246
+#Number of Jeb! Tweets: 81,127
+#Number of Kasich Tweets: 44,122
+#Number of Carson Tweets: 21,997
 #Current Stream Started at Sun Feb 14 17:43:35 MST
 ---
 ---
