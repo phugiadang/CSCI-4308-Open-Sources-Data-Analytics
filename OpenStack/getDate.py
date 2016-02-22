@@ -16,29 +16,35 @@ def updateData(current_word, current_word_number):
     return '', current_word_number+1
 
 
-with open("date.txt", "r+") as date_file:
-    for line in date_file:
-        current_word = ''
-        current_word_number = 0
-        for character in line:
-            if (character != ' '):
-                current_word += character
+def getDate():
+    global full_date, date_dictionary
+    with open("date.txt", "r+") as date_file:
+        for line in date_file:
+            current_word = ''
+            current_word_number = 0
+            for character in line:
+                if (character != ' '):
+                    current_word += character
+                    
+                else:
+                    if (current_word_number == 0):
+                        current_word = date_dictionary[current_word]
 
-            else:
-                if (current_word_number == 0):
-                    current_word = date_dictionary[current_word]
+	            res = updateData(current_word, current_word_number)
+                    current_word = res[0]
+                    current_word_number = res[1]
 
-	        res = updateData(current_word, current_word_number)
-                current_word = res[0]
-                current_word_number = res[1]
-
-  	full_date = current_word+full_date
+        full_date = current_word+full_date
         
 
-full_date = full_date.replace("MST", "").replace(":", "").replace("\n","")
+    full_date = full_date.replace("UTC", "").replace(":", "").replace("\n","")
+    
+    less_date = ''
+    for x in range(0,12):
+        less_date += full_date[x]
+    for x in range(0,2):
+        less_date += '0'
 
-less_date = ''
-for x in range(0,8):
-    less_date += full_date[x]
+    return less_date
 
-print less_date
+
