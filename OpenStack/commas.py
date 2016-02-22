@@ -10,8 +10,11 @@ def commify():
 	        else:
 	            b = a[len(a)-x]+b
 	    else:
-       	 b = a[len(a)-x]+b
+       	b = a[len(a)-x]+b
+	return b
 
 
+commify()
+	
 
 
