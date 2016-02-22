@@ -19,18 +19,18 @@ password=$(python hash.py)
 
 tweet_count=$(cat /home/centos/spark-1.5.1-bin-hadoop2.6/trumpTweetCount.txt)
 #total_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/totalTweetCount.txt)
-trump_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/trumpTweetCount.txt)
-sanders_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/sandersTweetCount.txt)
-cruz_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/cruzTweetCount.txt)
-clinton_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/clintonTweetCount.txt)
-rubio_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/rubioTweetCount.txt)
-carson_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/carsonTweetCount.txt)
-kasich_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/kasichTweetCount.txt)
-bush_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/bushTweetCount.txt)
+trump_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/trumpTweetCount.txt | python commas.py)
+sanders_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/sandersTweetCount.txt | python commas.py)
+cruz_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/cruzTweetCount.txt | python commas.py)
+clinton_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/clintonTweetCount.txt | python commas.py)
+rubio_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/rubioTweetCount.txt | python commas.py)
+carson_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/carsonTweetCount.txt | python commas.py)
+kasich_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/kasichTweetCount.txt | python commas.py)
+bush_tweet_count=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/bushTweetCount.txt | python commas.py)
 
 current_date=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/startTime.txt)
 
-clinton_tweet_count=$(python commas.py $clinton_tweet_count)
+#clinton_tweet_count=$(python commas.py $clinton_tweet_count)
 
 #b=$"\#Total Tweets: $totalTweetCount \n\nNumber of Trump Tweets: $tweetcount"
 
