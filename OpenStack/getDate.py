@@ -23,7 +23,7 @@ with open("date.txt", "r+") as date_file:
         for character in line:
             if (character != ' '):
                 current_word += character
-
+                print full_date
             else:
                 if (current_word_number == 0):
                     current_word = date_dictionary[current_word]
