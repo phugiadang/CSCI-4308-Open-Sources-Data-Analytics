@@ -1,7 +1,7 @@
 import sys
 
 def commify():
-	a = sys.arg[1]
+	a = sys.argv[1]
 	b=''
 	for x in range(1,len(a)+1):
 	    if (x %3 == 0):
@@ -10,7 +10,7 @@ def commify():
 	        else:
 	            b = a[len(a)-x]+b
 	    else:
-       	b = a[len(a)-x]+b
+	        b = a[len(a)-x]+b
 	return b
 
 
