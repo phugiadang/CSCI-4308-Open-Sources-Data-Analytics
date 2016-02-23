@@ -16,3 +16,17 @@ print(pollster.charts()[0].estimates)
 
 print('\npollster.charts()[0].estimates_by_date()[1]: --------------------')
 print(pollster.charts()[0].estimates_by_date()[1])
+
+#def stateVsTopic():
+#    stateCharts = pollster.charts(state='CO')
+#    presCharts = pollster.charts(topic='2016-president')
+#    
+#    for stateChart in stateCharts:
+#        for presChart in presCharts:
+#            if presChart == stateChart:
+#                print presChart
+
+#def stateAndTopic():
+#    print pollster.charts(topic='2016-president', state='WI')
+
+#stateAndTopic()

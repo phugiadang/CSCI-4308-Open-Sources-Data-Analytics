@@ -1,0 +1,3 @@
+MAILTO="bryan.connelly@colorado.edu"
+0 10 * * * python /home/centos/CSCI-4308-Open-Source-Data-Analytics/Polls/PollGrabber.py day
+5 10 * * * python /home/centos/CSCI-4308-Open-Source-Data-Analytics/tweetsBetweenPolls.py

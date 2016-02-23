@@ -2,9 +2,9 @@ from sys import argv
 from cassandra.cluster import Cluster
 from subprocess import call
 import operator
-#import calculateDate
+import calculateDate
 
-#addMinute = calculateDate.changeMinute
+addMinute = calculateDate.changeMinute
 keyspace = 'candidates'
 cluster = Cluster(
         contact_points=['128.138.202.110','128.138.202.117'],)
@@ -93,35 +93,23 @@ if (quantity == 'hourly'):
         
        
         print "\"dataset\": [\n{\n\"seriesname: \"" + candidate + "\",\n\"data\": [\n"
-	days = []
-	counts = []
+
         count111 = 0
-	print str()
         for x in done_sorted:
-            '''#junk1 = str(x).replace("\n", "")
+            #junk1 = str(x).replace("\n", "")
             #junk2 = str(x)[0]
             count111 += 1
             if (count111 != len(done_sorted)):
                 print "{ \"" + str(x[0]) + "\": \"" + str(x[1]) + "\" },\n"
             else:
                 print "{ \"" + str(x[0]) + "\": \"" + str(x[1]) + "\" }\n" 
-            '''
-	    days.append(str(x[0]))
-	    counts.append(str(x[1]))
-        print days
-	print counts
-	jsonizer = jsonize()
-        myJson = jsonizer.makeJson(candidate, days, counts)
-        f = open("" + candidate + "Json.json", 'w')
-	f.write(myJson)
-                 
-  
-	'''
+        
+
         print "]\n"
         print "},\n"
         print "]"
 
-	print str(x)'''
+
 
 else:
     if (candidate == 'all'):

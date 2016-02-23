@@ -167,7 +167,7 @@ class StreamListener(tweepy.StreamListener):
             #Convert tweet time to user local time
             utc = int(utc)/3600
             actual_date = int(numerical_date) + utc
-            
+        
 	
 	#if (numerical_date != 'NULL'):
 	#    f9 = int(numerical_date + str(f9))

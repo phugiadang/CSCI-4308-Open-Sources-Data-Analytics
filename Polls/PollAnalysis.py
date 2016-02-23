@@ -4,7 +4,7 @@ from cassandra.cluster import Cluster
 import sys
 
 cluster = Cluster(['128.138.202.110', '128.138.202.117'])
-session = cluster.connect('junk')
+session = cluster.connect('polls')
 
 # cql = "SELECT name FROM junk.polls"
 # print cql
@@ -31,7 +31,7 @@ allResponses = []
 averageResponses = {}
 numResponses = {}
 
-cql = "SELECT responses FROM junk.polls"
+cql = "SELECT responses FROM polls.president"
 rows = session.execute(cql)
 numRows = 0
 for row in rows:
@@ -55,7 +55,7 @@ for response in allResponses:
 for candidate in averageResponses:
         averageResponses[candidate] = averageResponses[candidate]/numResponses[candidate]
 
-print averageResponses
+#print averageResponses
 
 #cql = "SELECT responses FROM junk.polls WHERE startDate = '2014-01-10'"
 #rows = session.execute(cql)
@@ -65,3 +65,5 @@ print averageResponses
                 #There's probably a more efficient way to do this... eg saving the values as something other than a string
 #		evaluated =  eval(item)
 #                print evaluated[0]['first_name']
+
+

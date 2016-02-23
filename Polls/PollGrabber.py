@@ -65,7 +65,7 @@ class pollGrabber:
 
 	def pushToCassandra(self):
 		if(self.all_polls == []):
-			print "self.all_polls has not been populated. Run queryPolls first!"
+			print "No polls were found for the specified date range"
 		else:
 			#grab the last unique ID to increment it for the primary key
 			#f = open('PollID_DONOTTOUCH.txt', 'r+')
@@ -76,7 +76,10 @@ class pollGrabber:
                         if(len(IDlist) == 0):
                                 ID = 0
                         else:
-                                ID = IDlist.sort().reverse()[0] + 1
+                                IDlist.sort()
+                                IDlist.reverse()
+                                ID = IDlist[0] + 1
+                                
                         print("last ID: " + str(ID - 1))
                         
 			for poll in self.all_polls:
@@ -128,9 +131,9 @@ def main():
 
         elif(len(sys.argv) == 2 and sys.argv[1] == 'day'):
                 #just check for polls during the last day
-                #today = int(time.strftime('%Y%m%d') + '000000')
+                today = int(time.strftime('%Y%m%d') + '000000')
                 yesterday = today - 1000000
-                pg = pollGrabber(sys.argv[1], yesterday, 99999999999999)
+                pg = pollGrabber(sys.argv[1], yesterday, today)
                 pg.queryPolls()
                 pg.pushToCassandra()
 	else:
