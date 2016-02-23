@@ -1,6 +1,6 @@
 #Total Number of Tweets: 1,886,150 
 ---
-#First Place: Trump Tweets - 738,730
+#First Place: Trump Tweets - 738,731
 #Second Place: Rubio Tweets - 277,335
 #Third Place: Clinton Tweets - 268,773
 #Fourth Place: Cruz Tweets - 254,030
