@@ -15,8 +15,15 @@ def changeYear(date):
 
 
 def changeMonth(date):
-    if (date[6] == '2' and date[7] == '9'):
-        return str(int(date) + 72000000)
+    
+    if (date[6] == '2' and date[7] == '9' and isLeapYear(date) == False):
+       return str(int(date) + 72000000)  
+
+
+    if (date[6] == '3' and date[7] == '0'):
+        if (isLeapYear(date) == True):
+            return str(int(date) + 71000000)
+        
 
 
     if (date[6] == '3' and int(date[7]) >= 1):
@@ -30,15 +37,15 @@ def changeMonth(date):
 
 
 def changeDay(date):
+ 
     if (date[6] == '2' and date[7] == '9'):
-        if (isLeapYear(date) == False):
-            return changeMonth(date)
-        return date
+        return changeMonth(date)
+        
 
-    if ((date[6] == '3') and (int(date[7]) >= 1)):
+    if ((date[6] == '3') and (int(date[7]) >= 0)):
         return changeMonth(date)
     
-    return str(int(date) + 1000000)
+    return date#str(int(date) + 1000000)
 
 
 def changeHour1(date):
