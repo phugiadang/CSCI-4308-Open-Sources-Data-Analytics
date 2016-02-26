@@ -1,4 +1,4 @@
-#Total Number of Tweets: 7,081,494 
+#Total Number of Tweets: 7,081,496 
 ---
 #First Place: Trump Tweets - 2,894,125
 #Second Place: Rubio Tweets - 1,318,768
