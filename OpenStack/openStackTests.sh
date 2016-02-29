@@ -13,7 +13,7 @@ if [ $a -eq 0 ]
 	echo "YAY"
 	echo "Machine ${m} has no internet, better restart!" | mail -s "Machine ${m} has no internet!" ${listOfUsers}
 #captainrex1995@gmail.com
-    	good=good-1
+    	good=$(($good-1))
 
 fi
 
@@ -25,7 +25,7 @@ if [ $b -ne $nm ]
 	echo $b
 	echo $nm
 	echo "Not all Spark workers are alive, better check it out!" | mail -s "Missing Spark Worker(s)!" ${listOfUsers}
-	good=good-1
+	good=$(($good-1))
 fi
 
 #check on tweet streaming
@@ -34,12 +34,21 @@ if [ $c -eq 1 ]
 then
 	echo "bad!!!"
 	echo "Tweet streaming is stopped, better restart it!" | mail -s "Tweet Streaming Stopped!" ${listOfUsers}
-	good=good-1
+	good=$(($good-1))
+fi
+
+#Make sure cassandra status is "Up Normal"
+statusss=$(nodetool status | grep "UN " | wc | cut -d ' ' -f 7)
+if [ $statusss -ne 2 ]
+then
+	echo "Cassandra is down, better fix it!" | mail -s "Cassandra is down!" ${listOfUsers}
+	good=$(($good-1))
 fi
 
 #If all tests pass!
 if [ $good -eq 0 ]
    then
+	#echo "Please reply to senior project group text if you get this" | mail 7206297749@vtext.com
 	echo "All OpenStack operations are normal, everything looks good!" | mail -s "OpenStack Machine 1 Status: OK!" ${listOfUsers}
 fi
 
