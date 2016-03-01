@@ -6,5 +6,5 @@
 #Fourth Place: Rubio Tweets - 65,255
 #Fifth Place: Sanders Tweets - 42,962
 #Sixth Place: Carson Tweets - 10,421
-#Seventh Place: Jeb! Tweets - 6,732
-#Last Place: Kasich Tweets - 5,477
+#Seventh Place: Kasich Tweets - 5,477
+#Last Place: Jeb! Tweets - 
