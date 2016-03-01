@@ -2,7 +2,7 @@
 ---
 #First Place: Trump Tweets - 525,471
 #Second Place: Clinton Tweets - 112,312
-#Third Place: Cruz Tweets - 108,405
+#Third Place: Cruz Tweets - 108,406
 #Fourth Place: Rubio Tweets - 83,835
 #Fifth Place: Sanders Tweets - 57,314
 #Sixth Place: Carson Tweets - 13,226
