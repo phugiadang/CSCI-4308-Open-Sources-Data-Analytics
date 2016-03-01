@@ -47,7 +47,7 @@ sudo python finalize.py
 #sudo sh -c "printf \"#Total Tweets: $totalTweetCount \n---\n#Number of Trump Tweets: $trumpTweetCount\n#Number of Sanders Tweets: $sandersTweetCount\n#Number of Bush Tweets: $bushTweetCount\n#Number of Clinton Tweets: $clintonTweetCount\n#Number of Rubio Tweets: $rubioTweetCount\n#Number of Carson Tweets: $carsonTweetCount\n#Number of Kasich Tweets: $kasichTweetCount\n#Number of Jeb! Tweets: $bushTweetCount\" > tweetCount.md"
 
 
-sudo git add * &> /dev/null #sortedNumbers.md &> /dev/null
+sudo git add tweetCount.md &> /dev/null #sortedNumbers.md &> /dev/null
 sudo git commit -m "Updated candidate tweet count" &> /dev/null
 sudo git push #https://CommandoScorch16:dogworm16@github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics
 #git config credential.helper store

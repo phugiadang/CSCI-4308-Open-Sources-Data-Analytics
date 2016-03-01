@@ -1,7 +1,7 @@
 cd /home/centos/CSCI-4308-Open-Sources-Data-Analytics/OpenStack
 
 c=$(ps aux | grep trump.py | wc | cut -d ' ' -f 7)
-d=$(ps aux | grep Cass | wc | cut -d ' ' -f 7)
+d=$(ps aux | grep threadCass.py | wc | cut -d ' ' -f 7)
 
 if [ $c -eq 1 ]
 then
@@ -15,6 +15,7 @@ fi
 if [ $d -eq 1 ]
 then
 	cd /home/centos/CSCI-4308-Open-Sources-Data-Analytics
+        echo "Tweet Streaming Stopped, restarting now!" | mail -s "Tweet Streaming Stopped, restarting now" captainrex1995@gmail.com
         python threadCass.py
 fi
 

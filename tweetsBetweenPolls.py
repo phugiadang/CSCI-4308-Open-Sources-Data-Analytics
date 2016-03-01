@@ -12,7 +12,8 @@ session = cluster.connect('polls')
 def tweetsSinceLastPoll():
     if newPoll():
         #get the end date of the last poll and the new poll
-        f = open('lastPoll.txt', 'r+')
+        f = open(os.path.join(os.path.expanduser('~'), 'CSCI-4308-Open-Sources-Data-Analytics/lastPoll.txt'), 'r+')
+#        f = open('lastPoll.txt', 'r+')
         poll_ID = int(f.readline())
         f.close()
         poll_1 = session.execute('SELECT end_date FROM president WHERE id = ' + str(poll_ID-1) + ' ALLOW FILTERING')[0]
@@ -28,7 +29,8 @@ def tweetsSinceLastPoll():
         print(poll_1_end)
         print(poll_2_end)
         #get counts of tweets between these dates (beginning of first day, end of second)
-        command = 'python query.py all ' + str(poll_1_end) + ' ' + str(poll_2_end)
+        filePath = os.path.join(os.path.expanduser('~'), 'CSCI-4308-Open-Sources-Data-Analytics/query.py')
+        command = 'sudo python ' + filePath + ' all ' + str(poll_1_end) + ' ' + str(poll_2_end)
         os.system(command)
         
         #Now post the results from the new poll
@@ -39,7 +41,8 @@ def tweetsSinceLastPoll():
 #returns true if a new poll has been added to the database since last time this was run
 def newPoll():
     #the ID of the last poll will be writted to lastPoll.txt. Check if another one has been added
-    f = open('lastPoll.txt', 'r+')
+    f = open(os.path.join(os.path.expanduser('~'), 'CSCI-4308-Open-Sources-Data-Analytics/lastPoll.txt'), 'r+')
+    #f = open('lastPoll.txt', 'r+')
     last_poll_ID = int(f.readline())
     #check for another poll by checking for the next ID
     row = session.execute('SELECT id FROM president WHERE id = ' + str(last_poll_ID+1) + ' ALLOW FILTERING')

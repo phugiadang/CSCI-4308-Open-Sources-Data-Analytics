@@ -9,10 +9,6 @@
 #  Phu Dang
 #  
 #  
-<<<<<<< HEAD
-
-=======
->>>>>>> 79a87fe3bae985f02bd033fdf3f842a639a5c8c8
 import argparse
 import requests
 import lxml.html as lh
@@ -27,7 +23,7 @@ import sys
 
 
 gdelt_base_url = 'http://data.gdeltproject.org/gkg/'
-local_path = '/home/user/Downloads/GDELT Data/'
+local_path = '/home/centos/GDELT/'
 key_word = ''
 
 def setKeyword(name):
@@ -108,10 +104,6 @@ def turnToPandas():
 		for active_file in files:
 			os.remove(active_file)
 	
-<<<<<<< HEAD
-
-=======
->>>>>>> 79a87fe3bae985f02bd033fdf3f842a639a5c8c8
 def main():
 	parser = argparse.ArgumentParser(description='Senior project')
 	#flag n: name of candidate
@@ -121,11 +113,6 @@ def main():
 	args = parser.parse_args()
 	setKeyword(args.n)
 	prepareData(args.e)
-	
-<<<<<<< HEAD
-
-=======
->>>>>>> 79a87fe3bae985f02bd033fdf3f842a639a5c8c8
 	
 if __name__ == '__main__':
 	main()
