@@ -1,4 +1,4 @@
-#Total Number of Tweets: 1,155,394 
+#Total Number of Tweets: 1,155,395 
 ---
 #First Place: Cruz Tweets - 391,706
 #Second Place: Rubio Tweets - 336,166
