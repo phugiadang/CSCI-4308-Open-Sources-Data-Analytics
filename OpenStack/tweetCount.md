@@ -1,10 +1,10 @@
-#Total Number of Tweets: 2,155,765 
+#Total Number of Tweets: 2,160,853 
 ---
-#First Place: Trump Tweets - 1,280,752
-#Second Place: Cruz Tweets - 269,256
-#Third Place: Clinton Tweets - 244,255
-#Fourth Place: Rubio Tweets - 178,776
-#Fifth Place: Sanders Tweets - 91,901
-#Sixth Place: Kasich Tweets - 50,438
-#Seventh Place: Jeb! Tweets - 20,888
-#Last Place: Carson Tweets - 19,508
+#First Place: Trump Tweets - 1,283,526
+#Second Place: Cruz Tweets - 269,992
+#Third Place: Clinton Tweets - 244,889
+#Fourth Place: Rubio Tweets - 179,074
+#Fifth Place: Sanders Tweets - 92,167
+#Sixth Place: Kasich Tweets - 50,557
+#Seventh Place: Jeb! Tweets - 20,934
+#Last Place: Carson Tweets - 19,724
