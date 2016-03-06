@@ -7,4 +7,4 @@
 #Fifth Place: Sanders Tweets - 425,856
 #Sixth Place: Kasich Tweets - 171,103
 #Seventh Place: Carson Tweets - 121,819
-#Last Place: Jeb! Tweets - 79,417
+#Last Place: Jeb! Tweets - 79,418
