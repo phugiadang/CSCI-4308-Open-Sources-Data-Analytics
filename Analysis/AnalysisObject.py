@@ -14,9 +14,13 @@ import numpy as np
 # list_para_one: list of 1st variable parameters, list_para_two: list of 2nd variable parameters
 class AnalysisObject(object):
 	def __init__(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):
+		#candidate
 		self.__fixed_para_one = fixed_para_one
+		#source
 		self.__fixed_para_two = fixed_para_two
+		#Date
 		self.__list_para_one = list_para_one
+		#count
 		self.__list_para_two = list_para_two
 		
 	def getfixed_para_one(self):
@@ -30,4 +34,14 @@ class AnalysisObject(object):
 		
 	def getlist_para_two(self):
 		return self.__list_para_two
-
+	
+	def createJson(self):
+		counts = self.getlist_para_two()
+		candidate = self.getfixed_para_one().title()
+		jsonCandidateString = '''{
+                    "seriesname": "''' + candidate + ''' Tweet Counts",
+                    "data": [ '''
+		for i in range(0,len(counts)-1):
+			jsonCandidateString += '{ "value": "' + str(counts[i]) + '" },'
+		jsonCandidateString += '{ "value": "' + str(counts[len(counts)-1]) + '" }]}'
+		return jsonCandidateString	

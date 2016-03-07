@@ -3,7 +3,7 @@
 old_trump=$(cat /home/centos/oldTrumpCount.txt)
 old_carson=$(cat /home/centos/oldCarsonCount.txt)
 old_sanders=$(cat /home/centos/oldSandersCount.txt)
-old_clinton=$(cat /home/centos/oldSandersCount.txt)
+old_clinton=$(cat /home/centos/oldClintonCount.txt)
 old_cruz=$(cat /home/centos/oldCruzCount.txt)
 old_kasich=$(cat /home/centos/oldKasichCount.txt)
 old_rubio=$(cat /home/centos/oldRubioCount.txt)
@@ -20,31 +20,36 @@ bush=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/bushTweetCount.txt
 
 bad=0
 
-if [ $old_trump -eq $trump ]
+
+echo $old_clinton
+echo $clinton
+
+if [ "$old_trump" -eq "$trump" ]
 then
     bad=1
     echo "bad trump"
-elif [ $old_carson -eq $carson ]
+elif [ "$old_carson" -eq "$carson" ]
 then
     bad=1
     echo "bad carson"
-elif [ $old_sanders -eq $sanders ]
+elif [ "$old_sanders" -eq "$sanders" ]
 then
     bad=1
     echo "bad sanders"
-elif [ $old_clinton -eq $clinton ]
+elif [ "$old_clinton" -eq "$clinton" ]
 then
     bad=1
-elif [ $old_cruz -eq $cruz ]
+    echo "bad clinton"
+elif [ "$old_cruz" -eq "$cruz" ]
 then
     bad=1
-elif [ $old_kasich -eq $kasich ]
+elif [ "$old_kasich" -eq "$kasich" ]
 then
     bad=1
-elif [ $old_bush -eq $bush ]
+elif [ "$old_bush" -eq "$bush" ]
 then
     bad=1
-elif [ $old_rubio -eq $rubio ]
+elif [ "$old_rubio" -eq "$rubio" ]
 then
     bad=1
 
@@ -73,9 +78,12 @@ fi #End ugly if
 if [ $bad -eq 1 ]
 then
 echo 'Killing threadCass.py'
-pid=$(ps aux | grep threadCass.py | cut -d ' ' -f 4)
+#pid=$(ps aux | grep threadCass.py | cut -d ' ' -f 4)
+#pid=$(ps aux | grep threadCass.py | head -1 | cut -d ' ' -f 5)
+pid=$(ps aux | grep threadCass.py | head -1 | tr -s " " | cut -d ' ' -f 2)
 echo $pid
 sudo kill $pid
+sudo ./home/centos/CSCI-4308-Open-Sources-Data-Analytics/zero.sh
 echo "Bad" | mail -s "A thread stopped its streaming, killing threadCass.py" captainrex1995@gmail.com
 #kill threadCass.py
 
