@@ -15,7 +15,9 @@ fi
 if [ $d -eq 1 ]
 then
 	cd /home/centos/CSCI-4308-Open-Sources-Data-Analytics
-        echo "Tweet Streaming Stopped, restarting now!" | mail -s "Tweet Streaming Stopped, restarting now" captainrex1995@gmail.com
-        python threadCass.py
+        sudo python threadCass.py
+        pid=$(ps aux | grep threadCass.py | head -1 | tr -s " " | cut -d ' ' -f 2)
+        echo "Tweet Streaming Stopped, restarted with pid $pid!" | mail -s "Tweet Streaming Stopped, successfully restarted with pid $pid!" captainrex1995@gmail.com
+
 fi
 

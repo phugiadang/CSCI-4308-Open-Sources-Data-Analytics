@@ -116,15 +116,17 @@ def subDay(date):
 
     b = ''
     while (a != date):
+        
         new_date = changeMinute(a)
         junk = new_date
         for i in range(0, 1440):
             b = changeMinute(junk)
             junk = b
+        
         if (b == date):
             return new_date
         a = new_date
-
+    return b 
 def subWeek(date):
     a = '20160101000000'
 
@@ -151,3 +153,5 @@ def subWeek(date):
             return new_date
         a = new_date
 
+
+#print subDay("20160103000000")

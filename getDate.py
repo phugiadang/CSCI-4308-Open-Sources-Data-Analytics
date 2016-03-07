@@ -39,18 +39,15 @@ def getDate():
 
 
         
-
-    full_date = full_date.replace("UTC", "").replace(":", "").replace("\n","")
     
-    less_date = ''
-    tiny_date = ''
-    for x in range(0,12):
-        if (x < 8):
-            tiny_date += full_date[x]
-        less_date += full_date[x]
-    for x in range(0,2):
-        less_date += '0'
+    full_date = full_date.replace("MST", "").replace("\n","")
+    full_date = full_date[:-8] 
+    
 
-    return tiny_date
+    #day is less than 10, add zero in front
+    if (len(full_date) == 3):
+        full_date = full_date[:2] + '0' + full_date[2:]
+  
+    return "2016" + full_date
 
-print getDate()
+#getDate()
