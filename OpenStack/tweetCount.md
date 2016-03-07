@@ -1,4 +1,4 @@
-#Total Number of Tweets: 181,655 
+#Total Number of Tweets: 181,654 
 ---
 #First Place: Sanders Tweets - 74,646
 #Second Place: Trump Tweets - 54,234
