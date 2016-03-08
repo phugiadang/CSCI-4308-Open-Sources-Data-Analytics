@@ -1,3 +1,5 @@
+import sys
+
 months1 = ["04", "06", "09", "11"]
 
 def isLeapYear(date):
@@ -153,5 +155,10 @@ def subWeek(date):
             return new_date
         a = new_date
 
+
+
+if (len(sys.argv) == 3):
+    if (sys.argv[1] == "-subDay"):
+        print subDay(sys.argv[2])
 
 #print subDay("20160103000000")
