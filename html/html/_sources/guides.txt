@@ -2,10 +2,10 @@ Guides
 ======
 
 
-Content:
+Contents:
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 1
 
    cassandra
    spark

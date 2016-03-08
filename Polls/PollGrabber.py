@@ -93,13 +93,10 @@ class pollGrabber:
 	def queryPolls(self):
                 self.getRelevantStatePolls()
                 self.getRelevantTopicPolls()
-                #self.all_polls.update(self.getRelevantTopicPolls())
-                #print self.all_polls
                 #sort the lists in all_polls on the end_date before putting them in cassandra
                 self.all_polls = sorted(self.all_polls, key=itemgetter('end_date'))
-                #self.all_polls = sorted(self.all_polls, key=itemgetter('end_date'))
                 #DEBUGGING
-                print len(self.all_polls)
+                print 'Polls Added To Database: ' + str(len(self.all_polls))
                 
 
 	def dumpPolls(self):
@@ -117,7 +114,7 @@ class pollGrabber:
 			#grab the last unique ID to increment it for the primary key
 			#f = open('PollID_DONOTTOUCH.txt', 'r+')
 			#ID = int(f.read())
-                        tempIDlist = list(session.execute("SELECT id FROM president"))
+                        tempIDlist = list(session.execute("SELECT id FROM presidentByPollster"))
                         IDlist = []
                         for row in tempIDlist: IDlist.append(row.id)
                         if(len(IDlist) == 0):
@@ -138,8 +135,12 @@ class pollGrabber:
 				temp_responses = poll['responses']
 				temp_state = poll['state']
                                 
-                                cql = "INSERT INTO president (pollster, id, start_date, end_date, name, observations, responses, state) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+                                cql = "INSERT INTO presidentByPollster (pollster, id, start_date, end_date, name, observations, responses, state) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
 				session.execute(cql, (temp_pollster, ID, temp_start_date, temp_end_date, temp_name, temp_observations, temp_responses, temp_state))
+                                cql = "INSERT INTO presidentByState (state, id, start_date, end_date, name, observations, responses, pollster) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+                                session.execute(cql, (temp_state, ID, temp_start_date, temp_end_date, temp_name, temp_observations, temp_responses, temp_pollster))
+                                cql = "INSERT INTO presidentByDate (end_date, id, start_date, pollster, name, observations, responses, state) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+                                session.execute(cql, (temp_end_date, ID, temp_start_date, temp_pollster, temp_name, temp_observations, temp_responses, temp_state))
 				
 				ID += 1
                 #f.seek(0)

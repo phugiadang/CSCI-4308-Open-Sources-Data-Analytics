@@ -6,9 +6,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Spark &mdash; Open Source Data Analytics 1.0 documentation</title>
+    <title>Setting up a Multi-Machine Spark Cluster &mdash; Open Source Data Analytics 1.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -26,21 +26,74 @@
     <link rel="top" title="Open Source Data Analytics 1.0 documentation" href="index.html" />
     <link rel="up" title="Guides" href="guides.html" />
     <link rel="next" title="Firing up the OpenStack" href="openStackStartUp.html" />
-    <link rel="prev" title="Setting up a Cassandra Cluster" href="cassandra.html" />
-   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="prev" title="Setting up a Multi-Machine Cassandra Cluster" href="cassandra.html" /> 
   </head>
-  <body role="document">  
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="openStackStartUp.html" title="Firing up the OpenStack"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cassandra.html" title="Setting up a Multi-Machine Cassandra Cluster"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Open Source Data Analytics 1.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="guides.html" accesskey="U">Guides</a> &raquo;</li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="spark">
-<h1>Spark<a class="headerlink" href="#spark" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="setting-up-a-multi-machine-spark-cluster">
+<h1>Setting up a Multi-Machine Spark Cluster<a class="headerlink" href="#setting-up-a-multi-machine-spark-cluster" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">`sudo</span> <span class="pre">yum</span> <span class="pre">install</span> <span class="pre">wget`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`wget</span> <span class="pre">-O</span> <span class="pre">/home/centos/spark.tar‘http://d3kbcqa49mib13.cloudfront.net/spark-1.5.1-bin-hadoop2.6.tgz’`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`tar</span> <span class="pre">-zfx</span> <span class="pre">spark.tar`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`cd</span> <span class="pre">spark-1.5.1-bin-hadoop2.6/`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`yum</span> <span class="pre">search</span> <span class="pre">openjdk-devel`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`sudo</span> <span class="pre">yum</span> <span class="pre">install</span> <span class="pre">java-1.7.0-openjdk-devel.x86_64`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`sudo</span> <span class="pre">/usr/sbin/alternatives</span> <span class="pre">--config</span> <span class="pre">java`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`sudo</span> <span class="pre">/usr/sbin/alternatives</span> <span class="pre">--config</span> <span class="pre">javac`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`sudo</span> <span class="pre">vim</span> <span class="pre">/etc/profile`</span></code></li>
+<li>Now, add the following lines at the end</li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><code class="docutils literal"><span class="pre">`export</span> <span class="pre">JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.19.x86_64`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`OPTIONAL(</span> <span class="pre">export</span> <span class="pre">JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85-2.6.1.2.el7_1.x86_64/jre</span>&nbsp; <span class="pre">)`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`export</span> <span class="pre">JRE_HOME=$JAVA_HOME/jre`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`export</span> <span class="pre">PATH=$PATH:$JAVA_HOME/bin`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`export</span> <span class="pre">CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar`</span></code></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li>Now, save and exit</li>
+<li><code class="docutils literal"><span class="pre">`source</span> <span class="pre">/etc/profile`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`java</span> <span class="pre">-version`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`wget</span> <span class="pre">-O</span> <span class="pre">/home/centos/scala.tgz</span> <span class="pre">&quot;http://downloads.typesafe.com/scala/2.10.6/scala-2.10.6.tgz?_ga=1.170409123.2032133767.1444195421&quot;`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`tar</span> <span class="pre">zfx</span> <span class="pre">scala.tgz`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`sudo</span> <span class="pre">mv</span> <span class="pre">scala-2.10.6</span> <span class="pre">/usr/lib`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`sudo</span> <span class="pre">vim</span> <span class="pre">/etc/profile`</span></code></li>
+<li>Now, add the following lines at the end</li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><code class="docutils literal"><span class="pre">`export</span> <span class="pre">SCALA_HOME=/usr/lib/scala-2.10.6`</span></code></li>
+<li><code class="docutils literal"><span class="pre">`export</span> <span class="pre">PATH=$PATH:$SCALA_HOME/bin`</span></code></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="19">
+<li>Now, Save and exit</li>
+<li><code class="docutils literal"><span class="pre">`source</span> <span class="pre">/etc/profile`</span></code></li>
+</ol>
 </div>
 
 
@@ -48,17 +101,16 @@
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="guides.html">Guides</a><ul>
-      <li>Previous: <a href="cassandra.html" title="previous chapter">Setting up a Cassandra Cluster</a></li>
-      <li>Next: <a href="openStackStartUp.html" title="next chapter">Firing up the OpenStack</a></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/logo2.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="cassandra.html"
+                        title="previous chapter">Setting up a Multi-Machine Cassandra Cluster</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="openStackStartUp.html"
+                        title="next chapter">Firing up the OpenStack</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -83,20 +135,25 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2016, Phu Dang, Samuel Horton, Eric Lindemann, David Bittle, Bryan Connelly, Daniel Nolan.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
-      
-      |
-      <a href="_sources/spark.txt"
-          rel="nofollow">Page source</a>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="openStackStartUp.html" title="Firing up the OpenStack"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="cassandra.html" title="Setting up a Multi-Machine Cassandra Cluster"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Open Source Data Analytics 1.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="guides.html" >Guides</a> &raquo;</li> 
+      </ul>
     </div>
-
-    
-
-    
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Phu Dang, Samuel Horton, David Bittle, Daniel Nolan, Bryan Connelly, Eric Lindemann.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
   </body>
 </html>

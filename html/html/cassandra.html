@@ -6,9 +6,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Setting up a Cassandra Cluster &mdash; Open Source Data Analytics 1.0 documentation</title>
+    <title>Setting up a Multi-Machine Cassandra Cluster &mdash; Open Source Data Analytics 1.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -25,51 +25,59 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Open Source Data Analytics 1.0 documentation" href="index.html" />
     <link rel="up" title="Guides" href="guides.html" />
-    <link rel="next" title="Spark" href="spark.html" />
-    <link rel="prev" title="Guides" href="guides.html" />
-   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="next" title="Setting up a Multi-Machine Spark Cluster" href="spark.html" />
+    <link rel="prev" title="Guides" href="guides.html" /> 
   </head>
-  <body role="document">  
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="spark.html" title="Setting up a Multi-Machine Spark Cluster"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="guides.html" title="Guides"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Open Source Data Analytics 1.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="guides.html" accesskey="U">Guides</a> &raquo;</li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="setting-up-a-cassandra-cluster">
-<h1>Setting up a Cassandra Cluster<a class="headerlink" href="#setting-up-a-cassandra-cluster" title="Permalink to this headline">¶</a></h1>
-<p>#Setting up a Cassandra Cluster across multiple machines
-&#8212;
-&#8212;
-#Step 1. Create a Datastax Enterprise Account
-#Step 2. Run the command:
+  <div class="section" id="setting-up-a-multi-machine-cassandra-cluster">
+<h1>Setting up a Multi-Machine Cassandra Cluster<a class="headerlink" href="#setting-up-a-multi-machine-cassandra-cluster" title="Permalink to this headline">¶</a></h1>
+<p>Step 1. Create a Datastax Enterprise Account
+Step 2. Run the command:
 <code class="docutils literal"><span class="pre">`</span>
 <span class="pre">curl</span> <span class="pre">--user</span> <span class="pre">&lt;your_datastax_email_here&gt;:&lt;your_datastax_password_here&gt;</span> <span class="pre">-L</span> <span class="pre">http://downloads.datastax.com/enterprise/dse.tar.gz</span> <span class="pre">|</span> <span class="pre">tar</span> <span class="pre">xz</span>
 <span class="pre">`</span></code>
-#Step 3. Repeat Step 2 on every machine you want to include in your cluster
-#Step 4. Edit the Cassandra.yaml file on each cluster, which is located at:
+Step 3. Repeat Step 2 on every machine you want to include in your cluster
+Step 4. Edit the Cassandra.yaml file on each cluster, which is located at:
 <code class="docutils literal"><span class="pre">`</span>
 <span class="pre">dse-x.x.x/resources/cassandra/conf/cassandra.yaml</span>
 <span class="pre">`</span></code>
-#Here are the things that you want to edit in cassandra.yaml:
-##1. cluster_name
-##2. initial_token
-###There is a python file that generates tokens for each machine, based off of the number of machines that are in your cluster. Use google to find the specific algorithim. You will have one machine set its initial_token to 0.
-##3. Under the section seed_provider, in the section marked seeds, add the ip address of each machine you have in your cluster. An example of this would be:
+<em>Here are the things that you want to edit in cassandra.yaml</em>:
+1. cluster_name
+2. initial_token
+There is a python file that generates tokens for each machine, based off of the number of machines that are in your cluster. Use google to find the specific algorithim. You will have one machine set its initial_token to 0.
+3. Under the section seed_provider, in the section marked seeds, add the ip address of each machine you have in your cluster. An example of this would be:
 <code class="docutils literal"><span class="pre">`</span>
 <span class="pre">-</span> <span class="pre">seeds:</span> <span class="pre">&quot;128.138.202.110,</span> <span class="pre">128.138.202.117&quot;</span>
+<span class="pre">`</span></code></p>
+<p><em>Make sure that the ip of the machine you are on comes first in this list.</em>
+4. listen_address
+Simply set this to the machine&#8217;s ip. Example:
+<code class="docutils literal"><span class="pre">`listen_address:</span> <span class="pre">128.138.202.117</span>
 <span class="pre">`</span></code>
-###Make sure that the ip of the machine you are on comes first in this list.
-##4. listen_address
-###Simply set this to the machine&#8217;s ip. Example:
-<code class="docutils literal"><span class="pre">`</span>
-<span class="pre">listen_address:</span> <span class="pre">128.138.202.117</span>
-<span class="pre">`</span></code>
-##5. endpoint_snitch
-###The snitch Cassandra where to store replicas. There are several snitches, so it is best to know exactly how you want your cluster to be setup, so you can choose the snitch that best suites your needs.</p>
+5. endpoint_snitch
+The snitch Cassandra where to store replicas. There are several snitches, so it is best to know exactly how you want your cluster to be setup, so you can choose the snitch that best suites your needs.</p>
 </div>
 
 
@@ -77,17 +85,16 @@
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="guides.html">Guides</a><ul>
-      <li>Previous: <a href="guides.html" title="previous chapter">Guides</a></li>
-      <li>Next: <a href="spark.html" title="next chapter">Spark</a></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/logo2.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="guides.html"
+                        title="previous chapter">Guides</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="spark.html"
+                        title="next chapter">Setting up a Multi-Machine Spark Cluster</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -112,20 +119,25 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2016, Phu Dang, Samuel Horton, Eric Lindemann, David Bittle, Bryan Connelly, Daniel Nolan.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
-      
-      |
-      <a href="_sources/cassandra.txt"
-          rel="nofollow">Page source</a>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="spark.html" title="Setting up a Multi-Machine Spark Cluster"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="guides.html" title="Guides"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Open Source Data Analytics 1.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="guides.html" >Guides</a> &raquo;</li> 
+      </ul>
     </div>
-
-    
-
-    
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Phu Dang, Samuel Horton, David Bittle, Daniel Nolan, Bryan Connelly, Eric Lindemann.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
   </body>
 </html>
