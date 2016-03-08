@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 # -*- coding: utf-8 -*-
 #
 #  gdelt.py
@@ -23,7 +23,7 @@ import sys
 
 
 gdelt_base_url = 'http://data.gdeltproject.org/gkg/'
-local_path = '/home/centos/GDELT/'
+local_path = '/VOLUME/GDELT/'
 key_word = ''
 
 def setKeyword(name):

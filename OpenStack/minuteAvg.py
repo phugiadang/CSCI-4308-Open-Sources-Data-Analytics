@@ -14,16 +14,13 @@ cluster = Cluster(
 session = cluster.connect(keyspace)
 session.default_timeout = 100000
 
-#list_of_candidates = ["trump", "rubio", "bush", "carson", "clinton", "kasich", "sanders", "cruz"]
+list_of_candidates = ["trump", "rubio", "bush", "carson", "clinton", "kasich", "sanders", "cruz"]
 
-list_of_candidates = ["trump"]
+a = getCurrentDate()
 
-start_date = getCurrentDate()
+start_date = calculateDate.subMinute(a)
 
-end_date = start_date
-for i in range(0, 10080):
-    new_end_date = addMinute(end_date)
-    end_date = new_end_date
+end_date = addMinute(start_date)
 
 print start_date
 print end_date
@@ -36,5 +33,5 @@ print end_date
 for candidate in list_of_candidates:
     minute_count = session.execute('select count(*) from ' + candidate + ' where created_at >= ' + start_date + ' and created_at < ' + end_date + ' ALLOW FILTERING;')
 
-    final_step = session.execute_async('insert into ' + candidate + 'WeeklyAverages ' + '(start_date, end_date, tweet_count) VALUES (%s, %s, %s)', (int(start_date), int(end_date), int(minute_count[0][0]) ))
+    final_step = session.execute_async('insert into ' + candidate + 'MinuteAverages ' + '(start_date, end_date, tweet_count) VALUES (%s, %s, %s)', (int(start_date), int(end_date), int(minute_count[0][0]) ))
 

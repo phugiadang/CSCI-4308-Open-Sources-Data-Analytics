@@ -19,7 +19,7 @@ def updateData(current_word, current_word_number):
 
 def getDate():
     global full_date, date_dictionary
-    with open("date.txt", "r+") as date_file:
+    with open("date.txt", "r") as date_file:
         for line in date_file:
             current_word = ''
             current_word_number = 0
@@ -50,4 +50,4 @@ def getDate():
   
     return "2016" + full_date
 
-#getDate()
+print getDate()
