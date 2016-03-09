@@ -18,10 +18,11 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
  
     <!-- FusionCharts Core Library JavaScript File-->
-    <script type="text/javascript" src="path/to/fusioncharts.js"></script>
+    <script type="text/javascript" src="../fusioncharts/js/fusioncharts.js"></script>
+  <script type="text/javascript" src="../fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
  
     <!-- FusionCharts AngularJS Plugin JavaScript File-->
-    <script type="text/javascript" src="path/to/angular-fusioncharts.min.js"></script>
+    <script type="text/javascript" src="../angular-fusioncharts.min.js"></script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body ng-app="clientApp">
@@ -42,23 +43,39 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">client</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li class="active"><a href="sanders/">Sanders</a></li>
+              <li class="active"><a href="trump/">Trump</a></li>
+              <li class="active"><a href="clinton/">Clinton</a></li>
+              <li class="active"><a href="cruz/">Cruz</a></li>
+              <li class="active"><a href="rubio/">Rubio</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
+    
     <div class="container">
-    <div ng-view=""></div>
+		
+		<div id="chartContainer" class="ng-scope">FusionCharts will load here!
+		
+		<script type="text/javascript">
+
+			var myChart = new FusionCharts( "FusionCharts/msline.swf",
+                                        "myChartId", "500", "300", "0", "0" );
+			myChart.setJSONUrl("sandersJson.json");
+			myChart.render("chartContainer");
+
+		</script>
+		
+		</div>
+		
+		
     </div>
 
     <div class="footer">
@@ -66,7 +83,6 @@
         <p> <i class="fa fa-heart"></i> Sponsored by Northrop Grumman </p>
       </div>
     </div>
-
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -97,7 +113,12 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/example.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script type="text/javascript" src="sandersJson.json"></script>
         <!-- endbuild -->
+        
 </body>
 </html>
+
+
