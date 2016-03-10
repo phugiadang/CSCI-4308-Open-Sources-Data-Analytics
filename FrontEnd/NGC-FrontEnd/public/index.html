@@ -50,7 +50,8 @@
 			 <li ng-class="{ active: isActive('/cruz')}"><a href="/#/cruz" style="color:red;">Cruz</a></li>
 			 <li ng-class="{ active: isActive('/rubio')}"><a href="/#/rubio" style="color:red;">Rubio</a></li>
 			 <li ng-class="{ active: isActive('/clinton')}"><a href="/#/clinton">Clinton</a></li>
-			 <li ng-class="{ active: isActive('/sanders')}"><a href="/#/cruz">Sanders</a></li>
+			 <li ng-class="{ active: isActive('/sanders')}"><a href="/#/sanders">Sanders</a></li>
+			<li ng-class="{ active: isActive('/kasich')}"><a href="/#/kasich">Kasich</a></li>
         </ul>
 
         <!-- Header Title -->
@@ -92,7 +93,7 @@
 			</script>
 		</div>
         <!-- Side Panel (Controlled by ng-view) -->
-        <div ng-view col-md-6></div>
+        <div ng-view col-md-6 type="hidden"></div>
 
     </div>
     <hr/>

@@ -1,7 +1,6 @@
 	{
           "chart": {
-            "caption": "Sanders Tweets",
-            "subCaption": "Counts",
+            "caption": "Sanders Tweet Counts",
             "xAxisName": "Day",
             "yAxisName": "Count",
           
