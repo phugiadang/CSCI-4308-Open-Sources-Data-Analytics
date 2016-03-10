@@ -1,0 +1,58 @@
+{
+            "chart": {
+                "caption": "Candidate GDELT Counts",
+                "subCaption": "",
+                "captionFontSize": "14",
+                "subcaptionFontSize": "14",
+                "subcaptionFontBold": "0",
+                "paletteColors": "#0075c2,#1aaf5d",
+                "bgcolor": "#ffffff",
+                "showBorder": "0",
+                "showShadow": "0",
+                "showCanvasBorder": "0",
+                "usePlotGradientColor": "0",
+                "legendBorderAlpha": "0",
+                "legendShadow": "0",
+                "showAxisLines": "0",
+                "showAlternateHGridColor": "0",
+                "divlineThickness": "1",
+                "divLineIsDashed": "1",
+                "divLineDashLen": "1",
+                "divLineGapLen": "1",
+                "xAxisName": "Day",
+                "showValues": "0"               
+            },
+            "categories": [
+                {
+                    "category": [{ "label": "March, 6" },{ "label": "March, 7" },{ "label": "March, 8" }
+		    ]
+                }
+            ],
+            "dataset": [{
+                    "seriesname": "Trump Tweet Counts",
+                    "data": [ { "value": "94" },{ "value": "78" },{ "value": "106" }]},{
+                    "seriesname": "Clinton Tweet Counts",
+                    "data": [ { "value": "14" },{ "value": "38" },{ "value": "74" }]},{
+                    "seriesname": "Sanders Tweet Counts",
+                    "data": [ { "value": "14" },{ "value": "13" },{ "value": "37" }]},{
+                    "seriesname": "Cruz Tweet Counts",
+                    "data": [ { "value": "179" },{ "value": "90" },{ "value": "59" }]},{
+                    "seriesname": "Rubio Tweet Counts",
+                    "data": [ { "value": "21" },{ "value": "18" },{ "value": "42" }]},{
+                    "seriesname": "Kasich Tweet Counts",
+                    "data": [ { "value": "6" },{ "value": "3" },{ "value": "3" }]}	
+	    ], 
+            "trendlines": [
+                {
+                    "line": [
+                        {
+                            "startvalue": "17022",
+                            "color": "#6baa01",
+                            "valueOnRight": "1",
+                            "displayvalue": "Average"
+                        }
+                    ]
+                }
+            ]
+        }
+
