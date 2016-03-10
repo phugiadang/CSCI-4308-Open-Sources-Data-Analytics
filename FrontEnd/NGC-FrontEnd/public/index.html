@@ -77,6 +77,20 @@
 			</script>
 		</div>
         
+        <div class = "col-md-12">
+			<body>
+				<div id="gdeltChart">FusionCharts XT will load here!</div>
+			</body>
+		
+			<script type="text/javascript">
+
+			var gdelt = new FusionCharts( "FusionCharts/msline.swf",
+                                        "gdeltId", "1200", "600", "0", "0");
+			gdelt.setJSONUrl("gdelt.json");
+			gdelt.render("gdeltChart");
+
+			</script>
+		</div>
         <div class="col-md-6">
             <body>
 				<div id="chartContainer">FusionCharts XT will load here!</div>
