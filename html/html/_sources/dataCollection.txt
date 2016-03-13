@@ -1,12 +1,13 @@
-Data Collection Methods
-=======================
+Data Collection
+===============
 
 
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    polls
    twitter
+

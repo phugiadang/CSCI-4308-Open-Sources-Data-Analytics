@@ -1,24 +1,18 @@
 .. Open Source Data Analytics documentation master file, created by
-   sphinx-quickstart on Mon Feb 29 18:34:55 2016.
+   sphinx-quickstart on Mon Feb 29 20:47:25 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Open Source Data Analytics's documentation!
+Welcome to Team OSAM's Project Documentation!
 ======================================================
 
 Contents:
 
 .. toctree::
-   :maxdepth: 5
-   
-   rootDocumentation
+   :maxdepth: 1
+
+   documentation
    guides
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 

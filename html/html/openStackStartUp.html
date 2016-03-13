@@ -8,7 +8,7 @@
     
     <title>Firing up the OpenStack &mdash; Open Source Data Analytics 1.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -25,13 +25,22 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Open Source Data Analytics 1.0 documentation" href="index.html" />
     <link rel="up" title="Guides" href="guides.html" />
-    <link rel="prev" title="Spark" href="spark.html" />
-   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="prev" title="Setting up a Multi-Machine Spark Cluster" href="spark.html" /> 
   </head>
-  <body role="document">  
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="spark.html" title="Setting up a Multi-Machine Spark Cluster"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Open Source Data Analytics 1.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="guides.html" accesskey="U">Guides</a> &raquo;</li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -40,6 +49,21 @@
             
   <div class="section" id="firing-up-the-openstack">
 <h1>Firing up the OpenStack<a class="headerlink" href="#firing-up-the-openstack" title="Permalink to this headline">¶</a></h1>
+<p><strong>1. Launch Spark</strong>
+<em>Step 1</em>: On Machine 1, navigate to the directory /home/centos/spark-1.5.1-bin-hadoop2.6/sbin</p>
+<p><em>Step 2</em>: Now run the command ./start-all.sh</p>
+<p><strong>2. Launch Cassandra</strong>
+<em>Step 1</em>: On Machine 2, navigate to the directory /home/centos/dse-4.8.1/bin</p>
+<p><em>Step 2</em>: now run the command sudo ./dse cassandra -t, and wait a while until you see the last three following lines:
+INFO  05:06:59  SparkClusterInfo plugin using 1 async writers
+INFO  05:06:59  Initializing data object io tracker plugin
+INFO  05:06:59  Hive metastore version: 1
+<em>Step 3</em>: On Machine 2, navigate to the directory /home/centos/dse-4.8.1/bin
+<em>Step 4</em>: now run the command sudo ./dse cassandra, and wait a while until you see the last three following lines:
+INFO  05:06:59  SparkClusterInfo plugin using 1 async writers
+INFO  05:06:59  Initializing data object io tracker plugin
+INFO  05:06:59  Hive metastore version: 1</p>
+<p>Now you are ready to use Spark and Cassandra!</p>
 </div>
 
 
@@ -47,16 +71,13 @@
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="guides.html">Guides</a><ul>
-      <li>Previous: <a href="spark.html" title="previous chapter">Spark</a></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/logo2.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="spark.html"
+                        title="previous chapter">Setting up a Multi-Machine Spark Cluster</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -81,20 +102,22 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2016, Phu Dang, Samuel Horton, Eric Lindemann, David Bittle, Bryan Connelly, Daniel Nolan.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
-      
-      |
-      <a href="_sources/openStackStartUp.txt"
-          rel="nofollow">Page source</a>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="spark.html" title="Setting up a Multi-Machine Spark Cluster"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Open Source Data Analytics 1.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="guides.html" >Guides</a> &raquo;</li> 
+      </ul>
     </div>
-
-    
-
-    
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Phu Dang, Samuel Horton, David Bittle, Daniel Nolan, Bryan Connelly, Eric Lindemann.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
   </body>
 </html>
