@@ -40,7 +40,7 @@ def getDate():
 
         
     
-    full_date = full_date.replace("MST", "").replace("\n","")
+    full_date = full_date.replace("MDT", "").replace("\n","")
     full_date = full_date[:-8] 
     
 
@@ -48,6 +48,6 @@ def getDate():
     if (len(full_date) == 3):
         full_date = full_date[:2] + '0' + full_date[2:]
   
-    return "2016" + full_date
+    return full_date
 
 print getDate()
