@@ -1,0 +1,20 @@
+<!-- kasich.html -->
+<div class="jumbotron text-center col-md-12 col-lg-12">
+        <p>{{ message }}</p>
+        <h1 class="ng-binding">
+				<body>
+					<div id="kasichChart">FusionCharts XT will load here!</div>
+				</body>
+			
+				<script type="text/javascript">
+
+				var kasichChart = new FusionCharts( "FusionCharts/line.swf",
+											"kasichChartId", "1000", "600", "0", "0");
+				kasichChart.setJSONUrl("kasichdata.json");
+				kasichChart.render("kasichChart");
+
+				</script>
+			
+        </h1>        
+		
+    </div>

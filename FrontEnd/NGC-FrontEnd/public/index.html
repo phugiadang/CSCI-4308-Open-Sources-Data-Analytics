@@ -1,6 +1,6 @@
 <!doctype html>
-<!-- Declares meanMapApp as the starting Angular module -->
-<html class="no-js" ng-app="meanMapApp">
+<!-- Declares NCG-Fullstack as the starting Angular module -->
+<html class="no-js" ng-app="ngcFullstack">
 <head>
     <meta charset="utf-8">
     <title> Candidates Analysis</title></title>
@@ -35,7 +35,7 @@
 	<script type="text/javascript" src="../angular-fusioncharts.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="mainController">
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -46,91 +46,44 @@
 
         <!-- Header items are made active upon selection -->
         <ul class="nav nav-pills pull-right">
-             <li ng-class="{ active: isActive('/trump')}"><a href="/#/trump" style="color:red;">Trump</a></li>
-			 <li ng-class="{ active: isActive('/cruz')}"><a href="/#/cruz" style="color:red;">Cruz</a></li>
-			 <li ng-class="{ active: isActive('/rubio')}"><a href="/#/rubio" style="color:red;">Rubio</a></li>
-			 <li ng-class="{ active: isActive('/clinton')}"><a href="/#/clinton">Clinton</a></li>
-			 <li ng-class="{ active: isActive('/sanders')}"><a href="/#/sanders">Sanders</a></li>
-			<li ng-class="{ active: isActive('/kasich')}"><a href="/#/kasich">Kasich</a></li>
+             <li ><a href="#trump" style='color:red;'>Trump</a></li>
+			 <li><a href="#cruz" style='color:red;'>Cruz</a></li>
+			 <li><a href="#rubio" style='color:red;'>Rubio</a></li>
+			 <li><a href="#kasich" style='color:red;'>Kasich</a></li>
+			 <li><a href="#clinton">Clinton</a></li>
+			 <li><a href="#sanders">Sanders</a></li>
+			
         </ul>
 
         <!-- Header Title -->
         <h3 class="text-muted">Candidates Analysis</h3>
     </div>
-
+	<div id="main">
+		{{message}}
+		<div ng-view></div>
+		
+	</div>
     <!-- Map and Side Panel -->
     <div class="row content">
-
-        <!-- Google Map -->
-        <div class = "col-md-12">
+		
+        <!-- Full Sized Fusion Chart -->
+        <div class = "col-md-12 col-lg-12">
 			<body>
 				<div id="candidatesChart">FusionCharts XT will load here!</div>
 			</body>
-		
-			<script type="text/javascript">
-
-			var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
-                                        "candidateChartId", "1200", "600", "0", "0");
-			candidatesChart.setJSONUrl("sanders2.json");
-			candidatesChart.render("candidatesChart");
-
-			</script>
 		</div>
         
-        <div class = "col-md-12">
+        <div class = "col-md-12 col-lg-12">
 			<body>
 				<div id="gdeltChart">FusionCharts XT will load here!</div>
 			</body>
-		
-			<script type="text/javascript">
-
-			var gdelt = new FusionCharts( "FusionCharts/msline.swf",
-                                        "gdeltId", "1200", "600", "0", "0");
-			gdelt.setJSONUrl("gdelt.json");
-			gdelt.render("gdeltChart");
-
-			</script>
-		</div>
-        <div class="col-md-6">
-            <body>
-				<div id="chartContainer">FusionCharts XT will load here!</div>
-			</body>
-		
-			<script type="text/javascript">
-
-			var myChart = new FusionCharts( "FusionCharts/line.swf",
-                                        "myChartId", "500", "500", "0", "0");
-			myChart.setJSONUrl("sandersJson.json");
-			myChart.render("chartContainer");
-
-			</script>
-		
-        </div>
-		
-		<div class = "col-md-6">
-			<body>
-				<div id="kasichChart">FusionCharts XT will load here!</div>
-			</body>
-		
-			<script type="text/javascript">
-
-			var kasichChart = new FusionCharts( "FusionCharts/line.swf",
-                                        "kasichChartId", "500", "500", "0", "0");
-			kasichChart.setJSONUrl("kasichdata.json");
-			kasichChart.render("kasichChart");
-
-			</script>
-		</div>
-		
-        <!-- Side Panel (Controlled by ng-view) -->
-        
-
-    </div>
+		</div>        
+    </div>    
     <hr/>
 
     <!-- Footer -->
     <div class="footer">
-        <p class="text-center"><span class="glyphicon glyphicon-check"></span> Northrop Grumman Senio Project Group - CU Boulder
+        <p class="text-center"><span class="glyphicon glyphicon-check"></span> Team OSAM - CU Boulder
             <a href="https://github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics">GitHub Repository</a> 
         </p>
     </div>
