@@ -25,6 +25,7 @@
 from AnalysisObject import AnalysisObject
 from GraphAnalysisNormalized import GraphAnalysisNormalized
 from ClassificationAnalysis import ClassificationAnalysis
+from LinearRegressionObject import LinearRegressionObject
 
 class AnalysisObjectFactory:
 	
