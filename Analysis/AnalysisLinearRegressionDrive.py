@@ -27,9 +27,11 @@ from AnalysisObjectFactory import AnalysisObjectFactory
 
 def main():
 	AnalysisObjectFactory.initialFactory()
-	#types = AnalysisObjectFactory.createObject("LinearRegressionObject","hillary clinton",["2/17/2016","2/18/2016","2/19/2016","2/20/2016","2/21/2016","2/22/2016","2/23/2016"],("GDELT",[1,2,3,7,4,5,6]),("Tweet",[5,10,15,20,20,25,35]))
-	types = AnalysisObjectFactory.createObject("LinearRegressionObject","hillary clinton",["2/17/2016","2/18/2016","2/19/2016","2/20/2016","2/21/2016","2/22/2016","2/23/2016"],("GDELT",[1,2,3,7,4,3,10]),("Tweet",[20,10,15,20,5,17,21]))
-	print types.linearRegressionAnalysis()
+	types = AnalysisObjectFactory.createObject("LinearRegressionObject","hillary clinton",["2/17/2016","2/18/2016","2/19/2016","2/20/2016","2/21/2016","2/22/2016","2/23/2016"],("GDELT",[1,2,3,7,4,5,6]),("Tweet",[5,10,15,20,20,25,35]))
+	#types = AnalysisObjectFactory.createObject("LinearRegressionObject","hillary clinton",["2/17/2016","2/18/2016","2/19/2016","2/20/2016","2/21/2016","2/22/2016","2/23/2016"],("GDELT",[1,2,3,7,4,3,10]),("Tweet",[20,10,15,20,5,17,21]))
+	(text,data)= types.linearRegressionAnalysis()
+	print text
+	print data
 	return 0
 
 if __name__ == '__main__':

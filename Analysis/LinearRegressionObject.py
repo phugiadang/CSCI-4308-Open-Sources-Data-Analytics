@@ -64,6 +64,7 @@ class LinearRegressionObject(AnalysisObject):
 	
 	def linearRegressionAnalysis(self):
 		text_output = "LINEAR REGRESSION ANALYSIS\n"
+		text_output = text_output + "Candidate name: " + self.getfixed_para_one() + "\n"
 		text_output = text_output + self.__correlationCalculation()
 		fixed_para_two = self.getfixed_para_two()
 		if text_output != "Two variable sets are uncorrelated.\n":
@@ -95,7 +96,13 @@ class LinearRegressionObject(AnalysisObject):
 			text_output = text_output + "Score of this prediction " + str(score) + "\n"
 			text_output = text_output + "(Note: if score number equals 1, there is a perfect prediction and a strong linear relationship between two variables)\n"
 			self.__graphData(data,slope,intercept,training)
-			return text_output	
+			y_exact = self.getlist_para_two()[1][training:]
+			y_predict = []
+			date = []
+			for x in range (training,len(fixed_para_two)):
+				date.append(fixed_para_two[x])
+				y_predict.append(int(slope*self.getlist_para_one()[1][x]+intercept))
+			return (text_output,(date,y_predict,y_exact))
 		
 		
 	class Factory:
