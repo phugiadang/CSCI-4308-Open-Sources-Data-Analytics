@@ -25,6 +25,8 @@
 from AnalysisObject import AnalysisObject
 import numpy as np
 from sklearn import linear_model
+import matplotlib as mpl
+mpl.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -60,8 +62,9 @@ class LinearRegressionObject(AnalysisObject):
 			y_value = slope * k + intercept
 			y.append(y_value)
 		line, = plt.plot(x,y,c='red',linewidth=2)
-		plt.show()
+		plt.savefig('report')
 	
+	#Return the tuples of (report,(date,predict values, exact values))
 	def linearRegressionAnalysis(self):
 		text_output = "LINEAR REGRESSION ANALYSIS\n"
 		text_output = text_output + "Candidate name: " + self.getfixed_para_one() + "\n"
