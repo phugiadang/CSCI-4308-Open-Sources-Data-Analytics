@@ -2,13 +2,13 @@ import json
 import sys
 from sys import argv
 import operator
-
+import queryCounts
 from AnalysisObject import AnalysisObject
 from cassandra.cluster import Cluster
 import datetime, time
 from calendar import monthrange
 from time import gmtime,strftime
-
+from GetPollsFromDatabase import DatabasePolls
 #USAGE: python jsonize.py Twitter/GDELT CANDIDATE MONTH START_DAY END_DAY hourly/daily
 #Enter one of the slashes (Twitter or GDELT, hourly or daily)
 #Candidate name or all for all of them
