@@ -17,44 +17,50 @@ from GetPollsFromDatabase import DatabasePolls
 #hourly/daily only applies if Twitter was chosen
 
 hour = int(strftime("%H",  gmtime()))-1
+stringHour = str(hour)
 if hour < 0:
         hour = 23
 day = int(strftime("%d",  gmtime()))
 yesterday = day -1
 if hour == 23:
         day = yesterday
+if hour < 10:
+    stringHour = str("0")+str(hour)
+if hour >= 10:
+    stringHour = str(hour)
 year =  int(strftime("%Y", gmtime()))
 month = int(strftime("%m", gmtime()))
 monthInt = month
 stringMonth = str(month)
 if month < 10:
-    stringMonth = "0"+str(month)
+    stringMonth = str("0")+str(month)
 if month >= 10:
     stringMonth = str(month)
 month = stringMonth
 #We want to grab the the hours of the current day
 #Then, we want to grab the previous day's hours
 
-previousDay = str(year) + stringMonth + str(day - 1) + str(hour) + str("0000")
-currentDay = str(year) + stringMonth + str(day) + str(hour) + str("0000")
+previousDay = str(year) + stringMonth + str(yesterday) + stringHour + str("0000")
+currentDay = str(year) + stringMonth + str(day) + stringHour + str("0000")
 print previousDay
 print currentDay
+print day
+print stringHour
+
+
+previousInt = int(previousDay)
+currentInt= int(currentDay)
 
 
 
 
-	
-	
-	
-	
-	
-	
-	
+
+
 datasource = "Twitter"
-candidateRead = 'kasich'
-monthNumber = int(stringMonth)
-startDay = int(previousDay)
-endDay = int(currentDay)
+candidateRead = "all"
+monthNumber = monthInt
+startDay = previousInt
+endDay = currentInt
 if datasource == "Twitter":
 		timeframe = "hourly"
 
@@ -72,7 +78,7 @@ dates = []
 chartCaption = "Candidate " + datasource + "  Counts"
 chartSubCaption = ""
 
-dp = DatabasePolls(20160307, 20160308, 'Trump')
+dp = DatabasePolls(20160329, 20160330, 'Trump')
 dp.queryDatabase()
 dp.cleanPolls()
 pollData = dp.getCleanedPolls()
@@ -114,7 +120,7 @@ for day in days:
 
 if candidateRead == "all" and datasource == "GDELT":
 		candidateList =  getGDELTObjects()
-		
+
 		jsonString = '''
 		{
 					"chart": {
@@ -142,7 +148,7 @@ if candidateRead == "all" and datasource == "GDELT":
 						"divLineDashLen": "1",
 						"divLineGapLen": "1",
 						"xAxisName": "Day",
-						"showValues": "0"               
+						"showValues": "0"
 					},
 					"categories": [
 						{
@@ -160,8 +166,8 @@ if candidateRead == "all" and datasource == "GDELT":
 				jsonString += ','
 		jsonString += str(candidateList[len(candidateList)-1].createJson())
 
-		jsonString +=  '''      
-					], 
+		jsonString +=  '''
+					],
 					"trendlines": [
 						{
 							"line": [
@@ -182,7 +188,7 @@ if candidateRead == "all" and datasource == "GDELT":
 elif candidateRead == "all" and datasource == "Twitter":
 		if timeframe == "hourly":
 				candidateList = getTwitterObjects()
-		
+
 		jsonString = '''
 		{
 					"chart": {
@@ -210,7 +216,7 @@ elif candidateRead == "all" and datasource == "Twitter":
 						"divLineDashLen": "1",
 						"divLineGapLen": "1",
 						"xAxisName": "Day",
-						"showValues": "0"               
+						"showValues": "0"
 					},
 					"categories": [
 						{
@@ -234,8 +240,8 @@ elif candidateRead == "all" and datasource == "Twitter":
 				jsonString += ','
 		jsonString += str(candidateList[len(candidateList)-1].createJson())
 
-		jsonString +=  '''      
-					], 
+		jsonString +=  '''
+					],
 					"trendlines": [
 						{
 							"line": [
@@ -260,7 +266,7 @@ if candidateRead == "all" and datasource == "Polls":
 		if len(str(startDay)) < 2:
 				startDate = "20160" + str(monthNumber) + "0" + str(startDay)
 		if len(str(endDay)) < 2:
-				endDate = "20160" + str(monthNumber) + "0" + str(endDay) 
+				endDate = "20160" + str(monthNumber) + "0" + str(endDay)
 		for day in days:
 				if len(str(day)) < 2:
 						pollDays.append("20160" + str(monthNumber) + "0" + str(day))
@@ -271,4 +277,3 @@ if candidateRead == "all" and datasource == "Polls":
 				pollData = dp.getCleanedPolls()
 				for poll in pollData:
 						print poll
-
