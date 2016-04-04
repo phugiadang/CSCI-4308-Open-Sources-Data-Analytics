@@ -173,9 +173,13 @@ class StreamListener(tweepy.StreamListener):
 	#    f9 = int(numerical_date + str(f9))
 
         #Execute the Cassandra command to store the tweet fields into the database	    
-        final_step = session.execute_async('insert into ' + self.keyword[1] + '(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,int(numerical_date),b9,hash_tags,c9,d9,e9,text_field))
+        
+        #final_step = session.execute_async('insert into ' + self.keyword[1] + '(tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (int(f9),coord,int(numerical_date),b9,hash_tags,c9,d9,e9,text_field))
 
-
+        if(self.keyword[1] == "trump"):
+            tableName = "newtrump"
+            testing_Final_step = 'insert into ' + tableName + '(candidate, tweet_id, coordinates, created_at, favorite_count, hashtags, lang, quoted_status_id, retweet_count, tweet_text) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)', (self.keyword[1], int(f9),coord,int(numerical_date),b9,hash_tags,c9,d9,e9,text_field)
+        
 
         #Uncomment this try/except block if you want to see if the tweet fields are getting stored properly
 	
@@ -229,8 +233,8 @@ list_clinton = ['Clinton', 'clinton', 'Hillary', 'Hillary Clinton']
 list_kasich = ['Kasich', 'kasich', 'John Kasich', 'Kasich4Us']
 list_bush = ['Jeb!', 'bush', 'Jeb Bush', 'Bush']
 
-list_of_lists = [list_trump,list_rubio,list_sanders,list_carson,list_cruz,list_clinton,list_kasich,list_bush]
-
+#list_of_lists = [list_trump,list_rubio,list_sanders,list_carson,list_cruz,list_clinton,list_kasich,list_bush]
+list_of_lists = [list_trump]
 track = ['clinton', 'bush', 'python']
 
 i=0
@@ -244,7 +248,8 @@ line_count = 0
 
 key_list = []
 
-with open('/home/centos/CSCI-4308-Open-Sources-Data-Analytics/keys.txt', 'r') as key_text:
+#with open('/home/centos/CSCI-4308-Open-Sources-Data-Analytics/keys.txt', 'r') as key_text:
+with open('/home/user/Dropbox/SeniorProject/Spring2016/CSCI-4308-Open-Sources-Data-Analytics/keys.txt', 'r') as key_text:
 	for each_key in key_text:
  		key_list.append(str(each_key).rstrip('\n'))
 

@@ -8,33 +8,6 @@ cluster = Cluster(contact_points=['128.138.202.110','128.138.202.117'],)
 session = cluster.connect(keyspace)
 session.default_timeout = 2000.00
 
-January = 31
-February = 29
-March = 31
-April = 30
-May = 31
-June = 30
-July = 31
-August = 31
-September = 30
-October = 31
-November = 30
-December = 31
-
-listOfMonths = []
-listOfMonths.append(January)
-listOfMonths.append(February)
-listOfMonths.append(March)
-listOfMonths.append(April)
-listOfMonths.append(May)
-listOfMonths.append(June)
-listOfMonths.append(July)
-listOfMonths.append(August)
-listOfMonths.append(September)
-listOfMonths.append(October)
-listOfMonths.append(November)
-listOfMonths.append(December)
-
 #for months in listOfMonths:
 #    print months
  #date = "select count(*) from "+candidate+" where created_at > 2016"+month+str(day)+"000000 and created_at < 2016"+ month + str(day+1) + "000000 ALLOW FILTERING;"
