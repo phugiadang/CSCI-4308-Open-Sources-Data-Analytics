@@ -36,12 +36,15 @@ var app = angular.module('ngcFullstack', ['addCtrl', 'queryCtrl', 'headerCtrl', 
             controller: 'kasichController',
             templateUrl: 'partials/kasich.html',
 
-          }).when('/analysis', {
-              controller: 'analysisController',
-              templateUrl: 'partials/analysis.html',
+        }).when('/analysis', {
+            controller: 'analysisController',
+            templateUrl: 'partials/analysis.html',
 
         // All else forward to the Join Team Control Panel
-        }).otherwise({redirectTo:'/'})
+      }).when('/', {
+          controller: 'analysisController',
+          templateUrl: 'partials/home.html',
+        })
     });
 
 app.controller('mainController', function($scope){
