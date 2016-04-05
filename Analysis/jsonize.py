@@ -38,7 +38,7 @@ dates = []
 chartCaption = "Candidate " + datasource + "  Counts"
 chartSubCaption = ""
 
-dp = DatabasePolls(20160307, 20160308, 'Trump')
+dp = DatabasePolls(20160403, 20160404, 'Kasich')
 dp.queryDatabase()
 dp.cleanPolls()
 pollData = dp.getCleanedPolls()
@@ -81,7 +81,7 @@ for day in days:
 
 if candidateRead == "all" and datasource == "GDELT":
         candidateList =  getGDELTObjects()
-        
+
         jsonString = '''
         {
                     "chart": {
@@ -109,7 +109,7 @@ if candidateRead == "all" and datasource == "GDELT":
                         "divLineDashLen": "1",
                         "divLineGapLen": "1",
                         "xAxisName": "Day",
-                        "showValues": "0"               
+                        "showValues": "0"
                     },
                     "categories": [
                         {
@@ -127,8 +127,8 @@ if candidateRead == "all" and datasource == "GDELT":
                 jsonString += ','
         jsonString += str(candidateList[len(candidateList)-1].createJson())
 
-        jsonString +=  '''      
-                    ], 
+        jsonString +=  '''
+                    ],
                     "trendlines": [
                         {
                             "line": [
@@ -143,13 +143,13 @@ if candidateRead == "all" and datasource == "GDELT":
                     ]
                 }
         '''
-        f = open('GDELTAll.json', 'w')
+        f = open('../FrontEnd/NGC-FrontEnd/public/GDELTAll.json', 'w')
         f.write(jsonString)
 
 elif candidateRead == "all" and datasource == "Twitter":
         if timeframe == "hourly":
                 candidateList = getTwitterObjects()
-        
+
 		jsonString = '''
         {
                     "chart": {
@@ -177,7 +177,7 @@ elif candidateRead == "all" and datasource == "Twitter":
                         "divLineDashLen": "1",
                         "divLineGapLen": "1",
                         "xAxisName": "Day",
-                        "showValues": "0"               
+                        "showValues": "0"
                     },
                     "categories": [
                         {
@@ -201,8 +201,8 @@ elif candidateRead == "all" and datasource == "Twitter":
                 jsonString += ','
         jsonString += str(candidateList[len(candidateList)-1].createJson())
 
-        jsonString +=  '''      
-                    ], 
+        jsonString +=  '''
+                    ],
                     "trendlines": [
                         {
                             "line": [
@@ -217,7 +217,7 @@ elif candidateRead == "all" and datasource == "Twitter":
                     ]
                 }
 			'''
-        f = open('TwitterAll.json', 'w')
+        f = open('../FrontEnd/NGC-FrontEnd/public/TwitterAll.json', 'w')
         f.write(jsonString)
 
 if candidateRead == "all" and datasource == "Polls":
@@ -227,7 +227,7 @@ if candidateRead == "all" and datasource == "Polls":
         if len(str(startDay)) < 2:
                 startDate = "20160" + str(monthNumber) + "0" + str(startDay)
         if len(str(endDay)) < 2:
-                endDate = "20160" + str(monthNumber) + "0" + str(endDay) 
+                endDate = "20160" + str(monthNumber) + "0" + str(endDay)
         for day in days:
                 if len(str(day)) < 2:
                         pollDays.append("20160" + str(monthNumber) + "0" + str(day))
@@ -238,6 +238,3 @@ if candidateRead == "all" and datasource == "Polls":
                 pollData = dp.getCleanedPolls()
                 for poll in pollData:
                         print poll
-
-
-        

@@ -1,5 +1,5 @@
 // Declares the initial angular module "meanMapApp". Module grabs other controllers and services.
-var app = angular.module('ngcFullstack', ['addCtrl', 'queryCtrl', 'headerCtrl', 'geolocation', 'gservice', 'ngRoute'])
+var app = angular.module('ngcFullstack', ['addCtrl', 'queryCtrl', 'headerCtrl', 'gservice', 'ngRoute'])
 
     // Configures Angular routing -- showing the relevant view and controller when needed.
     .config(function($routeProvider){
@@ -36,22 +36,26 @@ var app = angular.module('ngcFullstack', ['addCtrl', 'queryCtrl', 'headerCtrl', 
             controller: 'kasichController',
             templateUrl: 'partials/kasich.html',
 
+          }).when('/analysis', {
+              controller: 'analysisController',
+              templateUrl: 'partials/analysis.html',
+
         // All else forward to the Join Team Control Panel
         }).otherwise({redirectTo:'/'})
     });
 
 app.controller('mainController', function($scope){
-	
+
 	var gdelt = new FusionCharts( "FusionCharts/msline.swf",
                                         "gdeltId", "1000", "600", "0", "0");
-			gdelt.setJSONUrl("gdelt.json");
+			gdelt.setJSONUrl("GDELTAll.json");
 			gdelt.render("gdeltChart");
-			
+
 	var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
                                         "candidateChartId", "1000", "600", "0", "0");
-			candidatesChart.setJSONUrl("sanders2.json");
+			candidatesChart.setJSONUrl("TwitterAll.json");
 			candidatesChart.render("candidatesChart");
-			
+
 	});
 app.controller('trumpController', function($scope){
 	$scope.message = 'Donald Trump Analysis'
@@ -67,7 +71,17 @@ app.controller('kasichController', function($scope){
 	});
 app.controller('sandersController', function($scope){
 	$scope.message = 'Bernie Sanders Analysis'
-	});	
+	});
 app.controller('clintonController', function($scope){
 	$scope.message = 'Hillary Clinton Analysis'
 	});
+app.controller('analysisController', function($scope){
+  $scope.message = 'Analyses and Correlations'
+
+  $scope.img=[
+      {id:'Twitter vs. GDELT',source:'../images/report.png'},
+      {id:'Trump Top 10',source:'../images/top_ten_webclinton.png'},
+      {id:'Clinton Top 10',source:'../images/top_ten_webtrump.png'},
+  ];
+
+  });

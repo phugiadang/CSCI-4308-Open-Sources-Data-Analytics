@@ -125,7 +125,7 @@ def candidateCountRangeDay(candidate, monthStart,dayStart,hourStart,monthEnd,day
     #return countSum
 
 #for row in candidateCount("sanders",3,6,4):
-    #print row.count;    
+    #print row.count;
 
 totalCount = 0
 #for row in candidateCountRange("sanders",3,6,4,3,8,8):
@@ -134,5 +134,5 @@ totalCount = 0
 #print candidateCountRange("sanders",3,6,4,3,8,8)
 print "The total count is " + str(totalCount)
 
-print candidateCountRangeDay("sanders",3,7,4,3,8,8)
-print len(candidateCountRangeDay("sanders",3,7,4,3,8,8))
+print candidateCountRangeDay("kasich",3,7,4,3,8,8)
+print len(candidateCountRangeDay("kasich",3,7,4,3,8,8))
