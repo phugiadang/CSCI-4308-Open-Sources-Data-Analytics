@@ -19,8 +19,8 @@ def candidateCount(candidate, month,day,hour):
     count = session.execute(queryString )
     print queryString
     return count
- 
- 
+
+
 def candidateCountRangeDay(candidate, monthStart,dayStart,hourStart,monthEnd,dayEnd,hourEnd,):
     countList = []
     if dayStart == dayEnd:
@@ -30,6 +30,7 @@ def candidateCountRangeDay(candidate, monthStart,dayStart,hourStart,monthEnd,day
         " and day = "+str(dayStart)+";")
         print queryString
         count = session.execute(queryString)
+
         for row in count:
             #countSum+= row.count;
             countList.append(row.count);
@@ -45,7 +46,74 @@ def candidateCountRangeDay(candidate, monthStart,dayStart,hourStart,monthEnd,day
             #countSum+= row.count;
             countList.append(row.count);
     return countList;
+ 
+def candidateCountRangeDayDict(candidate, start,end):
+    countList = []
+    countDict = {}
+    
+    yearStart =  "2"+"0"+start[2]+start[3]
+    #print year
+    monthStart = start[4]+start[5]
+    #print month
+    dayStart = start[6]+start[7]
+    #print day
+    hourStart = start[8]+start[9]
+    #print hour
+    
+    yearEnd =  "2"+"0"+end[2]+end[3]
+    #print year
+    monthEnd = end[4]+end[5]
+    #print month
+    dayEnd = end[6]+end[7]
+    #print day
+    hourEnd = end[8]+end[9]
+    #print hour
+    
+    #for i in range(int(hourStart),24):
+    #    if(i<10):
+    #        countDict[yearStart+monthStart+dayStart+"0"+str(i)] = 0 
+    #    else:
+    #        countDict[yearStart+monthStart+dayStart+str(i)] = 0 
+    
+    if dayStart == dayEnd:
+        
+        queryString = ("select hour, count from counts where candidate = '"
+        +str(candidate)+"' and year = 2016 and month = "+str(monthStart)+
+        " and day = "+str(dayStart)+";")
+        print queryString
+        count = session.execute(queryString)
+        hour = 0;
+        for row in count:
+            #countSum+= row.count;
+            countList.append(row.count);
+            if(row.hour<10):
+                countDict[yearStart+monthStart+dayStart+"0"+str(row.hour)]=row.count
+            else:
+                countDict[yearStart+monthStart+dayStart+str(row.hour)] = row.count
+    else:
+        print str(dayStart) + " to " +str(dayEnd)
+        
+        queryString = ("select day, hour, count from counts where candidate = '"
+        +str(candidate)+"' and year = 2016 and month = "+str(monthStart)+
+        " and day >= "+str(dayStart)+" and day <= "+str(dayEnd)+";")
+        print queryString
+        count = session.execute(queryString)
+        for row in count:
+            #countSum+= row.count;
+            countList.append(row.count);
+            strHour = str(row.hour)
+            strDay = str(row.day)
+            if(row.hour<10):
+                strHour = "0"+str(row.hour)
+            if(row.day<10):
+                strDay = "0"+str(row.day)
+            
+            countDict[yearStart+monthStart+strDay+strHour]=row.count
+    return countDict;
+
   
+  
+
   
 def candidateCountRangeDayFull(candidate, monthStart,dayStart,hourStart,monthEnd,dayEnd,hourEnd,):
     countList = []
@@ -89,6 +157,47 @@ def candidateCountRangeDayFull(candidate, monthStart,dayStart,hourStart,monthEnd
     i = 0
     return countList;
 
+def candidateCountRangeDayFull(candidate, monthStart,dayStart,hourStart,monthEnd,dayEnd,hourEnd,):
+    countList = []
+    if dayStart == dayEnd:
+        
+        queryString = ("select count from counts where candidate = '"
+        +str(candidate)+"' and year = 2016 and month = "+str(monthStart)+
+        " and day = "+str(dayStart)+";")
+        print queryString
+        count = session.execute(queryString)
+        daySum = 0
+        for row in count:
+            if(row.count != None):
+                daySum += row.count;
+                countList.append(daySum);
+            #countSum+= row.count;
+        
+    else:
+        
+        #need to have a case for counting days up individually 
+        print str(dayStart) + " to " +str(dayEnd)
+        for day in range(dayStart,dayEnd+1):
+            queryString = ("select count from counts where candidate = '"
+            +str(candidate)+"' and year = 2016 and month = "+str(monthStart)+
+            " and day = "+str(day)+";")
+            print queryString
+            count = session.execute(queryString)
+            dayCounter =0
+            daySum = 0
+            for row in count:
+                if(row.count != None):
+                    daySum += row.count;
+                    countList.append(daySum);
+                #countSum+= row.count;
+            print daySum
+            print dayCounter
+            
+            countList.append(daySum);
+            
+    countListFullDay = []
+    i = 0
+    return countList;
 
 
 #def candidateCountRange(candidate, monthStart,dayStart,hourStart,monthEnd,dayEnd,hourEnd,):
@@ -165,8 +274,15 @@ def candidateCountRangeDayFull(candidate, monthStart,dayStart,hourStart,monthEnd
 
 #for row in candidateCount("sanders",3,6,4):
     #print row.count;
-       
+    
+    
+# format YYYYMMDDHH
 totalCount = 0
-printStatement = candidateCountRangeDay("sanders",3,7,4,3,8,8)
-print printStatement
-print len(printStatement)
+#printStatement = candidateCountRangeDay("sanders",3,5,4,3,8,4)
+#print printStatement
+#print len(printStatement)
+
+
+#Testing the dictionary
+#print candidateCountRangeDayDict("sanders","2016030500","2016030800")
+#print len(candidateCountRangeDayDict("sanders","2016030500","2016030800"))
