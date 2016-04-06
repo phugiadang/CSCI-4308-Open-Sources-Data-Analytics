@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title> Candidates Analysis</title></title>
-    <meta name="description" content="TEAM OSAM Senior Project sponsored by Northrop Grumman">
+    <meta name="description" content="An example demonstrating Google Map integration with MEAN Apps">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
@@ -25,7 +25,7 @@
 
     <!-- Angular Files -->
     <script src="js/app.js"></script>
-
+    <script src="js/gservice.js"></script>
     <script src="js/addCtrl.js"></script>
     <script src="js/queryCtrl.js"></script>
     <script src="js/headerCtrl.js"></script>
@@ -42,31 +42,50 @@
 
 <div class="container">
     <!-- Header Menu. Note use of headerCtrl -->
-    <div class="header" ng-controller="headerCtrl">
+
+    <nav class="navbar navbar-default" role="navigation" ng-controller="headerCtrl">
 
         <!-- Header items are made active upon selection -->
         <ul class="nav nav-pills pull-right">
-             <li ><a href="#trump" style='color:red;'>Trump</a></li>
-			 <li><a href="#cruz" style='color:red;'>Cruz</a></li>
-			 <li><a href="#rubio" style='color:red;'>Rubio</a></li>
-			 <li><a href="#kasich" style='color:red;'>Kasich</a></li>
-			 <li><a href="#clinton">Clinton</a></li>
-			 <li><a href="#sanders">Sanders</a></li>
-			<li><a href="#analysis">Analysis</a></li>
+
+        <li><dropdown ng-controller="navCtrl">
+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:red;">
+              <option value="home">Republicans:</option>
+              <option value="trump">Trump</option>
+              <option value="cruz">Cruz</option>
+              <option value="kasich">Kasich</option>
+              <option value="rubio"> Rubio </option>
+          </select>
+        </dropdown></li>
+
+        <li><dropdown ng-controller="navCtrl">
+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:blue;">
+              <option value="home">Democrats:</option>
+              <option value="clinton">Clinton</option>
+              <option value="sanders">Sanders</option>
+          </select>
+        </dropdown></li>
+
+			<li><a href="#/analysis">Analysis</a></li>
         </ul>
 
         <!-- Header Title -->
         <h3 class="text-muted">Candidates Analysis</h3>
     </div>
-	<div id="main">
+  </nav>
+  <div id="about-us" style="text-align:center;">PUT MISSION STATEMENT HERE! PROJECT EXPLANATION.</div>
+  <div id="main">
 		{{message}}
-		<div ng-view></div>
+		<div ng-view=""></div>
 
 	</div>
     <!-- Map and Side Panel -->
     <div class="row content">
-    
-    <hr/>
+
+        <!-- Full Sized Fusion Chart -->
+
+    </div>
+
 
     <!-- Footer -->
     <div class="footer">
@@ -77,5 +96,23 @@
 
 </div>
 
+</body>
+<body>
+  <div ng-controller="CarouselDemoCtrl">
+  <div style="height: 305px">
+    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <uib-slide ng-repeat="x in img track by slide.id" index="slide.id">
+        <img ng-src="{{x.source}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{x.source}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </uib-slide>
+    </uib-carousel>
+  </div>
+
+
+  </div>
+</div>
 </body>
 </html>

@@ -7,49 +7,52 @@ var app = angular.module('ngcFullstack', ['addCtrl', 'queryCtrl', 'headerCtrl', 
         // Join Team Control Panel
         $routeProvider
         //route for home page
+        .when('/', {
+            templateUrl: "home.html",
+            controller: 'HomeController'
+        })
         .when('/trump', {
             controller: 'trumpController',
-            templateUrl: 'partials/trump.html',
+            templateUrl: 'partials/trump.html'
 
         // Find Teammates Control Panel
         }).when('/cruz', {
             controller: 'cruzController',
-            templateUrl: 'partials/cruz.html',
+            templateUrl: 'partials/cruz.html'
 
         // All else forward to the Join Team Control Panel
         }).when('/rubio', {
             controller: 'rubioController',
-            templateUrl: 'partials/rubio.html',
+            templateUrl: 'partials/rubio.html'
 
         // All else forward to the Join Team Control Panel
         }).when('/clinton', {
             controller: 'clintonController',
-            templateUrl: 'partials/clinton.html',
+            templateUrl: 'partials/clinton.html'
 
         // All else forward to the Join Team Control Panel
         }).when('/sanders', {
             controller: 'sandersController',
-            templateUrl: 'partials/sanders.html',
+            templateUrl: 'partials/sanders.html'
 
         // All else forward to the Join Team Control Panel
         }).when('/kasich', {
             controller: 'kasichController',
-            templateUrl: 'partials/kasich.html',
+            templateUrl: 'partials/kasich.html'
 
         }).when('/analysis', {
-            controller: 'analysisController',
-            templateUrl: 'partials/analysis.html',
+              controller: 'analysisController',
+              templateUrl: 'partials/analysis.html'
 
         // All else forward to the Join Team Control Panel
-      }).when('/', {
-          controller: 'analysisController',
-          templateUrl: 'partials/home.html',
-        })
+      }).otherwise({redirectTo: '/'});
     });
-
-app.controller('mainController', function($scope){
-
-	var gdelt = new FusionCharts( "FusionCharts/msline.swf",
+//
+// Controller Section
+//
+//Controller for Home Page
+app.controller('HomeController', function($scope, $location){
+  var gdelt = new FusionCharts( "FusionCharts/msline.swf",
                                         "gdeltId", "1000", "600", "0", "0");
 			gdelt.setJSONUrl("GDELTAll.json");
 			gdelt.render("gdeltChart");
@@ -58,27 +61,39 @@ app.controller('mainController', function($scope){
                                         "candidateChartId", "1000", "600", "0", "0");
 			candidatesChart.setJSONUrl("TwitterAll.json");
 			candidatesChart.render("candidatesChart");
+});
 
+app.controller('mainController', function($scope, $location){
+  var gdelt = new FusionCharts( "FusionCharts/msline.swf",
+                                        "gdeltId", "1000", "600", "0", "0");
+			gdelt.setJSONUrl("GDELTAll.json");
+			gdelt.render("gdeltChart");
+
+	var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
+                                        "candidateChartId", "1000", "600", "0", "0");
+			candidatesChart.setJSONUrl("TwitterAll.json");
+			candidatesChart.render("candidatesChart");
 	});
-app.controller('trumpController', function($scope){
+
+app.controller('trumpController', function($scope, $location){
 	$scope.message = 'Donald Trump Analysis'
 	});
-app.controller('cruzController', function($scope){
+app.controller('cruzController', function($scope, $location){
 	$scope.message = 'Ted Cruz Analysis'
 	});
-app.controller('rubioController', function($scope){
+app.controller('rubioController', function($scope, $location){
 	$scope.message = 'Marco Rubio Analysis'
 	});
-app.controller('kasichController', function($scope){
+app.controller('kasichController', function($scope, $location){
 	$scope.message = 'John Kasich Analysis'
 	});
-app.controller('sandersController', function($scope){
+app.controller('sandersController', function($scope, $location){
 	$scope.message = 'Bernie Sanders Analysis'
 	});
-app.controller('clintonController', function($scope){
+app.controller('clintonController', function($scope, $location){
 	$scope.message = 'Hillary Clinton Analysis'
 	});
-app.controller('analysisController', function($scope){
+app.controller('analysisController', function($scope, $location){
   $scope.message = 'Analyses and Correlations'
 
   $scope.img=[
@@ -88,3 +103,19 @@ app.controller('analysisController', function($scope){
   ];
 
   });
+
+app.controller('navCtrl', function ($location, $scope) {
+  $scope.currentPage = "home";
+
+  $scope.go = function (page) {
+    $location.path('/' + page);
+  };
+});
+app.controller('nav2Ctrl', function ($location, $scope) {
+  $scope.currentPage = "home";
+
+  $scope.go = function (page) {
+    $location.path('/' + page);
+  };
+});
+//image slider code
