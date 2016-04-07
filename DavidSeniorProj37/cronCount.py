@@ -44,18 +44,18 @@ for candidate in candidates:
         dayOfMonth = str(day)
         dayPlusOne = str(day+1)
     if hour == 9:
-        date = "select count(*) from "+candidate+" where created_at > 2016"+month+dayOfMonth+"0"+str(hour)+"0000 and created_at < 2016"+ month + dayOfMonth+str(hour+1)+"0000 ALLOW FILTERING;"
+        date = "select count(*) from new"+candidate+" where created_at > 2016"+month+dayOfMonth+"0"+str(hour)+"0000 and created_at < 2016"+ month + dayOfMonth+str(hour+1)+"0000 ALLOW FILTERING;"
         print date
     else:
 	    if hour < 9:
-	        date = "select count(*) from "+candidate+" where created_at > 2016"+month+dayOfMonth+"0"+str(hour)+"0000 and created_at < 2016"+ month + dayOfMonth + "0"+str(hour+1)+"0000 ALLOW FILTERING;"
+	        date = "select count(*) from new"+candidate+" where created_at > 2016"+month+dayOfMonth+"0"+str(hour)+"0000 and created_at < 2016"+ month + dayOfMonth + "0"+str(hour+1)+"0000 ALLOW FILTERING;"
 	        print date
 	    else: 
 	        if hour <23:
-	            date = "select count(*) from "+candidate+" where created_at > 2016"+month+dayOfMonth+str(hour)+"0000 and created_at < 2016"+ month + dayOfMonth+str(hour+1)+"0000 ALLOW FILTERING;"
+	            date = "select count(*) from new"+candidate+" where created_at > 2016"+month+dayOfMonth+str(hour)+"0000 and created_at < 2016"+ month + dayOfMonth+str(hour+1)+"0000 ALLOW FILTERING;"
 	            print date
 	        if hour==23:
-	            date = "select count(*) from "+candidate+" where created_at > 2016"+month+dayOfMonth+str(hour)+"0000 and created_at < 2016"+ month + dayOfMonth+str(hour)+"5900 ALLOW FILTERING;"
+	            date = "select count(*) from new"+candidate+" where created_at > 2016"+month+dayOfMonth+str(hour)+"0000 and created_at < 2016"+ month + dayOfMonth+str(hour)+"5900 ALLOW FILTERING;"
 	            print date
 
     rows = session.execute(date)
