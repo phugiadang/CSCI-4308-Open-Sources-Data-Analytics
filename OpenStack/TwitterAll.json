@@ -1,0 +1,59 @@
+
+	{
+		    "chart": {
+			"caption": "Candidate Twitter  Counts",
+			"subCaption": "",
+			"captionFontSize": "14",
+			"subcaptionFontSize": "14",
+			"subcaptionFontBold": "0",
+			"paletteColors": "#0075c2,#1aaf5d",
+			"bgcolor": "#ffffff",
+			"showBorder": "0",
+			"showShadow": "0",
+			"showCanvasBorder": "0",
+			"usePlotGradientColor": "0",
+			"legendBorderAlpha": "0",
+			"legendShadow": "0",
+			"showAxisLines": "0",
+			"showAlternateHGridColor": "0",
+			"divlineThickness": "1",
+			"divLineIsDashed": "1",
+			"divLineDashLen": "1",
+			"divLineGapLen": "1",
+			"xAxisName": "Day",
+			"showValues": "0"               
+		    },
+		    "categories": [
+			{
+			    "category": [{ "label": "April, 1 0:00" },{ "label": "April, 1 1:00" },{ "label": "April, 1 2:00" },{ "label": "April, 1 3:00" },{ "label": "April, 1 4:00" },{ "label": "April, 1 5:00" },{ "label": "April, 1 6:00" },{ "label": "April, 1 7:00" },{ "label": "April, 1 8:00" },{ "label": "April, 1 9:00" },{ "label": "April, 1 10:00" },{ "label": "April, 1 11:00" },{ "label": "April, 1 12:00" },{ "label": "April, 1 13:00" },{ "label": "April, 1 14:00" },{ "label": "April, 1 15:00" },{ "label": "April, 1 16:00" },{ "label": "April, 1 17:00" },{ "label": "April, 1 18:00" },{ "label": "April, 1 19:00" },{ "label": "April, 1 20:00" },{ "label": "April, 1 21:00" },{ "label": "April, 1 22:00" },{ "label": "April, 1 23:00" },{ "label": "April, 2 0:00" },{ "label": "April, 2 1:00" },{ "label": "April, 2 2:00" },{ "label": "April, 2 3:00" },{ "label": "April, 2 4:00" },{ "label": "April, 2 5:00" },{ "label": "April, 2 6:00" },{ "label": "April, 2 7:00" },{ "label": "April, 2 8:00" },{ "label": "April, 2 9:00" },{ "label": "April, 2 10:00" },{ "label": "April, 2 11:00" },{ "label": "April, 2 12:00" },{ "label": "April, 2 13:00" },{ "label": "April, 2 14:00" },{ "label": "April, 2 15:00" },{ "label": "April, 2 16:00" },{ "label": "April, 2 17:00" },{ "label": "April, 2 18:00" },{ "label": "April, 2 19:00" },{ "label": "April, 2 20:00" },{ "label": "April, 2 21:00" },{ "label": "April, 2 22:00" },{ "label": "April, 2 23:00" },{ "label": "April, 3 0:00" },{ "label": "April, 3 1:00" },{ "label": "April, 3 2:00" },{ "label": "April, 3 3:00" },{ "label": "April, 3 4:00" },{ "label": "April, 3 5:00" },{ "label": "April, 3 6:00" },{ "label": "April, 3 7:00" },{ "label": "April, 3 8:00" },{ "label": "April, 3 9:00" },{ "label": "April, 3 10:00" },{ "label": "April, 3 11:00" },{ "label": "April, 3 12:00" },{ "label": "April, 3 13:00" },{ "label": "April, 3 14:00" },{ "label": "April, 3 15:00" },{ "label": "April, 3 16:00" },{ "label": "April, 3 17:00" },{ "label": "April, 3 18:00" },{ "label": "April, 3 19:00" },{ "label": "April, 3 20:00" },{ "label": "April, 3 21:00" },{ "label": "April, 3 22:00" },{ "label": "April, 3 23:00" }
+			    ]
+			}
+		    ],
+		    "dataset": [{
+                    "seriesname": "Trump Twitter Counts",
+                    "data": [ { "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" }]},{
+                    "seriesname": "Clinton Twitter Counts",
+                    "data": [ { "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" }]},{
+                    "seriesname": "Sanders Twitter Counts",
+                    "data": [ { "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" }]},{
+                    "seriesname": "Cruz Twitter Counts",
+                    "data": [ { "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" }]},{
+                    "seriesname": "Rubio Twitter Counts",
+                    "data": [ { "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" }]},{
+                    "seriesname": "Kasich Twitter Counts",
+                    "data": [ { "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" },{ "value": "0" }]}	
+		    ], 
+		    "trendlines": [
+			{
+			    "line": [
+				{
+				    "startvalue": "17022",
+				    "color": "#6baa01",
+				    "valueOnRight": "1",
+				    "displayvalue": "Average"
+				}
+			    ]
+			}
+		    ]
+		}
+	

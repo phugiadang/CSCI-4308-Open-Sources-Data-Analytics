@@ -1,6 +1,6 @@
 <!doctype html>
-<!-- Declares NCG-Fullstack as the starting Angular module -->
-<html class="no-js" ng-app="ngcFullstack">
+<!-- Declares meanMapApp as the starting Angular module -->
+<html class="no-js" ng-app="meanMapApp">
 <head>
     <meta charset="utf-8">
     <title> Candidates Analysis</title></title>
@@ -29,97 +29,113 @@
     <script src="js/addCtrl.js"></script>
     <script src="js/queryCtrl.js"></script>
     <script src="js/headerCtrl.js"></script>
-
+    
     <!-- FusionCharts Files -->
     <script type="text/javascript" src="../fusioncharts/js/fusioncharts.js"></script>
 	<script type="text/javascript" src="../angular-fusioncharts.min.js"></script>
 </head>
 
-<body ng-controller="mainController">
+<body>
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <div class="container">
     <!-- Header Menu. Note use of headerCtrl -->
-
-    <nav class="navbar navbar-default" role="navigation" ng-controller="headerCtrl">
+    <div class="header" ng-controller="headerCtrl">
 
         <!-- Header items are made active upon selection -->
         <ul class="nav nav-pills pull-right">
-          <h3 class="text-muted" style="text-align:center;">Dropdown Menus</h3>
-        <li><dropdown ng-controller="navCtrl">
-          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:red;">
-              <option value="home">Republicans:</option>
-              <option value="trump">Trump</option>
-              <option value="cruz">Cruz</option>
-              <option value="kasich">Kasich</option>
-              <option value="rubio"> Rubio </option>
-          </select>
-        </dropdown></li>
-
-        <li><dropdown ng-controller="navCtrl">
-          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:blue;">
-              <option value="home">Democrats:</option>
-              <option value="clinton">Clinton</option>
-              <option value="sanders">Sanders</option>
-          </select>
-        </dropdown></li>
-
-        <li><dropdown ng-controller="navCtrl">
-          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)">
-              <option value="home">Analysis:</option>
-              <option value="analysis">Linear Regression</option>
-              <option value="analysis">Top 10 Web</option>
-          </select>
-        </dropdown></li>
-			<!-- <li><a href="#/analysis">Analysis</a></li> -->
+             <li ng-class="{ active: isActive('/trump')}"><a href="/#/trump" style="color:red;">Trump</a></li>
+			 <li ng-class="{ active: isActive('/cruz')}"><a href="/#/cruz" style="color:red;">Cruz</a></li>
+			 <li ng-class="{ active: isActive('/rubio')}"><a href="/#/rubio" style="color:red;">Rubio</a></li>
+			 <li ng-class="{ active: isActive('/clinton')}"><a href="/#/clinton">Clinton</a></li>
+			 <li ng-class="{ active: isActive('/sanders')}"><a href="/#/sanders">Sanders</a></li>
+			<li ng-class="{ active: isActive('/kasich')}"><a href="/#/kasich">Kasich</a></li>
         </ul>
 
         <!-- Header Title -->
         <h3 class="text-muted">Candidates Analysis</h3>
     </div>
-  </nav>
 
-  <div id="main">
-		{{message}}
-		<div ng-view=""></div>
-
-	</div>
     <!-- Map and Side Panel -->
     <div class="row content">
 
-        <!-- Full Sized Fusion Chart -->
+        <!-- Google Map -->
+        <div class = "col-md-12">
+			<body>
+				<div id="candidatesChart">FusionCharts XT will load here!</div>
+			</body>
+		
+			<script type="text/javascript">
+
+			var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
+                                        "candidateChartId", "1200", "600", "0", "0");
+			candidatesChart.setJSONUrl("sanders2.json");
+			candidatesChart.render("candidatesChart");
+
+			</script>
+		</div>
+        
+        <div class = "col-md-12">
+			<body>
+				<div id="gdeltChart">FusionCharts XT will load here!</div>
+			</body>
+		
+			<script type="text/javascript">
+
+			var gdelt = new FusionCharts( "FusionCharts/msline.swf",
+                                        "gdeltId", "1200", "600", "0", "0");
+			gdelt.setJSONUrl("gdelt.json");
+			gdelt.render("gdeltChart");
+
+			</script>
+		</div>
+        <div class="col-md-6">
+            <body>
+				<div id="chartContainer">FusionCharts XT will load here!</div>
+			</body>
+		
+			<script type="text/javascript">
+
+			var myChart = new FusionCharts( "FusionCharts/line.swf",
+                                        "myChartId", "500", "500", "0", "0");
+			myChart.setJSONUrl("sandersJson.json");
+			myChart.render("chartContainer");
+
+			</script>
+		
+        </div>
+		
+		<div class = "col-md-6">
+			<body>
+				<div id="kasichChart">FusionCharts XT will load here!</div>
+			</body>
+		
+			<script type="text/javascript">
+
+			var kasichChart = new FusionCharts( "FusionCharts/line.swf",
+                                        "kasichChartId", "500", "500", "0", "0");
+			kasichChart.setJSONUrl("kasichdata.json");
+			kasichChart.render("kasichChart");
+
+			</script>
+		</div>
+		
+        <!-- Side Panel (Controlled by ng-view) -->
+        
 
     </div>
-
+    <hr/>
 
     <!-- Footer -->
     <div class="footer">
-        <p class="text-center"><span class="glyphicon glyphicon-check"></span> Team OSAM - CU Boulder
-            <a href="https://github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics">GitHub Repository</a>
+        <p class="text-center"><span class="glyphicon glyphicon-check"></span> Northrop Grumman Senio Project Group - CU Boulder
+            <a href="https://github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics">GitHub Repository</a> 
         </p>
     </div>
 
 </div>
 
-</body>
-<body>
-  <div ng-controller="CarouselDemoCtrl">
-  <div style="height: 305px">
-    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-      <uib-slide ng-repeat="x in img track by slide.id" index="slide.id">
-        <img ng-src="{{x.source}}" style="margin:auto;">
-        <div class="carousel-caption">
-          <h4>Slide {{x.source}}</h4>
-          <p>{{slide.text}}</p>
-        </div>
-      </uib-slide>
-    </uib-carousel>
-  </div>
-
-
-  </div>
-</div>
 </body>
 </html>

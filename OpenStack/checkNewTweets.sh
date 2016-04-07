@@ -1,22 +1,22 @@
 #!/bin/bash
 
-old_trump=$(cat /home/centos/oldTrumpCount.txt)
-old_carson=$(cat /home/centos/oldCarsonCount.txt)
-old_sanders=$(cat /home/centos/oldSandersCount.txt)
-old_clinton=$(cat /home/centos/oldClintonCount.txt)
-old_cruz=$(cat /home/centos/oldCruzCount.txt)
-old_kasich=$(cat /home/centos/oldKasichCount.txt)
-old_rubio=$(cat /home/centos/oldRubioCount.txt)
-old_bush=$(cat /home/centos/oldBushCount.txt)
+old_trump=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldTrumpCount.txt)
+old_carson=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldCarsonCount.txt)
+old_sanders=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldSandersCount.txt)
+old_clinton=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldClintonCount.txt)
+old_cruz=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldCruzCount.txt)
+old_kasich=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldKasichCount.txt)
+old_rubio=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldRubioCount.txt)
+old_bush=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldBushCount.txt)
 
-trump=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/trumpTweetCount.txt)
-carson=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/carsonTweetCount.txt)
-sanders=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/sandersTweetCount.txt)
-clinton=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/clintonTweetCount.txt)
-cruz=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/cruzTweetCount.txt)
-kasich=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/kasichTweetCount.txt)
-rubio=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/rubioTweetCount.txt)
-bush=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/bushTweetCount.txt)
+trump=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/trumpTweetCount.txt)
+carson=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/carsonTweetCount.txt)
+sanders=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/sandersTweetCount.txt)
+clinton=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/clintonTweetCount.txt)
+cruz=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/cruzTweetCount.txt)
+kasich=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/kasichTweetCount.txt)
+rubio=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/rubioTweetCount.txt)
+bush=$(cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/bushTweetCount.txt)
 
 bad=0
 cand=''
@@ -62,22 +62,24 @@ then
     cand="rubio"
 
 else
+
+
 #Update the old values
-cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/trumpTweetCount.txt > /home/centos/oldTrumpCount.txt
+cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/trumpTweetCount.txt > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldTrumpCount.txt
 
-cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/carsonTweetCount.txt > /home/centos/oldCarsonCount.txt
+cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/carsonTweetCount.txt > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldCarsonCount.txt
 
-cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/cruzTweetCount.txt > /home/centos/oldCruzCount.txt
+cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/cruzTweetCount.txt > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldCruzCount.txt
 
-cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/clintonTweetCount.txt > /home/centos/oldClintonCount.txt
+cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/clintonTweetCount.txt > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldClintonCount.txt
 
-cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/sandersTweetCount.txt > /home/centos/oldSandersCount.txt
+cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/sandersTweetCount.txt > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldSandersCount.txt
 
-cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/rubioTweetCount.txt > /home/centos/oldRubioCount.txt
+cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/rubioTweetCount.txt > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldRubioCount.txt
 
-cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/bushTweetCount.txt > /home/centos/oldBushCount.txt
+cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/bushTweetCount.txt > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldBushCount.txt
 
-cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/kasichTweetCount.txt > /home/centos/oldKasichCount.txt
+cat /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/kasichTweetCount.txt > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/candidateCounts/oldKasichCount.txt
  
 fi #End ugly if 
 

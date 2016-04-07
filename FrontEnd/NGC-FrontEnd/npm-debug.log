@@ -1,33 +1,33 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
-2 info using npm@3.7.3
-3 info using node@v5.9.0
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle MeanMapsApp@1.0.0~prestart: MeanMapsApp@1.0.0
 6 silly lifecycle MeanMapsApp@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle MeanMapsApp@1.0.0~start: MeanMapsApp@1.0.0
 8 verbose lifecycle MeanMapsApp@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle MeanMapsApp@1.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/dano8957/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-10 verbose lifecycle MeanMapsApp@1.0.0~start: CWD: /home/dano8957/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd
+9 verbose lifecycle MeanMapsApp@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd/node_modules/.bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85-2.6.1.2.el7_1.x86_64/jre/bin:/usr/lib/scala-2.10.6/bin:/home/centos/.local/bin:/home/centos/bin:/home/centos/spark-0.7.2/bin
+10 verbose lifecycle MeanMapsApp@1.0.0~start: CWD: /home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd
 11 silly lifecycle MeanMapsApp@1.0.0~start: Args: [ '-c', 'node server.js' ]
 12 silly lifecycle MeanMapsApp@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle MeanMapsApp@1.0.0~start: Failed to exec start script
 14 verbose stack Error: MeanMapsApp@1.0.0 start: `node server.js`
 14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
 14 verbose stack     at emitTwo (events.js:100:13)
 14 verbose stack     at EventEmitter.emit (events.js:185:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
 14 verbose stack     at emitTwo (events.js:100:13)
 14 verbose stack     at ChildProcess.emit (events.js:185:7)
-14 verbose stack     at maybeClose (internal/child_process.js:850:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+14 verbose stack     at maybeClose (internal/child_process.js:827:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid MeanMapsApp@1.0.0
-16 verbose cwd /home/dano8957/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd
-17 error Linux 3.19.0-51-generic
-18 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
-19 error node v5.9.0
-20 error npm  v3.7.3
+16 verbose cwd /home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd
+17 error Linux 4.5.0-1.el7.elrepo.x86_64
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+19 error node v5.6.0
+20 error npm  v3.6.0
 21 error code ELIFECYCLE
 22 error MeanMapsApp@1.0.0 start: `node server.js`
 22 error Exit status 1

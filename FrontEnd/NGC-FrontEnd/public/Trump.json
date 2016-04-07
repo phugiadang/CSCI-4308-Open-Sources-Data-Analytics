@@ -1,0 +1,94 @@
+
+{
+    "chart": {
+        "caption": "Trump Counts",
+        "xaxisname": "Days",
+        "showvalues": "0",
+        "divlinealpha": "100",
+        "vdivlinealpha": "0",
+        "showborder": "0",
+        "bgcolor": "FFFFFF",
+        "showalternatehgridcolor": "0",
+        "labeldisplay": "WRAP",
+        "divlinecolor": "CCCCCC",
+        "showcanvasborder": "0",
+        "showshadow": "0",
+        "linethickness": "3",
+        "legendshadow": "0",
+        "legendborderalpha": "50"
+    },
+    "categories": [
+        {
+	    "category": [{ "label": "March, 6" },{ "label": "March, 7" },{ "label": "March, 8" },{ "label": "March, 9" },{ "label": "March, 10" },{ "label": "March, 11" }
+			    ]
+        }
+    ],
+    "axis": [
+        {
+            "title": "Twitter",
+            "titlepos": "left",
+            "tickwidth": "10",
+            "divlineisdashed": "1",
+            "color": "008ee4",
+            "dataset": [
+                {
+                    "seriesname": "Tweets",
+                    "data": [
+                        {
+                            "value": "6"
+                        },
+                        {
+                            "value": "13"
+                        },
+                        {
+                            "value": "20"
+                        },
+                        {
+                            "value": "27"
+                        },
+                        {
+                            "value": "28"
+                        },
+                        {
+                            "value": "33"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Polls",
+            "titlepos": "right",
+            "numdivlines": "14",
+            "tickwidth": "10",
+	    "axisonleft": "0",
+            "sdivlineisdashed": "1",
+            "color": "f8bd19",
+            "divlinealpha": "30",
+            "dataset": [
+                {
+                    "seriesname": "Poll Percentage",
+                    "data": [{ "value": "40" },{ "value": "41" },{ "value": "37" },{ "value": "25" },{ "value": "38" },{ "value": "44" }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "GDELT",
+            "titlepos": "left",
+            "axisonleft": "1",
+            "numdivlines": "10",
+            "tickwidth": "10",
+            "divlineisdashed": "1",
+            "color": "6baa01",
+            "dataset": [
+                {
+                    "seriesname": "Article Counts",
+                    "data": [{ "value": "94" },{ "value": "78" },{ "value": "106" },{ "value": "314" },{ "value": "86" },{ "value": "186" }
+                    ]
+                }
+            ]
+        }
+    ]
+}	
+	
