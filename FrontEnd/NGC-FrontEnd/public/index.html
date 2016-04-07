@@ -47,7 +47,7 @@
 
         <!-- Header items are made active upon selection -->
         <ul class="nav nav-pills pull-right">
-
+          <h3 class="text-muted" style="text-align:center;">Dropdown Menus</h3>
         <li><dropdown ng-controller="navCtrl">
           <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:red;">
               <option value="home">Republicans:</option>
@@ -66,14 +66,21 @@
           </select>
         </dropdown></li>
 
-			<li><a href="#/analysis">Analysis</a></li>
+        <li><dropdown ng-controller="navCtrl">
+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)">
+              <option value="home">Analysis:</option>
+              <option value="analysis">Linear Regression</option>
+              <option value="analysis">Top 10 Web</option>
+          </select>
+        </dropdown></li>
+			<!-- <li><a href="#/analysis">Analysis</a></li> -->
         </ul>
 
         <!-- Header Title -->
         <h3 class="text-muted">Candidates Analysis</h3>
     </div>
   </nav>
-  <div id="about-us" style="text-align:center;">PUT MISSION STATEMENT HERE! PROJECT EXPLANATION.</div>
+
   <div id="main">
 		{{message}}
 		<div ng-view=""></div>

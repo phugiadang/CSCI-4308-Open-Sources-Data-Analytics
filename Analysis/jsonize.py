@@ -36,10 +36,10 @@ def getTwitterObjects():
         for candidate_name in candidate_names:
             this_candidate_counts = queryCounts.candidateCountRangeDay(candidate_name, month_start_number, days[0], current_hour, month_end_number, days[len(days)-1], current_hour)
                 #append 0's if missing data MAY BE ONE TOO MANY
-                for i in range(len(this_candidate_counts),len(days)*24):
-                        this_candidate_counts.append(0)
-                candidate = AnalysisObject(candidate_name, datasource, dates, this_candidate_counts)
-                candidate_list.append(candidate)
+            for i in range(len(this_candidate_counts),len(days)*24):
+                    this_candidate_counts.append(0)
+            candidate = AnalysisObject(candidate_name, datasource, dates, this_candidate_counts)
+            candidate_list.append(candidate)
         return candidate_list
 
 
@@ -319,73 +319,72 @@ elif candidate_read == "all" and datasource == "Twitter":
 
 elif candidate_read == "all" and datasource == "Polls":
     candidate_list = []
-        for candidate_name in candidate_names:
-                candidate_list.append(getPollObjectCandidate(candidate_name))
+    for candidate_name in candidate_names:
+            candidate_list.append(getPollObjectCandidate(candidate_name))
+            json_string = '''
+            {
+                "chart": {
+                    "caption": "'''
+            json_string += chart_caption
+            json_string +=          '''",
+                            "subCaption": "'''
+            json_string += chart_sub_caption
+            json_string +=          '''",
+                            "captionFontSize": "14",
+                            "subcaptionFontSize": "14",
+                            "subcaptionFontBold": "0",
+                            "paletteColors": "#0075c2,#1aaf5d",
+                            "bgcolor": "#ffffff",
+                            "showBorder": "0",
+                            "showShadow": "0",
+                            "showCanvasBorder": "0",
+                            "usePlotGradientColor": "0",
+                            "legendBorderAlpha": "0",
+                            "legendShadow": "0",
+                            "showAxisLines": "0",
+                            "showAlternateHGridColor": "0",
+                            "divlineThickness": "1",
+                            "divLineIsDashed": "1",
+                            "divLineDashLen": "1",
+                            "divLineGapLen": "1",
+                            "xAxisName": "Day",
+                            "showValues": "0"
+                        },
+                        "categories": [
+                            {
+                                "category": ['''
+            for i in range(0,len(dates)-1):
+                json_string += '{ "label": "' + dates[i] + '" },'
+            json_string += '{ "label": "' + dates[len(dates)-1] + '" }'
+            json_string += '''
+                                ]
+                            }
+                        ],
+                        "dataset": ['''
+            for i in range (0, len(candidate_list)-1):
+                    json_string += str(candidate_list[i].createJson())
+                    json_string += ','
+            json_string += str(candidate_list[len(candidate_list)-1].createJson())
 
-        json_string = '''
-        {
-                    "chart": {
-                        "caption": "'''
-        json_string += chart_caption
-        json_string +=          '''",
-                        "subCaption": "'''
-        json_string += chart_sub_caption
-        json_string +=          '''",
-                        "captionFontSize": "14",
-                        "subcaptionFontSize": "14",
-                        "subcaptionFontBold": "0",
-                        "paletteColors": "#0075c2,#1aaf5d",
-                        "bgcolor": "#ffffff",
-                        "showBorder": "0",
-                        "showShadow": "0",
-                        "showCanvasBorder": "0",
-                        "usePlotGradientColor": "0",
-                        "legendBorderAlpha": "0",
-                        "legendShadow": "0",
-                        "showAxisLines": "0",
-                        "showAlternateHGridColor": "0",
-                        "divlineThickness": "1",
-                        "divLineIsDashed": "1",
-                        "divLineDashLen": "1",
-                        "divLineGapLen": "1",
-                        "xAxisName": "Day",
-                        "showValues": "0"
-                    },
-                    "categories": [
-                        {
-                            "category": ['''
-        for i in range(0,len(dates)-1):
-            json_string += '{ "label": "' + dates[i] + '" },'
-        json_string += '{ "label": "' + dates[len(dates)-1] + '" }'
-        json_string += '''
-                            ]
-                        }
-                    ],
-                    "dataset": ['''
-        for i in range (0, len(candidate_list)-1):
-                json_string += str(candidate_list[i].createJson())
-                json_string += ','
-        json_string += str(candidate_list[len(candidate_list)-1].createJson())
+            json_string +=  '''
+                        ],
+                        "trendlines": [
+                            {
+                                "line": [
+                                    {
+                                        "startvalue": "17022",
+                                        "color": "#6baa01",
+                                        "valueOnRight": "1",
+                                        "displayvalue": "Average"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+            '''
 
-        json_string +=  '''
-                    ],
-                    "trendlines": [
-                        {
-                            "line": [
-                                {
-                                    "startvalue": "17022",
-                                    "color": "#6baa01",
-                                    "valueOnRight": "1",
-                                    "displayvalue": "Average"
-                                }
-                            ]
-                        }
-                    ]
-                }
-        '''
-
-        f = open('../FrontEnd/NGC-FrontEnd/public/PollsAll.json', 'w')
-        f.write(json_string)
+            f = open('../FrontEnd/NGC-FrontEnd/public/PollsAll.json', 'w')
+            f.write(json_string)
 
 elif datasource == "all":
         candidate_polls = getPollObjectCandidate(candidate_read)

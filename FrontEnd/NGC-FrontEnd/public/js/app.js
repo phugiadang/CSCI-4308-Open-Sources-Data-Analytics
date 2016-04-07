@@ -53,39 +53,49 @@ var app = angular.module('ngcFullstack', ['addCtrl', 'queryCtrl', 'headerCtrl', 
 //Controller for Home Page
 app.controller('HomeController', function($scope, $location){
   var gdelt = new FusionCharts( "FusionCharts/msline.swf",
-                                        "gdeltId", "1000", "600", "0", "0");
+                                        "gdeltId", "100%", "500", "0", "0");
 			gdelt.setJSONUrl("GDELTAll.json");
 			gdelt.render("gdeltChart");
 
 	var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
-                                        "candidateChartId", "1000", "600", "0", "0");
+                                        "candidateChartId", "100%", "500", "0", "0");
 			candidatesChart.setJSONUrl("TwitterAll.json");
 			candidatesChart.render("candidatesChart");
+
+  
 });
 
 app.controller('mainController', function($scope, $location){
   var gdelt = new FusionCharts( "FusionCharts/msline.swf",
-                                        "gdeltId", "1000", "600", "0", "0");
+                                        "gdeltId", "100%", "500", "0", "0");
 			gdelt.setJSONUrl("GDELTAll.json");
 			gdelt.render("gdeltChart");
 
 	var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
-                                        "candidateChartId", "1000", "600", "0", "0");
+                                        "candidateChartId", "100%", "500", "0", "0");
 			candidatesChart.setJSONUrl("TwitterAll.json");
 			candidatesChart.render("candidatesChart");
 	});
-
+//Trump Partials Page functions
 app.controller('trumpController', function($scope, $location){
 	$scope.message = 'Donald Trump Analysis'
 	});
+//Cruz Partials Page functions
 app.controller('cruzController', function($scope, $location){
 	$scope.message = 'Ted Cruz Analysis'
 	});
+//Rubio Partials Page functions
 app.controller('rubioController', function($scope, $location){
 	$scope.message = 'Marco Rubio Analysis'
 	});
 app.controller('kasichController', function($scope, $location){
 	$scope.message = 'John Kasich Analysis'
+
+  var kasichChart = new FusionCharts( "FusionCharts/line.swf",
+                "kasichChartId", "100%", "500", "0", "0");
+  kasichChart.setJSONUrl("kasichdata.json");
+  kasichChart.render("kasichChart");
+
 	});
 app.controller('sandersController', function($scope, $location){
 	$scope.message = 'Bernie Sanders Analysis'
@@ -97,7 +107,7 @@ app.controller('analysisController', function($scope, $location){
   $scope.message = 'Analyses and Correlations'
 
   $scope.img=[
-      {id:'Twitter vs. GDELT',source:'../images/report.png'},
+      {id:'Analysis',source:'../images/*'},
       {id:'Trump Top 10',source:'../images/top_ten_webclinton.png'},
       {id:'Clinton Top 10',source:'../images/top_ten_webtrump.png'},
   ];

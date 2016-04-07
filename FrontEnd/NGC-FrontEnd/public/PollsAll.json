@@ -1,0 +1,59 @@
+
+            {
+                "chart": {
+                    "caption": "Candidate Polls  Counts",
+                            "subCaption": "",
+                            "captionFontSize": "14",
+                            "subcaptionFontSize": "14",
+                            "subcaptionFontBold": "0",
+                            "paletteColors": "#0075c2,#1aaf5d",
+                            "bgcolor": "#ffffff",
+                            "showBorder": "0",
+                            "showShadow": "0",
+                            "showCanvasBorder": "0",
+                            "usePlotGradientColor": "0",
+                            "legendBorderAlpha": "0",
+                            "legendShadow": "0",
+                            "showAxisLines": "0",
+                            "showAlternateHGridColor": "0",
+                            "divlineThickness": "1",
+                            "divLineIsDashed": "1",
+                            "divLineDashLen": "1",
+                            "divLineGapLen": "1",
+                            "xAxisName": "Day",
+                            "showValues": "0"
+                        },
+                        "categories": [
+                            {
+                                "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" }
+                                ]
+                            }
+                        ],
+                        "dataset": [{
+                    "seriesname": "Trump Tweet Counts",
+                    "data": [ { "value": "52" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Clinton Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "45" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Sanders Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "44" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Cruz Tweet Counts",
+                    "data": [ { "value": "20" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Rubio Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Kasich Tweet Counts",
+                    "data": [ { "value": "21" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]}
+                        ],
+                        "trendlines": [
+                            {
+                                "line": [
+                                    {
+                                        "startvalue": "17022",
+                                        "color": "#6baa01",
+                                        "valueOnRight": "1",
+                                        "displayvalue": "Average"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+            

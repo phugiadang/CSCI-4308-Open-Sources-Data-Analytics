@@ -22,50 +22,29 @@
                         "divLineGapLen": "1",
                         "xAxisName": "Day",
                         "showValues": "0"
+                        "showRealTimeValue": "0"
+                        "refreshinterval": "86400",
+                        "datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json
                     },
                     "categories": [
                         {
-                            "category": [{ "label": "March, 28" },{ "label": "March, 29" },{ "label": "March, 30" }
+                            "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" }
                             ]
                         }
                     ],
                     "dataset": [{
                     "seriesname": "Trump Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Trump Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Trump Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Clinton Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Clinton Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Clinton Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Sanders Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Sanders Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Sanders Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Cruz Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Cruz Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Cruz Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Rubio Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Rubio Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Rubio Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Kasich Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Kasich Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Kasich Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" }]}
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]}
                     ],
                     "trendlines": [
                         {

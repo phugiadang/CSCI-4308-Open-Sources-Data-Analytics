@@ -1,20 +1,20 @@
 <!-- sanders.html -->
 <div class="jumbotron text-center col-md-12 col-lg-12">
 		<p>{{ message }}</p>
-		
+
 		<div class="ng-binding">
             <body>
 				<div id="chartContainer">FusionCharts XT will load here!</div>
 			</body>
-		
+
 			<script type="text/javascript">
 
 			var myChart = new FusionCharts( "FusionCharts/line.swf",
-                                        "myChartId", "1000", "600", "0", "0");
+                                        "myChartId", "100%", "500", "0", "0");
 			myChart.setJSONUrl("sandersJson.json");
 			myChart.render("chartContainer");
 
 			</script>
-		
+
         </div>
     </div>
