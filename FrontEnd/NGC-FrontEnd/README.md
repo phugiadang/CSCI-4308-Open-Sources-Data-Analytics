@@ -1,23 +1,38 @@
-# NCG Senior Project - Front End Development
-This is a basic application demonstrating CEAN (Cassandra, Express, Angular, Node) integrated with FusionCharts. Application allows users to track activity of potential presidential nominees through Twitter and GDELT activity. The application also demonstrates the use of FusionCharts as a means to show correlations between multiple datasets. Based on correlations, information can be found on the similarities between social media and other databases more consistent in political nature.  
+# MeanMapAppV2.0
+Basic application demonstrating MEAN (Mongo, Express, Angular, and Node) Integration with Google Maps. Application allows users to add themselves onto a Google Map map with identifying markers based on their form response. The application also demonstrates the use of HTML5 validated geolocation and the use of geospatial filtering through MongoDB. 
+
+![appimage](https://raw.githubusercontent.com/afhaque/MeanMapAppV2.0/master/Resources/AppImage.png)
 
 ## Demo Link
 
-Please follow instructions to launch:
+https://mean-google-maps.herokuapp.com/#/join
 
-1. Clone this repository
-2. Travel to CSCI-4308-OpenSources-Data-Analytics/FrontEnd/NGC-Front
-3. Type in "grunt serve"
-4. Open up your selected browser to http://128.138.202.110:3000/
+## Full Tutorial
+Part I
+https://scotch.io/tutorials/making-mean-apps-with-google-maps-part-i
+ 
+Part II
+https://scotch.io/tutorials/making-mean-apps-with-google-maps-part-ii
  
 ## Instructions to run locally 
 
 1) Clone repository and download npm packages 
 
 ```
-git clone https://github.com/CSCI-4308-Open-Sources-Data-Analytics
+git clone https://github.com/afhaque/MeanMapAppV2.0.git
+npm install
 ```
+
+2) Launch mongod in one terminal then run server.js
+
+````
+mongod
+node server.js
+````
+
+3) Open browser `http://localhost:3000/`
+
 ## Questions
 
-For questions, please comment through GitHub, new communications will be figured out soon.
+For questions, contact Ahmed Haque (afhaque@rice.edu)
 
