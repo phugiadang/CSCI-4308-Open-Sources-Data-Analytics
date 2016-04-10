@@ -34,7 +34,7 @@ def plotTwitter(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(daily_counts)))
-    plt.plot(x, daily_counts, 'r')
+    plt.plot(daily_counts, 'r')
     plt.xticks(x, dates, rotation = '45')
     return daily_counts
 
@@ -56,7 +56,7 @@ def plotGDELT(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(GDELT_counts)))
-    plt.plot(dates, GDELT_counts, 'b')
+    plt.plot(GDELT_counts, 'b')
     return GDELT_counts
 
 def main():
