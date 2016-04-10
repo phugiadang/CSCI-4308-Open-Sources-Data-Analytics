@@ -74,7 +74,7 @@ class TweetSentimentAnalysis(AnalysisObject):
 			fig.add_subplot(111)
 			data.T.plot.bar(stacked=True)
 			plt.title("User Sentiment Analysis for " + name)
-			plt.savefig('User Sentiment Analysis',bbox_inches='tight',dpi=100)
+			plt.savefig('User_Sentiment_Analysis_'+name,bbox_inches='tight',dpi=100)
 		return text_output
 				
 	
