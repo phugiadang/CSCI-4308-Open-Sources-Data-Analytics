@@ -39,7 +39,7 @@ def getTwitterObjects():
 		for i in range(len(this_candidate_counts),len(days)*24):
 			this_candidate_counts.append(0)
 		candidate = AnalysisObject(candidate_name, datasource, dates, this_candidate_counts)
-		candidate_list.append(candidate) 
+		candidate_list.append(candidate)
 	return candidate_list
 
 
@@ -55,30 +55,30 @@ def getGDELTObjects():
 	for candidate_name in candidate_names:
 		candidate_counts = []
 		for day in days:
-			if day >= end_day: 
+			if day >= end_day:
 				this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
-			else:	
+			else:
 				this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
 			candidate_counts.append(this_day_count)
 		candidate = AnalysisObject(candidate_name, datasource, [], candidate_counts)
 		candidate_list.append(candidate)
 
-	return candidate_list 
+	return candidate_list
 
 
 
 def getGDELTObjectCandidate(candidate_name):
 	candidate_counts = []
 	for day in days:
-		if day >= end_day: 
+		if day >= end_day:
 			this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
-		else:	
+		else:
 			this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
 		candidate_counts.append(this_day_count)
 	return  AnalysisObject(candidate_name, "GDELT", [], candidate_counts)
-	 
 
-def getPollObjectCandidate(candidate_name):	
+
+def getPollObjectCandidate(candidate_name):
 	start_date = ""
 	end_date = ""
 	poll_days = []
@@ -114,14 +114,14 @@ def getPollObjectCandidate(candidate_name):
 				for candidateInPoll in poll[1]:
 					if candidateInPoll == candidate_name.title():
 						does_exist = True
-						list_of_data.append(poll[2][i])	
+						list_of_data.append(poll[2][i])
 					i += 1
-				still_searching = False	
+				still_searching = False
 		if does_exist == False:
 			list_of_data.append("None")
 		poll_days_copy.remove(poll_days_copy[0])
 
-	
+
 	return AnalysisObject(candidate_name, "Polls", [], list_of_data)
 
 
@@ -135,7 +135,7 @@ if month_end_number == 0:
 	end_day = int(date[0:2]) - 1
 	month_end_number = int(date[3:5])
 	start_day = end_day - 2
-	
+
 
 if start_day > end_day:
 	month_start_number = month_end_number - 1
@@ -167,9 +167,9 @@ for day in days:
 	else:
 		for hour in hours:
 			dates_hours.append(month_end + ', ' + str(day) + ': ' + str(hour))
-		
+
 for day in days:
-	#first month	
+	#first month
 	if day > end_day:
 		dates.append(month_start + ', ' + str(day))
 	else:
@@ -190,7 +190,7 @@ if candidate_read == "all" and datasource == "GDELT":
 			"captionFontSize": "14",
 			"subcaptionFontSize": "14",
 			"subcaptionFontBold": "0",
-			"paletteColors": "#0075c2,#1aaf5d",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
 			"bgcolor": "#ffffff",
 			"showBorder": "0",
 			"showShadow": "0",
@@ -208,7 +208,7 @@ if candidate_read == "all" and datasource == "GDELT":
 			"showValues": "0"
 			"showRealTimeValue": "0"
 			"refreshinterval": "86400",
-			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json               
+			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json"
 		    },
 		    "categories": [
 			{
@@ -226,8 +226,8 @@ if candidate_read == "all" and datasource == "GDELT":
 		json_string += ','
 	json_string += str(candidate_list[len(candidate_list)-1].createJson())
 
-	json_string +=  '''	
-		    ], 
+	json_string +=  '''
+		    ],
 		    "trendlines": [
 			{
 			    "line": [
@@ -249,7 +249,7 @@ elif candidate_read == "all" and datasource == "Twitter":
 	if timeframe == "hourly":
 		candidate_list = getTwitterObjects()
 
-	
+
 	json_string = '''
 	{
 		    "chart": {
@@ -262,7 +262,7 @@ elif candidate_read == "all" and datasource == "Twitter":
 			"captionFontSize": "14",
 			"subcaptionFontSize": "14",
 			"subcaptionFontBold": "0",
-			"paletteColors": "#0075c2,#1aaf5d",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
 			"bgcolor": "#ffffff",
 			"showBorder": "0",
 			"showShadow": "0",
@@ -278,7 +278,7 @@ elif candidate_read == "all" and datasource == "Twitter":
 			"divLineGapLen": "1",
 			"xAxisName": "Day",
 			"showValues": "0",
-			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/TwitterAll.json"               
+			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/TwitterAll.json"
 		    },
 		    "categories": [
 			{
@@ -286,11 +286,11 @@ elif candidate_read == "all" and datasource == "Twitter":
 	for i in range(0,len(dates)-1):
 		for j in range(0,len(hours)-1):
 			json_string += '{ "label": "' + dates[i] + ' ' + str(hours[j]) + ':00" },'
-		
+
 		json_string += '{ "label": "' + dates[i] + ' ' + str(hours[len(hours)-1]) + ':00" },'
 	for j in range(0, len(hours)-1):
 		json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[j]) + ':00" },'
-	
+
 	json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[len(hours)-1]) + ':00" }'
 	json_string += '''
 			    ]
@@ -301,9 +301,9 @@ elif candidate_read == "all" and datasource == "Twitter":
 		json_string += str(candidate_list[i].createJson())
 		json_string += ','
 	json_string += str(candidate_list[len(candidate_list)-1].createJson())
-	
-	json_string +=  '''	
-		    ], 
+
+	json_string +=  '''
+		    ],
 		    "trendlines": [
 			{
 			    "line": [
@@ -317,7 +317,7 @@ elif candidate_read == "all" and datasource == "Twitter":
 			}
 		    ]
 		}
-	'''	
+	'''
 	f = open('../FrontEnd/NGC-FrontEnd/public/TwitterAll.json', 'w')
 	f.write(json_string)
 
@@ -338,7 +338,7 @@ elif candidate_read == "all" and datasource == "Polls":
 			"captionFontSize": "14",
 			"subcaptionFontSize": "14",
 			"subcaptionFontBold": "0",
-			"paletteColors": "#0075c2,#1aaf5d",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
 			"bgcolor": "#ffffff",
 			"showBorder": "0",
 			"showShadow": "0",
@@ -353,7 +353,7 @@ elif candidate_read == "all" and datasource == "Polls":
 			"divLineDashLen": "1",
 			"divLineGapLen": "1",
 			"xAxisName": "Day",
-			"showValues": "0"               
+			"showValues": "0"
 		    },
 		    "categories": [
 			{
@@ -371,8 +371,8 @@ elif candidate_read == "all" and datasource == "Polls":
 		json_string += ','
 	json_string += str(candidate_list[len(candidate_list)-1].createJson())
 
-	json_string +=  '''	
-		    ], 
+	json_string +=  '''
+		    ],
 		    "trendlines": [
 			{
 			    "line": [
@@ -391,7 +391,7 @@ elif candidate_read == "all" and datasource == "Polls":
 	f = open('../FrontEnd/NGC-FrontEnd/public/PollsAll.json', 'w')
 	f.write(json_string)
 
-elif datasource == "all":	
+elif datasource == "all":
 	candidate_polls = getPollObjectCandidate(candidate_read)
 	candidate_gdelt = getGDELTObjectCandidate(candidate_read)
 	candidate_twitter = getTwitterObjectCandidate(candidate_read) #need daily not hourly
@@ -499,10 +499,10 @@ elif datasource == "all":
             ]
         }
     ]
-}	
+}
 	'''
 
 
-	
+
 	f = open('../FrontEnd/NGC-FrontEnd/public' + candidate_read + '.json', 'w')
 	f.write(json_string)
