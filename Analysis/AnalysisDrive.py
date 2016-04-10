@@ -23,15 +23,58 @@
 #  
 
 from AnalysisObjectFactory import AnalysisObjectFactory
+import numpy as np
 
+def linearRegressionObject():
+        AnalysisObjectFactory.initialFactory()
+	types = AnalysisObjectFactory.createObject("LinearRegressionObject","hillary clinton",["2/17/2016","2/18/2016","2/19/2016","2/20/2016","2/21/2016","2/22/2016","2/23/2016"],("GDELT",[1,2,3,7,4,3,10]),("Tweet",[20,10,15,20,5,17,21]))
+	(text,data)= types.linearRegressionAnalysis()
+	print text
+	print data
+	return 0
+
+def classificationAnalysis():
+        AnalysisObjectFactory.initialFactory()
+	types = AnalysisObjectFactory.createObject("ClassificationAnalysis","2/23/2016","gdelt",["hilary clinton","donaldtrump","ted cruz"],[9,8,2])
+	print types.getlist_para_two()
+
+def graphAnalysis():
+        AnalysisObjectFactory.initialFactory()
+        types = AnalysisObjectFactory.createObject("GraphAnalysisNormalized","hilary clinton","gdelt",["2/23/2016","2/22/2016"],[15,23])
+        print types.getlist_para_two()
+
+
+def regressionObject():
+        fake_tweets = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+        #change these values to plot different points
+        fake_polls = np.array([3, 2, 5, 0, 4, 10, 7, 0, 5])
+
+        AnalysisObjectFactory.initialFactory()
+        types = AnalysisObjectFactory.createObject("RegressionObject", "Bernie", "Dates I guess", fake_tweets, fake_polls)
+        types.Interpolate()
+
+def timeSeriesObject():
+        AnalysisObjectFactory.initialFactory()
+        types = AnalysisObjectFactory.createObject("TimeSeriesObject", "Trump", "Date", [1, 2, 3, 4, 5, 6, 7, 8], [10, 8, 4, 6, 7, 5, 9, 2])
+        print types.getlist_para_two()
 
 def main():
-	AnalysisObjectFactory.initialFactory()
-	types = AnalysisObjectFactory.createObject("GraphAnalysisNormalized","hilary clinton","gdelt",["2/23/2016","2/22/2016"],[15,23])
-	types1 =AnalysisObjectFactory.createObject("ClassificationAnalysis","2/23/2016","gdelt",["hilary clinton","donaldtrump","ted cruz"],[9,8,2])
-	print types1.getlist_para_two()
-	return 0
+        
+        #linearRegressionObject()
+        #print 'Regression Analysis:'
+        #regressionObject()
+        #print '\nClassification Analysis: '
+        #classificationAnalysis()
+        #print '\nGraph Analysis: '
+        #graphAnalysis()
+        #print '\nLinear Regression Analysis: '
+        #linearRegressionObject()
+        #print '\nTime Series Analysis: '
+	timeSeriesObject()
 
 if __name__ == '__main__':
 	main()
+
+
+
 

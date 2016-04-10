@@ -1,4 +1,3 @@
-from AnalysisObjectFactory import AnalysisObjectFactory
 from AnalysisObject import AnalysisObject
 import numpy as np
 from scipy.interpolate import *
@@ -94,16 +93,8 @@ class RegressionObject(AnalysisObject):
 
         plt.savefig('interpolation.jpg')
         #plt.show()
-        class Factory:
-		def create(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):return RegressionObject(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
+    class Factory:
+	def create(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):return RegressionObject(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
 
 
-fake_tweets = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-#change these values to plot different points
-fake_polls = np.array([3, 2, 5, 0, 4, 10, 7, 0, 5])
 
-#the third argument is the order of the polynomial. Try anything!
-#the fourth argument is the x value at which is will predict the y value
-#reg = RegressionObject(x, y, 3, [[6, 7, 8, 9],[10, 7, 0, 5]])
-reg = RegressionObject('Bernie', 'date range goes here', fake_tweets, fake_polls)
-reg.Interpolate()

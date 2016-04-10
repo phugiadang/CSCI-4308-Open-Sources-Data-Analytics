@@ -1,5 +1,5 @@
-git pull
+sudo git pull
 
-git add .
-git commit -m "Daily commit"
-git push origin master
+sudo git add .
+sudo git commit -m "Daily commit"
+sudo git push origin master
