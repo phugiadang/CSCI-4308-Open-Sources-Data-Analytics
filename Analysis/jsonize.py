@@ -131,6 +131,8 @@ current_hour = 01
 if month_end_number == 0:
 	date = time.strftime("%d,%m,%y")
 	current_time = datetime.datetime.now()
+	
+	print current_time
 	current_hour = str(current_time)[11:13]
 	end_day = int(date[0:2]) - 1
 	month_end_number = int(date[3:5])

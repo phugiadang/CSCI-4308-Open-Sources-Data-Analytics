@@ -8,11 +8,12 @@ import pandas as pd
 import GetHourlyTweetsDayRange
 from RegressionReadyPolls import RegressionReadyPolls
 from GetPollsFromDatabase import DatabasePolls
+import GetDailyGDELTCounts
 import sys
 
-def predictPolls(candidate, start, end):
-    AnalysisObjectFactory.initialFactory()
-    
+AnalysisObjectFactory.initialFactory()
+
+def getTweets(candidate, start, end):
     #get the tweets
     twitter_counts, dates = GetHourlyTweetsDayRange.hourlyTweets(candidate, start, end)
     
@@ -30,6 +31,9 @@ def predictPolls(candidate, start, end):
         daily_counts.append(sum(twitter_counts[i:i+23]))
         i += 24
     
+    return daily_counts, dates
+
+def getPolls(candidate, start, end):
     #get the polls
     polls = DatabasePolls(start, end, [candidate.capitalize()])
     polls.queryDatabase()
@@ -41,13 +45,22 @@ def predictPolls(candidate, start, end):
     reg_polls.fillGapsWithAvg()
     reg_polls = reg_polls.getPollNumbers()
 
-    print 'Polls: ' + str(reg_polls)
-    print 'Tweets: ' + str(daily_counts)
+    return reg_polls
+
+def getGDELT(candidate, start, end):
+    counts, dates = GetDailyGDELTCounts.getGDELTCounts(candidate, start, end)
+    return counts
+
+
+def predictPollsWithTwitter(candidate, start, end):
     
-    types = AnalysisObjectFactory.createObject("LinearRegressionObject", candidate, dates, ("Tweets", daily_counts),("Polls", reg_polls))
+    tweets, dates = getTweets(candidate, start, end)
+    polls = getPolls(candidate, start, end)
+    gdelt = getGDELT(candidate, start, end)
+
+    types = AnalysisObjectFactory.createObject("LinearRegressionObject", candidate, dates, ("Tweets", tweets),("GDELT", gdelt))
     (text,data)= types.linearRegressionAnalysis()
     print text
     print data
 
-predictPolls(sys.argv[1], sys.argv[2], sys.argv[3])
-#predictPolls('sanders', '20160301', '20160330')
+predictPollsWithTwitter(sys.argv[1], sys.argv[2], sys.argv[3])
