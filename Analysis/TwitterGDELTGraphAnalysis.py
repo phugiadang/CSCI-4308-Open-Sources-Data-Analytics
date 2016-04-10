@@ -66,7 +66,7 @@ def main():
     else:
         tweets = plotTwitter(sys.argv[1], sys.argv[2], sys.argv[3])
         print len(tweets)
-        articles = plotGDELT(sys.argv[1], sys.argv[2], sys.argv[3])
-        print len(articles)
+        #articles = plotGDELT(sys.argv[1], sys.argv[2], sys.argv[3])
+        #print len(articles)
         plt.savefig('Twitter_vs_GDELT.png')
 main()
