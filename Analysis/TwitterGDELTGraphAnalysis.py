@@ -33,8 +33,8 @@ def plotTwitter(candidate, start, end):
     print 'Normalized: ' + str(daily_counts) + '\n'
     
     #generate x-axis
-    x = list(range(0, len(twitter_counts)))
-    plt.plot(x, twitter_counts, 'ro')
+    x = list(range(0, len(daily_counts)))
+    plt.plot(x, daily_counts, 'r')
     return daily_counts
 
 def plotGDELT(candidate, start, end):
@@ -55,7 +55,7 @@ def plotGDELT(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(GDELT_counts)))
-    plt.plot(x, GDELT_counts, 'bo')
+    plt.plot(x, GDELT_counts, 'b')
     return GDELT_counts
 
 def main():
