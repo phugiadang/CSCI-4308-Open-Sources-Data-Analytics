@@ -25,8 +25,6 @@ def plotTwitter(candidate, start, end):
     while i < len(twitter_counts):
         daily_counts.append(sum(twitter_counts[i:i+23]))
         i += 24
-    
-    print '\nDaily Twitter Counts: ' + str(daily_counts)
         
     #normalize counts
     types = AnalysisObjectFactory.createObject("GraphAnalysisNormalized", candidate, "twitter", 'dates go here', daily_counts)
@@ -36,7 +34,7 @@ def plotTwitter(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(twitter_counts)))
-    plt.plot(x, twitter_counts)
+    plt.plot(x, twitter_counts, 'ro')
     return daily_counts
 
 def plotGDELT(candidate, start, end):
@@ -48,8 +46,6 @@ def plotGDELT(candidate, start, end):
         if count == None:
             GDELT_counts[i] = 0
         i += 1
-
-    print 'Daily GDELT Counts: ' + str(GDELT_counts)
     
     #normalize counts
     types = AnalysisObjectFactory.createObject("GraphAnalysisNormalized", candidate, "twitter", 'dates go here', GDELT_counts)
@@ -59,7 +55,7 @@ def plotGDELT(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(GDELT_counts)))
-    plt.plot(x, GDELT_counts)
+    plt.plot(x, GDELT_counts, 'bo')
     return GDELT_counts
 
 def main():
