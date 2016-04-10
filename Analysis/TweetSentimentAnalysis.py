@@ -73,8 +73,9 @@ class TweetSentimentAnalysis(AnalysisObject):
 			fig = plt.figure()
 			fig.add_subplot(111)
 			data.T.plot.bar(stacked=True)
-			plt.title("User Sentiment Analysis for " + name)
+		        plt.title("User Sentiment Analysis for " + name)
 			plt.savefig('User_Sentiment_Analysis_'+name,bbox_inches='tight',dpi=100)
+				 
 		return text_output
 				
 	
@@ -95,5 +96,7 @@ def _cleanTweet(tweet,name):
     #trim
     tweet = tweet.strip('\'"')
     #tweet = tweet.replace(name,'')
+    tweet = tweet.replace("'", "")
+    tweet = tweet.replace(u"\u201c", "").replace(u'\u2026', "").replace(u'\u2014', "").replace(u'\u2019', "").replace(u'\u2018', "").replace(u'\u201d', "").replace(u'\xa0', "").replace(u'\u2022', "")
     return tweet
 #end

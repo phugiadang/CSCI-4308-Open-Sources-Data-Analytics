@@ -37,7 +37,7 @@ class DatabasePolls:
         relevant_responses = []
         #grab the polls with the relevant candidates
         for poll in self.raw_polls:
-			#iterate through the candidates in the current poll
+            #iterate through the candidates in the current poll
             return_poll = False
             for candidate in poll['responses']:
                 #if this poll contains a candidate we care about...
@@ -63,24 +63,24 @@ class DatabasePolls:
         print self.start
         print self.end
 
-def main():
+#def main():
+#
+#    if len(sys.argv) < 3:
+#        print '\nUsage: python GetPollsFromDatabase.py <start date> <end date> <candidates>'
+#        print 'where the dates are formatted as YYYYMMDD and the candidates are a list of'
+#        print 'any length of candidate names separated by spaces'
+#        print 'Example:'
+#        print 'python GetPollsFromDatabase.py 20160301 20160310 Trump Sanders\n'
+#        return
 
-    if len(sys.argv) < 3:
-        print '\nUsage: python GetPollsFromDatabase.py <start date> <end date> <candidates>'
-        print 'where the dates are formatted as YYYYMMDD and the candidates are a list of'
-        print 'any length of candidate names separated by spaces'
-        print 'Example:'
-        print 'python GetPollsFromDatabase.py 20160301 20160310 Trump Sanders\n'
-        return
-
-    candidates = []
-    for i in range(3, len(sys.argv)):
-        candidates.append(sys.argv[i])
+#    candidates = []
+#    for i in range(3, len(sys.argv)):
+#        candidates.append(sys.argv[i])
 	
-	dp = DatabasePolls(sys.argv[1], sys.argv[2], candidates)
-    dp.queryDatabase()
-    dp.cleanPolls()
-    dp.printCleanedPolls()
+#	dp = DatabasePolls(sys.argv[1], sys.argv[2], candidates)
+#    dp.queryDatabase()
+#    dp.cleanPolls()
+#    dp.printCleanedPolls()
     
 #main()
 #Structure of what this returns:

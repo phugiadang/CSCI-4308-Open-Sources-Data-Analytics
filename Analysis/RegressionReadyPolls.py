@@ -1,7 +1,7 @@
 import operator
 import sys
 from AnalysisObjectFactory import AnalysisObjectFactory
-sys.path.insert(0, '../Polls')
+#sys.path.insert(0, '../Polls')
 from GetPollsFromDatabase import DatabasePolls
 
 
@@ -46,23 +46,21 @@ class RegressionReadyPolls:
         return best_choice_length
 
     def fillGapsWithAvg(self):
-        print 'Before gaps filled: ' + str(self.final_poll_numbers)
         interpolated_numbers = 0
 
         #since leading values can be None, iterate until we find the first number
         first_num = None
-        for i in range (0, len(self.final_poll_numbers)-1):
+        for i in range (0, len(self.final_poll_numbers)):
             if self.final_poll_numbers[i] != None:
                 first_num = self.final_poll_numbers[i]
                 break
         #replace leading None's with this number
-        for i in range (0, len(self.final_poll_numbers)-1):
+        for i in range (0, len(self.final_poll_numbers)):
             if self.final_poll_numbers[i] == None:
                 self.final_poll_numbers[i] = first_num
                 interpolated_numbers += 1
             else:
                 break
-
         #Now deal with trailing None's. Give them the value of the last number in the list
         #check if the last value is None
         if self.final_poll_numbers[len(self.final_poll_numbers)-1] == None:
@@ -84,14 +82,19 @@ class RegressionReadyPolls:
         second_num = None
         first_found = False
         avg = None
-        for i in range(0, len(self.final_poll_numbers)-1):
+        i = 0
+        while i < len(self.final_poll_numbers)-1:
             if first_found == False and self.final_poll_numbers[i] == None:
                 first_num = self.final_poll_numbers[i-1]
+                print 'Final Poll Numbers: ' + str(self.final_poll_numbers)
+                print 'Index of first number: ' + str(i)
                 first_found = True
                 j = 0
-                for j in range(0, len(self.final_poll_numbers)-1):
+                for j in range(0, len(self.final_poll_numbers)):
                     if self.final_poll_numbers[i+j] != None:
                         second_num = self.final_poll_numbers[i+j]
+                        print 'first_num: ' + str(first_num)
+                        print 'second_num: ' + str(second_num)
                         avg = (first_num + second_num) / 2
                         break
                 k = i
@@ -100,6 +103,9 @@ class RegressionReadyPolls:
                     interpolated_numbers += 1
                     k += 1
                     first_found = False
+                i += j
+            else:
+                i += 1
         
 
     def incrementDate(self, date):
@@ -146,13 +152,11 @@ class RegressionReadyPolls:
     def makeSimplePollNumbers(self):
 
         best_choice_length = self.getBestPollLength()
-
         #Only use polls with the best number of choices to make interpolation easier
         relevant_polls = []
         for poll in self.polls:
             if len(poll[1]) == int(best_choice_length):
                 relevant_polls.append(poll)
-                
                 #we now have the polls of the correct length containing the correct candidate. Now pull out the poll numbers for the relevant candidate
         current_date = relevant_polls[0][0]
         to_be_averaged = []
