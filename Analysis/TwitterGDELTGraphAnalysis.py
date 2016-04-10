@@ -5,6 +5,9 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from AnalysisObjectFactory import AnalysisObjectFactory
+
+AnalysisObjectFactory.initialFactory()
 
 def plotTwitter(candidate, start, end):
     twitter_counts = GetHourlyTweetsDayRange.hourlyTweets(candidate, start, end)
@@ -25,6 +28,12 @@ def plotTwitter(candidate, start, end):
     
     print '\nDaily Twitter Counts: ' + str(daily_counts)
         
+    #normalize counts
+    types = AnalysisObjectFactory.createObject("GraphAnalysisNormalized", candidate, "twitter", 'dates go here', daily_counts)
+    daily_counts = types.getlist_para_two()
+    
+    print 'Normalized: ' + str(daily_counts) + '\n'
+    
     #generate x-axis
     x = list(range(0, len(twitter_counts)))
     plt.plot(x, twitter_counts)
@@ -33,9 +42,24 @@ def plotTwitter(candidate, start, end):
 def plotGDELT(candidate, start, end):
     GDELT_counts = GetDailyGDELTCounts.getGDELTCounts(candidate, start, end)
 
+    #change Nones to 0's
+    i = 0
+    for count in GDELT_counts:
+        if count == None:
+            GDELT_counts[i] = 0
+        i += 1
+
     print 'Daily GDELT Counts: ' + str(GDELT_counts)
     
-    plt.plot(GDELT_counts)
+    #normalize counts
+    types = AnalysisObjectFactory.createObject("GraphAnalysisNormalized", candidate, "twitter", 'dates go here', GDELT_counts)
+    GDELT_counts = types.getlist_para_two()
+
+    print 'Normalized: ' + str(GDELT_counts) + '\n'
+    
+    #generate x-axis
+    x = list(range(0, len(GDELT_counts)))
+    plt.plot(x, GDELT_counts)
     return GDELT_counts
 
 def main():
