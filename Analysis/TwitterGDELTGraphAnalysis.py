@@ -40,6 +40,7 @@ def plotTwitter(candidate, start, end):
     plt.xticks(x, dates, rotation = 'vertical')
     plt.xlim(0, num_counts)
     plt.gcf().subplots_adjust(bottom=0.20)
+    plt.title('Daily tweet counts and article counts for ' + candidate)
     return daily_counts
 
 def plotGDELT(candidate, start, end):
