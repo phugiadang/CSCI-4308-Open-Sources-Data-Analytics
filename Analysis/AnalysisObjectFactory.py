@@ -28,6 +28,7 @@ from ClassificationAnalysis import ClassificationAnalysis
 from LinearRegressionObject import LinearRegressionObject
 from TimeSeriesObject import TimeSeriesObject
 from RegressionAnalysis import RegressionObject
+from TweetSentimentAnalysis import TweetSentimentAnalysis
 
 class AnalysisObjectFactory:
 	
