@@ -53,12 +53,12 @@ var app = angular.module('ngc', ['addCtrl', 'queryCtrl', 'headerCtrl', 'gservice
 //Controller for Home Page
 app.controller('HomeController', function($scope, $location){
   var gdelt = new FusionCharts( "FusionCharts/msline.swf",
-                                        "gdeltId", "1000", "600", "0", "0");
+                                        "gdeltId", "100%", "500", "0", "0");
 			gdelt.setJSONUrl("GDELTAll.json");
 			gdelt.render("gdeltChart");
 
 	var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
-                                        "candidateChartId", "1000", "600", "0", "0");
+                                        "candidateChartId", "100%", "500", "0", "0");
 			candidatesChart.setJSONUrl("TwitterAll.json");
 			candidatesChart.render("candidatesChart");
 });
@@ -87,9 +87,9 @@ app.controller('analysisController', function($scope, $location){
   $scope.message = 'Analyses and Correlations'
 
   $scope.img=[
-      {id:'Twitter vs. GDELT',source:'../images/report.png'},
-      {id:'Trump Top 10',source:'../images/top_ten_webclinton.png'},
-      {id:'Clinton Top 10',source:'../images/top_ten_webtrump.png'},
+      // {id:'Twitter vs. GDELT',source:'../images/report.png'},
+      // {id:'Trump Top 10',source:'../images/top_ten_webclinton.png'},
+      // {id:'Clinton Top 10',source:'../images/top_ten_webtrump.png'},
   ];
 
   });

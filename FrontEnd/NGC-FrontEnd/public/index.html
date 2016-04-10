@@ -43,38 +43,43 @@
 
 
     <!-- Header items are made active upon selection -->
-    <ul class="nav nav-pills pull-right">
-      <li><dropdown ng-controller="navCtrl">
-+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:red;">
-+              <option value="home">Republicans:</option>
-+              <option value="trump">Trump</option>
-+              <option value="cruz">Cruz</option>
-+              <option value="kasich">Kasich</option>
-+              <option value="rubio"> Rubio </option>
-+          </select>
-+        </dropdown></li>
-+
-+        <li><dropdown ng-controller="navCtrl">
-+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:blue;">
-+              <option value="home">Democrats:</option>
-+              <option value="clinton">Clinton</option>
-+              <option value="sanders">Sanders</option>
-+          </select>
-+        </dropdown></li>
+    <ul class="nav nav-pills pull-right navbar-padding">
+      <li class="navbar-fontsize"><dropdown ng-controller="navCtrl">
+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:red;">
+             <option value="home">Republicans:</option>
+             <option value="trump">Trump</option>
+             <option value="cruz">Cruz</option>
+              <option value="kasich">Kasich</option>
+              <option value="rubio"> Rubio </option>
+          </select>
+        </dropdown></li>
 
-      <li><dropdown ng-controller="navCtrl">
-+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:blue;">
-+              <option value="home">Analysis</option>
-+              <option value="linear_regression">Linear Regression</option>
-+              <option value="analysis">Sanders</option>
-+          </select>
-+        </dropdown></li>
+        <li class="navbar-fontsize"><dropdown ng-controller="navCtrl">
+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:blue;">
+              <option value="home">Democrats:</option>
+              <option value="clinton">Clinton</option>
+              <option value="sanders">Sanders</option>
+          </select>
+        </dropdown></li>
+
+      <li class="navbar-fontsize"><dropdown ng-controller="navCtrl">
+          <select name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)" style="color:blue;">
+              <option value="home">Analysis</option>
+              <option value="linear_regression">Linear Regression</option>
+              <option value="analysis">Sanders</option>
+          </select>
+        </dropdown></li>
     </ul>
 
         <!-- Header Title -->
-        <h3 class="text-muted">Candidates Analysis</h3>
+        <ul class="text-muted navbar-padding navbar-fontsize">Candidates Analysis</ul>
     </div>
 
+  </nav>
+  <div id="main">
+    {{message}}
+    <div ng-view=""></div>
+  </div>
     <!-- Map and Side Panel -->
     <div class="row content">
 
@@ -83,35 +88,14 @@
 			<body>
 				<div id="candidatesChart">FusionCharts XT will load here!</div>
 			</body>
-
-			<script type="text/javascript">
-
-			var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
-                                        "candidateChartId", "100%", "500", "0", "0");
-			candidatesChart.setJSONUrl("sanders2.json");
-			candidatesChart.render("candidatesChart");
-
-			</script>
-		</div>
+    </div>
 
         <div class = "col-md-12">
 			<body>
 				<div id="gdeltChart">FusionCharts XT will load here!</div>
 			</body>
-
-			<script type="text/javascript">
-
-			var gdelt = new FusionCharts( "FusionCharts/msline.swf",
-                                        "gdeltId", "100%", "500", "0", "0");
-			gdelt.setJSONUrl("gdelt.json");
-			gdelt.render("gdeltChart");
-
-			</script>
 		</div>
         <div class="col-md-6">
-            <body>
-				<div id="chartContainer">FusionCharts XT will load here!</div>
-			</body>
 
 			<script type="text/javascript">
 

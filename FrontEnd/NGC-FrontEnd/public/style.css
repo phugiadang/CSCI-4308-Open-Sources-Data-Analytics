@@ -10,7 +10,13 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.navbar-padding{
 
+    padding-top: 2%;
+}
+.navbar-fontsize{
+    font-size: 20px;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .content,
