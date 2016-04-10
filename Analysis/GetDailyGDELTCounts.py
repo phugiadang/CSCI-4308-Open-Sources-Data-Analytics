@@ -70,7 +70,7 @@ def getGDELTCounts(candidate, start, end):
         else:
             countList.append(None)
             
-    return countList;
+    return countList, dates;
 
 
 def main():

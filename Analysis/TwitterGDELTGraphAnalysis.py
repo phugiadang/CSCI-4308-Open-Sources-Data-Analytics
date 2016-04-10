@@ -10,7 +10,7 @@ from AnalysisObjectFactory import AnalysisObjectFactory
 AnalysisObjectFactory.initialFactory()
 
 def plotTwitter(candidate, start, end):
-    twitter_counts = GetHourlyTweetsDayRange.hourlyTweets(candidate, start, end)
+    twitter_counts, dates = GetHourlyTweetsDayRange.hourlyTweets(candidate, start, end)
     
     #change Nones to 0's
     i = 0
@@ -34,11 +34,12 @@ def plotTwitter(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(daily_counts)))
-    plt.plot(x, daily_counts, 'r')
+    print x
+    plt.plot(dates, daily_counts, 'r')
     return daily_counts
 
 def plotGDELT(candidate, start, end):
-    GDELT_counts = GetDailyGDELTCounts.getGDELTCounts(candidate, start, end)
+    GDELT_counts, dates = GetDailyGDELTCounts.getGDELTCounts(candidate, start, end)
 
     #change Nones to 0's
     i = 0
@@ -55,7 +56,7 @@ def plotGDELT(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(GDELT_counts)))
-    plt.plot(x, GDELT_counts, 'b')
+    plt.plot(dates, GDELT_counts, 'b')
     return GDELT_counts
 
 def main():
@@ -64,8 +65,8 @@ def main():
         print 'Usage: python TwitterGDELTGraphAnalysis.py <candidate, lower case> <start date> <end date>'
         print 'where date format is YYYYMMDD'
     else:
-        #tweets = plotTwitter(sys.argv[1], sys.argv[2], sys.argv[3])
-        #print len(tweets)
+        tweets = plotTwitter(sys.argv[1], sys.argv[2], sys.argv[3])
+        print len(tweets)
         articles = plotGDELT(sys.argv[1], sys.argv[2], sys.argv[3])
         print len(articles)
         plt.savefig('Twitter_vs_GDELT.png')
