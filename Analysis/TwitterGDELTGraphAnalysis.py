@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 from AnalysisObjectFactory import AnalysisObjectFactory
 
 AnalysisObjectFactory.initialFactory()
@@ -41,6 +42,8 @@ def plotTwitter(candidate, start, end):
     plt.xlim(0, num_counts)
     plt.gcf().subplots_adjust(bottom=0.20)
     plt.title('Daily tweet counts and article counts for ' + candidate)
+    legend = mpatches.Patch(color='red', label='Twitter')
+    plt.legend(handles = [legend])
     return daily_counts
 
 def plotGDELT(candidate, start, end):
@@ -62,6 +65,8 @@ def plotGDELT(candidate, start, end):
     #generate x-axis
     x = list(range(0, len(GDELT_counts)))
     plt.plot(GDELT_counts, 'b')
+    legend = mpatches.Patch(color='blue', label='GDELT')
+    plt.legend(handles = [legend])
     return GDELT_counts
 
 def main():
