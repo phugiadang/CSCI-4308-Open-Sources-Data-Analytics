@@ -53,33 +53,28 @@ def regressionObject():
         types = AnalysisObjectFactory.createObject("RegressionObject", "Bernie", "Dates I guess", fake_tweets, fake_polls)
         types.Interpolate()
 
+def timeSeriesObject():
+        AnalysisObjectFactory.initialFactory()
+        types = AnalysisObjectFactory.createObject("TimeSeriesObject", "Trump", "Date", [1, 2, 3, 4, 5, 6, 7, 8], [10, 8, 4, 6, 7, 5, 9, 2])
+        print types.getlist_para_two()
+
 def main():
         
         #linearRegressionObject()
-        print 'Regression Analysis:'
-        regressionObject()
-        print '\nClassification Analysis: '
-        classificationAnalysis()
-        print '\nGraph Analysis: '
-        graphAnalysis()
-
-	
-
-if __name__ == '__main__':
-	main()
-
-
-
-from AnalysisObjectFactory import AnalysisObjectFactory
-
-
-def main():
-	AnalysisObjectFactory.initialFactory()
-	types = AnalysisObjectFactory.createObject("GraphAnalysisNormalized","hilary clinton","gdelt",["2/23/2016","2/22/2016"],[15,23])
-	types1 =AnalysisObjectFactory.createObject("ClassificationAnalysis","2/23/2016","gdelt",["hilary clinton","donaldtrump","ted cruz"],[9,8,2])
-	print types1.getlist_para_two()
-	return 0
+        #print 'Regression Analysis:'
+        #regressionObject()
+        #print '\nClassification Analysis: '
+        #classificationAnalysis()
+        #print '\nGraph Analysis: '
+        #graphAnalysis()
+        #print '\nLinear Regression Analysis: '
+        #linearRegressionObject()
+        #print '\nTime Series Analysis: '
+	timeSeriesObject()
 
 if __name__ == '__main__':
 	main()
+
+
+
 
