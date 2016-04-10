@@ -36,6 +36,7 @@ def plotTwitter(candidate, start, end):
     x = list(range(0, len(daily_counts)))
     plt.plot(daily_counts, 'r')
     plt.xticks(x, dates, rotation = '45')
+    plt.xlim(0, 39)
     return daily_counts
 
 def plotGDELT(candidate, start, end):
