@@ -82,8 +82,8 @@ def main():
         print 'where the date format is YYYYMMDD'
     
     else:
-        counts = hourlyTweets(sys.argv[1], sys.argv[2], sys.argv[3])
+        counts, dates = hourlyTweets(sys.argv[1], sys.argv[2], sys.argv[3])
         print counts
         print len(counts)
 
-#main()
+main()

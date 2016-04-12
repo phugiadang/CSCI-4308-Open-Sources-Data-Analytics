@@ -95,6 +95,3 @@ class RegressionObject(AnalysisObject):
         #plt.show()
     class Factory:
 	def create(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):return RegressionObject(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
-
-
-

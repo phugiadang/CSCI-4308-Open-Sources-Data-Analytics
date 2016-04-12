@@ -73,10 +73,10 @@ def getGDELTCounts(candidate, start, end):
     return countList, dates;
 
 
-def main():
-    if len(sys.argv) != 4:
-        print 'Usage: GetDailyGDELTCounts.py <candidate, lower case> <start date> <end date>'
-        print 'where date format is YYYYMMDD'
-    else:
-        print getGDELTCounts(sys.argv[1], sys.argv[2], sys.argv[3])
-main()
+#def main():
+#    if len(sys.argv) != 4:
+#        print 'Usage: GetDailyGDELTCounts.py <candidate, lower case> <start date> <end date>'
+#        print 'where date format is YYYYMMDD'
+#    else:
+#        print getGDELTCounts(sys.argv[1], sys.argv[2], sys.argv[3])
+#main()
