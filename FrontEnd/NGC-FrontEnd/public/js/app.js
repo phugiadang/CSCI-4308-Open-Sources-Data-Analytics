@@ -79,6 +79,10 @@ app.controller('kasichController', function($scope, $location){
 	});
 app.controller('sandersController', function($scope, $location){
 	$scope.message = 'Bernie Sanders Analysis'
+  var myChart = new FusionCharts( "FusionCharts/line.swf",
+                                    "myChartId", "100%", "500", "0", "0");
+  myChart.setJSONUrl("sandersJson.json");
+  myChart.render("chartContainer");
 	});
 app.controller('clintonController', function($scope, $location){
 	$scope.message = 'Hillary Clinton Analysis'

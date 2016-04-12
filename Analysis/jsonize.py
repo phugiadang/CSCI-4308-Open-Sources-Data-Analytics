@@ -253,7 +253,7 @@ elif candidate_read == "all" and datasource == "Twitter":
 	json_string = '''
 	{
 		    "chart": {
-			"caption: "'''
+			"caption": "'''
 	json_string += chart_caption
 	json_string +=		'''",
 			"subCaption": "'''

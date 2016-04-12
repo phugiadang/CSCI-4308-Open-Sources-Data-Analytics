@@ -10,12 +10,40 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.break-components{
+  padding-top: 2%;
+}
+.comp-background{
+  background-color: white;
+  padding: 1% 2% 2% 2%;
+  border-radius: 5px;
+}
+.nav-button{
+  color: white;
+  background-color: black;
+  border: none;
+}
+.nav-image{
+  border-radius: 5px 5px 5px 5px;
+  padding-left:2%;
+  width:25%;
+  height:10%;
+}
+.navbar-color{
+  background-color: #000000;
+}
+.navbar-inner{
+  background-color:#000000;
+}
 .navbar-padding{
-
-    padding-top: 2%;
+    padding: 2% 2% 2% 2%;
 }
 .navbar-fontsize{
     font-size: 20px;
+}
+.navbar-border-top{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
