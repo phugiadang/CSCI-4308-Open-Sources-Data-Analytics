@@ -2,7 +2,8 @@ import json
 import sys
 from sys import argv
 import operator
-import queryCounts
+#import QueryingDavid
+import QueryingDavid
 from AnalysisObject import AnalysisObject
 from cassandra.cluster import Cluster
 import time
@@ -30,25 +31,39 @@ if datasource == "Twitter":
 
 
 
-def getTwitterObjects():
+def getTwitterObjectsHourly():
 	print days
 	candidate_list = []
 	for candidate_name in candidate_names:
-		this_candidate_counts = queryCounts.candidateCountRangeDay(candidate_name, month_start_number, days[0], current_hour, month_end_number, days[len(days)-1], current_hour)
+		this_candidate_counts = QueryingDavid.candidateCountRangeDay(candidate_name, month_start_number, days[0], current_hour, month_end_number, days[len(days)-1], current_hour)
 		#append 0's if missing data MAY BE ONE TOO MANY
 		for i in range(len(this_candidate_counts),len(days)*24):
 			this_candidate_counts.append(0)
 		candidate = AnalysisObject(candidate_name, datasource, dates, this_candidate_counts)
 		candidate_list.append(candidate)
 	return candidate_list
-
+'''
+def getTwitterObjectsDaily():
+	print days
+	candidate_list = []
+	for candidate_name in candidate_names:
+		this_candidate_counts = QueryingDavid.candidateCountRangeDayFull(candidate_name, month_start_number, days[0], current_hour, month_end_number, days[len(days)-1], current_hour)
+		print this_candidate_counts
+		#append 0's if missing data MAY BE ONE TOO MANY
+		for i in range(len(this_candidate_counts),len(days)*24):
+			this_candidate_counts.append(0)
+		candidate = AnalysisObject(candidate_name, datasource, dates, this_candidate_counts)
+		candidate_list.append(candidate)
+	return candidate_list
+'''
 
 def getTwitterObjectCandidate(candidate_name):
-	this_candidate_counts = queryCounts.candidateCountRangeDay(candidate_name, month_start_number, days[0], 1, month_end_number, days[len(days)-1], 1)
+	this_candidate_counts = QueryingDavid.candidateCountRangeDayFull(candidate_name, month_start_number, days[0], 1, month_end_number, days[len(days)-1], 1)
 	#append 0's if missing data THIS MAY NOT WORK, MAY BE ONE TOO MANY
 	for i in range(len(this_candidate_counts),len(days)*24):
 		this_candidate_counts.append(0)
 	return AnalysisObject(candidate_name, datasource, dates, this_candidate_counts)
+
 
 def getGDELTObjects():
 	candidate_list = []
@@ -56,10 +71,14 @@ def getGDELTObjects():
 		candidate_counts = []
 		for day in days:
 			if day >= end_day:
-				this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
+				this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
 			else:
-				this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
-			candidate_counts.append(this_day_count)
+				this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
+			#for row in this_day_count:
+				#print "u"
+				#print "count is " +  str(row.count)
+			candidate_counts.append(this_day_count[0][1])
+		print candidate_counts
 		candidate = AnalysisObject(candidate_name, datasource, [], candidate_counts)
 		candidate_list.append(candidate)
 
@@ -71,9 +90,9 @@ def getGDELTObjectCandidate(candidate_name):
 	candidate_counts = []
 	for day in days:
 		if day >= end_day:
-			this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
+			this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
 		else:
-			this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
+			this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
 		candidate_counts.append(this_day_count)
 	return  AnalysisObject(candidate_name, "GDELT", [], candidate_counts)
 
@@ -159,6 +178,8 @@ dates = []
 chart_caption = "Candidate " + datasource + "  Counts"
 chart_sub_caption = ""
 
+#getTwitterObjectsDaily()
+
 
 #FIX TO MAKE HOURS START FROM CURRENT HOUR
 for day in days:
@@ -179,7 +200,7 @@ for day in days:
 
 if candidate_read == "all" and datasource == "GDELT":
 	candidate_list =  getGDELTObjects()
-
+	print candidate_list[1].createJson()
 	json_string = '''
 	{
 		    "chart": {
@@ -207,8 +228,8 @@ if candidate_read == "all" and datasource == "GDELT":
 			"divLineDashLen": "1",
 			"divLineGapLen": "1",
 			"xAxisName": "Day",
-			"showValues": "0"
-			"showRealTimeValue": "0"
+			"showValues": "0",
+			"showRealTimeValue": "0",
 			"refreshinterval": "86400",
 			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json"
 		    },
@@ -249,13 +270,13 @@ if candidate_read == "all" and datasource == "GDELT":
 
 elif candidate_read == "all" and datasource == "Twitter":
 	if timeframe == "hourly":
-		candidate_list = getTwitterObjects()
+		candidate_list = getTwitterObjectsHourly()
 
 
 	json_string = '''
 	{
 		    "chart": {
-			"caption: "'''
+			"caption": "'''
 	json_string += chart_caption
 	json_string +=		'''",
 			"subCaption": "'''
@@ -285,15 +306,27 @@ elif candidate_read == "all" and datasource == "Twitter":
 		    "categories": [
 			{
 			    "category": ['''
+	k = 0
 	for i in range(0,len(dates)-1):
 		for j in range(0,len(hours)-1):
-			json_string += '{ "label": "' + dates[i] + ' ' + str(hours[j]) + ':00" },'
-
-		json_string += '{ "label": "' + dates[i] + ' ' + str(hours[len(hours)-1]) + ':00" },'
+			if k % 3 == 0:
+				json_string += '{ "label": "' + dates[i] + ' ' + str(hours[j]) + ':00" },'
+			else:
+				json_string += '{ "label": "" },'
+			k += 1
+			print k
+			print json_string
+		#json_string += '{ "label": "' + dates[i] + ' ' + str(hours[len(hours)-1]) + ':00" },'
+		json_string += '{ "label": "" },'
+		k += 1
 	for j in range(0, len(hours)-1):
-		json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[j]) + ':00" },'
-
-	json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[len(hours)-1]) + ':00" }'
+		if k % 3 == 0:
+			json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[j]) + ':00" },'
+		else:
+			json_string += '{ "label": "" },'
+		k += 1
+	#json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[len(hours)-1]) + ':00" }'
+	json_string += '{ "label": "" }'
 	json_string += '''
 			    ]
 			}
@@ -396,7 +429,7 @@ elif candidate_read == "all" and datasource == "Polls":
 elif datasource == "all":
 	candidate_polls = getPollObjectCandidate(candidate_read)
 	candidate_gdelt = getGDELTObjectCandidate(candidate_read)
-	candidate_twitter = getTwitterObjectCandidate(candidate_read) #need daily not hourly
+	#candidate_twitter = getTwitterObjectCandidate(candidate_read) #need daily not hourly
 	json_string = '''
 {
     "chart": {
