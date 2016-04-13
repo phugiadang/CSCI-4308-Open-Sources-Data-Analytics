@@ -45,6 +45,9 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+ol.carousel-indicators{
+  bottom:-30px;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .content,

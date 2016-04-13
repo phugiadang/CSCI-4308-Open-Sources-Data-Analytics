@@ -29,7 +29,11 @@
 
     <!-- FusionCharts Files -->
     <script type="text/javascript" src="../fusioncharts/js/fusioncharts.js"></script>
-	<script type="text/javascript" src="../angular-fusioncharts.min.js"></script>
+	  <script type="text/javascript" src="../angular-fusioncharts.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body style="background-color: slategray;">
@@ -69,11 +73,19 @@
               <option value="analysis">Etc.</option>
           </select>
         </dropdown></li>
+
+        <li class="navbar-fontsize nav-button"><dropdown ng-controller="navCtrl" ng-click="isCollapsed = !isCollapsed">
+            <select class="nav-button" ng-model="currentPage" ng-change="go(currentPage)">
+                <option value="home">About Us</option>
+                <option value="team">The Team</option>
+                <option value="sponsor">Sponsor</option>
+            </select>
+          </dropdown></li>
     </ol>
 
         <!-- Header Title -->
         <div class="text-muted navbar-fontsize navbar-border-top">
-          <img src="/images/OSAM.png" class="nav-image">
+          <a href="#/home"><img src="/images/OSAM.png" class="nav-image"></a>
         </div>
     </div>
     </div>
@@ -84,15 +96,16 @@
   </div>
     <!-- Map and Side Panel -->
     <div class="row content"></div>
+
+
     <hr/>
 
     <!-- Footer -->
-    <div class="footer">
-        <p class="text-center"><span class="glyphicon glyphicon-check"></span> Northrop Grumman Senio Project Group - CU Boulder
-            <a href="https://github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics">GitHub Repository</a>
+    <div class="footer" style="color:white;">
+        <p class="text-center"><span class="glyphicon glyphicon-check"></span> Team OSAM - University of Colorado at Boulder ---
+            <a  style="color:white;" href="https://github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics">GitHub Repository</a>
         </p>
     </div>
-
 </div>
 
 </body>

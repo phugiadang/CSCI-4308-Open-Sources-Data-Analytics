@@ -1,9 +1,14 @@
-<!-- analysis.html -->
-<simple-carousel>
-  <img src="analysis-images/Twitter_vs_GDELT.png">
-  <img src="analysis-images/Twitter_vs_GDELT_clinton.png">
-  <img src="analysis-images/Twitter_vs_GDELT_cruz.png">
-  <img src="analysis-images/Twitter_vs_GDELT_rubio.png">
-  <img src="analysis-images/Twitter_vs_GDELT_sanders.png">
-  <img src="analysis-images/Twitter_vs_GDELT_trump.png">
-</simple-carousel>
+<div ng-controller="analysisController" id="slides_control">
+  <div>
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}">
+        <div class="carousel-caption">
+          <h4></h4>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
