@@ -3,18 +3,14 @@
 		<p>{{ message }}</p>
 
 		<div class="ng-binding">
-            <body>
+    	<body>
 				<div id="chartContainer">FusionCharts XT will load here!</div>
 			</body>
 
-			<script type="text/javascript">
+			<div class="break-components"></div>
 
-			var myChart = new FusionCharts( "FusionCharts/line.swf",
-                                        "myChartId", "100%", "500", "0", "0");
-			myChart.setJSONUrl("sandersJson.json");
-			myChart.render("chartContainer");
-
-			</script>
-
-        </div>
-    </div>
+			<body class="col-md-12 col-lg-12">
+				<img src="../analysis-images/Twitter_vs_GDELT_sanders.png">
+	    </body>
+		</div>
+</div>

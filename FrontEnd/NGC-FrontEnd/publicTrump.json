@@ -19,7 +19,7 @@
     },
     "categories": [
         {
-	    "category": [{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" }
+	    "category": [{ "label": "April, 8" },{ "label": "April, 9" },{ "label": "April, 10" }
 			    ]
         }
     ],
@@ -84,11 +84,11 @@
             "dataset": [
                 {
                     "seriesname": "Article Counts",
-                    "data": [{ "value": "115" },{ "value": "79" },{ "value": "87" }
+                    "data": [{ "value": "<cassandra.cluster.ResultSet object at 0x7f3c68107310>" },{ "value": "<cassandra.cluster.ResultSet object at 0x7f3c68107610>" },{ "value": "<cassandra.cluster.ResultSet object at 0x7f3c68107c10>" }
                     ]
                 }
             ]
         }
     ]
-}	
+}
 	

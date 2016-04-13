@@ -13,6 +13,18 @@ session.default_timeout = 2000.00
 
 
 
+def candidateGDELTCount(candidate,year, month, day):
+    if len(str(month)) == 1:
+        month = "0" + str(month)
+    if len(str(day)) == 1:
+        day = "0" + str(day)
+        print day
+    queryString = "select * from " + candidate + "GDELT where date = " + str(year) + str(month) + str(day) + ";"
+    count = session.execute(queryString)
+    return count
+	#print count[0][1]
+
+
 
 def candidateCount(candidate, month,day,hour):
     queryString = "select count from counts where candidate = '"+str(candidate)+"' and year = 2016 and month = "+str(3)+" and day = "+str(day)+" and hour = "+str(hour)+";"

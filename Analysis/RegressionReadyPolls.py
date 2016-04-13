@@ -86,15 +86,11 @@ class RegressionReadyPolls:
         while i < len(self.final_poll_numbers)-1:
             if first_found == False and self.final_poll_numbers[i] == None:
                 first_num = self.final_poll_numbers[i-1]
-                print 'Final Poll Numbers: ' + str(self.final_poll_numbers)
-                print 'Index of first number: ' + str(i)
                 first_found = True
                 j = 0
                 for j in range(0, len(self.final_poll_numbers)):
                     if self.final_poll_numbers[i+j] != None:
                         second_num = self.final_poll_numbers[i+j]
-                        print 'first_num: ' + str(first_num)
-                        print 'second_num: ' + str(second_num)
                         avg = (first_num + second_num) / 2
                         break
                 k = i
@@ -163,7 +159,6 @@ class RegressionReadyPolls:
 
         #if there are no polls on the first n days of the range, add n None's to poll_numbers
         #print int(self.start)
-        print current_date
         if int(self.start) != current_date:
             for i in range (int(self.start), current_date):
                 self.final_poll_numbers.append(None)
@@ -180,7 +175,6 @@ class RegressionReadyPolls:
                     if poll[0] == current_date:
                         #there's more than one poll a day, so we average each day's polls
                         to_be_averaged.append(poll[2][i])
-                        #print 'Adding ' + str(poll[2][i]) + ' to be averaged, date is ' + str(current_date)
                     else:
                         #if we're on to a poll on a new day, get the averages for the previous day
                         if (current_date != poll[0]):
@@ -216,6 +210,5 @@ class RegressionReadyPolls:
 
     def getPollNumbers(self):
         return self.final_poll_numbers
-
 
 

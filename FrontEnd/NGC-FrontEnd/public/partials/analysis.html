@@ -1,4 +1,14 @@
-<!-- analysis.html -->
-<div  ng-repeat="x in img">
-     <img ng-src="{{x.source}}" style="width:100%;" >
- </div>
+<div ng-controller="analysisController" id="slides_control">
+  <div>
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}">
+        <div class="carousel-caption">
+          <h4></h4>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>

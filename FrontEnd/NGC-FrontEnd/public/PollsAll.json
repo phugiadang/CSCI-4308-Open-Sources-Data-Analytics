@@ -6,7 +6,7 @@
 			"captionFontSize": "14",
 			"subcaptionFontSize": "14",
 			"subcaptionFontBold": "0",
-			"paletteColors": "#0075c2,#1aaf5d",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
 			"bgcolor": "#ffffff",
 			"showBorder": "0",
 			"showShadow": "0",
@@ -21,28 +21,28 @@
 			"divLineDashLen": "1",
 			"divLineGapLen": "1",
 			"xAxisName": "Day",
-			"showValues": "0"               
+			"showValues": "0"
 		    },
 		    "categories": [
 			{
-			    "category": [{ "label": "March, 15" },{ "label": "March, 16" },{ "label": "March, 17" },{ "label": "March, 18" }
+			    "category": [{ "label": "March, 7" },{ "label": "March, 8" },{ "label": "March, 9" },{ "label": "March, 10" },{ "label": "March, 11" },{ "label": "March, 12" },{ "label": "March, 13" },{ "label": "March, 14" },{ "label": "March, 15" },{ "label": "March, 16" },{ "label": "March, 17" },{ "label": "March, 18" },{ "label": "March, 19" },{ "label": "March, 20" },{ "label": "March, 21" },{ "label": "March, 22" },{ "label": "March, 23" },{ "label": "March, 24" },{ "label": "March, 25" },{ "label": "March, 26" },{ "label": "March, 27" },{ "label": "March, 28" },{ "label": "March, 29" },{ "label": "March, 30" },{ "label": "March, 31" },{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" }
 			    ]
 			}
 		    ],
 		    "dataset": [{
                     "seriesname": "Trump Polls Counts",
-                    "data": [ { "value": "38" },{ "value": "64" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "41" },{ "value": "37" },{ "value": "25" },{ "value": "38" },{ "value": "44" },{ "value": "53" },{ "value": "44" },{ "value": "None" },{ "value": "38" },{ "value": "64" },{ "value": "None" },{ "value": "None" },{ "value": "11" },{ "value": "46" },{ "value": "43" },{ "value": "35" },{ "value": "36" },{ "value": "47" },{ "value": "None" },{ "value": "41" },{ "value": "41" },{ "value": "30" },{ "value": "56" },{ "value": "None" },{ "value": "44" },{ "value": "52" },{ "value": "None" },{ "value": "40" },{ "value": "39" },{ "value": "52" },{ "value": "37" }]},{
                     "seriesname": "Clinton Polls Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "49" }]},{
+                    "data": [ { "value": "62" },{ "value": "62" },{ "value": "None" },{ "value": "47" },{ "value": "46" },{ "value": "57" },{ "value": "58" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "49" },{ "value": "None" },{ "value": "48" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "48" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "43" },{ "value": "None" },{ "value": "None" },{ "value": "45" },{ "value": "55" },{ "value": "47" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Sanders Polls Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "40" }]},{
+                    "data": [ { "value": "32" },{ "value": "25" },{ "value": "None" },{ "value": "40" },{ "value": "48" },{ "value": "32" },{ "value": "37" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "40" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "36" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "48" },{ "value": "None" },{ "value": "None" },{ "value": "44" },{ "value": "33" },{ "value": "41" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Cruz Polls Counts",
-                    "data": [ { "value": "27" },{ "value": "12" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "27" },{ "value": "23" },{ "value": "20" },{ "value": "22" },{ "value": "24" },{ "value": "22" },{ "value": "18" },{ "value": "None" },{ "value": "27" },{ "value": "12" },{ "value": "None" },{ "value": "None" },{ "value": "53" },{ "value": "33" },{ "value": "29" },{ "value": "36" },{ "value": "35" },{ "value": "15" },{ "value": "None" },{ "value": "28" },{ "value": "32" },{ "value": "40" },{ "value": "20" },{ "value": "None" },{ "value": "33" },{ "value": "20" },{ "value": "None" },{ "value": "32" },{ "value": "32" },{ "value": "17" },{ "value": "29" }]},{
                     "seriesname": "Rubio Polls Counts",
-                    "data": [ { "value": "17" },{ "value": "4" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "14" },{ "value": "12" },{ "value": "18" },{ "value": "10" },{ "value": "21" },{ "value": "10" },{ "value": "26" },{ "value": "None" },{ "value": "17" },{ "value": "4" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Kasich Polls Counts",
-                    "data": [ { "value": "14" },{ "value": "1" },{ "value": "None" },{ "value": "None" }]}	
-		    ], 
+                    "data": [ { "value": "11" },{ "value": "15" },{ "value": "15" },{ "value": "20" },{ "value": "9" },{ "value": "11" },{ "value": "10" },{ "value": "None" },{ "value": "14" },{ "value": "1" },{ "value": "None" },{ "value": "None" },{ "value": "29" },{ "value": "17" },{ "value": "16" },{ "value": "19" },{ "value": "14" },{ "value": "22" },{ "value": "None" },{ "value": "10" },{ "value": "20" },{ "value": "21" },{ "value": "19" },{ "value": "None" },{ "value": "19" },{ "value": "21" },{ "value": "None" },{ "value": "17" },{ "value": "18" },{ "value": "25" },{ "value": "28" }]}
+		    ],
 		    "trendlines": [
 			{
 			    "line": [
