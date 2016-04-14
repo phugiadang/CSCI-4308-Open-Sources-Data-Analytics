@@ -1,5 +1,5 @@
+2016-04-14
 2016-04-13
-2016-04-12
 http://elections.huffingtonpost.com/pollster/api/charts?state=AL
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-new-hampshire-presidential-republican-caucus
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-alabama-democratic-presidential-primary

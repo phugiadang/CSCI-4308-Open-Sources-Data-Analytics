@@ -262,10 +262,10 @@ def candidateCountRangeDayFull(candidate, monthStart,dayStart,hourStart,monthEnd
             count = session.execute(queryString)
             dayCounter =0
             daySum = 0
-            for row in count:
+	    for row in count:
                 if(row.count != None):
                     daySum += row.count;
-                    countList.append(daySum);
+                    #countList.append(daySum);
                 #countSum+= row.count;
             print daySum
             print dayCounter
