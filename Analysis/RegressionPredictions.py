@@ -90,3 +90,4 @@ def predictPollsWithTwitter(candidate, start, end, source1, source2):
     print data
 
 predictPollsWithTwitter(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
+#candidate, start, end, source 1, source 2
