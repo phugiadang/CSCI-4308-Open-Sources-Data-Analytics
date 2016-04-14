@@ -533,6 +533,6 @@ elif datasource == "all":
 
 
 
-	f = open('../FrontEnd/NGC-FrontEnd/public' + candidate_read + '.json', 'w')
+	f = open('../FrontEnd/NGC-FrontEnd/public/' + candidate_read + '.json', 'w')
 	#f = open(candidate_read + '.json','w')
 	f.write(json_string)
