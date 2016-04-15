@@ -39,12 +39,13 @@ def getPolls(candidate, start, end):
     polls.queryDatabase()
     polls.cleanPolls()
     clean_polls = polls.getCleanedPolls()
-    
+
     reg_polls = RegressionReadyPolls(clean_polls, candidate.capitalize(), start, end)
     reg_polls.makeSimplePollNumbers()
+#    print 'Pre-Cleaned: ' + str(len(reg_polls.getPollNumbers()))
     reg_polls.fillGapsWithAvg()
     reg_polls = reg_polls.getPollNumbers()
-    
+    print 'Post-Cleaned: ' + str(reg_polls)
     return reg_polls
     
 def getGDELT(candidate, start, end):
