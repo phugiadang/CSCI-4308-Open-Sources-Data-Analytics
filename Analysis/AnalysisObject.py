@@ -38,8 +38,10 @@ class AnalysisObject(object):
 	def createJson(self):
 		counts = self.getlist_para_two()
 		candidate = self.getfixed_para_one().title()
+		source = self.getfixed_para_two()
+		print counts
 		jsonCandidateString = '''{
-                    "seriesname": "''' + candidate + ''' Tweet Counts",
+                    "seriesname": "''' + candidate + ''' ''' + source + ''' Counts",
                     "data": [ '''
 		for i in range(0,len(counts)-1):
 			jsonCandidateString += '{ "value": "' + str(counts[i]) + '" },'

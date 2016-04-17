@@ -41,8 +41,8 @@ def getDate():
         
     
     full_date = full_date.replace("MDT", "").replace("\n","")
-    full_date = full_date[:-8] 
-    
+    full_date = full_date[:-11] 
+        
 
     #day is less than 10, add zero in front
     if (len(full_date) == 3):

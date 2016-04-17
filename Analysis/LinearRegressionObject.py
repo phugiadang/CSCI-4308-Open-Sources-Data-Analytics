@@ -37,6 +37,8 @@ class LinearRegressionObject(AnalysisObject):
 	#list_para_one: list (source, list of counts) for x-values
 	#list_para_two: list (source, list of counts) for y values
 	def __init__(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):
+                print 'LinearRegressionObject X: ' + str(list_para_one)
+                print 'LinearRegressionObject Y: ' + str(list_para_two)
 		super(LinearRegressionObject,self).__init__(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
 	
 	#use to calculate the corellation between two data sets

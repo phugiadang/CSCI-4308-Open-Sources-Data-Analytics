@@ -1,7 +1,7 @@
 
 {
     "chart": {
-        "caption": "Trump Counts",
+        "caption": "trump Counts",
         "xaxisname": "Days",
         "showvalues": "0",
         "divlinealpha": "100",
@@ -19,7 +19,7 @@
     },
     "categories": [
         {
-	    "category": [{ "label": "March, 13" },{ "label": "March, 14" },{ "label": "March, 15" },{ "label": "March, 16" },{ "label": "March, 17" },{ "label": "March, 18" },{ "label": "March, 19" },{ "label": "March, 20" },{ "label": "March, 21" },{ "label": "March, 22" }
+	    "category": [{ "label": "April, 11" },{ "label": "April, 12" },{ "label": "April, 13" }
 			    ]
         }
     ],
@@ -33,7 +33,7 @@
             "dataset": [
                 {
                     "seriesname": "Tweets",
-                    "data": [{ "value": "2231242" },{ "value": "2022461" },{ "value": "2034354" },{ "value": "2196443" },{ "value": "1479949" },{ "value": "1279961" },{ "value": "1398603" },{ "value": "1274293" },{ "value": "1246421" },{ "value": "1416645" }
+                    "data": [{ "value": "820161" },{ "value": "795837" },{ "value": "814197" }
                     ]
                 }
             ]
@@ -50,7 +50,7 @@
             "dataset": [
                 {
                     "seriesname": "Poll Percentage",
-                    "data": [{ "value": "44" },{ "value": "None" },{ "value": "38" },{ "value": "64" },{ "value": "None" },{ "value": "None" },{ "value": "11" },{ "value": "46" },{ "value": "43" },{ "value": "35" }
+                    "data": [{ "value": "None" },{ "value": "None" },{ "value": "None" }
                     ]
                 }
             ]
@@ -66,7 +66,7 @@
             "dataset": [
                 {
                     "seriesname": "Article Counts",
-                    "data": [{ "value": "77" },{ "value": "131" },{ "value": "101" },{ "value": "118" },{ "value": "78" },{ "value": "78" },{ "value": "30" },{ "value": "49" },{ "value": "89" },{ "value": "96" }
+                    "data": [{ "value": "185" },{ "value": "131" },{ "value": "67" }
                     ]
                 }
             ]

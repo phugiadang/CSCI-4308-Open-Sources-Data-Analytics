@@ -1,114 +1,62 @@
-{
-	"chart": {
-		"caption": "Candidate GDELT  Counts",
-		"subCaption": "",
-		"captionFontSize": "14",
-		"subcaptionFontSize": "14",
-		"subcaptionFontBold": "0",
-		"paletteColors": "#0075c2,#1aaf5d",
-		"bgcolor": "#ffffff",
-		"showBorder": "0",
-		"showShadow": "0",
-		"showCanvasBorder": "0",
-		"usePlotGradientColor": "0",
-		"legendBorderAlpha": "0",
-		"legendShadow": "0",
-		"showAxisLines": "0",
-		"showAlternateHGridColor": "0",
-		"divlineThickness": "1",
-		"divLineIsDashed": "1",
-		"divLineDashLen": "1",
-		"divLineGapLen": "1",
-		"xAxisName": "Day",
-		"showValues": "0",
-		"showRealTimeValue": "0",
-		"refreshinterval": "86400",
-		"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json"
-	},
-	"categories": [{
-		"category": [{
-			"label": "March, 15"
-		}, {
-			"label": "March, 16"
-		}, {
-			"label": "March, 17"
-		}, {
-			"label": "March, 18"
-		}]
-	}],
-	"dataset": [{
-		"seriesname": "Trump GDELT Counts",
-		"data": [{
-			"value": "101"
-		}, {
-			"value": "118"
-		}, {
-			"value": "78"
-		}, {
-			"value": "78"
-		}]
-	}, {
-		"seriesname": "Clinton GDELT Counts",
-		"data": [{
-			"value": "35"
-		}, {
-			"value": "78"
-		}, {
-			"value": "59"
-		}, {
-			"value": "39"
-		}]
-	}, {
-		"seriesname": "Sanders GDELT Counts",
-		"data": [{
-			"value": "18"
-		}, {
-			"value": "154"
-		}, {
-			"value": "13"
-		}, {
-			"value": "20"
-		}]
-	}, {
-		"seriesname": "Cruz GDELT Counts",
-		"data": [{
-			"value": "31"
-		}, {
-			"value": "23"
-		}, {
-			"value": "29"
-		}, {
-			"value": "38"
-		}]
-	}, {
-		"seriesname": "Rubio GDELT Counts",
-		"data": [{
-			"value": "4"
-		}, {
-			"value": "70"
-		}, {
-			"value": "10"
-		}, {
-			"value": "13"
-		}]
-	}, {
-		"seriesname": "Kasich GDELT Counts",
-		"data": [{
-			"value": "14"
-		}, {
-			"value": "18"
-		}, {
-			"value": "21"
-		}, {
-			"value": "16"
-		}]
-	}],
-	"trendlines": [{
-		"line": [{
-			"startvalue": "17022",
-			"color": "#6baa01",
-			"valueOnRight": "1",
-			"displayvalue": "Average"
-		}]
-	}]
-}
+
+	{
+		    "chart": {
+			"caption": "Candidate GDELT  Counts",
+			"subCaption": "",
+			"captionFontSize": "14",
+			"subcaptionFontSize": "14",
+			"subcaptionFontBold": "0",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
+			"bgcolor": "#ffffff",
+			"showBorder": "0",
+			"showShadow": "0",
+			"showCanvasBorder": "0",
+			"usePlotGradientColor": "0",
+			"legendBorderAlpha": "0",
+			"legendShadow": "0",
+			"showAxisLines": "0",
+			"showAlternateHGridColor": "0",
+			"divlineThickness": "1",
+			"divLineIsDashed": "1",
+			"divLineDashLen": "1",
+			"divLineGapLen": "1",
+			"xAxisName": "Day",
+			"showValues": "0",
+			"showRealTimeValue": "0",
+			"refreshinterval": "86400",
+			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json"
+		    },
+		    "categories": [
+			{
+			    "category": [{ "label": "March, 13" },{ "label": "March, 14" },{ "label": "March, 15" },{ "label": "March, 16" },{ "label": "March, 17" },{ "label": "March, 18" },{ "label": "March, 19" },{ "label": "March, 20" },{ "label": "March, 21" },{ "label": "March, 22" },{ "label": "March, 23" },{ "label": "March, 24" },{ "label": "March, 25" },{ "label": "March, 26" },{ "label": "March, 27" },{ "label": "March, 28" },{ "label": "March, 29" },{ "label": "March, 30" },{ "label": "March, 31" },{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" },{ "label": "April, 7" }
+			    ]
+			}
+		    ],
+		    "dataset": [{
+                    "seriesname": "Trump GDELT Counts",
+                    "data": [ { "value": "77" },{ "value": "131" },{ "value": "101" },{ "value": "118" },{ "value": "78" },{ "value": "78" },{ "value": "30" },{ "value": "49" },{ "value": "89" },{ "value": "96" },{ "value": "110" },{ "value": "40" },{ "value": "34" },{ "value": "25" },{ "value": "37" },{ "value": "71" },{ "value": "100" },{ "value": "274" },{ "value": "79" },{ "value": "54" },{ "value": "38" },{ "value": "87" },{ "value": "115" },{ "value": "79" },{ "value": "87" },{ "value": "78" }]},{
+                    "seriesname": "Clinton GDELT Counts",
+                    "data": [ { "value": "19" },{ "value": "34" },{ "value": "35" },{ "value": "78" },{ "value": "59" },{ "value": "39" },{ "value": "17" },{ "value": "28" },{ "value": "31" },{ "value": "27" },{ "value": "20" },{ "value": "38" },{ "value": "22" },{ "value": "24" },{ "value": "16" },{ "value": "35" },{ "value": "48" },{ "value": "32" },{ "value": "38" },{ "value": "65" },{ "value": "101" },{ "value": "131" },{ "value": "88" },{ "value": "44" },{ "value": "26" },{ "value": "38" }]},{
+                    "seriesname": "Sanders GDELT Counts",
+                    "data": [ { "value": "12" },{ "value": "22" },{ "value": "18" },{ "value": "154" },{ "value": "13" },{ "value": "20" },{ "value": "21" },{ "value": "10" },{ "value": "29" },{ "value": "10" },{ "value": "16" },{ "value": "9" },{ "value": "13" },{ "value": "6" },{ "value": "12" },{ "value": "11" },{ "value": "45" },{ "value": "22" },{ "value": "19" },{ "value": "28" },{ "value": "35" },{ "value": "53" },{ "value": "53" },{ "value": "33" },{ "value": "49" },{ "value": "13" }]},{
+                    "seriesname": "Cruz GDELT Counts",
+                    "data": [ { "value": "8" },{ "value": "30" },{ "value": "31" },{ "value": "23" },{ "value": "29" },{ "value": "38" },{ "value": "21" },{ "value": "18" },{ "value": "35" },{ "value": "43" },{ "value": "42" },{ "value": "35" },{ "value": "52" },{ "value": "25" },{ "value": "44" },{ "value": "46" },{ "value": "125" },{ "value": "50" },{ "value": "26" },{ "value": "35" },{ "value": "109" },{ "value": "14" },{ "value": "57" },{ "value": "43" },{ "value": "103" },{ "value": "90" }]},{
+                    "seriesname": "Rubio GDELT Counts",
+                    "data": [ { "value": "6" },{ "value": "5" },{ "value": "4" },{ "value": "70" },{ "value": "10" },{ "value": "13" },{ "value": "1" },{ "value": "2" },{ "value": "4" },{ "value": "8" },{ "value": "8" },{ "value": "12" },{ "value": "28" },{ "value": "2" },{ "value": "3" },{ "value": "0" },{ "value": "5" },{ "value": "7" },{ "value": "10" },{ "value": "4" },{ "value": "1" },{ "value": "0" },{ "value": "3" },{ "value": "1" },{ "value": "1" },{ "value": "18" }]},{
+                    "seriesname": "Kasich GDELT Counts",
+                    "data": [ { "value": "27" },{ "value": "17" },{ "value": "14" },{ "value": "18" },{ "value": "21" },{ "value": "16" },{ "value": "4" },{ "value": "29" },{ "value": "21" },{ "value": "13" },{ "value": "22" },{ "value": "12" },{ "value": "12" },{ "value": "1" },{ "value": "22" },{ "value": "17" },{ "value": "24" },{ "value": "17" },{ "value": "0" },{ "value": "16" },{ "value": "4" },{ "value": "2" },{ "value": "24" },{ "value": "13" },{ "value": "11" },{ "value": "3" }]}
+		    ],
+		    "trendlines": [
+			{
+			    "line": [
+				{
+				    "startvalue": "17022",
+				    "color": "#6baa01",
+				    "valueOnRight": "1",
+				    "displayvalue": "Average"
+				}
+			    ]
+			}
+		    ]
+		}
+	

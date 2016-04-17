@@ -86,15 +86,11 @@ class RegressionReadyPolls:
         while i < len(self.final_poll_numbers)-1:
             if first_found == False and self.final_poll_numbers[i] == None:
                 first_num = self.final_poll_numbers[i-1]
-                print 'Final Poll Numbers: ' + str(self.final_poll_numbers)
-                print 'Index of first number: ' + str(i)
                 first_found = True
                 j = 0
                 for j in range(0, len(self.final_poll_numbers)):
                     if self.final_poll_numbers[i+j] != None:
                         second_num = self.final_poll_numbers[i+j]
-                        print 'first_num: ' + str(first_num)
-                        print 'second_num: ' + str(second_num)
                         avg = (first_num + second_num) / 2
                         break
                 k = i
@@ -106,7 +102,6 @@ class RegressionReadyPolls:
                 i += j
             else:
                 i += 1
-        
 
     def incrementDate(self, date):
         final_date = None
@@ -154,16 +149,16 @@ class RegressionReadyPolls:
         best_choice_length = self.getBestPollLength()
         #Only use polls with the best number of choices to make interpolation easier
         relevant_polls = []
-        for poll in self.polls:
+	for poll in self.polls:
             if len(poll[1]) == int(best_choice_length):
                 relevant_polls.append(poll)
                 #we now have the polls of the correct length containing the correct candidate. Now pull out the poll numbers for the relevant candidate
-        current_date = relevant_polls[0][0]
+        print relevant_polls
+	current_date = relevant_polls[0][0]
         to_be_averaged = []
 
         #if there are no polls on the first n days of the range, add n None's to poll_numbers
         #print int(self.start)
-        print current_date
         if int(self.start) != current_date:
             for i in range (int(self.start), current_date):
                 self.final_poll_numbers.append(None)
@@ -180,7 +175,6 @@ class RegressionReadyPolls:
                     if poll[0] == current_date:
                         #there's more than one poll a day, so we average each day's polls
                         to_be_averaged.append(poll[2][i])
-                        #print 'Adding ' + str(poll[2][i]) + ' to be averaged, date is ' + str(current_date)
                     else:
                         #if we're on to a poll on a new day, get the averages for the previous day
                         if (current_date != poll[0]):
@@ -189,11 +183,14 @@ class RegressionReadyPolls:
                             for num in to_be_averaged: avg += num
                             avg = avg/len(to_be_averaged)
                             self.final_poll_numbers.append(avg)
+                            #append this new day's value to be averaged on the next round of averaging
                             to_be_averaged = [poll[2][i]]
                         #we want to add 'None' into the days that have no poll numbers so we can later add averages there
                         if poll[0] != self.incrementDate(current_date):
-                            for i in range (current_date, poll[0]-1):
+                            i = self.incrementDate(current_date)
+                            while i < int(poll[0]):
                                 self.final_poll_numbers.append(None)
+                                i = self.incrementDate(i)
                         current_date = poll[0]
                 i += 1
     
@@ -206,16 +203,24 @@ class RegressionReadyPolls:
 
         #Now, if there was no poll on the last day of the range then this will not insert enough None's.
         #e.g. in the range 20160301 20160305, the last poll was on the 3rd so the list will only be 3 long
-        #We not have to add in the approproate number of trailing None's
-    
-        time_range = int(self.end) - int(self.start)
-        if len(self.final_poll_numbers) <= time_range:
-            for i in range(0, int(self.end) - current_date):
-                self.final_poll_numbers.append(None)
+        #We now have to add in the approproate number of trailing None's
+
+        #start with the date of the last poll given to the object
+        i = relevant_polls[len(relevant_polls)-1][0]
+        #add None until we reach the end date
+        while int(i) < int(self.end):
+            print i
+            print self.end
+            self.final_poll_numbers.append(None)
+            i = self.incrementDate(i)
+            
+#        time_range = int(self.end) - int(self.start)
+#        if len(self.final_poll_numbers) <= time_range:
+#            for i in range(0, int(self.end) - current_date):
+#                self.final_poll_numbers.append(None)
 
 
     def getPollNumbers(self):
         return self.final_poll_numbers
-
 
 

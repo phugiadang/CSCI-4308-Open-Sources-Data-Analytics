@@ -2,15 +2,16 @@ import json
 import sys
 from sys import argv
 import operator
-import queryCounts
+#import QueryingDavid
+import QueryingDavid
 from AnalysisObject import AnalysisObject
 from cassandra.cluster import Cluster
 import time
 import datetime
 from calendar import monthrange
 from GetPollsFromDatabase import DatabasePolls
-
-
+from RegressionReadyPolls import RegressionReadyPolls
+import matplotlib
 #USAGE: python jsonize.py Twitter/GDELT CANDIDATE MONTH START_DAY END_DAY hourly/daily
 #Enter one of the slashes (Twitter or GDELT, hourly or daily)
 #Candidate name or all for all of them
@@ -30,11 +31,10 @@ if datasource == "Twitter":
 
 
 
-def getTwitterObjects():
-	print days
+def getTwitterObjectsHourly():
 	candidate_list = []
 	for candidate_name in candidate_names:
-		this_candidate_counts = queryCounts.candidateCountRangeDay(candidate_name, month_start_number, days[0], current_hour, month_end_number, days[len(days)-1], current_hour)
+		this_candidate_counts = QueryingDavid.candidateCountRangeDay(candidate_name, month_start_number, days[0], current_hour, month_end_number, days[len(days)-1], current_hour)
 		#append 0's if missing data MAY BE ONE TOO MANY
 		for i in range(len(this_candidate_counts),len(days)*24):
 			this_candidate_counts.append(0)
@@ -44,11 +44,14 @@ def getTwitterObjects():
 
 
 def getTwitterObjectCandidate(candidate_name):
-	this_candidate_counts = queryCounts.candidateCountRangeDay(candidate_name, month_start_number, days[0], 1, month_end_number, days[len(days)-1], 1)
+	this_candidate_counts = QueryingDavid.candidateCountRangeDayFull(candidate_name.lower(), month_start_number, days[0], 1, month_end_number, days[len(days)-1], 1)
+	print len(this_candidate_counts)
+	print this_candidate_counts
 	#append 0's if missing data THIS MAY NOT WORK, MAY BE ONE TOO MANY
 	for i in range(len(this_candidate_counts),len(days)*24):
 		this_candidate_counts.append(0)
 	return AnalysisObject(candidate_name, datasource, dates, this_candidate_counts)
+
 
 def getGDELTObjects():
 	candidate_list = []
@@ -56,10 +59,13 @@ def getGDELTObjects():
 		candidate_counts = []
 		for day in days:
 			if day >= end_day:
-				this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
+				this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
 			else:
-				this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
-			candidate_counts.append(this_day_count)
+				this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
+			#for row in this_day_count:
+				#print "u"
+				#print "count is " +  str(row.count)
+			candidate_counts.append(this_day_count[0][1])
 		candidate = AnalysisObject(candidate_name, datasource, [], candidate_counts)
 		candidate_list.append(candidate)
 
@@ -71,12 +77,40 @@ def getGDELTObjectCandidate(candidate_name):
 	candidate_counts = []
 	for day in days:
 		if day >= end_day:
-			this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
+			this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
 		else:
-			this_day_count = queryCounts.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
-		candidate_counts.append(this_day_count)
+			this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
+		candidate_counts.append(this_day_count[0][1])
 	return  AnalysisObject(candidate_name, "GDELT", [], candidate_counts)
 
+def getPollObjectCandidate1(candidate_name):
+	start_date = ""
+	end_date = ""
+	poll_days = []
+	for day in days:
+		if len(str(day)) < 2:
+			#first month
+			if day > end_day:
+				poll_days.append("20160" + str(month_start_number) + "0" + str(day))
+			#end month
+			else:
+				poll_days.append("20160" + str(month_end_number) + "0" + str(day))
+		else:
+			#first month
+			if day > end_day:
+				poll_days.append("20160" + str(month_start_number) + str(day))
+			#end month
+			else:
+				poll_days.append("20160" + str(month_end_number) + str(day))
+	poll_days_copy = poll_days[:]
+	dp = DatabasePolls(poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1], candidate_name.title())
+	dp.queryDatabase()
+	dp.cleanPolls()
+	poll_data = dp.getCleanedPolls()
+	print poll_data
+	rrp = RegressionReadyPolls(poll_data, candidate_name, days[0], days[len(days)-1])
+	print rrp.makeSimplePollNumbers()
+	#print RegressionReadyPolls.makeSimplePollNumbers(poll_data, candidate_name, days[0], days[len(days)-1])
 
 def getPollObjectCandidate(candidate_name):
 	start_date = ""
@@ -97,7 +131,6 @@ def getPollObjectCandidate(candidate_name):
 			#end month
 			else:
 				poll_days.append("20160" + str(month_end_number) + str(day))
-	print poll_days
 	poll_days_copy = poll_days[:]
 	dp = DatabasePolls(poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1], candidate_name.title())
 	dp.queryDatabase()
@@ -132,7 +165,6 @@ if month_end_number == 0:
 	date = time.strftime("%d,%m,%y")
 	current_time = datetime.datetime.now()
 	
-	print current_time
 	current_hour = str(current_time)[11:13]
 	end_day = int(date[0:2]) - 1
 	month_end_number = int(date[3:5])
@@ -153,7 +185,7 @@ if end_day > start_day:
 else:
 	days = range(start_day, monthrange(2016,month_start_number)[1] + 1) + range(1, end_day + 1)
 
-hours = ["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+hours = ["19","20","21","22","23","00","01","02","03","04","05","06","07","08","09", "10", "11","12","13","14","15","16","17","18"]
 dates_hours = [] #empty list to be filled in with readable dates and times
 dates = []
 chart_caption = "Candidate " + datasource + "  Counts"
@@ -179,7 +211,6 @@ for day in days:
 
 if candidate_read == "all" and datasource == "GDELT":
 	candidate_list =  getGDELTObjects()
-
 	json_string = '''
 	{
 		    "chart": {
@@ -207,8 +238,8 @@ if candidate_read == "all" and datasource == "GDELT":
 			"divLineDashLen": "1",
 			"divLineGapLen": "1",
 			"xAxisName": "Day",
-			"showValues": "0"
-			"showRealTimeValue": "0"
+			"showValues": "0",
+			"showRealTimeValue": "0",
 			"refreshinterval": "86400",
 			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json"
 		    },
@@ -249,7 +280,7 @@ if candidate_read == "all" and datasource == "GDELT":
 
 elif candidate_read == "all" and datasource == "Twitter":
 	if timeframe == "hourly":
-		candidate_list = getTwitterObjects()
+		candidate_list = getTwitterObjectsHourly()
 
 
 	json_string = '''
@@ -285,15 +316,25 @@ elif candidate_read == "all" and datasource == "Twitter":
 		    "categories": [
 			{
 			    "category": ['''
+	k = 0
 	for i in range(0,len(dates)-1):
 		for j in range(0,len(hours)-1):
-			json_string += '{ "label": "' + dates[i] + ' ' + str(hours[j]) + ':00" },'
-
-		json_string += '{ "label": "' + dates[i] + ' ' + str(hours[len(hours)-1]) + ':00" },'
+			if k % 3 == 0:
+				json_string += '{ "label": "' + dates[i] + ' ' + str(hours[j]) + ':00" },'
+			else:
+				json_string += '{ "label": "" },'
+			k += 1
+		#json_string += '{ "label": "' + dates[i] + ' ' + str(hours[len(hours)-1]) + ':00" },'
+		json_string += '{ "label": "" },'
+		k += 1
 	for j in range(0, len(hours)-1):
-		json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[j]) + ':00" },'
-
-	json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[len(hours)-1]) + ':00" }'
+		if k % 3 == 0:
+			json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[j]) + ':00" },'
+		else:
+			json_string += '{ "label": "" },'
+		k += 1
+	#json_string += '{ "label": "' + dates[len(dates)-1] + ' ' + str(hours[len(hours)-1]) + ':00" }'
+	json_string += '{ "label": "" }'
 	json_string += '''
 			    ]
 			}
@@ -436,25 +477,11 @@ elif datasource == "all":
             "dataset": [
                 {
                     "seriesname": "Tweets",
-                    "data": [
-                        {
-                            "value": "6"
-                        },
-                        {
-                            "value": "13"
-                        },
-                        {
-                            "value": "20"
-                        },
-                        {
-                            "value": "27"
-                        },
-                        {
-                            "value": "28"
-                        },
-                        {
-                            "value": "33"
-                        }
+                    "data": ['''
+	for i in range (0,len(dates)-1):
+		json_string += '{ "value": "' + str(candidate_twitter.getlist_para_two()[i]) + '" },'
+	json_string += '{ "value": "' + str(candidate_twitter.getlist_para_two()[len(dates)-1]) + '" }'
+	json_string += '''
                     ]
                 }
             ]
@@ -506,5 +533,6 @@ elif datasource == "all":
 
 
 
-	f = open('../FrontEnd/NGC-FrontEnd/public' + candidate_read + '.json', 'w')
+	f = open('../FrontEnd/NGC-FrontEnd/public/' + candidate_read + '.json', 'w')
+	#f = open(candidate_read + '.json','w')
 	f.write(json_string)
