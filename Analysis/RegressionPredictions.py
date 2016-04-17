@@ -42,10 +42,10 @@ def getPolls(candidate, start, end):
 
     reg_polls = RegressionReadyPolls(clean_polls, candidate.capitalize(), start, end)
     reg_polls.makeSimplePollNumbers()
-#    print 'Pre-Cleaned: ' + str(len(reg_polls.getPollNumbers()))
+    print 'With Nones: ' + str(reg_polls.getPollNumbers())
     reg_polls.fillGapsWithAvg()
     reg_polls = reg_polls.getPollNumbers()
-    print 'Post-Cleaned: ' + str(reg_polls)
+#    print 'Without Nones: ' + str(reg_polls)
     return reg_polls
     
 def getGDELT(candidate, start, end):

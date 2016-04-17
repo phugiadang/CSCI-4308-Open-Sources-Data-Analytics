@@ -153,6 +153,7 @@ class RegressionReadyPolls:
             if len(poll[1]) == int(best_choice_length):
                 relevant_polls.append(poll)
                 #we now have the polls of the correct length containing the correct candidate. Now pull out the poll numbers for the relevant candidate
+        print relevant_polls
 	current_date = relevant_polls[0][0]
         to_be_averaged = []
 
@@ -186,8 +187,8 @@ class RegressionReadyPolls:
                             to_be_averaged = [poll[2][i]]
                         #we want to add 'None' into the days that have no poll numbers so we can later add averages there
                         if poll[0] != self.incrementDate(current_date):
-                            i = current_date
-                            while i < poll[0]:
+                            i = self.incrementDate(current_date)
+                            while i < int(poll[0]):
                                 self.final_poll_numbers.append(None)
                                 i = self.incrementDate(i)
                         current_date = poll[0]
