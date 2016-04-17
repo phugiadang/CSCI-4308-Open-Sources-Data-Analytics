@@ -1,0 +1,59 @@
+
+	{
+		    "chart": {
+			"caption": "Candidate Polls  Counts",
+			"subCaption": "",
+			"captionFontSize": "14",
+			"subcaptionFontSize": "14",
+			"subcaptionFontBold": "0",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
+			"bgcolor": "#ffffff",
+			"showBorder": "0",
+			"showShadow": "0",
+			"showCanvasBorder": "0",
+			"usePlotGradientColor": "0",
+			"legendBorderAlpha": "0",
+			"legendShadow": "0",
+			"showAxisLines": "0",
+			"showAlternateHGridColor": "0",
+			"divlineThickness": "1",
+			"divLineIsDashed": "1",
+			"divLineDashLen": "1",
+			"divLineGapLen": "1",
+			"xAxisName": "Day",
+			"showValues": "0"
+		    },
+		    "categories": [
+			{
+			    "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" }
+			    ]
+			}
+		    ],
+		    "dataset": [{
+                    "seriesname": "Trump Polls Counts",
+                    "data": [ { "value": "52" },{ "value": "None" },{ "value": "40" },{ "value": "39" }]},{
+                    "seriesname": "Clinton Polls Counts",
+                    "data": [ { "value": "None" },{ "value": "45" },{ "value": "55" },{ "value": "47" }]},{
+                    "seriesname": "Sanders Polls Counts",
+                    "data": [ { "value": "None" },{ "value": "44" },{ "value": "33" },{ "value": "41" }]},{
+                    "seriesname": "Cruz Polls Counts",
+                    "data": [ { "value": "20" },{ "value": "None" },{ "value": "32" },{ "value": "32" }]},{
+                    "seriesname": "Rubio Polls Counts",
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Kasich Polls Counts",
+                    "data": [ { "value": "21" },{ "value": "None" },{ "value": "17" },{ "value": "18" }]}
+		    ],
+		    "trendlines": [
+			{
+			    "line": [
+				{
+				    "startvalue": "17022",
+				    "color": "#6baa01",
+				    "valueOnRight": "1",
+				    "displayvalue": "Average"
+				}
+			    ]
+			}
+		    ]
+		}
+	

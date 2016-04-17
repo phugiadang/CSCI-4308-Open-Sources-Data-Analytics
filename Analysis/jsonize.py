@@ -2,7 +2,6 @@ import json
 import sys
 from sys import argv
 import operator
-#import QueryingDavid
 import QueryingDavid
 from AnalysisObject import AnalysisObject
 from cassandra.cluster import Cluster
@@ -103,15 +102,20 @@ def getPollObjectCandidate1(candidate_name):
 			else:
 				poll_days.append("20160" + str(month_end_number) + str(day))
 	poll_days_copy = poll_days[:]
-	dp = DatabasePolls(poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1], candidate_name.title())
+	print candidate_name
+	dp = DatabasePolls(poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1], [candidate_name.capitalize()])
 	dp.queryDatabase()
 	dp.cleanPolls()
 	poll_data = dp.getCleanedPolls()
-	print poll_data
-	rrp = RegressionReadyPolls(poll_data, candidate_name, days[0], days[len(days)-1])
+	
+	rrp = RegressionReadyPolls(poll_data, candidate_name.capitalize(), days[0], days[len(days)-1])
+	rrp.makeSimplePollNumbers()
+	rrp.fillGapsWithAvg()
 	print rrp.makeSimplePollNumbers()
+	return rrp.makeSimplePollNumbers()
 	#print RegressionReadyPolls.makeSimplePollNumbers(poll_data, candidate_name, days[0], days[len(days)-1])
-
+	#return rrp.getPollNumbers()
+	
 def getPollObjectCandidate(candidate_name):
 	start_date = ""
 	end_date = ""
@@ -151,7 +155,8 @@ def getPollObjectCandidate(candidate_name):
 					i += 1
 				still_searching = False
 		if does_exist == False:
-			list_of_data.append("None")
+			list_of_data.append("None")	
+
 		poll_days_copy.remove(poll_days_copy[0])
 
 
@@ -431,7 +436,8 @@ elif candidate_read == "all" and datasource == "Polls":
 		}
 	'''
 
-	f = open('../FrontEnd/NGC-FrontEnd/public/PollsAll.json', 'w')
+	#f = open('../FrontEnd/NGC-FrontEnd/public/PollsAll.json', 'w')
+	f = open('PollsAll.json', 'w')
 	f.write(json_string)
 
 elif datasource == "all":

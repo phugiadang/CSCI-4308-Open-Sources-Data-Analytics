@@ -23,11 +23,26 @@
 #  
 
 from AnalysisObjectFactory import AnalysisObjectFactory
+from cassandra.cluster import Cluster
 
+keyspace = 'candidates'
+cluster = Cluster(contact_points=['128.138.202.110','128.138.202.117'],)
+#connect to our Cassandra Keyspace
+session = cluster.connect(keyspace)
+session.default_timeout = 600
 
 def main():
 	AnalysisObjectFactory.initialFactory()
-	types = AnalysisObjectFactory.createObject("TweetAnalWord2Vec","trump",["2/17/2016","2/18/2016","2/19/2016","2/20/2016","2/21/2016","2/22/2016","2/23/2016"],['123','234'],[["Trump is a motherfucking Genius! Ban all Muslims is the best thing ever!","RT @kateloving: KING: Bill Clinton almost sounds like Donald Trump with jab https://t.co/5a2ze5YTc4","This is an exercise in taking Donald Trump at his word"," @GlobeIdeas editor @katiekings... https://t.co/vEa1mhKVDz via @jorgeramosnews"],["The TRUMP Fight Song [unofficial] - TRUMP 2016 https://t.co/9AnOeQV83V via @YouTube","Cheats abd liars in GOPe - time to write in Trump! #StopTheSteal help Trump #BurnDownTheGOP https://t.co/3z8qY8IW5Q","Trump nomination up to 200 people","Trump nomination up to 200 people"]])
+	list_of_userids=[]
+	list_of_list_of_tweets = []
+        list_of_candidates = ["kasich", "sanders"]
+	for candidate in list_of_candidates:
+            final_result = session.execute("select * from topTweeters where candidate_name = '" + candidate + "'");
+            for user in final_result:
+                list_of_userids.append(str(getattr(user, "user_id")))
+                list_of_list_of_tweets.append(getattr(user, "list_of_tweets"))
+            types = AnalysisObjectFactory.createObject("TweetAnalWord2Vec",candidate,["3/6/2016", "4/5/2016"],list_of_userids, list_of_list_of_tweets)
+	#types = AnalysisObjectFactory.createObject("TweetAnalWord2Vec","trump",["2/17/2016","2/18/2016","2/19/2016","2/20/2016","2/21/2016","2/22/2016","2/23/2016"],['123','234'],[["Trump is a motherfucking Genius! Ban all Muslims is the best thing ever!","RT @kateloving: KING: Bill Clinton almost sounds like Donald Trump with jab https://t.co/5a2ze5YTc4","This is an exercise in taking Donald Trump at his word"," @GlobeIdeas editor @katiekings... https://t.co/vEa1mhKVDz via @jorgeramosnews"],["The TRUMP Fight Song [unofficial] - TRUMP 2016 https://t.co/9AnOeQV83V via @YouTube","Cheats abd liars in GOPe - time to write in Trump! #StopTheSteal help Trump #BurnDownTheGOP https://t.co/3z8qY8IW5Q","Trump nomination up to 200 people","Trump nomination up to 200 people"]])
 	types.sentimentAnalysis()
 	return 0
 

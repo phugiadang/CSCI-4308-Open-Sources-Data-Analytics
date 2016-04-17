@@ -35,7 +35,7 @@ from sklearn.preprocessing import scale
 import numpy as np
 from sklearn.linear_model import SGDClassifier
 import unicodedata
-#unicodedata.normalize('NFKD', title).encode('ascii','ignore')
+
 
 def buildModel(size):
 	with open('Sentiment Analysis Dataset.csv', 'rb') as csvfile:
@@ -156,7 +156,10 @@ class TweetAnalWord2Vec(AnalysisObject):
 			clean_tweet = []
 			pos = 0
 			neg = 0
-			a = testingTweet(data_two[i],model,train_vecs,y_train)
+			for t in data_two[i]:
+				t=unicodedata.normalize('NFKD', t).encode('ascii','ignore')
+				clean_tweet.append(t)
+			a = testingTweet(clean_tweet,model,train_vecs,y_train)
 			for x in a:
 				if x == 0.0:
 					neg=neg+1
