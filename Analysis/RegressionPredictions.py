@@ -42,7 +42,6 @@ def getPolls(candidate, start, end):
 
     reg_polls = RegressionReadyPolls(clean_polls, candidate.capitalize(), start, end)
     reg_polls.makeSimplePollNumbers()
-    print 'With Nones: ' + str(reg_polls.getPollNumbers())
     reg_polls.fillGapsWithAvg()
     reg_polls = reg_polls.getPollNumbers()
 #    print 'Without Nones: ' + str(reg_polls)
@@ -72,6 +71,7 @@ def predictPollsWithTwitter(candidate, start, end, source1, source2):
         source1_name = 'polls'
     else:
         print 'Unknown source ' + source1
+        return
 
     if source2 == 'twitter':
         source2 = tweets
@@ -84,6 +84,7 @@ def predictPollsWithTwitter(candidate, start, end, source1, source2):
         source2_name = 'Polls'
     else:
         print 'Unknown source ' + source2
+        return
 
     types = AnalysisObjectFactory.createObject("LinearRegressionObject", candidate, dates, (source1_name, source1),(source2_name, source2))
     (text,data)= types.linearRegressionAnalysis()

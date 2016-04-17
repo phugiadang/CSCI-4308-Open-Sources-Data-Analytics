@@ -153,7 +153,6 @@ class RegressionReadyPolls:
             if len(poll[1]) == int(best_choice_length):
                 relevant_polls.append(poll)
                 #we now have the polls of the correct length containing the correct candidate. Now pull out the poll numbers for the relevant candidate
-        print relevant_polls
 	current_date = relevant_polls[0][0]
         to_be_averaged = []
 
@@ -209,8 +208,6 @@ class RegressionReadyPolls:
         i = relevant_polls[len(relevant_polls)-1][0]
         #add None until we reach the end date
         while int(i) < int(self.end):
-            print i
-            print self.end
             self.final_poll_numbers.append(None)
             i = self.incrementDate(i)
             
