@@ -198,4 +198,3 @@ def _cleanText(corpus):
     corpus = [z.lower().replace('\n','').split() for z in corpus]
     return corpus
 
-buildModel(200000)
