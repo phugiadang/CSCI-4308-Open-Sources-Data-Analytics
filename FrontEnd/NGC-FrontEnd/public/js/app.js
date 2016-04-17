@@ -1,5 +1,5 @@
-// Declares the initial angular module "meanMapApp". Module grabs other controllers and services.
-var app = angular.module('ngc', ['addCtrl', 'queryCtrl', 'headerCtrl', 'gservice', 'ngRoute', 'ui.bootstrap'])
+// Declares the initial angular module "ngc". Module grabs other controllers and services.
+var app = angular.module('ngc', ['queryCtrl', 'headerCtrl', 'ngRoute', 'ui.bootstrap'])
 
     // Configures Angular routing -- showing the relevant view and controller when needed.
     .config(function($routeProvider){
@@ -62,6 +62,11 @@ app.controller('HomeController', function($scope, $location){
                                         "candidateChartId", "100%", "500", "0", "0");
 			candidatesChart.setJSONUrl("TwitterAll.json");
 			candidatesChart.render("candidatesChart");
+
+  var pollsChart = new FusionCharts( "FusionCharts/msline.swf",
+                                        "pollsChartId", "100%", "500", "0", "0");
+			candidatesChart.setJSONUrl("PollsAll.json");
+			candidatesChart.render("pollsChart");
 });
 //Main Page Controller
 app.controller('mainController', function($scope, $location){});
@@ -90,23 +95,40 @@ app.controller('clintonController', function($scope, $location){
 	$scope.message = 'Hillary Clinton Analysis'
 });
 app.controller('analysisController', function($scope, $location){
-  $scope.message = 'Analyses and Correlations'
-  $scope.myInterval = 1000;
-  $scope.slides = [
-      //This is where the Analysis Images for the /analysis page goes
-      {
-        image: '../analysis-images/User_Sentiment_Analysis_kasich.png',
-        caption: 'Kasich Sentiment Analysis'
-      },
-      {
-        image: '../analysis-images/User_Sentiment_Analysis_trump.png',
-        caption: 'Trump Sentiment Analysis'
-      },
-      {
-        image: '../analysis-images/Twitter_vs_GDELT.png',
-        caption: 'Twitter vs. GDELT'
-      }
-  ];
+
+  $scope.myInterval = 5000;
+  $scope.noWrapSlides = false;
+  $scope.active = 0;
+  var slides = $scope.slides = [];
+  var currIndex = 0;
+  var images = [
+  'Twitter_vs_GDELT_clinton.png', 'Twitter_vs_GDELT_cruz.png', 'Twitter_vs_GDELT_kasich.png', 'Twitter_vs_GDELT_rubio.png', 'Twitter_vs_GDELT_sanders.png', 'Twitter_vs_GDELT_trump.png', 'Twitter_vs_GDELT.png', 'User_Sentiment_Analysis_kasich.png', 'User_Sentiment_Analysis_kasich.png'
+  ]
+  $scope.addSlide = function() {
+    var newWidth = 600 + slides.length;
+    slides.push({
+      image: '../analysis-images/' + images[currIndex],
+      text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+      id: currIndex++
+    });
+  };
+
+  $scope.randomize = function() {
+    var indexes = generateIndexesArray();
+    assignNewIndexesToSlides(indexes);
+  };
+
+  for (var i = 0; i < images.length; i++) {
+    $scope.addSlide();
+  }
+
+  // Randomize logic below
+
+  function assignNewIndexesToSlides(indexes) {
+    for (var i = 0, l = slides.length; i < l; i++) {
+      slides[i].id = indexes.pop();
+    }
+  }
 });
 app.controller('teamController', function($scope, $location){
 	$scope.message = 'Hillary Clinton Analysis'
