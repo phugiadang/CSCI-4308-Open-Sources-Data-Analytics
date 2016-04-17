@@ -6,7 +6,7 @@
 			"captionFontSize": "14",
 			"subcaptionFontSize": "14",
 			"subcaptionFontBold": "0",
-			"paletteColors": "#0075c2,#1aaf5d",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
 			"bgcolor": "#ffffff",
 			"showBorder": "0",
 			"showShadow": "0",
@@ -24,28 +24,28 @@
 			"showValues": "0"
 			"showRealTimeValue": "0"
 			"refreshinterval": "86400",
-			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json               
+			"datastreamurl": "../FrontEnd/NGC-FrontEnd/public/GDELTAll.json"
 		    },
 		    "categories": [
 			{
-			    "category": [{ "label": "March, 15" },{ "label": "March, 16" },{ "label": "March, 17" },{ "label": "March, 18" }
+			    "category": [{ "label": "April, 8" },{ "label": "April, 9" },{ "label": "April, 10" },{ "label": "April, 11" },{ "label": "April, 12" }
 			    ]
 			}
 		    ],
 		    "dataset": [{
-                    "seriesname": "Trump GDELT Counts",
-                    "data": [ { "value": "101" },{ "value": "118" },{ "value": "78" },{ "value": "78" }]},{
-                    "seriesname": "Clinton GDELT Counts",
-                    "data": [ { "value": "35" },{ "value": "78" },{ "value": "59" },{ "value": "39" }]},{
-                    "seriesname": "Sanders GDELT Counts",
-                    "data": [ { "value": "18" },{ "value": "154" },{ "value": "13" },{ "value": "20" }]},{
-                    "seriesname": "Cruz GDELT Counts",
-                    "data": [ { "value": "31" },{ "value": "23" },{ "value": "29" },{ "value": "38" }]},{
-                    "seriesname": "Rubio GDELT Counts",
-                    "data": [ { "value": "4" },{ "value": "70" },{ "value": "10" },{ "value": "13" }]},{
-                    "seriesname": "Kasich GDELT Counts",
-                    "data": [ { "value": "14" },{ "value": "18" },{ "value": "21" },{ "value": "16" }]}	
-		    ], 
+                    "seriesname": "Trump Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Clinton Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Sanders Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Cruz Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Rubio Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "seriesname": "Kasich Tweet Counts",
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]}
+		    ],
 		    "trendlines": [
 			{
 			    "line": [
