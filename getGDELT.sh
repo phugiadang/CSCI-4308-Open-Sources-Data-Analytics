@@ -5,7 +5,7 @@ a=$(python getDate.py)
 a+="000000"
 echo $a
 a=$(python calculateDate.py -subDay $a)
-#a="20160309000000"
+#a="20160406000000"
 b=${a::-6}
 
 echo $b
