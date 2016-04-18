@@ -82,7 +82,7 @@ def getGDELTObjectCandidate(candidate_name):
 		candidate_counts.append(this_day_count[0][1])
 	return  AnalysisObject(candidate_name, "GDELT", [], candidate_counts)
 
-def getPollObjectCandidate1(candidate_name):
+def getPollObjectCandidate(candidate_name):
 	start_date = ""
 	end_date = ""
 	poll_days = []
@@ -102,21 +102,18 @@ def getPollObjectCandidate1(candidate_name):
 			else:
 				poll_days.append("20160" + str(month_end_number) + str(day))
 	poll_days_copy = poll_days[:]
-	print candidate_name
+	print poll_days_copy
 	dp = DatabasePolls(poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1], [candidate_name.capitalize()])
 	dp.queryDatabase()
 	dp.cleanPolls()
 	poll_data = dp.getCleanedPolls()
 	
-	rrp = RegressionReadyPolls(poll_data, candidate_name.capitalize(), days[0], days[len(days)-1])
+	rrp = RegressionReadyPolls(poll_data, candidate_name.capitalize(), poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1])
 	rrp.makeSimplePollNumbers()
 	rrp.fillGapsWithAvg()
-	print rrp.makeSimplePollNumbers()
-	return rrp.makeSimplePollNumbers()
-	#print RegressionReadyPolls.makeSimplePollNumbers(poll_data, candidate_name, days[0], days[len(days)-1])
-	#return rrp.getPollNumbers()
+	return AnalysisObject(candidate_name, "Polls", [], rrp.getPollNumbers())
 	
-def getPollObjectCandidate(candidate_name):
+def getPollObjectCandidate1(candidate_name):
 	start_date = ""
 	end_date = ""
 	poll_days = []
@@ -183,7 +180,8 @@ else:
 #get month name from number
 month_end = datetime.date(1900, month_end_number, 1).strftime('%B')
 month_start = datetime.date(1900, month_start_number, 1).strftime('%B')
-candidate_names = ['trump', 'clinton', 'sanders', 'cruz', 'rubio', 'kasich']
+#candidate_names = ['trump', 'clinton', 'sanders', 'cruz', 'rubio', 'kasich']
+candidate_names = ['trump', 'clinton', 'sanders', 'cruz',  'kasich']
 
 if end_day > start_day:
 	days = range(start_day, end_day + 1)
@@ -372,8 +370,9 @@ elif candidate_read == "all" and datasource == "Twitter":
 elif candidate_read == "all" and datasource == "Polls":
 	candidate_list = []
 	for candidate_name in candidate_names:
-		candidate_list.append(getPollObjectCandidate(candidate_name))
-
+		print "going in with " + str(candidate_name.title())
+		candidate_list.append(getPollObjectCandidate(candidate_name.title()))
+	print candidate_list
 	json_string = '''
 	{
 		    "chart": {

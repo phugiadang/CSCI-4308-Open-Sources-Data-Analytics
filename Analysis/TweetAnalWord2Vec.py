@@ -171,8 +171,8 @@ class TweetAnalWord2Vec(AnalysisObject):
 			fig.add_subplot(111)
 			data.T.plot.bar(stacked=True)
 			plt.title("User Sentiment Analysis using Word2Vec model for " + name)
-		plt.savefig('Tweet_Word2Vec_Analysis_'+name,bbox_inches='tight',dpi=100)
-		f = open('Tweet_Word2Vec_Analysis_'+name+'.txt','w')
+		plt.savefig('../FrontEnd/NGC-FrontEnd/public/analysis-images/Tweet_Word2Vec_Analysis_'+name,bbox_inches='tight',dpi=100)
+		f = open('../FrontEnd/NGC-FrontEnd/public/analysis-images/Tweet_Word2Vec_Analysis_'+name+'.txt','w')
 		f.write(text_output)
 		f.close()
 				

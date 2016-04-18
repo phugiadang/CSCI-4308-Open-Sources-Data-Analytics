@@ -31,17 +31,15 @@
 		    ],
 		    "dataset": [{
                     "seriesname": "Trump Polls Counts",
-                    "data": [ { "value": "52" },{ "value": "None" },{ "value": "40" },{ "value": "39" }]},{
+                    "data": [ { "value": "45" },{ "value": "41" },{ "value": "37" },{ "value": "39" }]},{
                     "seriesname": "Clinton Polls Counts",
-                    "data": [ { "value": "None" },{ "value": "45" },{ "value": "55" },{ "value": "47" }]},{
+                    "data": [ { "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" }]},{
                     "seriesname": "Sanders Polls Counts",
-                    "data": [ { "value": "None" },{ "value": "44" },{ "value": "33" },{ "value": "41" }]},{
+                    "data": [ { "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" }]},{
                     "seriesname": "Cruz Polls Counts",
-                    "data": [ { "value": "20" },{ "value": "None" },{ "value": "32" },{ "value": "32" }]},{
-                    "seriesname": "Rubio Polls Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "31" },{ "value": "33" },{ "value": "36" },{ "value": "31" }]},{
                     "seriesname": "Kasich Polls Counts",
-                    "data": [ { "value": "21" },{ "value": "None" },{ "value": "17" },{ "value": "18" }]}
+                    "data": [ { "value": "20" },{ "value": "19" },{ "value": "19" },{ "value": "21" }]}
 		    ],
 		    "trendlines": [
 			{
