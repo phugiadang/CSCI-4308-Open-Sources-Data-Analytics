@@ -1,0 +1,3 @@
+Correlation Coefficient: 0.343947798659
+
+This graph shows a slight correlation between the number of articles written about Hillary and the number of tweets about her daily. The outliers make it less obvious visualy, but this means that in general people talk about her on twitter more at the same time that more articles are written about her. Interestingly, we can also see that this pattern reversed at the end of the month; the yellow dots representing the last 20% of the data chronologically show a clear downward trend, indicating that for the last few days of the month people were talking less about her on twitter the more she was reported on.

@@ -25,42 +25,23 @@
 		    },
 		    "categories": [
 			{
-<<<<<<< HEAD
-			    "category": [{ "label": "March, 15" },{ "label": "March, 16" },{ "label": "March, 17" },{ "label": "March, 18" },{ "label": "March, 19" },{ "label": "March, 20" },{ "label": "March, 21" },{ "label": "March, 22" },{ "label": "March, 23" },{ "label": "March, 24" },{ "label": "March, 25" },{ "label": "March, 26" },{ "label": "March, 27" },{ "label": "March, 28" },{ "label": "March, 29" },{ "label": "March, 30" },{ "label": "March, 31" }
-=======
-			    "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" }
->>>>>>> 4d488c0204c6e91d0b1583f7dbe3aa3092710c1f
+			    "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" },{ "label": "April, 7" },{ "label": "April, 8" },{ "label": "April, 9" },{ "label": "April, 10" },{ "label": "April, 11" },{ "label": "April, 12" },{ "label": "April, 13" },{ "label": "April, 14" },{ "label": "April, 15" }
 			    ]
 			}
 		    ],
 		    "dataset": [{
-<<<<<<< HEAD
-                    "seriesname": "Trump Tweet Counts",
-                    "data": [ { "value": "38" },{ "value": "64" },{ "value": "None" },{ "value": "None" },{ "value": "11" },{ "value": "46" },{ "value": "43" },{ "value": "35" },{ "value": "36" },{ "value": "47" },{ "value": "None" },{ "value": "41" },{ "value": "41" },{ "value": "30" },{ "value": "56" },{ "value": "None" },{ "value": "44" }]},{
-                    "seriesname": "Clinton Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "49" },{ "value": "None" },{ "value": "48" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "48" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "43" },{ "value": "None" }]},{
-                    "seriesname": "Sanders Tweet Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "40" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "36" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "48" },{ "value": "None" }]},{
-                    "seriesname": "Cruz Tweet Counts",
-                    "data": [ { "value": "27" },{ "value": "12" },{ "value": "None" },{ "value": "None" },{ "value": "53" },{ "value": "33" },{ "value": "29" },{ "value": "36" },{ "value": "35" },{ "value": "15" },{ "value": "None" },{ "value": "28" },{ "value": "32" },{ "value": "40" },{ "value": "20" },{ "value": "None" },{ "value": "33" }]},{
-                    "seriesname": "Rubio Tweet Counts",
-                    "data": [ { "value": "17" },{ "value": "4" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
-                    "seriesname": "Kasich Tweet Counts",
-                    "data": [ { "value": "14" },{ "value": "1" },{ "value": "None" },{ "value": "None" },{ "value": "29" },{ "value": "17" },{ "value": "16" },{ "value": "19" },{ "value": "14" },{ "value": "22" },{ "value": "None" },{ "value": "10" },{ "value": "20" },{ "value": "21" },{ "value": "19" },{ "value": "None" },{ "value": "19" }]}
-=======
                     "seriesname": "Trump Polls Counts",
-                    "data": [ { "value": "52" },{ "value": "None" },{ "value": "40" },{ "value": "39" },{ "value": "52" },{ "value": "37" }]},{
+                    "data": [ { "value": "52" },{ "value": "None" },{ "value": "40" },{ "value": "39" },{ "value": "52" },{ "value": "37" },{ "value": "54" },{ "value": "None" },{ "value": "None" },{ "value": "51" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Clinton Polls Counts",
-                    "data": [ { "value": "None" },{ "value": "45" },{ "value": "55" },{ "value": "47" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "None" },{ "value": "45" },{ "value": "55" },{ "value": "47" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "51" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Sanders Polls Counts",
-                    "data": [ { "value": "None" },{ "value": "44" },{ "value": "33" },{ "value": "41" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "None" },{ "value": "44" },{ "value": "33" },{ "value": "41" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "39" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Cruz Polls Counts",
-                    "data": [ { "value": "20" },{ "value": "None" },{ "value": "32" },{ "value": "32" },{ "value": "17" },{ "value": "29" }]},{
+                    "data": [ { "value": "20" },{ "value": "None" },{ "value": "32" },{ "value": "32" },{ "value": "17" },{ "value": "29" },{ "value": "15" },{ "value": "None" },{ "value": "None" },{ "value": "20" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Rubio Polls Counts",
-                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
+                    "data": [ { "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]},{
                     "seriesname": "Kasich Polls Counts",
-                    "data": [ { "value": "21" },{ "value": "None" },{ "value": "17" },{ "value": "18" },{ "value": "25" },{ "value": "28" }]}
->>>>>>> 4d488c0204c6e91d0b1583f7dbe3aa3092710c1f
+                    "data": [ { "value": "21" },{ "value": "None" },{ "value": "17" },{ "value": "18" },{ "value": "25" },{ "value": "28" },{ "value": "22" },{ "value": "None" },{ "value": "None" },{ "value": "25" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" },{ "value": "None" }]}
 		    ],
 		    "trendlines": [
 			{

@@ -1,0 +1,3 @@
+Correlation Coefficient: -0.243842669957
+
+The correlation between poll numbers and daily tweets about Hillary is surprisingly negative, though just barely. -0.24 isn't a very strong correlation, but it does indicate that people tended to tweet about her less when she did better in polls. It's impossible to know why, but one reasonable hypothesis is that people tend to be more surprised when she does poorly in the polls than when she does well, spurring them to tweet about it. It is also worth noting how well this regression model predicted the last 20% of the data. The yellow dots are very close to the line, so the error of the prediction is low.
