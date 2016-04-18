@@ -6,8 +6,6 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 import GetHourlyTweetsDayRange
-from RegressionReadyPolls import RegressionReadyPolls
-from GetPollsFromDatabase import DatabasePolls
 from RegressionAnalysis import RegressionObject
 import GetDailyGDELTCounts
 import sys
@@ -45,7 +43,9 @@ def main():
     
     tweets, dates = getTweets(candidate, start, end)
     gdelt = getGDELT(candidate, start, end)
-    types = AnalysisObjectFactory.createObject("RegressionObject", candidate, dates, ('Twitter', tweets),('GDELT', gdelt))
+    print 'Tweets: ' + str(tweets)
+    print 'GDELT: ' + str(gdelt)
+    types = AnalysisObjectFactory.createObject("RegressionObject", candidate, dates, tweets, gdelt)
 
 
 main()
