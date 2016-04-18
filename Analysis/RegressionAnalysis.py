@@ -12,7 +12,7 @@ class RegressionObject(AnalysisObject):
     #should take, for example, (candidate, [dates that are fixed], [daily tweet counts], [daily poll counts])
     def __init__(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):
 	super(RegressionObject,self).__init__(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
-        self.order = 3
+        self.order = 1
         print 'List paramater one: ' + str(list_para_one)
         #split into training data and observational data
         training_len_one = len(list_para_one)*80/100-1
