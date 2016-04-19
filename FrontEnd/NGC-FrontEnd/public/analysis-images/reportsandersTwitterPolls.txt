@@ -1,0 +1,3 @@
+Correlation Coefficient: -0.0641002966008
+
+There is no correlation between the number of tweets about Sanders and his performance in the polls for this dadte range. The fact that the linear regression model came up with a line so close to the observational data it's trying to predict is mostly coincidence. The graph shows that the data is fairly scattered, and the flat slope of the regression line reflects that his poll performance cannot be described as a function of the numberof tweets about him.

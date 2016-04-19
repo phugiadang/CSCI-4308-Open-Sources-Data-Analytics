@@ -1,0 +1,3 @@
+Correlation Coefficient: 0.023964656102
+
+The correlation coefficient being so close to 0 tells us that there is no correlation between these two sources; the number of articles written about Kasich is independent of his poll results. This also tells us that the linear regression model will not be an accurate predictor, and this is the case - none of the yellow dots are near the regression line. Looking at the data we can see that there is more fluctuation in the GDELT data than in his poll numbers, but that is the only real conclusion to come to. The data in this date range is too evenly spread to parse any trend.

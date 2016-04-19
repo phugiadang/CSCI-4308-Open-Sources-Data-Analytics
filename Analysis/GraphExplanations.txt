@@ -1,0 +1,4 @@
+Linear Regression in General:
+
+Each linear regression chart has daily tweet counts or article counts about the candidate on the x axis and poll results on the y axis. Each point represents one day's poll number and tweet or article count. The blue dots represent the first 80% of the data chronologically, and the line is the best-fit line that is the result of the linear regression. Finally, the yellow dots are the last 20% of the data chronologically. The closer they are to the red line, the better the linear regression model was at predicting what their values would be. 
+We also calculated the correlation between the two variables. The correlation coefficient will always be between 1 and -1. 1 means there is a 

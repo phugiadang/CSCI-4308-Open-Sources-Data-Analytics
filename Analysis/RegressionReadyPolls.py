@@ -145,7 +145,7 @@ class RegressionReadyPolls:
         return final_date
      
     def makeSimplePollNumbers(self):
-
+	
         best_choice_length = self.getBestPollLength()
         #Only use polls with the best number of choices to make interpolation easier
         relevant_polls = []
@@ -153,10 +153,9 @@ class RegressionReadyPolls:
             if len(poll[1]) == int(best_choice_length):
                 relevant_polls.append(poll)
                 #we now have the polls of the correct length containing the correct candidate. Now pull out the poll numbers for the relevant candidate
-        print relevant_polls
+	print self.polls
 	current_date = relevant_polls[0][0]
         to_be_averaged = []
-
         #if there are no polls on the first n days of the range, add n None's to poll_numbers
         #print int(self.start)
         if int(self.start) != current_date:
@@ -209,8 +208,6 @@ class RegressionReadyPolls:
         i = relevant_polls[len(relevant_polls)-1][0]
         #add None until we reach the end date
         while int(i) < int(self.end):
-            print i
-            print self.end
             self.final_poll_numbers.append(None)
             i = self.incrementDate(i)
             

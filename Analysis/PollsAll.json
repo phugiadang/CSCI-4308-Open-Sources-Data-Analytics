@@ -1,0 +1,57 @@
+
+	{
+		    "chart": {
+			"caption": "Candidate Polls  Counts",
+			"subCaption": "",
+			"captionFontSize": "14",
+			"subcaptionFontSize": "14",
+			"subcaptionFontBold": "0",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
+			"bgcolor": "#ffffff",
+			"showBorder": "0",
+			"showShadow": "0",
+			"showCanvasBorder": "0",
+			"usePlotGradientColor": "0",
+			"legendBorderAlpha": "0",
+			"legendShadow": "0",
+			"showAxisLines": "0",
+			"showAlternateHGridColor": "0",
+			"divlineThickness": "1",
+			"divLineIsDashed": "1",
+			"divLineDashLen": "1",
+			"divLineGapLen": "1",
+			"xAxisName": "Day",
+			"showValues": "0"
+		    },
+		    "categories": [
+			{
+			    "category": [{ "label": "March, 20" },{ "label": "March, 21" },{ "label": "March, 22" },{ "label": "March, 23" },{ "label": "March, 24" },{ "label": "March, 25" },{ "label": "March, 26" },{ "label": "March, 27" },{ "label": "March, 28" },{ "label": "March, 29" },{ "label": "March, 30" },{ "label": "March, 31" },{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" },{ "label": "April, 7" },{ "label": "April, 8" },{ "label": "April, 9" },{ "label": "April, 10" }
+			    ]
+			}
+		    ],
+		    "dataset": [{
+                    "seriesname": "Trump Polls Counts",
+                    "data": [ { "value": "35" },{ "value": "35" },{ "value": "35" },{ "value": "45" },{ "value": "38" },{ "value": "40" },{ "value": "42" },{ "value": "43" },{ "value": "43" },{ "value": "45" },{ "value": "44" },{ "value": "44" },{ "value": "45" },{ "value": "41" },{ "value": "37" },{ "value": "39" },{ "value": "52" },{ "value": "39" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "51" }]},{
+                    "seriesname": "Clinton Polls Counts",
+                    "data": [ { "value": "48" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "43" },{ "value": "44" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" }]},{
+                    "seriesname": "Sanders Polls Counts",
+                    "data": [ { "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "48" },{ "value": "46" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" }]},{
+                    "seriesname": "Cruz Polls Counts",
+                    "data": [ { "value": "27" },{ "value": "29" },{ "value": "32" },{ "value": "28" },{ "value": "20" },{ "value": "26" },{ "value": "32" },{ "value": "32" },{ "value": "31" },{ "value": "30" },{ "value": "31" },{ "value": "33" },{ "value": "31" },{ "value": "33" },{ "value": "36" },{ "value": "31" },{ "value": "17" },{ "value": "38" },{ "value": "29" },{ "value": "29" },{ "value": "29" },{ "value": "20" }]},{
+                    "seriesname": "Kasich Polls Counts",
+                    "data": [ { "value": "24" },{ "value": "23" },{ "value": "23" },{ "value": "18" },{ "value": "24" },{ "value": "23" },{ "value": "22" },{ "value": "20" },{ "value": "19" },{ "value": "18" },{ "value": "18" },{ "value": "19" },{ "value": "20" },{ "value": "19" },{ "value": "19" },{ "value": "21" },{ "value": "25" },{ "value": "19" },{ "value": "22" },{ "value": "22" },{ "value": "22" },{ "value": "25" }]}
+		    ],
+		    "trendlines": [
+			{
+			    "line": [
+				{
+				    "startvalue": "17022",
+				    "color": "#6baa01",
+				    "valueOnRight": "1",
+				    "displayvalue": "Average"
+				}
+			    ]
+			}
+		    ]
+		}
+	

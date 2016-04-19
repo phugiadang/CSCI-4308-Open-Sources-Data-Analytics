@@ -1,0 +1,3 @@
+Correlation Coefficient: -0.23955539496
+
+The correlation between the number of articles written about Cruz and his poll numbers is slightly negative. So, in general, the less he was written about in the media, the better he did in the polls. The training data representing the last few days of the month that weren't factored into the correlation coefficient or the regression line support this even further; his highest poll numbers were on days where some of the fewest articles were written about him. The negative slope of the regression line reflects this trend as well. 

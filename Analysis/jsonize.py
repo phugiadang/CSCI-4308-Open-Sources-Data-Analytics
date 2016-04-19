@@ -2,7 +2,6 @@ import json
 import sys
 from sys import argv
 import operator
-#import QueryingDavid
 import QueryingDavid
 from AnalysisObject import AnalysisObject
 from cassandra.cluster import Cluster
@@ -83,7 +82,7 @@ def getGDELTObjectCandidate(candidate_name):
 		candidate_counts.append(this_day_count[0][1])
 	return  AnalysisObject(candidate_name, "GDELT", [], candidate_counts)
 
-def getPollObjectCandidate1(candidate_name):
+def getPollObjectCandidate(candidate_name):
 	start_date = ""
 	end_date = ""
 	poll_days = []
@@ -103,16 +102,18 @@ def getPollObjectCandidate1(candidate_name):
 			else:
 				poll_days.append("20160" + str(month_end_number) + str(day))
 	poll_days_copy = poll_days[:]
-	dp = DatabasePolls(poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1], candidate_name.title())
+	print poll_days_copy
+	dp = DatabasePolls(poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1], [candidate_name.capitalize()])
 	dp.queryDatabase()
 	dp.cleanPolls()
 	poll_data = dp.getCleanedPolls()
-	print poll_data
-	rrp = RegressionReadyPolls(poll_data, candidate_name, days[0], days[len(days)-1])
-	print rrp.makeSimplePollNumbers()
-	#print RegressionReadyPolls.makeSimplePollNumbers(poll_data, candidate_name, days[0], days[len(days)-1])
-
-def getPollObjectCandidate(candidate_name):
+	
+	rrp = RegressionReadyPolls(poll_data, candidate_name.capitalize(), poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1])
+	rrp.makeSimplePollNumbers()
+	rrp.fillGapsWithAvg()
+	return AnalysisObject(candidate_name, "Polls", [], rrp.getPollNumbers())
+	
+def getPollObjectCandidate1(candidate_name):
 	start_date = ""
 	end_date = ""
 	poll_days = []
@@ -151,7 +152,8 @@ def getPollObjectCandidate(candidate_name):
 					i += 1
 				still_searching = False
 		if does_exist == False:
-			list_of_data.append("None")
+			list_of_data.append("None")	
+
 		poll_days_copy.remove(poll_days_copy[0])
 
 
@@ -178,13 +180,15 @@ else:
 #get month name from number
 month_end = datetime.date(1900, month_end_number, 1).strftime('%B')
 month_start = datetime.date(1900, month_start_number, 1).strftime('%B')
-candidate_names = ['trump', 'clinton', 'sanders', 'cruz', 'rubio', 'kasich']
+#candidate_names = ['trump', 'clinton', 'sanders', 'cruz', 'rubio', 'kasich']
+candidate_names = ['trump', 'clinton', 'sanders', 'cruz',  'kasich']
 
 if end_day > start_day:
 	days = range(start_day, end_day + 1)
 else:
 	days = range(start_day, monthrange(2016,month_start_number)[1] + 1) + range(1, end_day + 1)
 
+#hours adjusted from GMT to MST
 hours = ["19","20","21","22","23","00","01","02","03","04","05","06","07","08","09", "10", "11","12","13","14","15","16","17","18"]
 dates_hours = [] #empty list to be filled in with readable dates and times
 dates = []
@@ -367,8 +371,9 @@ elif candidate_read == "all" and datasource == "Twitter":
 elif candidate_read == "all" and datasource == "Polls":
 	candidate_list = []
 	for candidate_name in candidate_names:
-		candidate_list.append(getPollObjectCandidate(candidate_name))
-
+		print "going in with " + str(candidate_name.title())
+		candidate_list.append(getPollObjectCandidate(candidate_name.title()))
+	print candidate_list
 	json_string = '''
 	{
 		    "chart": {
@@ -432,6 +437,7 @@ elif candidate_read == "all" and datasource == "Polls":
 	'''
 
 	f = open('../FrontEnd/NGC-FrontEnd/public/PollsAll.json', 'w')
+	#f = open('PollsAll.json', 'w')
 	f.write(json_string)
 
 elif datasource == "all":

@@ -10,6 +10,8 @@ from AnalysisObjectFactory import AnalysisObjectFactory
 
 AnalysisObjectFactory.initialFactory()
 
+legend = [[], []]
+
 def plotTwitter(candidate, start, end):
     twitter_counts, dates = GetHourlyTweetsDayRange.hourlyTweets(candidate, start, end)
     
@@ -37,13 +39,14 @@ def plotTwitter(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(daily_counts)))
-    plt.plot(daily_counts, 'r')
+    line, = plt.plot(daily_counts, 'r')
     plt.xticks(x, dates, rotation = 'vertical')
     plt.xlim(0, num_counts)
     plt.gcf().subplots_adjust(bottom=0.20)
     plt.title('Daily tweet counts and article counts for ' + candidate)
-    legend = mpatches.Patch(color='red', label='Twitter')
-    plt.legend(handles = [legend])
+    global legend
+    legend[0].append(line)
+    legend[1].append('Tweets')
     return daily_counts
 
 def plotGDELT(candidate, start, end):
@@ -64,14 +67,15 @@ def plotGDELT(candidate, start, end):
     
     #generate x-axis
     x = list(range(0, len(GDELT_counts)))
-    plt.plot(GDELT_counts, 'b')
-    legend = mpatches.Patch(color='blue', label='GDELT')
-    plt.legend(handles = [legend])
+    line, = plt.plot(GDELT_counts, 'b')
+    global legend
+    legend[0].append(line)
+    legend[1].append('GDELT')
     return GDELT_counts
 
 def main():
 
-    if len(sys.argv) != 4:
+    if len(sys.argv) not in [4, 5]:
         print 'Usage: python TwitterGDELTGraphAnalysis.py <candidate, lower case> <start date> <end date>'
         print 'where date format is YYYYMMDD'
     else:
@@ -79,5 +83,11 @@ def main():
         print len(tweets)
         articles = plotGDELT(sys.argv[1], sys.argv[2], sys.argv[3])
         print len(articles)
-        plt.savefig('Twitter_vs_GDELT_' + sys.argv[1] + '.png')
+        global legend
+        plt.legend(legend[0], legend[1])
+        #add a special case for the cronjob
+        if sys.argv[4] == 'cronjob':
+            plt.savefig('/home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd/public/analysis-images/Twitter_vs_GDELT_' + sys.argv[1] + '.png')
+        else:
+            plt.savefig('../FrontEnd/NGC-FrontEnd/public/analysis-images/Twitter_vs_GDELT_' + sys.argv[1] + '.png')
 main()

@@ -12,13 +12,15 @@ class RegressionObject(AnalysisObject):
     #should take, for example, (candidate, [dates that are fixed], [daily tweet counts], [daily poll counts])
     def __init__(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):
 	super(RegressionObject,self).__init__(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
-        self.order = 1
+        self.order = 6
+        print 'List paramater one: ' + str(list_para_one)
         #split into training data and observational data
         training_len_one = len(list_para_one)*80/100-1
         self.training_one = list_para_one[0:training_len_one]
         self.training_two = list_para_two[0:training_len_one]
         self.obs_one = list_para_one[training_len_one:len(list_para_one)]
         self.obs_two = list_para_two[training_len_one:len(list_para_one)]
+        self.Interpolate()
 
     def Interpolate(self):
 
@@ -28,10 +30,17 @@ class RegressionObject(AnalysisObject):
             print 'y length: ' + str(len(self.training_two))
             return
 
-        plt.plot(self.training_one, self.training_two, 'o')
+        blue_dots = plt.scatter(self.training_one, self.training_two, c='blue')
+        yellow_dots = plt.scatter(self.obs_one, self.obs_two, c='yellow')
+        plt.xlabel('GDELT Daily Article Counts')
+        plt.ylabel('Daily Tweets')
+        plt.title('Donald Trump - High-Order Interpolation for March 2016')
+        plt.legend((blue_dots, yellow_dots),('Training Data', 'Observed Data'))
+        plt.axis([0, 350, 0, 3000000])
+        plt.gcf().subplots_adjust(left=0.15)
 
-        xp = np.linspace(-2, 6, 100)
-
+        xp = np.linspace(0, 350, 500)
+        print 'Training Data: ' + str(self.training_one) + ', ' + str(self.training_two)
         coeff = np.polyfit(self.training_one, self.training_two, self.order)
 
         plt.plot(xp, np.polyval(coeff, xp), 'b')
@@ -48,7 +57,6 @@ class RegressionObject(AnalysisObject):
             j += 1
         
         result_string = 'y = ' + result_string
-
 
         #calculate the predictions by evaluating the x-values of each observational point
         predictions = []

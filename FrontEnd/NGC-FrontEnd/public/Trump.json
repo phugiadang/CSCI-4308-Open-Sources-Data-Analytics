@@ -19,7 +19,7 @@
     },
     "categories": [
         {
-	    "category": [{ "label": "March, 6" },{ "label": "March, 7" },{ "label": "March, 8" },{ "label": "March, 9" },{ "label": "March, 10" },{ "label": "March, 11" }
+	    "category": [{ "label": "April, 14" },{ "label": "April, 15" },{ "label": "April, 16" }
 			    ]
         }
     ],
@@ -33,25 +33,7 @@
             "dataset": [
                 {
                     "seriesname": "Tweets",
-                    "data": [
-                        {
-                            "value": "6"
-                        },
-                        {
-                            "value": "13"
-                        },
-                        {
-                            "value": "20"
-                        },
-                        {
-                            "value": "27"
-                        },
-                        {
-                            "value": "28"
-                        },
-                        {
-                            "value": "33"
-                        }
+                    "data": [{ "value": "733468" },{ "value": "634140" },{ "value": "358345" }
                     ]
                 }
             ]
@@ -68,7 +50,7 @@
             "dataset": [
                 {
                     "seriesname": "Poll Percentage",
-                    "data": [{ "value": "40" },{ "value": "41" },{ "value": "37" },{ "value": "25" },{ "value": "38" },{ "value": "44" }
+                    "data": [{ "value": "None" },{ "value": "None" },{ "value": "None" }
                     ]
                 }
             ]
@@ -84,11 +66,11 @@
             "dataset": [
                 {
                     "seriesname": "Article Counts",
-                    "data": [{ "value": "94" },{ "value": "78" },{ "value": "106" },{ "value": "314" },{ "value": "86" },{ "value": "186" }
+                    "data": [{ "value": "71" },{ "value": "55" },{ "value": "74" }
                     ]
                 }
             ]
         }
     ]
-}	
+}
 	

@@ -64,9 +64,14 @@ class LinearRegressionObject(AnalysisObject):
 			y_value = slope * k + intercept
 			y.append(y_value)
 		line, = plt.plot(x,y,c='red',linewidth=2)
+<<<<<<< HEAD
 		linear_reg = plt.savefig('report'+self.getfixed_para_one()+self.getlist_para_one()[0]+self.getlist_para_two()[0])
 		f = open('../FrontEnd/NGC-FrontEnd/public/analyis-images/' + 'report'+ self.getfixed_para_one()+self.getlist_para_one()[0]+self.getlist_para_two()[0], 'w')
 		f.write(linear_reg)
+=======
+		plt.savefig('../FrontEnd/NGC-FrontEnd/public/analysis-images/report'+self.getfixed_para_one()+self.getlist_para_one()[0]+self.getlist_para_two()[0])
+	
+>>>>>>> 5f83b5981f6dcfc1e7a2c3dfab4eb9ebd7e46b39
 	#Return the tuples of (report,(date,predict values, exact values))
 	def linearRegressionAnalysis(self):
 		text_output = "LINEAR REGRESSION ANALYSIS\n"
