@@ -30,6 +30,7 @@ import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
 from AnalysisObject import AnalysisObject
+import unirest
 
 class TweetSentimentAnalysis(AnalysisObject):
 	
@@ -53,21 +54,54 @@ class TweetSentimentAnalysis(AnalysisObject):
 			text_output = text_output + data_one[i] + " " +str(len(data_two[i])) + "\n"
 		users_report = {}
 		for i in range (0,len(data_one)):
-			clean_tweet = []
+			users_report = {}
+                        clean_tweet = []
 			pos = 0
 			neg = 0
 			neutral = 0
 			for stt in data_two[i]:
 				clean_tweet.append(_cleanTweet(stt,name))
 			for stt in clean_tweet:
-				p = subprocess.Popen("curl -d text='"+str(stt)+"' http://text-processing.com/api/sentiment/", shell=True,stdout=subprocess.PIPE).communicate()[0]
-				p1 = ast.literal_eval(p)
-				if p1["label"] == "neg":
-					neg = neg +1
-				elif p1["label"] == "pos":
+				#p = subprocess.Popen("curl -d text='"+str(stt)+"' http://text-processing.com/api/sentiment/", shell=True,stdout=subprocess.PIPE).communicate()[0]
+                                print stt
+                                try:
+                                    stt = str(stt)
+     
+                                except:
+                                    print 'bad tweet!'
+                                    stt = 'neutral'
+                                good = 1
+                                
+                                try:
+                                    p = unirest.post("https://japerk-text-processing.p.mashape.com/sentiment/",
+  headers={
+    "X-Mashape-Key": "eo2rOfIXzUmshGWmknOvJlkdceozp1oMJLYjsniKpR5UXjovLm",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Accept": "application/json"
+  },
+  params={
+    "language": "english",
+    "text": stt
+  }
+)		                
+                                    good = 0
+
+                                except:
+                                    good = 1
+
+                                print p		
+
+                                p1 = p.body
+                                #p1 = ast.literal_eval(p)
+                                try:
+				    if p1["label"] == "neg":
+				        neg = neg +1
+				    elif p1["label"] == "pos":
 					pos = pos +1
-				else:
+				    else:
 					neutral = neutral +1
+                                except:
+                                    neutral += 1
 			users_report[data_one[i]]={"pos":pos,"neg":neg,"neutral":neutral}
 			data = pd.DataFrame(users_report)
 			fig = plt.figure()
@@ -96,7 +130,7 @@ def _cleanTweet(tweet,name):
     #trim
     tweet = tweet.strip('\'"')
     #tweet = tweet.replace(name,'')
-    tweet = tweet.replace("'", "")
+    tweet = tweet.replace("'", "").replace("@","")
     tweet = tweet.replace(u"\u201c", "").replace(u'\u2026', "").replace(u'\u2014', "").replace(u'\u2019', "").replace(u'\u2018', "").replace(u'\u201d', "").replace(u'\xa0', "").replace(u'\u2022', "")
     return tweet
 #end

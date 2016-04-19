@@ -58,7 +58,7 @@ app.controller('HomeController', function($scope, $location){
 			gdelt.setJSONUrl("GDELTAll.json");
 			gdelt.render("gdeltChart");
 
-	var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
+  var candidatesChart = new FusionCharts( "FusionCharts/msline.swf",
                                         "twitterChartId", "100%", "500", "0", "0");
 			candidatesChart.setJSONUrl("TwitterAll.json");
 			candidatesChart.render("candidatesChart");

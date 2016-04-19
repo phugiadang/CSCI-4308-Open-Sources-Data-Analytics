@@ -1,0 +1,3 @@
+Correlation Coefficient: -0.049290741393
+
+There is no correlation between the number of articles written about Trump daily and his poll performance. This indicates that the linear regression model will not predict the observational data, and this is the case. Looking at the graph of the data points, we can see that the data is very spread out. The relatively flat slope of the regression line also reflects the lack of a correlation between the sources. There aren't any solid conclusions to draw from the graph in this case.

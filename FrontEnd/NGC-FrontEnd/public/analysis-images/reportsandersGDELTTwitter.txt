@@ -1,0 +1,3 @@
+Correlation Coefficient: 0.144943495511
+
+There is a negligible ocrrelation between the number of articles written about Sanders and the number of tweets daily about him. The linear regression model does not do a good job of predicting the observational data as expected with such a low correlation between the sources. The graph itself reveals why there is such a low correlation; The number of tweets fluctuates significantly over the month, but the number of articles written about Sanders stays much more constant. One explanation is that there is much less of a response in the media about the successes or failures of Sanders than there is on Twitter in this date range.

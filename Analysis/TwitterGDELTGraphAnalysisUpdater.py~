@@ -1,0 +1,10 @@
+import datetime
+import os
+
+
+
+today = str(datetime.date.today()).replace('-', '')
+candidates = ['clinton', 'sanders', 'trump', 'cruz', 'kasich']
+
+for candidate in candidates:
+    os.system('python TwitterGDELTGraphAnalysis.py ' + candidate + ' 20160301 ' + today + ' cronjob')

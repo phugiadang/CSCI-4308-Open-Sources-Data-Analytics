@@ -188,6 +188,7 @@ if end_day > start_day:
 else:
 	days = range(start_day, monthrange(2016,month_start_number)[1] + 1) + range(1, end_day + 1)
 
+#hours adjusted from GMT to MST
 hours = ["19","20","21","22","23","00","01","02","03","04","05","06","07","08","09", "10", "11","12","13","14","15","16","17","18"]
 dates_hours = [] #empty list to be filled in with readable dates and times
 dates = []
@@ -435,8 +436,8 @@ elif candidate_read == "all" and datasource == "Polls":
 		}
 	'''
 
-	#f = open('../FrontEnd/NGC-FrontEnd/public/PollsAll.json', 'w')
-	f = open('PollsAll.json', 'w')
+	f = open('../FrontEnd/NGC-FrontEnd/public/PollsAll.json', 'w')
+	#f = open('PollsAll.json', 'w')
 	f.write(json_string)
 
 elif datasource == "all":

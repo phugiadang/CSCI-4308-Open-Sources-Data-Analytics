@@ -1,0 +1,3 @@
+Correlation Coefficient: 0.186223387334
+
+There is a slight positive correlation between the number of tweets daily about Trump and the number of articles written about him, but the correlation is small enough to be regarded as insigniifcant. The linear regression model, as expected with uncorrelated data sources, does not predict the observational data well. The flat slope of the regression line and the dispersion of the data on the graph also support that there is no trend in the data to draw a conclusion from. The only conclusion to draw is that neither of these sources affect the other, and nothing affected both of them in a similar way over the course of the month.

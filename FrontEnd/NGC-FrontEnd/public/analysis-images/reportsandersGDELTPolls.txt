@@ -1,0 +1,3 @@
+Correlation Coefficient: 0.0784067826209
+
+There is no correlation between these two sources; the number of articles written about Sanders is not dependent on his poll performance or vis versa. This means that we can't expect the linear regression model to be accurate at predicting the observational data, and it is more a coincidence than anything else that the model got so close to predicting the data points for the end of the month. Looking at the graph we can see that the number of articles written about Sanders doesn not fluctuate much, while his poll numbers over the month have. Whether Sanders does great or poorly in the polls, the media gives him a similar amount of coverage.

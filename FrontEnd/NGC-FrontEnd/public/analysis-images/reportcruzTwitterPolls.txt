@@ -1,0 +1,3 @@
+Correlation Coefficient: 0.366903888604
+
+There is a moderate positive correlation between daily tweets about Cruz and his poll numbers. Generally, more people tweeted about him when he did better and vis versa. This is the trend one would expect in all of the candidates, as it intuitively makes sense that people would become more aware and concerned about a candidate that is doing better in the polls. Because he did so much better in the polls in the end of the month where the linear regression model is trying to predict values, the prediction is very pootr and the line lies nowhere near those values. Looking at the data shows that while there is a slight overall trend, there are many exceptions to the rule of a correlation between these sources. 

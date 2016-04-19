@@ -45,7 +45,7 @@ def main():
     gdelt = getGDELT(candidate, start, end)
     print 'Tweets: ' + str(tweets)
     print 'GDELT: ' + str(gdelt)
-    types = AnalysisObjectFactory.createObject("RegressionObject", candidate, dates, tweets, gdelt)
+    types = AnalysisObjectFactory.createObject("RegressionObject", candidate, dates, gdelt, tweets)
 
 
 main()
