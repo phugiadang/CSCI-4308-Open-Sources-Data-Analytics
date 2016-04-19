@@ -1,3 +1,0 @@
-Correlation Coefficient: 0.144193171835
-
-The correlation between daily articles about Hillary and her poll numbers is very low, so it makes sense that the linear regression model drew a line that was so far from the final 20% of the data. It is also clear by looking at the distribution of the data points that the number of articles written about her didn't align with her poll numbers in any way. In this case the linear regression model is a poor predictor of future poll results using GDELT data.
