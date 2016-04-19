@@ -102,7 +102,7 @@ app.controller('analysisController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'Twitter_vs_GDELT_clinton.png', 'Twitter_vs_GDELT_cruz.png', 'Twitter_vs_GDELT_kasich.png', 'Twitter_vs_GDELT_rubio.png', 'Twitter_vs_GDELT_sanders.png', 'Twitter_vs_GDELT_trump.png', 'Twitter_vs_GDELT.png', 'User_Sentiment_Analysis_kasich.png', 'User_Sentiment_Analysis_kasich.png'
+  'Twitter_vs_GDELT_clinton.png', 'Twitter_vs_GDELT_cruz.png', 'Twitter_vs_GDELT_kasich.png', 'Twitter_vs_GDELT_sanders.png', 'Twitter_vs_GDELT_trump.png', 'User_Sentiment_Analysis_kasich.png', 'User_Sentiment_Analysis_kasich.png'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
