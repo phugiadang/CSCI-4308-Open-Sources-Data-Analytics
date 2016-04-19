@@ -30,6 +30,7 @@ from TimeSeriesObject import TimeSeriesObject
 from RegressionAnalysis import RegressionObject
 from TweetSentimentAnalysis import TweetSentimentAnalysis
 from TweetAnalWord2Vec import TweetAnalWord2Vec
+from ClusteringAnalysis import ClusteringAnalysis
 
 class AnalysisObjectFactory:
 	
