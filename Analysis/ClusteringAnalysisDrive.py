@@ -23,7 +23,48 @@
 #  
 
 from AnalysisObjectFactory import AnalysisObjectFactory
+import GetHourlyTweetsDayRange
+from RegressionReadyPolls import RegressionReadyPolls
+from GetPollsFromDatabase import DatabasePolls
+import GetDailyGDELTCounts
 
+def getTweets(candidate, start, end):
+    #get the tweets
+    twitter_counts, dates = GetHourlyTweetsDayRange.hourlyTweets(candidate, start, end)
+    
+    #change Nones to 0's
+    i = 0
+    for count in twitter_counts:
+        if count == None:
+            twitter_counts[i] = 0
+        i += 1
+
+    #turn hourly counts into daily counts
+    daily_counts = []
+    i = 0
+    while i < len(twitter_counts):
+        daily_counts.append(sum(twitter_counts[i:i+23]))
+        i += 24
+    
+    return daily_counts, dates
+
+def getPolls(candidate, start, end):
+    #get the polls
+    polls = DatabasePolls(start, end, [candidate.capitalize()])
+    polls.queryDatabase()
+    polls.cleanPolls()
+    clean_polls = polls.getCleanedPolls()
+
+    reg_polls = RegressionReadyPolls(clean_polls, candidate.capitalize(), start, end)
+    reg_polls.makeSimplePollNumbers()
+    reg_polls.fillGapsWithAvg()
+    reg_polls = reg_polls.getPollNumbers()
+#    print 'Without Nones: ' + str(reg_polls)
+    return reg_polls
+    
+def getGDELT(candidate, start, end):
+    counts, dates = GetDailyGDELTCounts.getGDELTCounts(candidate, start, end)
+    return counts
 
 def main():
 	AnalysisObjectFactory.initialFactory()
