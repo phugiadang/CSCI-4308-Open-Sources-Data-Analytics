@@ -2,25 +2,25 @@
 # -*- coding: utf-8 -*-
 #
 #  LinearRegressionObject.py
-#  
+#
 #  Copyright 2016 user <user@cu-cs-vm>
-#  
+#
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation; either version 2 of the License, or
 #  (at your option) any later version.
-#  
+#
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
-#  
+#
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
-#  
-#  
+#
+#
 
 from AnalysisObject import AnalysisObject
 import numpy as np
@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 class LinearRegressionObject(AnalysisObject):
-	
+
 	#fixed_para_one: name of candidate
 	#fixed_para_two: list of dates
 	#list_para_one: list (source, list of counts) for x-values
@@ -40,7 +40,7 @@ class LinearRegressionObject(AnalysisObject):
                 print 'LinearRegressionObject X: ' + str(list_para_one)
                 print 'LinearRegressionObject Y: ' + str(list_para_two)
 		super(LinearRegressionObject,self).__init__(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
-	
+
 	#use to calculate the corellation between two data sets
 	def __correlationCalculation(self):
 		correl = np.corrcoef(self.getlist_para_one()[1],self.getlist_para_two()[1])[0][1]
@@ -49,9 +49,9 @@ class LinearRegressionObject(AnalysisObject):
 		elif (correl > 0):
 			return "There is a positive correlation: one variable set moves the the same direction by "+str(abs(correl))+" the amount that the other variable set moves.\n"
 		else:
-			return "There is a negative correlation: one variable set moves the the opposite direction by "+str(abs(correl))+" the amount that the other variable set moves.\n"  
-			
-	
+			return "There is a negative correlation: one variable set moves the the opposite direction by "+str(abs(correl))+" the amount that the other variable set moves.\n"
+
+
 	def __graphData(self, data,slope,intercept,training):
 		data.plot(kind='scatter',x=self.getlist_para_one()[0],y=self.getlist_para_two()[0])
 		x_eval = self.getlist_para_one()[1][training:]
@@ -64,8 +64,9 @@ class LinearRegressionObject(AnalysisObject):
 			y_value = slope * k + intercept
 			y.append(y_value)
 		line, = plt.plot(x,y,c='red',linewidth=2)
-		plt.savefig('report'+self.getfixed_para_one()+self.getlist_para_one()[0]+self.getlist_para_two()[0])
-	
+		linear_reg = plt.savefig('report'+self.getfixed_para_one()+self.getlist_para_one()[0]+self.getlist_para_two()[0])
+		f = open('../FrontEnd/NGC-FrontEnd/public/analyis-images/' + 'report'+ self.getfixed_para_one()+self.getlist_para_one()[0]+self.getlist_para_two()[0], 'w')
+		f.write(linear_reg)
 	#Return the tuples of (report,(date,predict values, exact values))
 	def linearRegressionAnalysis(self):
 		text_output = "LINEAR REGRESSION ANALYSIS\n"
@@ -108,7 +109,7 @@ class LinearRegressionObject(AnalysisObject):
 				date.append(fixed_para_two[x])
 				y_predict.append(int(slope*self.getlist_para_one()[1][x]+intercept))
 			return (text_output,(date,y_predict,y_exact))
-		
-		
+
+
 	class Factory:
 		def create(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):return LinearRegressionObject(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
