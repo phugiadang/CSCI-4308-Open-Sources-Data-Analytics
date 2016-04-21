@@ -1,5 +1,5 @@
+2016-04-21
 2016-04-20
-2016-04-19
 http://elections.huffingtonpost.com/pollster/api/charts?state=AL
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-new-hampshire-presidential-republican-caucus
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-alabama-democratic-presidential-primary
@@ -82,6 +82,8 @@ http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-connecticut-se
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-connecticut-senate-mcmahon-vs-murphy
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-connecticut-president-romney-vs-obama
 http://elections.huffingtonpost.com/pollster/api/charts?state=DE
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-delaware-republican-presidential-primary
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-delaware-democratic-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2014-delaware-senate-wade-vs-coons
 http://elections.huffingtonpost.com/pollster/api/charts?state=FL
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-florida-senate-republican-primary
@@ -608,6 +610,7 @@ http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-general-electi
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-general-election-cruz-vs-clinton
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-general-election-rubio-vs-clinton
 http://elections.huffingtonpost.com/pollster/api/charts?topic=2016-president-dem-primary
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-delaware-democratic-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-idaho-democratic-presidential-caucus
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-rhode-island-democratic-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-alabama-democratic-presidential-primary
@@ -649,6 +652,7 @@ http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-new-hampshire-
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-iowa-presidential-democratic-caucus
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-national-democratic-primary
 http://elections.huffingtonpost.com/pollster/api/charts?topic=2016-president-gop-primary
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-delaware-republican-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-idaho-republican-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-rhode-island-republican-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-new-mexico-democratic-presidential-primary
