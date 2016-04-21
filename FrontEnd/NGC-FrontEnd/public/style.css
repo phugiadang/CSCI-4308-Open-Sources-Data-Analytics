@@ -18,6 +18,9 @@ body {
   padding: 1% 2% 2% 2%;
   border-radius: 5px;
 }
+embed.ng-scope{
+    width: 100%;
+}
 .nav-button{
   color: white;
   background-color: black;

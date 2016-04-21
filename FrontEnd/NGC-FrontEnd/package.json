@@ -1,9 +1,9 @@
 {
-    "name": "MeanMapsApp",
+    "name": "TeamOSAM",
     "version": "1.0.0",
-    "description": "Demo app showing the use of Google Maps in MEAN Apps",
+    "description": "App that is used to display analytic results and linear correlations between multiple data sources linked to possible election front-runner results.",
     "main": "server.js",
-    "author": "Ahmed Haque",
+    "author": "Team OSAM",
     "dependencies" : {
         "express"    : "~4.7.2",
         "mongoose"   : "~4.1.0",

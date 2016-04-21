@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="MapAppsLibrary" type="javaScript">
+  <library name="NGCLibrary" type="javaScript">
     <properties>
       <option name="frameworkName" value="node_modules" />
       <sourceFilesUrls>

@@ -11,24 +11,17 @@
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="style.css"/>
 
-    <!-- Modernizr -->
-    <script src="../bower_components/modernizr/bin/modernizr"></script>
-
     <!-- JS Source -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/angular/angular.js"></script>
     <script src="../bower_components/angular-route/angular-route.js"></script>
     <script src="../bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
 
-    <!-- Angular Files -->
+    <!-- JS Files -->
     <script src="js/app.js"></script>
-    <script src="js/gservice.js"></script>
     <script src="js/addCtrl.js"></script>
-    <script src="js/queryCtrl.js"></script>
     <script src="js/headerCtrl.js"></script>
-
-    <!-- FusionCharts Files -->
-
+<!-- Other necessary sources -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +45,7 @@
              <option value="trump">Trump</option>
              <option value="cruz">Cruz</option>
               <option value="kasich">Kasich</option>
-              <option value="rubio"> Rubio </option>
+              <option value="rubio"> <strike>Rubio<strike> </option>
           </select>
         </dropdown></li>
 
@@ -68,7 +61,7 @@
           <select class="nav-button" ng-model="currentPage" ng-change="go(currentPage)">
               <option value="home">Analysis</option>
               <option value="linear_regression">Linear Regression</option>
-              <option value="analysis">Etc.</option>
+              <option value="analysis">Sentiment Analysis</option>
           </select>
         </dropdown></li>
 

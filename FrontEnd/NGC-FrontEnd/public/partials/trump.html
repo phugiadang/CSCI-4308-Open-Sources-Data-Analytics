@@ -8,19 +8,20 @@
             <!-- <body>
 				<div id="chartContainer">FusionCharts XT will load here!</div>
 			</body> -->
-
-
 			<script type="text/javascript">
-        			var myChart = new FusionCharts( "FusionCharts/multiaxisline.swf", "myChartId", "800", "600", "0", "0" );
-        			myChart.setJSONUrl("../sandersJson.json");
-        			myChart.render("chartContainer");
-
-      			</script>
-
-			<body class="col-md-12 col-lg-12">
-				<img src="../analysis-images/Twitter_vs_GDELT_trump.png">
-			</body>
-
-
-        </div>
+  			var myChart = new FusionCharts( "FusionCharts/multiaxisline.swf", "myChartId", "800", "600", "0", "0" );
+  			myChart.setJSONUrl("../sandersJson.json");
+  			myChart.render("chartContainer");
+      </script>
     </div>
+</div>
+
+<!-- Carousel for Trump's Analysis Images -->
+<div ng-controller="trumpController" id="trump_slides">
+		<carousel active="active" interval="myInterval">
+			<slide ng-repeat="slide in slides track by slide.id" active="slide.active" index="slide.id">
+				<img ng-src="{{slide.image}}">
+				<embed ng-src="{{slide.text}}">
+			</slide>
+		</carousel>
+</div>

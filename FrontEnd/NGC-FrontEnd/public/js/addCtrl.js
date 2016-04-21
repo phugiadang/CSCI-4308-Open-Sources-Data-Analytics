@@ -87,4 +87,3 @@ addCtrl.controller('addCtrl', function($scope, $http, $rootScope, geolocation, g
             });
     };
 });
-

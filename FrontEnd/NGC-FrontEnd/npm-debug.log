@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.1
+4 verbose stack Error: Invalid name: "Team OSAM sponsored by Northrop Grumman"
+4 verbose stack     at ensureValidName (/usr/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:336:15)
+4 verbose stack     at Object.module.exports.fixNameField (/usr/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:215:5)
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:32:38
+4 verbose stack     at Array.forEach (native)
+4 verbose stack     at normalize (/usr/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:31:15)
+4 verbose stack     at final (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:338:5)
+4 verbose stack     at then (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:232:12
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at tryToString (fs.js:414:3)
+5 verbose cwd /home/dano8957/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd
+6 error Linux 3.19.0-51-generic
+7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
+8 error node v5.10.1
+9 error npm  v3.8.3
+10 error Invalid name: "Team OSAM sponsored by Northrop Grumman"
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
