@@ -54,7 +54,7 @@ class TweetSentimentAnalysis(AnalysisObject):
 			text_output = text_output + data_one[i] + " " +str(len(data_two[i])) + "\n"
 		users_report = {}
 		for i in range (0,len(data_one)):
-			users_report = {}
+			
                         clean_tweet = []
 			pos = 0
 			neg = 0
@@ -102,6 +102,8 @@ class TweetSentimentAnalysis(AnalysisObject):
 					neutral = neutral +1
                                 except:
                                     neutral += 1
+                        if (len(users_report) == 5):
+                             users_report = {}
 			users_report[data_one[i]]={"pos":pos,"neg":neg,"neutral":neutral}
 			data = pd.DataFrame(users_report)
 			fig = plt.figure()

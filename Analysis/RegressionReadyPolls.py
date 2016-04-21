@@ -153,7 +153,7 @@ class RegressionReadyPolls:
             if len(poll[1]) == int(best_choice_length):
                 relevant_polls.append(poll)
                 #we now have the polls of the correct length containing the correct candidate. Now pull out the poll numbers for the relevant candidate
-	print self.polls
+	
 	current_date = relevant_polls[0][0]
         to_be_averaged = []
         #if there are no polls on the first n days of the range, add n None's to poll_numbers

@@ -27,6 +27,9 @@ import GetHourlyTweetsDayRange
 from RegressionReadyPolls import RegressionReadyPolls
 from GetPollsFromDatabase import DatabasePolls
 import GetDailyGDELTCounts
+import sys
+from datetime import date, timedelta
+
 
 def getTweets(candidate, start, end):
     #get the tweets
@@ -46,7 +49,7 @@ def getTweets(candidate, start, end):
         daily_counts.append(sum(twitter_counts[i:i+23]))
         i += 24
     
-    return daily_counts, dates
+    return daily_counts
 
 def getPolls(candidate, start, end):
     #get the polls
@@ -54,12 +57,12 @@ def getPolls(candidate, start, end):
     polls.queryDatabase()
     polls.cleanPolls()
     clean_polls = polls.getCleanedPolls()
-
+    
     reg_polls = RegressionReadyPolls(clean_polls, candidate.capitalize(), start, end)
     reg_polls.makeSimplePollNumbers()
     reg_polls.fillGapsWithAvg()
     reg_polls = reg_polls.getPollNumbers()
-#    print 'Without Nones: ' + str(reg_polls)
+    
     return reg_polls
     
 def getGDELT(candidate, start, end):
@@ -67,10 +70,41 @@ def getGDELT(candidate, start, end):
     return counts
 
 def main():
-	AnalysisObjectFactory.initialFactory()
-	types = AnalysisObjectFactory.createObject("ClusteringAnalysis","2/17/2016",3,['Clinton','Sanders','Trump','Kasich'],[{'Poll':100.0,'GDELT':10.0,'Twitter':123.0},{'Poll':25.0,'GDELT':5.0,'Twitter':1234.0},{'Poll':10.0,'GDELT':4.0,'Twitter':145.0},{'Poll':5.0,'GDELT':4.0,'Twitter':145.0}])
-	types.clusterAnalysis()
-	return 0
+    
+    #check if it's being run locally or by the cronjob
+    delt = 1
+    if len(sys.argv) == 1:
+        delt = 2
+    yesterday = date.today() - timedelta(delt)
+    Date =  yesterday.strftime('%Y%m%d')
+    print Date
+
+    clinton_tweet = float(getTweets('clinton', Date, Date)[0])
+    clinton_poll = float(getPolls('clinton', '20160301', Date)[-1])
+    clinton_gdelt = getGDELT('clinton', Date, Date)[0]
+    
+    sanders_tweet = float(getTweets('sanders', Date, Date)[0])
+    sanders_poll = float(getPolls('sanders', '20160301', Date)[-1])
+    sanders_gdelt = float(getGDELT('sanders', Date, Date)[0])
+    
+    trump_tweet = float(getTweets('trump', Date, Date)[0])
+    trump_poll = float(getPolls('trump', '20160301', Date)[-1])
+    trump_gdelt = float(getGDELT('trump', Date, Date)[0])
+    
+    cruz_tweet = float(getTweets('cruz', Date, Date)[0])
+    cruz_poll = float(getPolls('cruz', '20160301', Date)[-1])
+    cruz_gdelt = float(getGDELT('cruz', Date, Date)[0])
+
+    kasich_tweet = float(getTweets('kasich', Date, Date)[0])
+    kasich_poll = float(getPolls('kasich', '20160301', Date)[-1])
+    kasich_gdelt = float(getGDELT('kasich', Date, Date)[0])
+    
+    AnalysisObjectFactory.initialFactory()
+    
+    pretty_date = Date[4] + Date[5] + '/' + Date[6] + Date[7] + '/' + Date[0:4]
+    types = AnalysisObjectFactory.createObject("ClusteringAnalysis",pretty_date,3, ['Clinton','Sanders','Trump','Cruz', 'Kasich'],[{'Poll':clinton_poll,'GDELT':clinton_gdelt,'Twitter':clinton_tweet},{'Poll':sanders_poll,'GDELT':sanders_gdelt,'Twitter':sanders_tweet},{'Poll':trump_poll,'GDELT':trump_gdelt,'Twitter':trump_tweet},{'Poll':cruz_poll,'GDELT':cruz_gdelt,'Twitter':cruz_tweet},{'Poll':kasich_poll,'GDELT':kasich_gdelt,'Twitter':kasich_tweet}])
+    types.clusterAnalysis()
+    return 0
 
 if __name__ == '__main__':
 	main()
