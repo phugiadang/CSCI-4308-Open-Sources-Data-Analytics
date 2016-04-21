@@ -39,6 +39,8 @@ def main():
 	list_of_list_of_tweets = []
         list_of_candidates = ["kasich", "sanders"]
 	for candidate in list_of_candidates:
+            list_of_userids = []
+            list_of_list_of_tweets = []
             final_result = session.execute("select * from topTweeters where candidate_name = '" + candidate + "'");
             for user in final_result:
                 list_of_userids.append(str(getattr(user, "user_id")))

@@ -54,7 +54,8 @@ class TweetSentimentAnalysis(AnalysisObject):
 			text_output = text_output + data_one[i] + " " +str(len(data_two[i])) + "\n"
 		users_report = {}
 		for i in range (0,len(data_one)):
-			
+			#print "data_one is " + str(data_one)
+                        #print "length of data_one is " + str(len(data_one))
                         clean_tweet = []
 			pos = 0
 			neg = 0
@@ -69,10 +70,11 @@ class TweetSentimentAnalysis(AnalysisObject):
      
                                 except:
                                     print 'bad tweet!'
-                                    stt = 'neutral'
+                                    stt = 'bad'
                                 good = 1
                                 
                                 try:
+                                    
                                     p = unirest.post("https://japerk-text-processing.p.mashape.com/sentiment/",
   headers={
     "X-Mashape-Key": "eo2rOfIXzUmshGWmknOvJlkdceozp1oMJLYjsniKpR5UXjovLm",
@@ -83,27 +85,31 @@ class TweetSentimentAnalysis(AnalysisObject):
     "language": "english",
     "text": stt
   }
-)		                
+)
+                                    		                
                                     good = 0
 
                                 except:
                                     good = 1
 
-                                print p		
-
-                                p1 = p.body
-                                #p1 = ast.literal_eval(p)
+                                #print p		
+                                #p1 = p.body
+                               
+                                p1 = {"label" : "neg"}
                                 try:
 				    if p1["label"] == "neg":
 				        neg = neg +1
 				    elif p1["label"] == "pos":
 					pos = pos +1
+                                    elif p1["label"] == "bad":
+                                        neutral += 0
 				    else:
 					neutral = neutral +1
                                 except:
                                     neutral += 1
-                        if (len(users_report) == 5):
-                             users_report = {}
+                        
+                             
+                        print "USER REPORT: " + str(users_report)
 			users_report[data_one[i]]={"pos":pos,"neg":neg,"neutral":neutral}
 			data = pd.DataFrame(users_report)
 			fig = plt.figure()
