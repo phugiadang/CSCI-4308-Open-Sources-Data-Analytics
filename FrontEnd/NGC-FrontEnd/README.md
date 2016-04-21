@@ -1,38 +1,35 @@
-# MeanMapAppV2.0
-Basic application demonstrating MEAN (Mongo, Express, Angular, and Node) Integration with Google Maps. Application allows users to add themselves onto a Google Map map with identifying markers based on their form response. The application also demonstrates the use of HTML5 validated geolocation and the use of geospatial filtering through MongoDB. 
-
-![appimage](https://raw.githubusercontent.com/afhaque/MeanMapAppV2.0/master/Resources/AppImage.png)
+# Team OSAM sponsored by Northrop Grumman
+Basic application demonstrating CEAN (Cassandra, Express, Angular, and Node) Integration with FusionCharts. Application allows users to view analysis pertaining to Democratic and Republican party candidate nominations. Data sources used were Twitter, GDELT, and the Huffington Post API. Each source was tracked by counts and all candidates were compared on a single FusionChart. Then, with all counts discovered on a certain time frame, analysis was done to try and find a correlation between multiple sources.  
 
 ## Demo Link
+Type in either below when the Front End server has been started:
 
-https://mean-google-maps.herokuapp.com/#/join
+128.138.202.110:3000
+128.138.202.117:3000
 
-## Full Tutorial
-Part I
-https://scotch.io/tutorials/making-mean-apps-with-google-maps-part-i
- 
-Part II
-https://scotch.io/tutorials/making-mean-apps-with-google-maps-part-ii
- 
-## Instructions to run locally 
+(if neither connect to the Front End, the server is down or has not been initialized for Front End purposes)
 
-1) Clone repository and download npm packages 
+## Instructions to run locally
+
+1) Clone repository and download npm packages
 
 ```
-git clone https://github.com/afhaque/MeanMapAppV2.0.git
+git clone https://github.com/phugiadang/CSCI-4308-Open-Sources-Data-Analytics
+
 npm install
+
+bower install
 ```
 
-2) Launch mongod in one terminal then run server.js
+2) Go into directory FrontEnd/NGC-FrontEnd/
 
 ````
-mongod
-node server.js
+Run "npm start" or "sudo npm start"
+
 ````
 
 3) Open browser `http://localhost:3000/`
 
 ## Questions
 
-For questions, contact Ahmed Haque (afhaque@rice.edu)
-
+For questions, contact Team OSAM (through GitHub is fine for now)

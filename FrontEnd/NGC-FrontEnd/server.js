@@ -1,7 +1,6 @@
 // Dependencies
 // -----------------------------------------------------
 var express         = require('express');
-
 var port            = process.env.PORT || 3000;
 var database        = require('./app/config');
 var morgan          = require('morgan');
