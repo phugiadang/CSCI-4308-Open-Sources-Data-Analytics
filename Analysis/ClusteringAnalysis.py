@@ -123,7 +123,7 @@ class ClusteringAnalysis(AnalysisObject):
 		threedee.set_ylabel('GDELT')
 		threedee.set_zlabel('Poll')
 		plt.title("Clustering Candidates on "+self.getfixed_para_one())
-		plt.savefig('home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd/public/analysis-images/CLustering_Candidates',bbox_inches='tight',dpi=100)
+		plt.savefig('home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd/public/analysis-images/Clustering_Candidates',bbox_inches='tight',dpi=100)
 		for i in xrange(0,self.getfixed_para_two()):
 			text_output = text_output + "*Cluster "+str(i)+":\n"
 			for j in xrange(0,len(labels)):
