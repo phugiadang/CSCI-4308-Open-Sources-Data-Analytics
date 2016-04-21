@@ -37,7 +37,7 @@ def main():
 	AnalysisObjectFactory.initialFactory()
 	list_of_userids=[]
 	list_of_list_of_tweets = []
-        list_of_candidates = ["kasich", "sanders"]
+        list_of_candidates = ["kasich", "sanders", "bush", "carson", "clinton", "cruz"]
 	for candidate in list_of_candidates:
             list_of_userids = []
             list_of_list_of_tweets = []

@@ -49,7 +49,7 @@ def getTwitterObjectCandidate(candidate_name):
 	#append 0's if missing data THIS MAY NOT WORK, MAY BE ONE TOO MANY
 	for i in range(len(this_candidate_counts),len(days)*24):
 		this_candidate_counts.append(0)
-	return AnalysisObject(candidate_name, datasource, dates, this_candidate_counts)
+	return AnalysisObject(candidate_name, datasource, dates, this_candidate_counts[0:len(days)-1])
 
 
 def getGDELTObjects():
@@ -282,10 +282,10 @@ if candidate_read == "all" and datasource == "GDELT":
 	f = open('../FrontEnd/NGC-FrontEnd/public/GDELTAll.json', 'w')
 	f.write(json_string)
 
-elif candidate_read == "all" and datasource == "Twitter":
-	if timeframe == "hourly":
-		candidate_list = getTwitterObjectsHourly()
 
+	print candidate_list
+elif candidate_read == "all" and datasource == "Twitter" and timeframe == "hourly":
+	candidate_list = getTwitterObjectsHourly()
 
 	json_string = '''
 	{
@@ -366,6 +366,75 @@ elif candidate_read == "all" and datasource == "Twitter":
 		}
 	'''
 	f = open('../FrontEnd/NGC-FrontEnd/public/TwitterAll.json', 'w')
+	f.write(json_string)
+elif candidate_read == "all" and datasource == "Twitter" and timeframe == "daily":
+	candidate_list = []
+	for candidate in candidate_names:
+		candidate_list.append(getTwitterObjectCandidate(candidate))
+	json_string = '''
+	{
+		    "chart": {
+			"caption": "'''
+	json_string += chart_caption
+	json_string +=		'''",
+			"subCaption": "'''
+	json_string += chart_sub_caption
+	json_string +=		'''",
+			"captionFontSize": "14",
+			"subcaptionFontSize": "14",
+			"subcaptionFontBold": "0",
+			"paletteColors": "#FF0000,#0000FF,#000033,#9D1309,#FF6A6A,#330000",
+			"bgcolor": "#ffffff",
+			"showBorder": "0",
+			"showShadow": "0",
+			"showCanvasBorder": "0",
+			"usePlotGradientColor": "0",
+			"legendBorderAlpha": "0",
+			"legendShadow": "0",
+			"showAxisLines": "0",
+			"showAlternateHGridColor": "0",
+			"divlineThickness": "1",
+			"divLineIsDashed": "1",
+			"divLineDashLen": "1",
+			"divLineGapLen": "1",
+			"xAxisName": "Day",
+			"showValues": "0"
+		    },
+		    "categories": [
+			{
+			    "category": ['''
+	for i in range(0,len(dates)-1):
+		json_string += '{ "label": "' + dates[i] + '" },'
+	json_string += '{ "label": "' + dates[len(dates)-1] + '" }'
+	json_string += '''
+			    ]
+			}
+		    ],
+		    "dataset": ['''
+	for i in range (0, len(candidate_list)-1):
+		json_string += str(candidate_list[i].createJson())
+		json_string += ','
+	json_string += str(candidate_list[len(candidate_list)-1].createJson())
+
+	json_string +=  '''
+		    ],
+		    "trendlines": [
+			{
+			    "line": [
+				{
+				    "startvalue": "17022",
+				    "color": "#6baa01",
+				    "valueOnRight": "1",
+				    "displayvalue": "Average"
+				}
+			    ]
+			}
+		    ]
+		}
+	'''
+
+	f = open('../FrontEnd/NGC-FrontEnd/public/TwitterAllDaily.json', 'w')
+	#f = open('PollsAll.json', 'w')
 	f.write(json_string)
 
 elif candidate_read == "all" and datasource == "Polls":
