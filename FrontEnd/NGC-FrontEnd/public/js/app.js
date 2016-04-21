@@ -299,10 +299,10 @@ app.controller('analysisController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'Tweet_Word2Vec_Analysis_kasich.png', 'Tweet_Word2Vec_Analysis_sanders.png', 'Twitter_vs_GDELT_kasich.png', 'Twitter_vs_GDELT_sanders.png', 'Twitter_vs_GDELT_trump.png', 'User_Sentiment_Analysis_kasich.png', 'User_Sentiment_Analysis_trump.png'
+  'Tweet_Word2Vec_Analysis_kasich.png', 'Tweet_Word2Vec_Analysis_sanders.png', 'Clustering_Candidates.gif','Clustering_Candidates.png'
   ]
   var text = [
-    'Tweet_Word2Vec_Analysis_kasich.txt', 'Tweet_Word2Vec_Analysis_sanders.txt', '', '', '', '', ''
+    'Tweet_Word2Vec_Analysis_kasich.txt', 'Tweet_Word2Vec_Analysis_sanders.txt', 'Clustering_Candidates.txt', 'Clustering_Candidates.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
