@@ -25,8 +25,7 @@
 		    },
 		    "categories": [
 			{
-			    "category": [{ "label": "March, 1" },{ "label": "March, 2" },{ "label": "March, 3" },{ "label": "March, 4" },{ "label": "March, 5" },{ "label": "March, 6" },{ "label": "March, 7" },{ "label": "March, 8" },{ "label": "March, 9" },{ "label": "March, 10" },{ "label": "March, 11" },{ "label": "March, 12" },{ "label": "March, 13" },{ "label": "March, 14" },{ "label": "March, 15" },{ "label": "March, 16" },{ "label": "March, 17" },{ "label": "March, 18" },{ "label": "March, 19" },{ "label": "March, 20" },{ "label": "March, 21" },{ "label": "March, 22" },{ "label": "March, 23" },{ "label": "March, 24" },{ "label": "March, 25" },{ "label": "March, 26" },{ "label": "March, 27" },{ "label": "March, 28" },{ "label": "March, 29" },{ "label": "March, 30" },{ "label": "March, 31" }
-			    ]
+			    "category": [{ "label": "March, 1" },{ "label": "March, 2" },{ "label": "March, 3" },{ "label": "March, 4" },{ "label": "March, 5" },{ "label": "March, 6" },{ "label": "March, 7" },{ "label": "March, 8" },{ "label": "March, 9" },{ "label": "March, 10" },{ "label": "March, 11" },{ "label": "March, 12" },{ "label": "March, 13" },{ "label": "March, 14" },{ "label": "March, 15" },{ "label": "March, 16" },{ "label": "March, 17" },{ "label": "March, 18" },{ "label": "March, 19" },{ "label": "March, 20" },{ "label": "March, 21" },{ "label": "March, 22" },{ "label": "March, 23" },{ "label": "March, 24" },{ "label": "March, 25" },{ "label": "March, 26" },{ "label": "March, 27" },{ "label": "March, 28" },{ "label": "March, 29" },{ "label": "March, 30" },{ "label": "March, 31" }]
 			}
 		    ],
 		    "dataset": [{
@@ -39,8 +38,7 @@
                     "seriesname": "Cruz Polls Counts",
                     "data": [ { "value": "17" },{ "value": "17" },{ "value": "11" },{ "value": "16" },{ "value": "16" },{ "value": "22" },{ "value": "22" },{ "value": "22" },{ "value": "23" },{ "value": "21" },{ "value": "20" },{ "value": "20" },{ "value": "19" },{ "value": "15" },{ "value": "15" },{ "value": "12" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "31" },{ "value": "34" },{ "value": "38" },{ "value": "39" },{ "value": "39" },{ "value": "39" },{ "value": "39" },{ "value": "40" },{ "value": "40" },{ "value": "40" },{ "value": "40" },{ "value": "40" }]},{
                     "seriesname": "Kasich Polls Counts",
-                    "data": [ { "value": "9" },{ "value": "9" },{ "value": "18" },{ "value": "14" },{ "value": "14" },{ "value": "10" },{ "value": "13" },{ "value": "17" },{ "value": "12" },{ "value": "20" },{ "value": "17" },{ "value": "17" },{ "value": "15" },{ "value": "8" },{ "value": "8" },{ "value": "1" },{ "value": "9" },{ "value": "9" },{ "value": "9" },{ "value": "17" },{ "value": "17" },{ "value": "17" },{ "value": "19" },{ "value": "19" },{ "value": "19" },{ "value": "19" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" }]}
-		    ],
+                    "data": [ { "value": "9" },{ "value": "9" },{ "value": "18" },{ "value": "14" },{ "value": "14" },{ "value": "10" },{ "value": "13" },{ "value": "17" },{ "value": "12" },{ "value": "20" },{ "value": "17" },{ "value": "17" },{ "value": "15" },{ "value": "8" },{ "value": "8" },{ "value": "1" },{ "value": "9" },{ "value": "9" },{ "value": "9" },{ "value": "17" },{ "value": "17" },{ "value": "17" },{ "value": "19" },{ "value": "19" },{ "value": "19" },{ "value": "19" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" }]}],
 		    "trendlines": [
 			{
 			    "line": [
@@ -54,4 +52,3 @@
 			}
 		    ]
 		}
-	

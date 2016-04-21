@@ -54,19 +54,19 @@ var app = angular.module('ngc', ['queryCtrl', 'headerCtrl', 'ngRoute', 'ui.boots
 //Controller for Home Page
 app.controller('HomeController', function($scope, $location){
   var gdelt = new FusionCharts( "FusionCharts/msline.swf",
-                                        "gdeltChartId", "100%","500","0","0"); 
+                                        "gdeltChartId", "100%","500","0","0");
 			gdelt.setJSONUrl("GDELTAll.json");
 			gdelt.render("gdeltChart");
 
   var candidates = new FusionCharts( "FusionCharts/msline.swf",
                                         "candidateChartId", "100%", "500", "0", "0");
-			candidatesChart.setJSONUrl("TwitterAll.json");
-			candidatesChart.render("candidatesChart");
+			candidates.setJSONUrl("TwitterAll.json");
+			candidates.render("candidatesChart");
 
   var polls = new FusionCharts( "FusionCharts/msline.swf",
                                         "pollsChartId", "100%", "500", "0", "0");
-			candidatesChart.setJSONUrl("PollsAll.json");
-			candidatesChart.render("pollsChart");
+			polls.setJSONUrl("PollsAll.json");
+			polls.render("pollsChart");
 });
 //Main Page Controller
 app.controller('mainController', function($scope, $location){});
