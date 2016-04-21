@@ -21,6 +21,7 @@
 #  MA 02110-1301, USA.
 #  
 #  Reference: https://districtdatalabs.silvrback.com/modern-methods-for-sentiment-analysis
+#  Data sources: http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/
 
 import re
 import pandas as pd
