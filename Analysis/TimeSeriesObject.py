@@ -46,7 +46,7 @@ def test_stationarity(timeseries,term,text_output):
     timeseries.plot(color='blue',label='Original')
     plt.legend(loc='best')
     plt.title('Rolling Mean & Standard Deviation'+term)
-    plt.savefig('rolling_mean_sd_'+term,bbox_inches='tight',dpi=100,block=False)
+    plt.savefig('../FrontEnd/NGC-FrontEnd/public/analysis-images/rolling_mean_sd_'+term,bbox_inches='tight',dpi=100,block=False)
     dfoutput,text_output = dickeyFullertest(timeseries,term,text_output)
     return dfoutput,text_output
 		
@@ -95,7 +95,7 @@ class TimeSeriesObject(AnalysisObject):
 		fig.add_subplot(111)
 		ts.plot(title="Hourly Tweet Counts For "+name)
 		plt.ylabel("Number of Tweet Counts")
-		plt.savefig('daily_graph_'+name,bbox_inches='tight',dpi=100)
+		plt.savefig('../FrontEnd/NGC-FrontEnd/public/analysis-images/daily_graph_'+name,bbox_inches='tight',dpi=100)
 		dfoutput,text_output=test_stationarity(ts,"orginal_"+name,text_output)
 		if dfoutput['Test Statistic'] < dfoutput['Critical Value (1%)']:
 			text_output = text_output + "Since Test Statistic Value less than Critical Value (1%): Time Series is stationary for 99% confidence\n"
@@ -149,8 +149,8 @@ class TimeSeriesObject(AnalysisObject):
 		prediction_ARIMA.plot(label="Forecasting using ARIMA Model for "+name)
 		plt.legend(loc='best')
 		plt.title('Time Series Forecasting for '+name)
-		plt.savefig('Final Result'+name,bbox_inches='tight',dpi=100)
-		f = open('Time_Series_Analysis_'+name+'.txt','w')
+		plt.savefig('../FrontEnd/NGC-FrontEnd/public/analysis-images/Final Result'+name,bbox_inches='tight',dpi=100)
+		f = open('../FrontEnd/NGC-FrontEnd/public/analysis-images/Time_Series_Analysis_'+name+'.txt','w')
 		f.write(text_output)
 		f.close()
 		
