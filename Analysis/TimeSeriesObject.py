@@ -28,6 +28,38 @@ import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
+import numpy as np
+from statsmodels.tsa.arima_model import ARIMA
+
+
+def test_stationarity(timeseries,term,text_output):
+    
+    #Determing rolling statistics
+    rolmean = timeseries.rolling(window=24,center=False).mean()
+    rolstd = timeseries.rolling(window=24,center=False).std()
+
+    #Plot rolling statistics:
+    fig = plt.figure()
+    fig.add_subplot(111)
+    rolmean.plot(color='red', label='Rolling Mean')
+    rolstd.plot(color='black', label = 'Rolling Std')
+    timeseries.plot(color='blue',label='Original')
+    plt.legend(loc='best')
+    plt.title('Rolling Mean & Standard Deviation'+term)
+    plt.savefig('rolling_mean_sd_'+term,bbox_inches='tight',dpi=100,block=False)
+    dfoutput,text_output = dickeyFullertest(timeseries,term,text_output)
+    return dfoutput,text_output
+		
+    
+def dickeyFullertest(timeseries,term,text_output):
+	#Perform Dickey-Fuller test:
+    text_output = text_output + 'Results of Dickey-Fuller Test for '+term+' data:\n'
+    dftest = adfuller(timeseries)
+    dfoutput = pd.Series(dftest[0:4], index=['Test Statistic','p-value','#Lags Used','Number of Observations Used'])
+    for key,value in dftest[4].items():
+        dfoutput['Critical Value (%s)'%key] = value
+    text_output = text_output + str(dfoutput)
+    return dfoutput,text_output
 
 class TimeSeriesObject(AnalysisObject):
 	
@@ -37,36 +69,6 @@ class TimeSeriesObject(AnalysisObject):
 	#list_para_two: list of counts for y values
 	def __init__(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):
 		super(TimeSeriesObject,self).__init__(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
-	
-	def __testStationarity(self,time_series,text_output):
-		#Determing rolling statistics
-		rol_mean = pd.rolling_mean(time_series,window=2)
-		rol_std = pd.rolling_std(time_series,window=2)
-		#Plot rolling statistics:
-		plt.plot(time_series, color='blue',label='Original')
-		plt.plot(rol_mean, color='red', label='Rolling Mean')
-		plt.plot(rol_std, color='black', label = 'Rolling Std')
-		plt.legend(loc='best')
-		plt.title('Rolling Mean & Standard Deviation')
-		#plt.show()
-		plt.savefig('Rolling_Mean_Standard_Deviation',bbox_inches='tight',dpi=100)
-		#Perform Dickey-Fuller test:
-		text_output = text_output + 'Results of Dickey-Fuller Test:\n'
-		text_output = text_output + 'In statistics, the Dickey–Fuller test tests whether a unit root is present in an autoregressive model. It is named after the statisticians David Dickey and Wayne Fuller, who developed the test in 1979.\n'
-		df_test = adfuller(time_series)
-		df_output = pd.Series(df_test[0:4], index=['Test Statistic','p-value','#Lags Used','Number of Observations Used'])
-		for key,value in df_test[4].items():
-			df_output['Critical Value (%s)'%key] = value
-		text_output = text_output + str(df_output)
-		if (df_output['Test Statistic'] < df_output['Critical Value (1%)']):
-			text_output = text_output + "\nSince Text Statistic is smaller than Critical Value (1%): This is a stationarity.\n"
-		elif (df_output['Test Statistic'] < df_output['Critical Value (5%)']):
-			text_output = text_output + "\nSince Text Statistic is smaller than Critical Value (5%): This is a stationarity within Critical Value (5%).\n"
-		elif (df_output['Test Statistic'] < df_output['Critical Value (10%)']):
-			text_output = text_output + "\nSince Text Statistic is smaller than Critical Value (10%): This is a stationarity within Critical Value (10%).\n"
-		else:
-			text_output = text_output + "\nSince Text Statistic is greater than Critical Value (10%): This is NOT a stationarity.\n"
-		return text_output
 	
 	def timeSeriesAnalysis(self):
 		name = self.getfixed_para_one()
@@ -80,13 +82,77 @@ class TimeSeriesObject(AnalysisObject):
 		text_output = text_output + "Stationarity is defined using very strict criterion. However, for practical purposes we can assume the series to be stationary if it has constant statistical properties over time, ie. the following:\n1.constant mean\n2.constant variance\n3.an autocovariance that does not depend on time\n"
 		dates = []
 		for x in data_one:
-			dates.append(pd.Timestamp(x))
+			year= int(x[0:4])
+			month= int(x[4:6])
+			date= int(x[6:8])
+			hour= int(x[8:10])
+			dates.append(pd.Timestamp(pd.datetime(year,month,date,hour)))
 		dic = {'Date':dates,source:data_two}
 		data = pd.DataFrame(dic)
 		data_index = data.set_index(['Date'])
-		ts = data_index[source]
-		text_output = self.__testStationarity(ts,text_output)	
-		return text_output
+		ts = data_index[source]	
+		fig = plt.figure()
+		fig.add_subplot(111)
+		ts.plot(title="Hourly Tweet Counts For "+name)
+		plt.ylabel("Number of Tweet Counts")
+		plt.savefig('daily_graph_'+name,bbox_inches='tight',dpi=100)
+		dfoutput,text_output=test_stationarity(ts,"orginal_"+name,text_output)
+		if dfoutput['Test Statistic'] < dfoutput['Critical Value (1%)']:
+			text_output = text_output + "Since Test Statistic Value less than Critical Value (1%): Time Series is stationary for 99% confidence\n"
+		elif dfoutput['Test Statistic'] < dfoutput['Critical Value (5%)']:
+			text_output = text_output + "Since Test Statistic Value less than Critical Value (5%): Time Series is stationary for 95% confidence\n"
+		elif dfoutput['Test Statistic'] < dfoutput['Critical Value (10%)']:
+			text_output = text_output + "Since Test Statistic Value less than Critical Value (10%): Time Series is stationary for 90% confidence\n"
+		else:
+			text_output = text_output + 'ESTIMATING & ELIMINATING TREND:\n'
+			exweight_avg = ts.ewm(halflife=12,ignore_na=False,min_periods=0,adjust=True).mean()
+			fig = plt.figure()
+			fig.add_subplot(111)
+			plt.plot(ts)
+			plt.plot(exweight_avg,color='red')
+			plt.savefig('exponent_weight_moving_average_'+name,bbox_inches='tight',dpi=100)
+			ts_log_ewma_diff = ts - exweight_avg
+			ts_log_ewma_diff.dropna(inplace=True)
+			dfoutput,text_output=test_stationarity(ts_log_ewma_diff,"perform_exp_weight_avg_"+name,text_output)
+			ts_log = np.log(ts)
+			ts_log_diff = ts_log - ts_log.shift()
+			model = ARIMA(ts_log, order=(2,1,2))
+			results_ARIMA = model.fit(disp=-1)
+			fig = plt.figure()
+			fig.add_subplot(111)
+			plt.plot(ts_log_diff)
+			plt.plot(results_ARIMA.fittedvalues,color='red')
+			plt.savefig('Combine_model_plot_'+name,bbox_inches='tight',dpi=100)
+			predictions_ARIMA_diff = pd.Series(results_ARIMA.fittedvalues,copy=True)
+			predictions_ARIMA_diff_cumsum = predictions_ARIMA_diff.cumsum()
+			prediction_ARIMA_log = pd.Series(ts_log.ix[0],index=ts_log.index)
+			prediction_ARIMA_log = prediction_ARIMA_log.add(predictions_ARIMA_diff_cumsum,fill_value=0)
+			prediction_ARIMA = np.exp(prediction_ARIMA_log)
+			fig = plt.figure()
+			fig.add_subplot(111)
+			ts.plot(label="Original")
+			prediction_ARIMA.plot(label="Forecasting using ARIMA Model for "+name)
+			plt.legend(loc='best')
+			plt.savefig('Final Result'+name,bbox_inches='tight',dpi=100)
+		ts_diff = ts - ts.shift(1)
+		model = ARIMA(ts, order=(2,1,2))
+		results_ARIMA = model.fit(disp=-1)
+		predictions_ARIMA_diff = pd.Series(results_ARIMA.fittedvalues,copy=True)
+		predictions_ARIMA_diff_cumsum = predictions_ARIMA_diff.cumsum()
+		prediction_ARIMA = pd.Series(ts.ix[0],index=ts.index)
+		prediction_ARIMA = prediction_ARIMA.add((-1)*predictions_ARIMA_diff_cumsum,fill_value=0)
+		#prediction_ARIMA = np.exp(prediction_ARIMA_log)
+		#print prediction_ARIMA
+		fig = plt.figure()
+		fig.add_subplot(111)
+		ts.plot(label="Original")
+		prediction_ARIMA.plot(label="Forecasting using ARIMA Model for "+name)
+		plt.legend(loc='best')
+		plt.title('Time Series Forecasting for '+name)
+		plt.savefig('Final Result'+name,bbox_inches='tight',dpi=100)
+		f = open('Time_Series_Analysis_'+name+'.txt','w')
+		f.write(text_output)
+		f.close()
 		
 		
 	class Factory:
