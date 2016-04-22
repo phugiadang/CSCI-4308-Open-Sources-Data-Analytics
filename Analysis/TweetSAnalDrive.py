@@ -39,7 +39,7 @@ def main():
 
         list_of_userids = []
         list_of_list_of_tweets = []
-        list_of_candidates = ["sanders", "carson", "bush", "cruz", "clinton"]
+        list_of_candidates = ["kasich", "sanders", "carson", "bush", "cruz", "clinton"]
         for candidate in list_of_candidates:
             list_of_userids = []
             list_of_list_of_tweets = []
@@ -47,7 +47,7 @@ def main():
             for user in final_result:
                 list_of_userids.append(str(getattr(user, "user_id")))
                 list_of_list_of_tweets.append(getattr(user, "list_of_tweets"))
-            print [[list_of_list_of_tweets[0][0]]]
+            #print [[list_of_list_of_tweets[0][0]]]
             types = AnalysisObjectFactory.createObject("TweetSentimentAnalysis",candidate,["3/6/2016", "4/5/2016"],list_of_userids, list_of_list_of_tweets)
         #types = AnalysisObjectFactory.createObject("TweetSentimentAnalysis","kasich",["3/6/2016", "4/5/2016"],[list_of_userids[0]], [[u"I fell da bernz mutilate fun happy"]])
 

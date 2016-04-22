@@ -47,8 +47,6 @@ def getTwitterObjectCandidate(candidate_name):
 	print len(this_candidate_counts)
 	print this_candidate_counts
 	#append 0's if missing data THIS MAY NOT WORK, MAY BE ONE TOO MANY
-	for i in range(len(this_candidate_counts),len(days)*24):
-		this_candidate_counts.append(0)
 	return AnalysisObject(candidate_name, datasource, dates, this_candidate_counts[0:len(days)-1])
 
 

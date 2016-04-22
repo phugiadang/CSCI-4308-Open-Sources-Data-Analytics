@@ -64,7 +64,7 @@ class TweetSentimentAnalysis(AnalysisObject):
 				clean_tweet.append(_cleanTweet(stt,name))
 			for stt in clean_tweet:
 				#p = subprocess.Popen("curl -d text='"+str(stt)+"' http://text-processing.com/api/sentiment/", shell=True,stdout=subprocess.PIPE).communicate()[0]
-                                print stt
+                                #print stt
                                 try:
                                     stt = str(stt)
      
@@ -93,9 +93,9 @@ class TweetSentimentAnalysis(AnalysisObject):
                                     good = 1
 
                                 #print p		
-                                #p1 = p.body
+                                p1 = p.body
                                
-                                p1 = {"label" : "neg"}
+                                
                                 try:
 				    if p1["label"] == "neg":
 				        neg = neg +1
