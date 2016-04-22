@@ -28,7 +28,7 @@ from AnalysisObjectFactory import AnalysisObjectFactory
 
 
 def main():
-	dic = QueryingDavid.candidateCountRangeHourlyDict("sanders","2016041100","2016041700")
+	dic = QueryingDavid.candidateCountRangeHourlyDict("trump","2016041100","2016041700")
 	ordered_dic = collections.OrderedDict(sorted(dic.items()))
 	dates =[]
 	count =[]
@@ -36,7 +36,7 @@ def main():
 		dates.append(item)
 		count.append(float(ordered_dic[item]))
 	AnalysisObjectFactory.initialFactory()
-	types = AnalysisObjectFactory.createObject("TimeSeriesObject","sanders","Twitter",dates,count)
+	types = AnalysisObjectFactory.createObject("TimeSeriesObject","trump","Twitter",dates,count)
 	text= types.timeSeriesAnalysis()
 	return 0
 
