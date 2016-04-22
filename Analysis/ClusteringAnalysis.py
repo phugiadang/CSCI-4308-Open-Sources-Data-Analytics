@@ -112,7 +112,7 @@ class ClusteringAnalysis(AnalysisObject):
 		kmeans.fit(p_df)
 		labels = kmeans.labels_
 		threedee = plt.figure().gca(projection='3d')
-		threedee.scatter(p_df['Twitter'], p_df['GDELT'], p_df['Poll'],c=labels.astype(np.float),edgecolors="green")
+		threedee.scatter(p_df['Twitter'], p_df['GDELT'], p_df['Poll'],c=labels.astype(np.float))
 		for name in candidates:
 			a = p_df.T[name]
 			x=a['Twitter']
