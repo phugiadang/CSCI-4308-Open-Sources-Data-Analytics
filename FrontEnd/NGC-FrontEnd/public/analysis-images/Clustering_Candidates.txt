@@ -3,24 +3,24 @@ Question we want to answer for this analysis is how to group the candidates base
 Clustering technique: K Means
 *Cluster 0:
 -Clinton
-Twitter    331880.0
+Twitter    318044.0
 Poll           47.0
-GDELT          80.0
+GDELT          60.0
 -Cruz
-Twitter    270164.0
+Twitter    347519.0
 Poll           17.0
-GDELT          71.0
--Sanders
-Twitter    215871.0
-Poll           33.0
-GDELT          50.0
+GDELT          44.0
 *Cluster 1:
 -Trump
-Twitter    672000.0
+Twitter    851806.0
 Poll           51.0
-GDELT         406.0
+GDELT          88.0
 *Cluster 2:
 -Kasich
-Twitter    36027.0
+Twitter    65384.0
 Poll          22.0
-GDELT         12.0
+GDELT         37.0
+-Sanders
+Twitter    143030.0
+Poll           33.0
+GDELT          39.0

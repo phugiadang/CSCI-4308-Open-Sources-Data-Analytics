@@ -1,5 +1,5 @@
+2016-04-22
 2016-04-21
-2016-04-20
 http://elections.huffingtonpost.com/pollster/api/charts?state=AL
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-new-hampshire-presidential-republican-caucus
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-alabama-democratic-presidential-primary
@@ -228,6 +228,7 @@ http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-maine-senate-d
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-maine-senate-summers-vs-dunlap-vs-king
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-maine-president-romney-vs-obama
 http://elections.huffingtonpost.com/pollster/api/charts?state=MD
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-maryland-senate-republican-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-maryland-presidential-democratic-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-maryland-presidential-republican-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-maryland-senate-democratic-primary
@@ -406,6 +407,7 @@ http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-new-york-senat
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-new-york-president-romney-vs-obama
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-new-york-gop-primary
 http://elections.huffingtonpost.com/pollster/api/charts?state=NC
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-north-carolina-senate-burr-vs-ross
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-north-carolina-governor-mccrory-vs-cooper
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-north-carolina-democratic-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-north-carolina-republican-presidential-primary
@@ -453,6 +455,7 @@ http://elections.huffingtonpost.com/pollster/api/polls?chart=2014-oregon-senate-
 http://elections.huffingtonpost.com/pollster/api/polls?chart=oregon-obama-job-approval
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-oregon-president-romney-vs-obama
 http://elections.huffingtonpost.com/pollster/api/charts?state=PA
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-pennsylvania-senate-democratic-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-pennsylvania-senate-toomey-vs-sestak
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-pennsylvania-democratic-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-pennsylvania-republican-presidential-primary

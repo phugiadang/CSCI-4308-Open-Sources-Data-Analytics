@@ -1,0 +1,4 @@
+- Combine sentiment analysis with regression models to improve quality of predictions
+  - use sentiments of tweets each day to weight each day's count, should be able to improve prediction quality
+- Use higher order regression models for prediction
+  - figure out for each collection of data what order of regression predicts the best - should it be an equation on the order of x^4, or x^6? They produce radically different predictions
