@@ -1,0 +1,13 @@
+TWEET SENTIMENT ANALYSIS FOR TOP 5 USERS USING WORD2VEC
+This model is built to implement the sentiment analysis using deep learning technique Gensim (Word2Vec built-in in python)
+Training data is from: https://districtdatalabs.silvrback.com/modern-methods-for-sentiment-analysis
+Testing initial model: The accuracy is 73%
+Number of initial training data: 600000
+Candidate Name: trump
+Data is collected from 3/6/2016 to 4/5/2016
+Top 5 users for this candidate are:
+48866739 82
+384005220 79
+1223685223 39
+2305879171 81
+3532804813 205
