@@ -39,7 +39,7 @@ from AnalysisObject import AnalysisObject
 
 def makeGif(p_df,labels,candidates,date):
 	threedee = plt.figure().gca(projection='3d')
-	threedee.scatter(p_df['Twitter'], p_df['GDELT'], p_df['Poll'],c=labels.astype(np.float),edgecolors="green")
+	threedee.scatter(p_df['Twitter'], p_df['GDELT'], p_df['Poll'],c=labels.astype(np.float))
 	for name in candidates:
 		a = p_df.T[name]
 		x=a['Twitter']
@@ -81,7 +81,7 @@ def makeGif(p_df,labels,candidates,date):
 		plt.savefig('home/centos/CSCI-4308-Open-Sources-Data-Analytics/Analysis/images/img' + str(n).zfill(3) + '.png',bbox_inches='tight')
 	plt.close()
 	images = [PIL_Image.open(image) for image in glob.glob('home/centos/CSCI-4308-Open-Sources-Data-Analytics/Analysis/images/*.png')]
-	file_path_name = 'home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd/public/analysis-images/Clustering_Candidates.gif'
+	file_path_name = 'home/centos/CSCI-4308-Open-Sources-Data-Analytics/Analysis/Clustering_Candidates.gif'
 	writeGif(file_path_name, images, duration=0.2, dither=0)
 	
 
@@ -141,4 +141,3 @@ class ClusteringAnalysis(AnalysisObject):
 	class Factory:
 		def create(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):return ClusteringAnalysis(fixed_para_one,fixed_para_two,list_para_one,list_para_two)
 
-#clustering()
