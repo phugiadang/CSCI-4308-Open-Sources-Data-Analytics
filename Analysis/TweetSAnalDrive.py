@@ -39,7 +39,7 @@ def main():
 
         list_of_userids = []
         list_of_list_of_tweets = []
-        list_of_candidates = ["carson", "bush", "cruz", "clinton"]
+        list_of_candidates = ["sanders","trump"]
         for candidate in list_of_candidates:
             list_of_userids = []
             list_of_list_of_tweets = []
