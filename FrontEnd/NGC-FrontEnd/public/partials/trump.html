@@ -1,19 +1,11 @@
 <!-- trump.html -->
-<script type="text/javascript" src="/fusioncharts/js/fusioncharts.js"></script>
-<script type="text/javascript" src="/angular-fusioncharts.min.js"></script>
-<div class="jumbotron text-center col-md-12 col-lg-12">
-		<p>{{ message }}</p>
+<head>
+	<script type="text/javascript" src="/fusioncharts/js/fusioncharts.js"></script>
+	<script type="text/javascript" src="/angular-fusioncharts.min.js"></script>
+</head>
 
-		<div class="ng-binding">
-            <!-- <body>
-				<div id="chartContainer">FusionCharts XT will load here!</div>
-			</body> -->
-			<script type="text/javascript">
-  			var myChart = new FusionCharts( "FusionCharts/multiaxisline.swf", "myChartId", "800", "600", "0", "0" );
-  			myChart.setJSONUrl("../sandersJson.json");
-  			myChart.render("chartContainer");
-      </script>
-    </div>
+<div class="jumbotron text-center col-md-12 col-lg-12">
+        <p>{{ message }}</p>
 </div>
 
 <!-- Carousel for Trump's Analysis Images -->

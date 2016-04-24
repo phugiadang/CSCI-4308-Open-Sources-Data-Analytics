@@ -19,12 +19,6 @@ var app = angular.module('ngc', ['headerCtrl', 'ngRoute', 'ui.bootstrap'])
         }).when('/cruz', {
             controller: 'cruzController',
             templateUrl: 'partials/cruz.html'
-
-        // All else forward to the Join Team Control Panel
-        }).when('/rubio', {
-            controller: 'rubioController',
-            templateUrl: 'partials/rubio.html'
-
         // All else forward to the Join Team Control Panel
         }).when('/clinton', {
             controller: 'clintonController',
@@ -55,7 +49,6 @@ var app = angular.module('ngc', ['headerCtrl', 'ngRoute', 'ui.bootstrap'])
       }).otherwise({redirectTo: '/'});
 
     });
-//
 // Controller Section
 //
 //Controller for Home Page
@@ -81,7 +74,7 @@ app.controller('mainController', function($scope, $location){});
 //Controllers for all html pages in the partials folder
 app.controller('trumpController', function($scope, $location){
 
-  $scope.message = 'Donald Trump Analysis'
+  $scope.message = 'THE DONALD Analysis'
   $scope.myInterval = -1;
   $scope.noWrapSlides = false;
   $scope.active = 0;
@@ -161,10 +154,6 @@ app.controller('cruzController', function($scope, $location){
   }
 });
 
-app.controller('rubioController', function($scope, $location){
-	$scope.message = 'Marco Rubio Analysis'
-});
-
 app.controller('kasichController', function($scope, $location){
 
   $scope.message = 'John Kasich Analysis'
@@ -209,10 +198,9 @@ app.controller('kasichController', function($scope, $location){
 app.controller('sandersController', function($scope, $location){
 
   $scope.message = 'Bernie Sanders Analysis'
-  var myChart = new FusionCharts( "FusionCharts/line.swf",
-                                    "myChartId", "100%", "500", "0", "0");
   myChart.setJSONUrl("sandersJson.json");
   myChart.render("chartContainer");
+
   $scope.myInterval = -1;
   $scope.noWrapSlides = false;
   $scope.active = 0;

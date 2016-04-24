@@ -44,8 +44,6 @@ def getTwitterObjectsHourly():
 
 def getTwitterObjectCandidate(candidate_name):
 	this_candidate_counts = QueryingDavid.candidateCountRangeDayFull(candidate_name.lower(), month_start_number, days[0], 1, month_end_number, days[len(days)-1], 1)
-	print len(this_candidate_counts)
-	print this_candidate_counts
 	#append 0's if missing data THIS MAY NOT WORK, MAY BE ONE TOO MANY
 	return AnalysisObject(candidate_name, datasource, dates, this_candidate_counts[0:len(days)])
 
@@ -59,9 +57,6 @@ def getGDELTObjects():
 				this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_start_number, day)
 			else:
 				this_day_count = QueryingDavid.candidateGDELTCount(candidate_name, 2016, month_end_number, day)
-			#for row in this_day_count:
-				#print "u"
-				#print "count is " +  str(row.count)
 			candidate_counts.append(this_day_count[0][1])
 		candidate = AnalysisObject(candidate_name, datasource, [], candidate_counts)
 		candidate_list.append(candidate)
@@ -100,7 +95,6 @@ def getPollObjectCandidate(candidate_name):
 			else:
 				poll_days.append("20160" + str(month_end_number) + str(day))
 	poll_days_copy = poll_days[:]
-	print poll_days_copy
 	dp = DatabasePolls(poll_days_copy[0], poll_days_copy[len(poll_days_copy)-1], [candidate_name.capitalize()])
 	dp.queryDatabase()
 	dp.cleanPolls()
@@ -281,7 +275,6 @@ if candidate_read == "all" and datasource == "GDELT":
 	f.write(json_string)
 
 
-	print candidate_list
 elif candidate_read == "all" and datasource == "Twitter" and timeframe == "hourly":
 	candidate_list = getTwitterObjectsHourly()
 
@@ -438,9 +431,7 @@ elif candidate_read == "all" and datasource == "Twitter" and timeframe == "daily
 elif candidate_read == "all" and datasource == "Polls":
 	candidate_list = []
 	for candidate_name in candidate_names:
-		print "going in with " + str(candidate_name.title())
 		candidate_list.append(getPollObjectCandidate(candidate_name.title()))
-	print candidate_list
 	json_string = '''
 	{
 		    "chart": {
