@@ -47,7 +47,7 @@ def getTwitterObjectCandidate(candidate_name):
 	print len(this_candidate_counts)
 	print this_candidate_counts
 	#append 0's if missing data THIS MAY NOT WORK, MAY BE ONE TOO MANY
-	return AnalysisObject(candidate_name, datasource, dates, this_candidate_counts[0:len(days)-1])
+	return AnalysisObject(candidate_name, datasource, dates, this_candidate_counts[0:len(days)])
 
 
 def getGDELTObjects():
