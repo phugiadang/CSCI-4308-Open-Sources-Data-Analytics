@@ -16,11 +16,11 @@
     </div>
 </div>
 
-<div ng-controller="clintonController" id="clinton_slides">
+<div ng-controller="timeSeriesController" id="timeseries_slides">
     <carousel active="active" interval="myInterval">
       <slide ng-repeat="slide in slides track by slide.id" active="slide.active" index="slide.id">
         <img ng-src="{{slide.image}}">
-				<embed ng-src="{{slide.text}}" style="background-color:white;">
+        <embed ng-src="{{slide.text}}" style="background-color:white;">
       </slide>
     </carousel>
 </div>

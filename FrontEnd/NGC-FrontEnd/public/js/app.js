@@ -46,7 +46,10 @@ var app = angular.module('ngc', ['headerCtrl', 'ngRoute', 'ui.bootstrap'])
             controller: 'sponsorController',
             templateUrl: 'partials/sponsor.html'
         // If none of the above, back to the FusionCharts and description
-      }).otherwise({redirectTo: '/'});
+      }).when('/time_series', {
+            controller: 'timeSeriesController',
+            templateUrl: 'partials/time_series.html'
+        }).otherwise({redirectTo: '/'});
 
     });
 // Controller Section
@@ -74,17 +77,17 @@ app.controller('mainController', function($scope, $location){});
 //Controllers for all html pages in the partials folder
 app.controller('trumpController', function($scope, $location){
 
-  $scope.message = 'THE DONALD Analysis'
+  $scope.message = 'Donald Trump Analysis'
   $scope.myInterval = -1;
   $scope.noWrapSlides = false;
   $scope.active = 0;
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'reporttrumpGDELTPolls.png', 'reporttrumpGDELTTwitter.png', 'reporttrumpTwitterPolls.png'
+  'daily_graph_trump.png','reporttrumpGDELTPolls.png', 'reporttrumpGDELTTwitter.png', 'reporttrumpTwitterPolls.png'
   ]
   var text = [
-    'reporttrumpGDELTPolls.txt', 'reporttrumpGDELTTwitter.txt', 'reporttrumpTwitterPolls.txt'
+    'daily_graph_trump.txt','reporttrumpGDELTPolls.txt', 'reporttrumpGDELTTwitter.txt', 'reporttrumpTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -122,10 +125,10 @@ app.controller('cruzController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'reportcruzGDELTPolls.png', 'reportcruzGDELTTwitter.png', 'reportcruzTwitterPolls.png'
+  'Twitter_vs_GDELT_cruz.png', 'reportcruzGDELTPolls.png', 'reportcruzGDELTTwitter.png', 'reportcruzTwitterPolls.png'
   ]
   var text = [
-    'reportcruzGDELTPolls.txt', 'reportcruzGDELTTwitter.txt', 'reportcruzTwitterPolls.txt'
+  'Twitter_vs_GDELT_cruz.png', 'reportcruzGDELTPolls.txt', 'reportcruzGDELTTwitter.txt', 'reportcruzTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -163,10 +166,10 @@ app.controller('kasichController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'reportkasichGDELTPolls.png', 'reportkasichGDELTTwitter.png', 'reportkasichTwitterPolls.png'
+  'Twitter_vs_GDELT_kasich.png', 'reportkasichGDELTPolls.png', 'reportkasichGDELTTwitter.png', 'reportkasichTwitterPolls.png'
   ]
   var text = [
-    'reportkasichGDELTPolls.txt', 'reportkasichGDELTTwitter.txt', 'reportkasichTwitterPolls.txt'
+    'Twitter_vs_GDELT_kasich.txt', 'reportkasichGDELTPolls.txt', 'reportkasichGDELTTwitter.txt', 'reportkasichTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -207,10 +210,10 @@ app.controller('sandersController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'reportsandersGDELTPolls.png', 'reportsandersGDELTTwitter.png', 'reportsandersTwitterPolls.png'
+  'daily_graph_sanders.png','reportsandersGDELTPolls.png', 'reportsandersGDELTTwitter.png', 'reportsandersTwitterPolls.png'
   ]
   var text = [
-    'reportsandersGDELTPolls.txt', 'reportsandersGDELTTwitter.txt', 'reportsandersTwitterPolls.txt'
+    'daily_graph_sanders.txt','reportsandersGDELTPolls.txt', 'reportsandersGDELTTwitter.txt', 'reportsandersTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -248,10 +251,10 @@ app.controller('clintonController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'reportclintonGDELTPolls.png', 'reportclintonGDELTTwitter.png', 'reportclintonTwitterPolls.png'
+  'Twitter_vs_GDELT_clinton.png', 'daily_graph_clinton.png','reportclintonGDELTPolls.png', 'reportclintonGDELTTwitter.png', 'reportclintonTwitterPolls.png'
   ]
   var text = [
-    'reportclintonGDELTPolls.txt', 'reportclintonGDELTTwitter.txt', 'reportclintonTwitterPolls.txt'
+  'Twitter_vs_GDELT.txt', 'daily_graph_clinton.txt','reportclintonGDELTPolls.txt', 'reportclintonGDELTTwitter.txt', 'reportclintonTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -280,23 +283,23 @@ app.controller('clintonController', function($scope, $location){
   }
 });
 app.controller('analysisController', function($scope, $location){
-
+  $scope.message = 'Sentiment Analysis'
   $scope.myInterval = -1;
   $scope.noWrapSlides = false;
   $scope.active = 0;
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'Tweet_Word2Vec_Analysis_kasich.png', 'Tweet_Word2Vec_Analysis_sanders.png', 'Clustering_Candidates.gif','Clustering_Candidates.png'
+    'Tweet_Word2Vec_Analysis_bush.png', 'Tweet_Word2Vec_Analysis_carson.png', 'Tweet_Word2Vec_Analysis_clinton.png', 'Tweet_Word2Vec_Analysis_cruz.png', 'Tweet_Word2Vec_Analysis_kasich.png', 'Tweet_Word2Vec_Analysis_sanders.png'
   ]
   var text = [
-    'Tweet_Word2Vec_Analysis_kasich.txt', 'Tweet_Word2Vec_Analysis_sanders.txt', 'Clustering_Candidates.txt', 'Clustering_Candidates.txt'
+    'Tweet_Word2Vec_Analysis_bush.txt', 'Tweet_Word2Vec_Analysis_carson.txt', 'Tweet_Word2Vec_Analysis_clinton.txt', 'Tweet_Word2Vec_Analysis_cruz.txt', 'Tweet_Word2Vec_Analysis_kasich.txt', 'Tweet_Word2Vec_Analysis_sanders.txt'
   ]
   $scope.addSlide = function() {
-    var newWidth = 600 + slides.length;
+    var newWidth = 100 + slides.length;
     slides.push({
       image: '../analysis-images/' + images[currIndex],
-      text: '../analysis-images/' + images[currIndex],
+      text: '../analysis-images/' + text[currIndex],
       id: currIndex++
     });
   };
@@ -318,8 +321,50 @@ app.controller('analysisController', function($scope, $location){
     }
   }
 });
+
+app.controller('timeSeriesController', function($scope, $location){
+
+  $scope.message = 'Time Series Analysis'
+  $scope.myInterval = -1;
+  $scope.noWrapSlides = false;
+  $scope.active = 0;
+  var slides = $scope.slides = [];
+  var currIndex = 0;
+  var images = [
+    'Final_Resultclinton.png', 'Final_Resultsanders.png', 'Final_Resulttrump.png'
+  ]
+  var text = [
+    'Time_Series_Analysis_clinton.txt', 'Time_Series_Analysis_sanders.txt', 'Time_Series_Analysis_trump.txt'
+  ]
+  $scope.addSlide = function() {
+    var newWidth = 100 + slides.length;
+    slides.push({
+      image: '../analysis-images/' + images[currIndex],
+      text: '../analysis-images/' + text[currIndex],
+      id: currIndex++
+    });
+  };
+
+  $scope.randomize = function() {
+    var indexes = generateIndexesArray();
+    assignNewIndexesToSlides(indexes);
+  };
+
+  for (var i = 0; i < images.length; i++) {
+    $scope.addSlide();
+  }
+
+  // Randomize logic below
+
+  function assignNewIndexesToSlides(indexes) {
+    for (var i = 0, l = slides.length; i < l; i++) {
+      slides[i].id = indexes.pop();
+    }
+  }
+});
+
 app.controller('teamController', function($scope, $location){
-	$scope.message = 'The Team!'
+	$scope.message = 'The Team'
 });
 app.controller('sponsorController', function($scope, $location){
 	$scope.message = 'Sponsor Page'

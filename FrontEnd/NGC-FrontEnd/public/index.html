@@ -59,8 +59,8 @@
       <li class="navbar-fontsize nav-button"><dropdown ng-controller="navCtrl" ng-click="isCollapsed = !isCollapsed">
           <select class="nav-button" ng-model="currentPage" ng-change="go(currentPage)">
               <option value="home">Analysis</option>
-              <option value="linear_regression">Linear Regression</option>
-              <option value="analysis">Sentiment Analysis</option>
+              <option value="time_series">Time-Series</option>
+              <option value="analysis">Sentiment</option>
           </select>
         </dropdown></li>
 
@@ -85,7 +85,8 @@
     <div ng-view=""></div>
   </div>
     <!-- Map and Side Panel -->
-    <div class="row content"></div>
+    <div class="row content">
+    </div>
 
 
     <hr/>
