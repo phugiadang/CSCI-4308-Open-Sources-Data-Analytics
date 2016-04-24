@@ -25,8 +25,7 @@
 		    },
 		    "categories": [
 			{
-			    "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" },{ "label": "April, 7" },{ "label": "April, 8" },{ "label": "April, 9" },{ "label": "April, 10" },{ "label": "April, 11" },{ "label": "April, 12" },{ "label": "April, 13" },{ "label": "April, 14" },{ "label": "April, 15" },{ "label": "April, 16" },{ "label": "April, 17" },{ "label": "April, 18" },{ "label": "April, 19" },{ "label": "April, 20" }
-			    ]
+			    "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" },{ "label": "April, 7" },{ "label": "April, 8" },{ "label": "April, 9" },{ "label": "April, 10" },{ "label": "April, 11" },{ "label": "April, 12" },{ "label": "April, 13" },{ "label": "April, 14" },{ "label": "April, 15" },{ "label": "April, 16" },{ "label": "April, 17" },{ "label": "April, 18" },{ "label": "April, 19" },{ "label": "April, 20" }]
 			}
 		    ],
 		    "dataset": [{
@@ -39,8 +38,7 @@
                     "seriesname": "Cruz Twitter Counts",
                     "data": [ { "value": "392518" },{ "value": "361888" },{ "value": "385467" },{ "value": "418579" },{ "value": "411576" },{ "value": "693917" },{ "value": "465391" },{ "value": "379994" },{ "value": "339169" },{ "value": "424066" },{ "value": "404918" },{ "value": "361001" },{ "value": "412843" },{ "value": "439873" },{ "value": "373690" },{ "value": "212554" },{ "value": "353540" },{ "value": "380391" },{ "value": "297076" }]},{
                     "seriesname": "Kasich Twitter Counts",
-                    "data": [ { "value": "54266" },{ "value": "39319" },{ "value": "52350" },{ "value": "64046" },{ "value": "54102" },{ "value": "63374" },{ "value": "43895" },{ "value": "40580" },{ "value": "41629" },{ "value": "48563" },{ "value": "32183" },{ "value": "63455" },{ "value": "34089" },{ "value": "35476" },{ "value": "54871" },{ "value": "24021" },{ "value": "30652" },{ "value": "37092" },{ "value": "38792" }]}
-		    ],
+                    "data": [ { "value": "54266" },{ "value": "39319" },{ "value": "52350" },{ "value": "64046" },{ "value": "54102" },{ "value": "63374" },{ "value": "43895" },{ "value": "40580" },{ "value": "41629" },{ "value": "48563" },{ "value": "32183" },{ "value": "63455" },{ "value": "34089" },{ "value": "35476" },{ "value": "54871" },{ "value": "24021" },{ "value": "30652" },{ "value": "37092" },{ "value": "38792" }]}],
 		    "trendlines": [
 			{
 			    "line": [
@@ -54,4 +52,3 @@
 			}
 		    ]
 		}
-	
