@@ -1,1811 +1,984 @@
-[[u"RT @RandyLudlow: Sanders on Kasich: 'He's not crazy' https://t.co/Obh9tDcJg0"]]
-rt sanders on kasich: hes not crazy 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt msnbc hosted kasich town hall in howard beach 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt john kasich plans st. george visit saturday presidentialrace utah gop elections 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt i will not take the low road to the highest office in america." 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt after more or less dropping out of the race, rubios delegates become free agents 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich compound for tonight in berea ohio 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt john kasichs utah chairman, rep. kraig powell, says guvs endorsement of cruz is move to appease far-right. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt the anti-kasich spot is part of a more than $500,000 buy in wisconsin by trusted leadership pac, one of the main pro-cru
-<unirest.UnirestResponse object at 0x4c4d950>
-rt t&amp;g poll about evenly split on support for trump/kasich ticket. join the conversation poll link
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt my story on swing through queens. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt well be posting updates in the primary day liveblog throughout the day 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt milwaukee  in interview w reporters, trump says he urged the rnc to push kasich to drop out of the race.
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt kasich plans campaign fundraising trip to minneapolis 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt the pa leadership conference is tomorrow. kasich and cruz will be there. preview on tonight at 5&amp;6 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt sen. bernie sanders, gov. john kasich barnstorming akron-canton area in 11th-hour bid for ohio primary votes 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt talking about the convention this summer, kasich says delegates have to consider who can win, and who can actually run the c
-<unirest.UnirestResponse object at 0x4c4d890>
-rt john kasich makes an awkward pitch in trumps backyard: "i went body surfing with the president of uruguay!" 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt virtually all ohio establishment party leaders expect a close vote tonight, but figure governor kasich will win ohios
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt kasich heads to villanova for town hall today 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt inbox: jim tressel, john cooper, earle bruce, luke fickell endorse kasich. as um alum, ive no idea, maybe he has all liv
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich plays the long game in wisconsin, hoping to grab delegates ahead of republican convention: 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt john kasich was asked about the open carry petition for the convention. "all that matters is what the secret service says.
-<unirest.UnirestResponse object at 0x4c4d890>
-rt why hasnt john kasich gathered more support? 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt trump won illinois statewide, but kasich and cruz won delegates here dhelection 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt a good look at kasich, cruz and trumps battle for the contested convention 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt more than 600 people rally, plus some watching in overflow room. not a trump-sized crowd but maybe its momentu
-<unirest.UnirestResponse object at 0x4c4d950>
-rt ohio gov. kasich to campaign in wisconsin next week -- 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt woman at kasich town hall in st. george, utah, tells kasich he shouldve debated cruz w/o trump. kasich says hed rather be
-<unirest.UnirestResponse object at 0x4c4d890>
-rt crowd gathering to hear john kasich speak. his 2nd of 3 stops in utah today. kutv2news 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasichs fundraising improved but still trailed his rivals in february. he entered march far behind. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt kasich has arrived for a town hall. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt new poll shows promising s for john kasich in pennsylvania within 3% of trump 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt at john kasichs town hall in madison. it starts at 6. this will be his second town hall in wi today. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt lt. gov. touts kasich at portage county gop dinner.....
-<unirest.UnirestResponse object at 0x4c4d890>
-rt former sen. earl baker introduces kasich at villanova
-<unirest.UnirestResponse object at 0x4c4d950>
-rt special "kasich victory dinner" menu tonight at the spread eagle tavern in hanoverton, oh. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt john kasich survives ohio primary battle with donald trump. now comes the really tough part. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt mitt romney to join john kasich at town hall in north canton 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt john kasich tells supporters in madison that hes the one who can win in november 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt . gets the backing of last five ohiostate head football coaches 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich talks up his blue-collar upbringing: "my entire purpose as a public official...has been to create an environment of j
-<unirest.UnirestResponse object at 0x4c4d950>
-rt gov. john kasich to speak at villanova today 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt breaking: rubio supporters drop challenge to kasich being on pa ballot. plus kasich rally at villanova 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt icymi john kasich addresses pro-israel group in washington, d.c. - 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt former utah gov. mike leavitt arrives at kasich town hall at uvu. im told he will introduce kasich 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt politifact: did john kasich misquote harry s. truman? 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt how kasichs religion hurts him with conservatives jealous of awesome work on this 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt trump wins florida, convincingly. but falls to kasich in ohio, and only barely ahead of cruz in nc and missouri tcelec
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt donald trump wins eastern, southeastern ohio, but john kasich dominates rest of the state in primary win (map) 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich to visit greece on saturday roc
-<unirest.UnirestResponse object at 0x4c4d950>
-rt presidential candidate john kasich grabs a slice in howard beach after town hall taping 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt kasich up with ads in wisconsin nbc15 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt taking qs from the audience, kasich addresses isis (says hed destroy them and pull out) and gridlock over supreme court n
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich takes the stage at hofstra university. kasichathofstra
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt things are getting packed at the john kasich event in madison. we are now to standing room only. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich takes center stage 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt available now: kasich takes ohio in emphatic win &amp; more top stories in todays epaper: 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt cruz, kasich, palin to headline gop dinner at serb hall 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich planning 11:10am presser re: trump comments. coupled w/ stmt, seems hes decided to take him on more directly http
-<unirest.UnirestResponse object at 0x4c4d950>
-rt gov. kasich is now speaking first addresses youngstown schools. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt cruz has 13 campaign offices in wi, compared to 3 for kasich and 2 for trump 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt based on people self-reporting precinct results, it looks like utahs shaking out to go cruz, kasich, trump. ut
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich will not attend debate without trump, strategist says 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt cnns town hall with ted cruz, donald trump and john kasich set a new record. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt the kasich town hall meeting hasnt yet started. country music serenading the audience. national debt ticker running.
-<unirest.UnirestResponse object at 0x4c4d950>
-rt on night of 1st win, superpac turns away $250k from big backer due to abuse suit 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt what cruz allies are calling soros donations to kasich: $200k to super pac &amp; $2,700 to kasich from soros exec who recentl
-<unirest.UnirestResponse object at 0x4c4d890>
-rt john kasichs win in ohio last night means pas april 26 primary returns to relevance. 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt wiprimary gop congressional endorsements, as of 04-02: cruz: grothman (wi-06), ribble (wi-08). kasich: none. trum
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt bernie and kasich will be in utah tomorrow, cruz will be here saturday. utpol 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt full room to see john kasich at villanova student center 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich now making the appeal to trump supporters: "their frustrations, their expressions do not fall on deaf ears for me.
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt utah federal judge tosses lawsuit over ted cruzs citizenship 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt opinion: the importance of moderate candidates like john kasich to break the political gridlock 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt ted cruz and john kasich are set to speak to conservative activists in pennsylvania today: https:
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt kasich has no plans of being a running mate on the gop ticket. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich: label "last establishment candidate" ok if its complimentary but touts fiscal independence
-<unirest.UnirestResponse object at 0x4c4d950>
-rt john kasich brings campaign to hershey 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt john kasich: ted cruz has no record 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt musher, business owner selected to quiz kasich at town hall meeting. 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt in which we revisit john kasich jerk reputation: why the republican establishment doesnt like john kasich 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt ted cruz is challenging john kasich before ohios republican primary: (photo: ap) 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt soros inaccurately floated as kasich backer in pro-cruz ad 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt a bit of pushback after oho gov. john kasich says trump is lucky jon stewart is no longer doing 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt why hasnt john kasich gathered more support? 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt former utah gov. mike leavitt visits fox 13 to discuss his endorsement of john kasich: 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt in presser just now, kasich deeply troubled by recent ad featuring women reading what trump has said about other women. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt in the battle for north dakotas uncontested delegates, "kasich is still in the spotlight but under a very dim one" htt
-<unirest.UnirestResponse object at 0x4c4d890>
-rt trump and kasich have also been invited to speak at the california gops convention.
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich: "i think i am going to do very well here. the reason is i am going to overcome that first picture of me taking a bit
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt  our full nc poll, which finds trump 44, cruz 33, kasich 11, rubio 7, is now posted: 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich to hold town hall meeting in wauwatosa 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt this ohio republican supports rubio, but shes voting for kasich today. why? trump. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt theyve changed the podium sign from "america never gives up" to "kasich for president." 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt no waterboarding: gov. john kasich rejects harsh interrogation methods proposed by cruz, trump 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt in fox news interview, john kasich says theres no reason for him to end presidential campaign 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt fyi: cruz and kasich have green bay campaign offices, trump has an appleton campaign office wipolitics
-<unirest.UnirestResponse object at 0x4c4d890>
-rt insiders think john kasich would be a great vice president  but hed never accept it 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich, hanging on in gop presidential race, says hes most electable by 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt kasich vs. cruz slc smackdown will still be interesting but not as fun without the donald utpol
-<unirest.UnirestResponse object at 0x4c4d890>
-rt dramatic entrance as kasich bus drives into hangar in north canton 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt while trump is acting like hes trying to lose wi, kasich is the one who would actually benefit most from losing: https:/
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt . to have press conference in nyc today to talk heres his statement from earlier. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt video: cruz, kasich speak at gop event at serb hall in milwaukee 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt john kasich ate new york pizza with a fork and then had the gall to defend it: 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt pressure grows on john kasich to quit the race after a poor showing tuesday 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt new this evening: more anxious than ever for a two-man race, shows growing frustration with https
-<unirest.UnirestResponse object at 0x4c4d950>
-rt mike leavitt endorses john kasich for president 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt updated - trump, clinton, cruz, kasich, sanders react to brusselsattack: 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt im the only candidate who can beat hillary clinton in the fall, kasich tells utah utpol
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich says despite the fact that he got caught eating pizza with a fork, he thinks hell be competitive in ny primary
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt trump leads kasich in oh among those without college degree, 46-35. kasich leads among college plus 54-31. overall electora
-<unirest.UnirestResponse object at 0x4c4d890>
-rt trump and kasich weigh in on brussels attacks 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt at pa town hall, one voter tells kasich hes a rubio supporter "shopping for a new candidate" via 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt kasich rails against corporate welfare and big money in politics. so from time to time its worth pointing this out: https
-<unirest.UnirestResponse object at 0x4c4d890>
-rt former wi gov scott mccallum in kasich audience. 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt john kasichs claim about trump getting $1.8b in free air time while he got none rated "mostly true" 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt so kasich has the support of a now-unbound new hampshire delegateand a former senator no less: 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt 11 year old jack shapiro asks kasich about extent of us involvement in defeating isis: kasich says boots on ground 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt the real gop candidates to watch are kasich and rubio. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt waiting w for kasich. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich, looking past ohio and to other states he can win, announces former gov. tommy thompson as wisconsin chair (april 5
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt where president kasich would send u.s. troops via 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich villanova has 600 seats, filled, plus maybe 100 plus standing around edges and more in spillover room
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich seeks votes in rock county clint wolf reports election2016 kasich elections
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt ohio gov. john kasich to start town hall meeting in tosa at noon. crowne plaza hotel is packed, standing room only.
-<unirest.UnirestResponse object at 0x4c4d950>
-rt statement from kasich chief strategist basically kasich wont debate if trump doesnt. 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich casts his vote, and promises "more to say" about trumps campaign and rhetoric 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt spoiler alert: kasich will mention that his dad was a mailman on the msnbc town hall at 7 tonight.
-<unirest.UnirestResponse object at 0x4c4d950>
-rt watch live: kasich addresses trump comments at press conference 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt nearly 100 lined up for john kasich town hall before doors open in burlington, wisc., as a snowplow goes by. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt icymi: sat down for an exclusive conversation with -- the full interview, here: 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt sanders, kasich both in utah friday 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt says hes impressed with kasich and, of the remaining candidates, "hed make the best president." 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt candidates clinton, kasich, cruz and trump speak at aipac, american israel public affairs committee, conference 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich on contested convention: i think its going to be fantastic. probably be less kardashians, more whos going to b
-<unirest.UnirestResponse object at 0x4c4d890>
-rt new york primary: kasich vows to stay in race via 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt herberts endorsement of cruz brings questions from kasich campaign 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt first on cnn: ted cruz supporters unload on john kasich in wisconsin 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt bernie sanders is coming to pittsburgh while john kasich will visit hershey this week. has details: 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt what is kasichs strategy for a contested convention? 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt breaking: we have not one but two kasich supporters here at the aquarium. tbtprimary
-<unirest.UnirestResponse object at 0x4c4d890>
-rt treasurer josh mandel passes on another chance to back gov. kasichs presidential bid 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt trump, cruz, kasich may visit neb.; 1st time in 40 years gop presidential hopefuls have vied in state for delegates 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich looks toward open gop convention at final wisconsin campaign stop - wipolitics 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt rick caruso joins kasich campaign as gop presidential hopefuls eye california primary 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt anderson cooper asks john kasich if hed call out ohio national guard for the gop convention in cleveland. he doesnt say y
-<unirest.UnirestResponse object at 0x4c4d950>
-rt heres what kasich had to say to the deseret news/ksl editorial board: 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich clears up comments today about merrick garland -- tells reporters in ut he wouldnt consider nominating him-&gt; https:/
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt john kasichs notable quotables said at villanova 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich is clearly making a play for trump voters, a message hes articulated in the past but is doing particularly forceful
-<unirest.UnirestResponse object at 0x4c4d890>
-rt ciscos republican ceo will back hillary clinton or john kasich 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt in other ohprimary news, trump was in cincy today. heres what he said abt kasich -- &amp; pete rose, natch 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt inbox: former u.s. sen bob bennett of utah endorses kasich. bennett lost in 2010 to mike lee, who backs cruz.
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich trying to find other states where he is beloved multi-term governor 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt walker says cruz victory in wisconsin can change momentum. 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt kasich just told people in st. george, utah, that "butch cassidy &amp; the sundance kid," filmed nearby, was "coolest movie eve
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasich should quit the gop race, trump says 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt plus a look at how much money the kasich campaign raised and how much theyve spent. 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt bay ridge goper impressed by at town hall 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt . trounces in fundraising. kasich started march with $1.25m in available cash. vi
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt cruz launches anti-kasich attack ad in wisconsin 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt gop presidential candidate kasich holds upbeat rally at villanova university 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt rep. kraig powell again touting kasich as the guy that can win ohio and, thus, the presidency. introduces former gov. mik
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt 57 seconds of a gov. kasich town hall. 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt ted cruz open to rubio, kasich in cabinet 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt kasichs office to dems targeting jobsohio: "your partys leaders drove ohio over the cliff, lost 350,000 jobs." 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt icymi: rush limbaugh says john kasich is delusional to think he could be gop presidential nominee 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt sanders, kasich first candidates to visit pa. whos next? 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt another poll shows john kasich doing best of any goper vs. hillary, this one from pennsylvania. 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt so far, weve assessed wisconsin campaign speeches by bernie sanders, john kasich and hillary clinton. 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt ted cruz tells peoria churchgoers: a vote for kasich is a vote for trump via 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt would john kasich help the gop ticket if he were on it? | ap 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt cruz attacks kasich in charlie sykes interview: "youre not electable" | video | realclearpolitics 
-<unirest.UnirestResponse object at 0x4c4d950>
-rt republican john kasich to campaign in hershey 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt presidential candidates including gov. john kasich seek support at pro-israel aipac conference: 5 takeways 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt i talked to john kasich yesterday at one of his final wiprimary campaign stops in madison htt
-<unirest.UnirestResponse object at 0x4c4d950>
-rt glenn beck rips kasich for staying in race: "you son of a bitch" 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt is charlie baker leaning toward supporting john kasich? 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt three types of people we spoke to rally undecided, staunch kasich supporters &amp; against http
-<unirest.UnirestResponse object at 0x4c4d950>
-rt john kasich in burlington 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt orem mayor warming up the crowd for kasich at utpol 
-<unirest.UnirestResponse object at 0x4c4d8d0>
-rt at a presser, kasich says trumps stance abortion, use of nukes "shows that hes really not prepared to be president of th
-<unirest.UnirestResponse object at 0x4c4d950>
-rt wi projection: cruz wins 5 cg districts kasich wins 1 cg district 2 other too close to call wiprimary wiright 
-<unirest.UnirestResponse object at 0x4c4d890>
-rt john kasich has won only his home state. heres his path to the nomination: 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt pro-kasich pac releases terrifying anti-cruz ad, called nose. you decide if it will give you nightmares. 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt live on periscope: john kasich at ksl broadcast house. 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt inside john kasichs long-shot strategy to beat trump to the gop nomination: 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt john kasich trashes unmoored donald trump in manhattan 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt kasich swings through central pa 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt in utah, kasich brushes off romney endorsement of cruz johnkasich2016 tedcruz2016 donaldtrump2
-<unirest.UnirestResponse object at 0x4d5df90>
-rt bernie sanders set to speak in pittsburgh, kasich to hold midstate town hall 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt update: 134,000 votes cast in hamco so far, topping historically low 2012 prez primary turnout 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt 25/25 including primaries 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt kasich makes cleveland stop hoping for loyal home-state voters 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt aides to trump, cruz say its in their mutual interest to keep kasich out of gop convention 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt media mob of local, state and national crews set up to record john kasichs remarks on this do-or die vote. 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt crowds of kasich supporters arrive in baldwin wallace gym to claim seats for his remarks later tonight. 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt the soros donations to kasich, that never happened 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt cruz and kasich to make campaign stops in the midstate today: 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt john kasich, donald trump tied in new poll of ohio 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt getting ready at the auto museum in hershey for gov. john kasichs town hall event. updates coming... 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt former governor tommy thompson introducing governor john kasich 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt congressman charlie dent is here, as is state sen. alloway hershey kasich4us
-<unirest.UnirestResponse object at 0x4d5df50>
-rt ny primary: ohio gov. john kasich rallies at hofstra university 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasich takes question for middle schooler on supporting law enforcement 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt "lets compare governor kasichs record...what is ted cruzs greatest accomplishment?" the gop has a new rivalry: 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt mitt romney, john kasich and an on-again, off-again marriage of political convenience: 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt john kasich has turned ohprimary into a referendum on donald trump and his angry, dark brand of politics. 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt gov. john kasich almost a half-hour late to dank industrial warehouse in youngstown for 1st of 3 campaign stops on ohio
-<unirest.UnirestResponse object at 0x4d5df50>
-rt big question for big 5 fans. did kasich take nova in his ncaa bracket?
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt late decider watch: cruz won them in nc, mo and il. kasich won them in oh and trump won them in fl.
-<unirest.UnirestResponse object at 0x4d5df90>
-rt hundreds in green for second of 3 kasich town hall meetings in ohio today. some admit being undecided still 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt want a truthful person as our next president? might suggest clinton or kasich. 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasich delays trump train, takes ohios 66 delegates. 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt trump: i automatically win if kasich would just quit - campaign2016 update liveonk2 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt gov. kasich campaigned out of ohio half of last year; ot security pay rose 64% as result 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt details of gop2016 trump, sanders, cruz, kasich campaigning in utah utpol
-<unirest.UnirestResponse object at 0x4d5df90>
-rt new: former gov. mike leavitt has endorsed john kasich for president. tune in for updates. 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt update: says expect additional security around bernie sanders, donald trump, john kasich rallies in slc tomorrow. 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt rnc rulemakers say trump can lose at contested gop convention  but only to cruz or kasich 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt kasich visits west salem 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt john kasich campaign courting big republican donors in california 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt sen. portman, gop legislative candidates concerned about trump. some also say cruz would be a problem downticket 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt john kasich interview: gop convention "delegates are going to decide who can run the country." 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt john kasich debuts new donald trump strategy: ohio politics roundup 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt cruz turns to gop convention rule to keep kasich from nabbing nomination 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt cruz is pinnochio. at least, that is what the new ad a pro-kasich pac released is saying. 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt scott walker says gop nominee may not be trump, cruz or kasich 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasich, cruz stump in camp hill, hershey 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt wisconsins largest newspaper backs john kasich before primary 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt ohio gov. wins straw poll at oregon republican dorchester conference via 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasich attacked gopers for promising they would repeal obamacare in the 2014 election cycle 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt john kasichs campaign looking to coordinate with ted cruz in mutual effort to deny donald trump nomination. 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt john kasich switches things up in wisconsin 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasich and romney enter in on bus to the music from the movie air force one 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt approx 300 supporters gather at uofu for john kasich town hall meeting. next is davis high school. utpol 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt our weekend endorsement: hillary clinton, john kasich are the stars top choices in missouris presidential primary 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt still waiting for kasich at the antique automobile club of america museum as crowd chants for him. paprimary 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt john kasich to appear in burlington 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt kasichs super pac has picked up much of the advertising and ground game slack. 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt reject trump and cruz - vote kasich 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt former utah sen. bob bennett endorses kasich for president 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt in oh, the pro-kasich/anti-trump outspent trump 2-1. bangforthebuck(eye)
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt monday: trump, cruz and kasich all have must-see interviews on fox news starting at 6p et! 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt waiting for kasich to talk trump ( see how the internet freaked out about how he eats pizza https
-<unirest.UnirestResponse object at 0x4d5df50>
-rt my dispatch from janesville today: kasich touts experience, electability (and ends by playing bieber) 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt no real way for team kasich to bust into this news cycle, but might be just as well to sit back and watch the spectacle.
-<unirest.UnirestResponse object at 0x4d5df90>
-rt college sophomore nathaniel rome had withdrawn lawsuit against john kasich. 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt election: kasich emphasizes his experience during beer and basketball event in madison 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt trump, cruz and kasich take back vow to support republican nominee: 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt seated next to a number of cruz supporters, waving their "cruz" banners when kasich asked "who can beat hillary clinton
-<unirest.UnirestResponse object at 0x4d5df50>
-rt cleveland city council to pass 2016 budget, many blaming kasich administration for cuts to local govt cle 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasich declares "i love new york." says "im going to do very well here" because hell overcome first picture of him eati
-<unirest.UnirestResponse object at 0x4d5df90>
-rt trump, kasich to skip republican jewish coalition event: washington (jta)  donald trump and john kasich are s... https
-<unirest.UnirestResponse object at 0x4d5df50>
-rt worried abot the ugly tone of the campaign? clinton, kasich best choices for nations equilibrium. editorial 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt 12 smaller ohio cities each lost $2m-plus a year from state changes since gov. kasich took office. https:/
-<unirest.UnirestResponse object at 0x4d5df90>
-rt trump, cruz vow to barricade kasich from convention | ap photo 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt republican presidential candidate gov. john kasich campaigns in milwaukee before wisconsins primary https:/
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt guide: how to attend the rallies of 4 presidential candidates visiting utah this weekend. 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt inside kasich rally that starts at 6. westerville hs. 10tv 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt john kasichs ohio win strikes some gop donors as too little too late to stop donald trump 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasich will be at serb hall on april 1 giving another speech
-<unirest.UnirestResponse object at 0x4d5df90>
-rt more kasich: probably donald trump will figure out a way to say he didnt say it, or he was misquoted or whatever. http
-<unirest.UnirestResponse object at 0x4d5df50>
-rt do you think gov. gary herbert knew hed endorse cruz when he appeared with kasich at a friday rally? utpol 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt thompson: dont believe that a vote for kasich is a vote for trump. kasich is the only gop candidate who can win in november
-<unirest.UnirestResponse object at 0x4d5df90>
-rt kasich isnt even eligible to have his name put into nomination at the gop convention because he hasnt won eight states, 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt . in phoenix: "theres no good reason (for kasich to stay in the race)" ht
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt inbox: john kasich will campaign in queens tomorrow. hell visit ginos pizzeria &amp; restaurant from 2 to 3 p.m.
-<unirest.UnirestResponse object at 0x4d5df90>
-rt did rubios call for oh supporters to back kasich work? kind of looks like it... 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt . maybe today the weather will trump trump. also: has heard frm cruz/kasich, nada from trump wiprimary https:
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt former gov. tommy thompson getting the crowd fired up for kasich. 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt each of the three remaining gop campaigns (kasich, trump &amp; now cruz) have had something nice to say about marco rubio tonigh
-<unirest.UnirestResponse object at 0x4d5df50>
-rt john kasich refuses to drop out of the race, even though he was awarded no delegates in utah and arizona 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt . former marco rubio in ri chair, will serve new england policy adviser and ri co-chair for gov. john kasich preside
-<unirest.UnirestResponse object at 0x4d5df90>
-rt super pacs backing clinton, kasich and cruz get big checks from opaque companies via 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt cruz doesnt back away from his call for additional police patrols of mulslim neighborhoods. trump agrees, kasich does not. 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt presidential candidates clinton, kasich to visit madison today prior to primary 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt todays the day to caucus - and your decision counts! utah
-<unirest.UnirestResponse object at 0x4d5df50>
-rt john kasich in nyc hits donald trump for nato comments and "casually talking" about the use of nuclear weapons.
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasichs arguing with a questioner after saying teachers are the most underpaid workers. paprimary
-<unirest.UnirestResponse object at 0x4d5df90>
-rt former rep. amo houghton, scared at prospect of "president trump," announces his endorsement of ohio gov. john kasich, a forme
-<unirest.UnirestResponse object at 0x4d5df50>
-rt kasich woos vote-rich philly burbs: 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt cruz, kasich, trump set different paths in state primary with &amp; 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt gop presidential candidate joined insidecityhalls to talk about the race. watch: 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt voters here at villanova say theyre excited about john kasich because of his positivity. "hes kind of the adult in the ro
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt awesome. latest utah republican poll: cruz 53, kasich 29, trump 11. utpol
-<unirest.UnirestResponse object at 0x4d5df90>
-rt donald trump, ted cruz, john kasich react to brussels terror attacks 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt should a dem vote for kasich in the gop primary to derail trump? 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt wisconsin poll  emerson college gop cruz 36% trump 35% kasich 19% dems clinton 50% sanders 44% 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt spent some time on the bus with john kasich today. he talks endorsements on at 6pm. 
-<unirest.UnirestResponse object at 0x4d5df50>
-rt john kasich skips arizona in presidential campaign 
-<unirest.UnirestResponse object at 0x4d5dfd0>
-rt kasich rejects harsh interrogation methods proposed by cruz, trump 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt its going to be a busy campaign week in wisconsin. clinton, sanders, kasich and trump will be here. 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt gov. herbert speaking at kasich rally
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt rick caruso joins kasich campaign as gop presidential hopefuls eye california primary 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich says he hasnt talked to "wed love to have his endorsement...i dont know what hes going to do." wip
-<unirest.UnirestResponse object at 0x4d66f50>
-rt crowd at kasich nova event thinks hes coming in, stands up...false alarm 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt the s that matter: wi elections expert sees 5 cong. districts for cruz, 1 for kasich, and 2 too close to call. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich on msnbc this morning, re: trump: "he united the pro-choice and pro-life groups, which i dont know how he did that.
-<unirest.UnirestResponse object at 0x4d66f50>
-rt john kasichs presidential campaign began march with $1.25 million, new filing shows 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt crowd heads in ahead of gov. kasich stump speech at maps museum. kasichmaps 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt new: former u.s. sen. bob bennett announces endorsement of gov. john kasich for president
-<unirest.UnirestResponse object at 0x4d66f50>
-rt . at first of two long island town hall events today, "im not dropping out!" via nyprimary &gt;&gt; htt
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt - says and would be welcome in his administration: via 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt so now gives kasich a 78% chance of winning ohio, clinton is 98% 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt former gov. mike leavitt introducing kasich, who hes endorsed. utpol 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt video: meet the kasich superfan 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt i didnt know utah was so important! sheesh!!! 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt ohio gov. kasich to campaign in wisconsin next week 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt what will happen at the rnc in july? kasich brushes off any possibility of becoming a vp role 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich4us town hall coming soon here follow our coverage! kasich 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt why john kasich is the unlikely linchpin in the gops plan to stop donald trump primaryday https:
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt kasich campaign senior strategist john weaver responds to new cruz attack ad airing in wi. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt in ohio, tea party leaders and social conservatives are skeptical of the establishment and gov. john kasich. 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt oklahoma sen. jim inhofe endorses john kasich for president 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt five hours before the kasich rally on primary election night baldwin wallace univ 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt glenn beck annoyed with son of a bitch kasich 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt kasich-ism: "if theres only one pizza shop, im not getting much pepperoni. but if theres 3 pizza shopsim getting 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt curious to see what kasich says about - ohio passed sb5 in 2010. similar to act 10 but voters there shot it dow
-<unirest.UnirestResponse object at 0x4d66f90>
-rt gov john kasich orders flags on all ohio public buildings be flown at half-staff thru sat in honor of the lives lost in
-<unirest.UnirestResponse object at 0x4d66f50>
-rt crowd here in draper, utah: boos at mention of kasich, louder at mentions of trump, a bit louder at mention of sanders 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt latest update on the petition to remove ohio gov. john kasich from the pennsylvania ballot. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt want some lgbt reading on kasich, who some think is moderate (its all relative, more moderate that what?): 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt donald trump likely to attend colorado gop convention, john kasich a no show: ~ copol
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt currently ruining romney/kasich event: dude with "romney pay up" sign 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich rejects harsh interrogation methods proposed by cruz, trump 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt . brings campaign to home turfqueens 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt percent of remaining delegates needed to win for trump, cruz, and kasich. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt the kasich playlist tonight? all country so far.
-<unirest.UnirestResponse object at 0x4d66f50>
-rt john kasich brings campaign to donald trumps home turfqueens 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt new ad from pro- super pac shows obama praising for expanding medicaid (title: "kasich bff") https:/
-<unirest.UnirestResponse object at 0x4d66f90>
-rt "he is really not prepared to be president of the united states," kasich says about trump
-<unirest.UnirestResponse object at 0x4d66f50>
-rt kasich town hall at beginning. he made a visit here 20 years ago. 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt john kasich wraps up sagamore hill tour, heads to huntington (in long island traffic) where will report ht
-<unirest.UnirestResponse object at 0x4d66f90>
-rt disability rights ohio sues gov. john kasich, state officials 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt john kasich whacks the slow ball donald trump threw down the middle of the plate on abandoning nato...then brussels. ht
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt newschannel 9 talks with gop candidate john kasich | 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt rubio staffer: "we just didnt see kasich coming. via &amp; 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt john kasich has long said he understands where trump supporters are coming from, but is making a direct and clear appeal to
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt new bloomberg poll: clinton 54%, trump 36% clinton 51%, cruz 42% kasich 47%, clinton 43% 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich, pushing back on notion hes pulling back in wisconsin, adds a frozen custard stop tomorrow evening in greenfield.
-<unirest.UnirestResponse object at 0x4d66f50>
-rt new quinnipiac poll in ohio (likely primary voters): clinton - 51 sanders - 46 kasich - 33 trump - 33 cruz - 16 rubio - 3
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt romney at a rally for kasich near columbus: "weve got to turn out tomorrow and make sure we send a signal loud and clear
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich is now making an argument, as he often does, that trump supporters should turn to him 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt brussels bombing is "not about patrolling (muslim) neighborhoods" - a swipe at donald trump, kasich tells his mke audienc
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt gop town hall: reality check: ted cruz, donald trump and john kasich gathered in milwaukee, wisconsin, for cnn... 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich still behind other republicans. 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt watch: we have one-on-one interviews with presidential candidates trump, kasich, cruz and sanders. click on the... 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt kasich says trump aiding enemies; romney joins campaign 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich haul puts him far behind rivals, but feb. numbers were significant improvement over jan. as field thinned. 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt john kasich to appear at "town hall" talk in janesville on saturday 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt . endorses as "the only republican left in the race who actually could govern" 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt john boehner, who just endorsed kasich for president, says he wants paul ryan to be the nominee 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt john kasich to speak at california republican party convention 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt super-pacs kasich ad hits back at trump attack 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt ohio gop senator portman still hoping for kasich as nominee 10tv
-<unirest.UnirestResponse object at 0x4d66f50>
-rt john boehner endorses longtime friend, john kasich 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt the kasich super pac actually raised less than the kasich campaign proper in february but had more on hand. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt after the confetti clears, can kasich turn his ohio victory into something with momentum? https:
-<unirest.UnirestResponse object at 0x4d66f50>
-rt false alarm, kasich isnt here...yet...but giant crowd at the kasich4us town hall in hershey, pa. 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt in rockford, tells reporters a vote for kasich/rubio "is a vote thats thrown away. math actually matters." https
-<unirest.UnirestResponse object at 0x4d66f90>
-rt john kasich takes more aggressive stance against donald trump via 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt gov. john kasich addressed a crowd at davis high in kaysville on friday. see the photos, find out what he said: 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt heres the scene at the kasich event in orem. utpol 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt ted cruz tells it may be time for kasich to "reflect and come together and unify" 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt banner behind john kasich - as ohio goes, so goes the nation.
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt today about more than just kasich &amp; his legacy. ohprimary has become a battle for the soul of the republican party https
-<unirest.UnirestResponse object at 0x4d66f90>
-rt ready for another busy day. kasich in berea tonight 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt total ad spending in wisconsin this week: team cruz: $895k team kasich: $550k team trump: $347k anti-trump: $162k 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt "there are a lot of people who are upset," john kasich tells hanoverton, oh rally. "some are absolutely angry." 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt it aint the topline. its the trend. since last week, trump widened margin over rubio from 8% to 17% --a 9 pt gain. https
-<unirest.UnirestResponse object at 0x4d66f50>
-rt a donald trump supporter interrupts kasich as he begins speaking. hes escorted out by police. supertuesday
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt this tweetstorm on kasich is worth a read. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt my precinct results (raw vote totals): kasich-10 trump-18 cruz-71 utpol utahcaucus
-<unirest.UnirestResponse object at 0x4d66f50>
-rt . to begin his presidential town hall circuit at uvu | utpol utcampaign 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt some people here tell me kasich wasnt their first choice but out of all the candidates, hes their best choice. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt many republicans are quietly hoping kasich will drop out to leave cruz a clear path to stop trump. 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt presidential candidate john kasich visits springfield 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt kasich villanova townhall meeting for noon....seating for 600 ...already filling up... 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt stock up: john kasich stock down: donald trump analyzes the week in politics: 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt republicans wary of trump discuss cruz-kasich ticket 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt video: kasich makes campaign stop in wauwatosa 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt kasich pitches himself as a sturdy alternative to gop rivals dhelection 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt sorry, not sorry: john kasich adding bieber to playlist 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt the ohio gop presidential primary will come down to whether trumps rallies &amp; free media can beat kasichs gr
-<unirest.UnirestResponse object at 0x4d66f90>
-rt will kasich win ohio watch for updates on 9 on your side at 4,5,6,7,730 10 and 11 pm 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt breaking: trump says kasich must be blocked from convention ballot- inside story of how he &amp; cruz camp are doing it: https:/
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt election: cruz, kasich, palin attending milwaukee gop event today 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt sen. ted cruz and ohio gov. john kasich plan to make campaign stops in wisconsin tomorrow. 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt "trumps decision to scuttle the slc debate is disappointing, but not surprising," says kasich will show up if trum
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt john kasich changes previous empty thurs sked w/ planned 11:10 am presser to comment on trump, sheraton new york times square
-<unirest.UnirestResponse object at 0x4d66f90>
-rt observations from the kasich, trump and cruz utah events - utpol utgop 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt with ohio behind him, john kasich must prove he can win beyond his home state primaryday 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt just in: next weeks cnn town hall debate with sen. cruz, gov. kasich and donald trump will be at the riverside. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt capitol insider: a year later, gov. john kasich still doesnt have promised social security fix 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt republican presidential candidate gov. john kasich to visit greeceny saturday campaign2016 
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt kasich says he expects to do well in ny "despite the fact that i got caught eating a piece of my pizza with a fork... we ca
-<unirest.UnirestResponse object at 0x4d66f90>
-rt ken berg: the case for john kasich is strong in wisconsin 
-<unirest.UnirestResponse object at 0x4d66f50>
-rt updated delegate counts per nbc: trump 666 (has won 47% of allocated delegates) cruz 413 (29%) rubio 172 (12%) kasich 142 (10%)
-<unirest.UnirestResponse object at 0x4d66fd0>
-rt john kasich, meet ted cruz. ted cruz, meet john kasich. you are now fierce rivals. 
-<unirest.UnirestResponse object at 0x4d66f90>
-rt trump calls on kasich to quit race via wipolitics
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt kasich to trump supporters: i want to offer myself up as a new vessel that can actually understand your problems...take ac
-<unirest.UnirestResponse object at 0x4d62e90>
-rt david karst, milwaukee county gop chair, introducing ahead of says kasich will be back in milwau
-<unirest.UnirestResponse object at 0x4d62f10>
-rt john kasich gets endorsement of another dubya cabinet member/three-term utah gov ahead of tuesday caucus in ut 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt john kasichs campaign trail to make a stop in utah friday 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt its striking how a constant question  kasichs oh town halls, unlike elsewhere, is about how hes handled ppl w developme
-<unirest.UnirestResponse object at 0x4d62f10>
-rt aaron rodgers -- dissed by john kasich ... in packers territory (video) via 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt kasich then hits trump &amp; cruz- not by name- going after patrolling neighborhoods and shutting the border down.
-<unirest.UnirestResponse object at 0x4d62e90>
-rt presidential candidate events happening in utah this week more! 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt kasich gives ohioans humble message of moderation on election eve 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt mah. gop chairman says kasichs chances of winning gop nomination "slim" 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt john kasich taking the stage to enormous applause and ac-dc. 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt on eve of wisconsin primary, gov. kasich answer trump and cruz calls to quit race. "im not getting out" 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt john kasich to stop at ocean zen wednesday night for fundraiser 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt john kasich making a racine county stop saturday in burlington. 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt john kasich on donald trump: hes not prepared to be president via 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt john kasich finally going on (albeit subdued in 2016 terms) offensive against trump, holding presser to say hes "not pr
-<unirest.UnirestResponse object at 0x4d62e90>
-rt john kasich holds town hall at utah valley university via 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt kasich is a spoiler, says. a vote for is a vote for he says.
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt kasichs bus just rolled in to factory in youngstown to one of their campaign song classics, u2s "beautiful day" 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt john kasich on mitt romney: its always good to have the standard-bearer come in ohio 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt early exit polls show kasich beating trump in ohio 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt donald trump could end the campaigns of john kasich and marco rubio if he wins in ohio and florida 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt ohio congressman jim jordan questions ohio gov. john kasich staying in presidential race via 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt video: patrick paolantonio talks with john kasich 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt crowd gathering in hershey for ohio gov. john kasichs townhall this morning. 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt remember: kasichs tangle with cruz at a debate last november did not end well for kasich. 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt photos: kasich celebrates after ohioprimary win 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt kasich proposes fixes for lead contamination in water 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt exclusive poll of ca voters conducted by 4 gop: trump 40 cruz 32 kasich 17 dem: clinton 53 sanders 39 ca
-<unirest.UnirestResponse object at 0x4d62f10>
-rt full story from rally in madison, where he said hes the candidate who can actually run the country" 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt gov. kasich condemns brussels attack perpetrators. presidential candidate sickened by the pictures of carnage. 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt kasich wins 55 of ohios 88 counties in big win. trump strong in east/south ohio. analysis &amp; map 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt kasich hopes to score big in pa, the neighboring state where he was born, but some rs question his path: 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt photos: kasich visits youngstown 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt . kasich tells super pac to remove word lying from anti- cruz ad | https:/
-<unirest.UnirestResponse object at 0x4d62f10>
-rt media prep for kasich results at baldwin wallace 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt local: kasich in west salem: we need to bring the civilized people of the world together: west salem  ohio ... http
-<unirest.UnirestResponse object at 0x4d62e90>
-rt gov. kasich also criticizes president obama for not immediately returning from cuba.
-<unirest.UnirestResponse object at 0x4d62f10>
-rt without spending more, can kasich stay in the race? 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt new york primary: kasich vows to stay in race 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt can john kasich stop donald trump? ohio politics roundup 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt john kasich says he asked his aides to give him a list of donald trumps quotes promoting violence at rallies. 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt primary ballot challenge to kasich dropped in pennsylvania 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt kasich town hall was supposed to start at 10. still waiting. rolling stones now on playlist. not an american band. cmonman
-<unirest.UnirestResponse object at 0x4d62f10>
-rt did you hear? "still here," republicans. playing that delegate long game: wiprima
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt cruz launches anti-kasich attack ad in wisconsin 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt trump will finish 3rd in one or more wi congressional districts. kasich will definitely get delegates. question now is
-<unirest.UnirestResponse object at 0x4d62f10>
-rt john kasich: i wouldnt be going to any baseball game today, thats for darn sure; obama should leave cuba for dc https
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt the gop schedule today tells a story: rubio in florida cruz in illinois kasich in ohio trump in nc, florida &amp; ohio
-<unirest.UnirestResponse object at 0x4d62e90>
-rt just in: early maricopa county azvotes returns clinton: 114,186 sanders: 67,059 trump: 119,385 cruz: 53,149 rubio: 47,351 kas
-<unirest.UnirestResponse object at 0x4d62f10>
-rt new poll of ny gop voters has trump 64, cruz 12, kasich 1. one. 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt ohio gov. john kasich has added stops in ny and pa. to his campaigning this week for the republican nomination 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt john kasich to host town hall meeting in greece on saturday; registration required 13wham 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt the multipurpose room is full for john kasichs town hall meeting. the student center theater will act as the overflow roo
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt standing room only at in anticipation of kasich town hall meeting 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt john kasich defends utah debate pullout: no point without front-runner 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt vote: can john kasich or ted cruz beat donald trump in pennsylvania? election2016 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt is kasich a crook? 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt so far we have kasich and sanders here friday and cruz on saturday. havent heard from front-runners clinton and trump.
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt gov john kasich tries his hand at bocce outside a youngstown italian restaurant. 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt john kasich hires hathaway strategies to help manage indiana campaign. 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt in queens, john kasich blasts donald trump for not firing a campaign manager accused of assault 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt soros inaccurately floated as kasich backer in pro-cruz ad - by 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt video: kasich talks national debt at racine town hall 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt new . shows . winning fl w/46% followed by . (22%) . (14%), ohio gov. j
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt people filing in to see john kasich at antique auto club of america musem in hershey. paprimary http
-<unirest.UnirestResponse object at 0x4d62f10>
-rt republican ohio gov. john kasich defeated donald trump in 55 of 88 counties in ohio 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt breaking: delegates for cd6. 46 delegates for 3 spots. 17 cruz, 24 unpledged, 1 kasich, 0 trump,
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt the latest: kasich endorsed by senator who had backed rubio 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt john kasich strategist has words for cruz on twitter. april 3 debate in works? via 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt more than a hundred people in line for kasich speech10tv 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt kasich on stage. behind him, portman and romney stand on each side of his wife and daughters.
-<unirest.UnirestResponse object at 0x4d62f10>
-rt cruz and kasich plan to win the gop nomination by ignoring each other: 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt multiple sources tell me they expect donald trump and john kasich to follow suit and campaign in the springs as well. 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt on wednesdays front page, kasich wins ohio. trump knocks out rubio in florida. primaryday 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt ohio governor kasich hosts town hall at villanova university 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt ohio gov. john kasich airing previously run ads in wisconsin 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt the setup for team kasich tonight at baldwin wallace university near cleveland 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt ted cruz sees a path forward, tries pushing john kasich to the exit 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt takeaways: -ted cruz lied about his favorite food -donald trump is afraid of pens -john kasich thinks his top strategist
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt predictably, does best in madison per "suggests kasich might have a chance to win 2nd cd" says fr
-<unirest.UnirestResponse object at 0x4d62f10>
-rt cruz, trump look to block kasich at convention 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt john kasich, in mn for fundraiser at minneapolis club, to speak to media at noon about terror attacks in brussels. https:
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt at missouri fundraiser for john kasich, supporter sez its a great chance to meet a possible future...vice president ht
-<unirest.UnirestResponse object at 0x4d62f10>
-rt nine-year-old cayden asks kasich a question about the national debt, gets invited on stage rpnews 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt shot of media waiting for gov. john kasich. 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt false. theres an unresolved challenge to kasich eligibility. didnt trump criticize cruz for doing this to carson? https:
-<unirest.UnirestResponse object at 0x4d62f10>
-rt gov. kasich: "i hear murmurs in the crowd and i love it." in response to his support of teachers. 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt kasich is 40 minutes late. thompson says its because he was held up by journalists at another stop.
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt marquette poll: 45% of kasich primary voters in wisconsin have negative view of both cruz and trump 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt where kasich goes from here 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt kasich asked about trump: "youre not going to ruin my day after i just voted for myself for president. i have nothing to 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt kasich appearance at university of utah at university guest house at fort douglas, not olpin student union 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt throwing kasich pins to the crowd in hershey. paprimary 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt in head to head presidential match-up results, clinton trails kasich by 9 points, ties with cruz, and leads trump by 10. mu
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt john kasich warns against singling out muslims for monitoring 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt kasich: the delegates really take this seriously. and i think thats where were going, and its going to be fantastic.
-<unirest.UnirestResponse object at 0x4d62e90>
-rt john kasichs opening remarks: youd better believe its about pulling us together, not pulling us apart.
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt ohio gop sen. portman still hoping for kasich as nominee 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt senator lamar alexander tells me that among the remaining candidates on the republican side, john kasich is the most p
-<unirest.UnirestResponse object at 0x4d62e90>
-rt ohios election night could be suspenseful: q poll shows trump &amp; kasich tied, and bernie closing the gap w/ clinton http
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt kasich mingling w/ folks after his town hall. will head to u. for another event. then kaysville this evening. utpol http
-<unirest.UnirestResponse object at 0x4d62f10>
-rt sanders, cruz, kasich all campaigning in utah. 
-<unirest.UnirestResponse object at 0x4d62e90>
-rt kasich now touting his budget committee experience in congress, pointing to his national debt sign to right of stage.
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt i ask eric ulrich if he told how to eat his pizza. kasich tartly responds: "ive been eating pizza since before
-<unirest.UnirestResponse object at 0x4d62f10>
-rt kasich says hes "extremely disappointed" in the way certain candidates have run campaigns alluding to donaldtrump htt
-<unirest.UnirestResponse object at 0x4d62e90>
-rt poll finds kasich, rubio moving in opposite directions on the cusp of must-win primaries 
-<unirest.UnirestResponse object at 0x4d62ed0>
-rt highlights from gop presidential candidate john kasichs rally at villanova today: 
-<unirest.UnirestResponse object at 0x4d62f10>
-rt kasich in wi: if i drop out, trump wins. 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt former gov. thompson w/gov. kasich  waukesha town hall. details on 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt utpol notables here at kasich slc rally: sen. brian shiozawa, rep. kraig powell, fmr wvc mayor mike winder. kutv2ne
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich on trump telling him to get out: "im going to get a heck of a lot of his voters, thats what is going to happen.
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt john kasichs utterly strange, bizarre campaign 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt john kasich frames ohio primary battle with donald trump as a test of positive vs. negative 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich tells wisconsin gop i dont even like politics dhelection 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt kasich proposes overhaul of how cities deal with lead in drinking water via 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt trump, kasich campaign on li this week 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt john kasich speaking at pa. leadership conference. paprimary 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt orem mayor: kasich has the experience needed to run a country.
-<unirest.UnirestResponse object at 0x4d71e90>
-rt exclusive: john kasich speaks to in queens about campaign strategy 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt john kasich might be the truest believer in the race. but his faith has come back to bite him: 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt newspaper that announced it was out of the endorsement biz, flip flops today. backs kasich. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt john kasichs bottle of water. still waiting in hershey. paprimary 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt rudolph giuliani will campaign for donald trump in new yorkif john kasich drops out 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt john kasich is marveling at the beauty of southern utah: "there is not a more beautiful state in all of america." 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt crowd has a lot of energy. chanting "kasich." 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt ohio gov. john kasich arrives at villanova. greeter w applause 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt john kasich has raised just $12 million for his entire campaign. thats what ted cruz collected last month. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt on trump/cruz proposals to ban muslim immigration or patrol neighborhoods, kasich says this is the voice of inexperience -- 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich has taken the stage. apparently to relief of that young fellow on the left, caught yawning during tommy. https:/
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt john kasich, at minneapolis club, says we must move aggressively to destroy isis. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt "wheres my spotted cow?" john kasich says at event to have a beer with 2016 presidential candidate. 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt governor kasich has arrived. 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt bloomberg explains where things stand on the kasich/pa ballot situation. hes hoping rubio will call off the dogs. https:/
-<unirest.UnirestResponse object at 0x4d71e90>
-rt ex-governor tommy thompson chairs john kasichs wisconsin campaign 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt context: in feb., rubio spent more on ads than spent on his whole campaign. 1 of them is still in race. 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt i, along with covered kasichs watch party last. heres our story on it: 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt cruz questions signatures that put kasich on montana ballot nbcmontana
-<unirest.UnirestResponse object at 0x4d71f10>
-rt john kasich: donald trump really not prepared to be president donaldtrump johnkasich 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt jeb blew $100m+ attacking mostly rubio; didnt endorse in florida. when trump wins, remember circular firing squad. http
-<unirest.UnirestResponse object at 0x4d71e90>
-rt does kasichs ohio win put pa.s primary much more in play. his pa. visit seems to say yes. 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt great photos from gary cates and on the kasich trail in wisconsin this weekend. 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt good piece from detailing how much kasichs campaign trail security detail is costing ohio taxpayers. https:/
-<unirest.UnirestResponse object at 0x4d71e90>
-rt new: sc gov. rubio endorser, backs cruz for gop nod over donald trump. does not see a path for kasich. 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich makes pitch to pennsylvania republicans 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt 27 ohio tv affiliates with kasich camp in berea, including 13abc. bill hormann live st 6 pm 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt kasich finished in hershey. will be at pa. leadership conference in camp hill. paprimary 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt former utah gov. leavitt throws support behind kasich: via 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt follow us on snapchat for a closer look at the rallies today in utah! search for username ksl_news. sanders kasich http
-<unirest.UnirestResponse object at 0x4d71e90>
-rt big fleet of tv news vehicles in place at baldwin wallace for gov .kasichs victory or defeat remarks tonight 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich says this is not the day to attack trump, but hell have "something to say" about trumps rhetoric about women.
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt kasich criticized trumps statement that women should be punished for getting abortions if abortions were illegal. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt donald trump supporter chanting "trump, trump, trump" removed from john kasich victory celebration.
-<unirest.UnirestResponse object at 0x4d71f10>
-rt presidential candidate john kasich will hold a town hall on long island 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt for videos from governor john kasichs town hall meeting today, please visit our facebook page. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt kasich campaign finance report, february: $1.5m leftover from january $3.4m raised $3.6m spent $1.25m on hand 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt john kasich will hold a town hall at weldall manufacturing in waukesha at 11:30a next tuesday. wipolitics
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt the room is hot and combative at plc2016. kasich is trying to control the room, wrapping up questions shortly.
-<unirest.UnirestResponse object at 0x4d71e90>
-rt crowds gather at uvu for first of four utah campaign stops for john kasich. im live at noon on and 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt breaking: 587 delegates on state ballot to go to 13 will be picked. 60% unpledged, 30% cruz, 7% t
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt romney tried to open backchannel between kasich, cruz 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt hundreds wait for the kasich town-hall to start in hershey. 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich urges ppl stuck outside in slc to come in. "when you get to heaven if you get a chance, go through the gate!" https:/
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt john kasichs win in ohio complicates donald trumps road to the gop nomination: 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt john kasichs delegate math keeps voters largely out of the equation 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich wont say who should be punished for abortions 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt nice shout out to our work in a look at kasichs budget and tax record. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt "there is not a more beautiful state in all of america," john kasich, the governor of ohio, says about utah (in st. george,
-<unirest.UnirestResponse object at 0x4d71f10>
-rt runningmate: kasich refuses to bow out of gop campaign ksatnews 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt mitt romney praises john kasich on campaign trail ohprimary 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt kasich to hold town hall in hershey 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt ohioprimary video: kasich beats trump. "i will not take the low road to the highest office in the land" 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt . supports kasich ("colleague to the south"), says hes not overly optimistic abt triumph of "values" https:
-<unirest.UnirestResponse object at 0x4d71e90>
-rt replay: gop presidential hopeful john kasich was at villanova. heres how it went - 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt hits the valley. 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt crowd boos mention of name. asked why kasich is still in the race. "theres no good reason," he answ
-<unirest.UnirestResponse object at 0x4d71f10>
-rt and $550k from druckenmiller, past soros partner, to kasich super pac. in other words: soros is not bankrolling kasich, a
-<unirest.UnirestResponse object at 0x4d71e90>
-rt another take on the ohio economy under john kasichs watch. 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt the people i have to fight for are the people that worked hard but somethings things didnt work out for them, kasich say
-<unirest.UnirestResponse object at 0x4d71f10>
-rt soft and cuddly? john kasichs old colleagues barely recognize him these days. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt ted cruz and john kasich will need a political earthquake to slow donald trump 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt insiders: kasich could win a contested convention 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt in queens for a town hall and a slice with john kasich: 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt kasich: politics, egos get in the way of solving social issues of poverty, social security, mental health rpnews http
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt in two long island locales with relatively large jewish populations today, hofstra and huntington, kasich praised the jewis
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich campaign just finished an hour-long stretegy call with national supporters/delegates/potential delegates
-<unirest.UnirestResponse object at 0x4d71e90>
-rt hear what kasich had to say to the deseret news/ksl editorial board 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt reading material while we wait for kasich. 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt as kasich begins to leave the stage he encourages the audience to vote this election season kasichathofstra
-<unirest.UnirestResponse object at 0x4d71e90>
-rt people filing in for kasich event in berea 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt aggies! governor kasich is coming to utah this friday (3/18)! he will be stopping in at uvu, uofu, and in davis county t
-<unirest.UnirestResponse object at 0x4d71f10>
-rt john kasich: i think a convention is going to consider who can win. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt kasich response to romney-for-cruz 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt freshly updated, includes 2 new kasich events --&gt; guide to presidential candidate appearances in wis. wiprimary 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt take w/ grain of salt, but ive been talking to voters in a working-class suburb of dayton for 90 mins and have yet to m
-<unirest.UnirestResponse object at 0x4d71e90>
-rt last night, held a classy rally in ohio &amp; recited beautiful song lyrics: 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt for those wondering gov kasich will be having pepperoni and green pepper... decision2016 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt romney votes for cruz in utah. and tells kasich who he campaigned for  to step aside. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt kasich town hall in hershey is standing room only 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt kasich holds town hall in janesville 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich "would change the washington establishment, including his own party." 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt . hints he may not support 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt . on whom he has endorsed, &amp; whom he hasnt: 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt from yesterday  cruz and kasich still not really attacking one another, but tensions running higher than ever: 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt john kasich has held pas first campaign event by a presidential hopeful. 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt if trump wins fl, mo, kasich oh, heres what each candidate would need of remaining delegates: trump 52% cruz 72% rubio 89
-<unirest.UnirestResponse object at 0x4d71f10>
-rt gov. john kasichs plan to win the nomination. 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt . fmr boss: trump blaming kasich for lehman collapse is like blaming a pilot for trump airlines failure 
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt presidential hopeful kasich returns to native pa. to campaign 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt john kasich in minneapolis: we are at war with radical islam 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt profiles in courage: john kasich just called teachers "the most underpaid people on the face of the earth" in a roomful of
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt news: gop town hall in milwaukee w/ trump, cruz &amp; kasich tuesday march 29. 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich blames black people for high infant mortality rates after cutting program that helped: 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt . files complaint over allies ad hitting in wisconsin. https:/
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt tonight kasich described how aides came to him friday night and told him to turn the tv on: 
-<unirest.UnirestResponse object at 0x4d71f10>
-rt kasich to address crowd later 
-<unirest.UnirestResponse object at 0x4d71e90>
-rt new c4g ad in wi: "a vote for kasich actually helps trump by dividing the opposition." $1m tv/digi
-<unirest.UnirestResponse object at 0x4d71ed0>
-rt sanders, kasich to visit utah tomorrow 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt ohio politics now: john kasich rejects calls to drop out 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt inhofe impressed with kasich 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt kasich: when brussels happened yesterday, i knew how to talk about it in a way that a leader should talk about it.
-<unirest.UnirestResponse object at 0x4d61e90>
-rt cruz talks up rnc rule 40b to block kasich: problem is: rules committee could change everything
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt kasich campaigns in waukesha today: 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt button business going strong in line for kasich event 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt pa. gop leader bob asher helping raise money for john kasich. 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt boehner endorses fellow ohioan kasich, who laughs off vp rubio suggestion 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt john kasich opens pennsylvanias presidential campaign season 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt how john kasich and ted cruz could work together to deny donald trump the gop presidential nomination b4 cleveland http
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt media setting up for kasich coverage in berea ohio 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt ted cruz: a vote for john kasich in utah is a vote for donald trump tedcruz 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt new: poll from says ted cruz has 53% support in utah, ahead of john kasich (29%) &amp; donald trump (11%) htt
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt our techs did this after it went viral post-nh. many were confused. we also wrote this: https:/
-<unirest.UnirestResponse object at 0x4d61f50>
-rt i just confirmed gop presidential candidate john kasich will be in springfield tonight at a restaurant for a private f
-<unirest.UnirestResponse object at 0x4d61e90>
-rt ted cruz super-pac tries to tie to george soros in new ad up in wisconsin. 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt . also set to host town hall in la crosse county monday 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt with photos: kasich makes burlington stop 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt kasich responds to overly laudatory ques. from 17 yr old (staple of town halls): "im not running for saint and i dont th
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt . on stage introducing in kasichs hometown of westerville, ohio 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt in wisconsin, trump calls on kasich to drop out; clinton, sanders agree to debate. 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt as hillary clinton speaks on campus, were about an hour away from john kasichs town hall at the madison sheraton 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt john kasich: its "inappropriate" to talk about rioting cnnsotu 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt standing room only at john kasichs town hall, scheduled to start in 15 minutes 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt john kasich winning his home state, but rubio not? realize, rubio has only run statewide in florida once, and even then
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt video: rep video: kasich vote rally in green via 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt icymi: bertram de souza discusses valley gop failing ohio gov. john kasich. 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt 5 reasons john kasich is staying in the presidential race: 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt among the menu options at kasichs party: beer ($3), wine ($5) and pizza ($3) 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt in town hall opens pennsylvanias presidential campaign season 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt photos: kasich holds rally following ohio primary win 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt despite delegate deficits, sanders and kasich to stay in the presidential race. 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt cruz to appear at republican jewish coalition event; trump and kasich yet to confirm: republican presidential ... https
-<unirest.UnirestResponse object at 0x4d61e90>
-rt ohio gov. john kasich is raising money today in minneapolis. 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt ohio politics roundup: dont hold your breath for a john kasich-ted cruz ticket. 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt i would never tell anyone to drop out of the race - on gov. kasich.
-<unirest.UnirestResponse object at 0x4d61e90>
-rt monday so far: 3 stops by sanders, 3 stops by trump. but we havent seen the last of cruz, kasic
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt rnc chairman reince priebus: cant imagine nominee wouldnt be trump, cruz or kasich 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt ny primary roundup: clinton, sanders to campaign in nyc; kasich to attend ny gop gala (by 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt looks like gov. john kasich added 13 out-of-state delegates tuesday to the 66 he got in winner-take-all ohio. 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt those times when still photos tell the best story. of at the top of his game w/ kasich. 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt glenn beck says john kasich is a son of a bitch who is going to possibly destroy the republic 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt since romneys words didnt come with a "best if used by" date, the kasich camp using them in web ad in utah! 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt gop presidential candidate john kasich to hold rochester-area town hall meeting saturday: ohio gov. john kasic... https:
-<unirest.UnirestResponse object at 0x4d61f50>
-rt voters at kasich town hall appearance believe hes electable 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt gov. kasich says a walker endorsement would boost campaign 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt gov. kasich speaks at pennsylvania town hall - toledo blade via 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt lining up to see john kasich 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt april 14th will be a very busy in nyc. clinton-sanders debate on cnn while trump, cruz, and kasich will be at a gop dinner in
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt john kasich brings campaign to hershey 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt kasich - were not at war with islam. were at war with radical islam 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt fox news, fivethirtyeight, wsj have kasich winning ohio; cnn, quinnipiac university say trump 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt villanova student asks kasich how far school goes in his march madness bracket. "ive been a little bit busy," he says.
-<unirest.UnirestResponse object at 0x4d61f50>
-rt a short time lapse of the kasich town hall utpol pol 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt gop candidate john kasich addresses aaron rodgers "controversy" 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt kasichs campaign confirms former nj gov. christie whitman will hold a fundraiser for kasich at her home april 15 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt john kasich opens pennsylvanias presidential campaign season 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt if john kasich were a movie, hed be getting panned right now. 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt the crowd is filling in at kasich hq here at baldwin wallace. the seats are in bleachers and on the floor. 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt john kasich in 1982: 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt cruz &amp; sanders up in wi. but averages see two close races: * cruz 39.5, trump 32.5, kasich 18.8 * sande
-<unirest.UnirestResponse object at 0x4d61f50>
-rt my observations from attending the utah rallies of &amp; utpol u
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt in make-or-break pennsylvania, kasich finds rough going ... 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt serious chris wallace shot at john kasich 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt . slams kasich, reads song lyrics at primary eve rally in ohio ohprimary 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt why are cruz trump &amp; likely kasich coming to next weekend? 13 delegates up for grabs. 60% of delegates "unpledge
-<unirest.UnirestResponse object at 0x4d61e90>
-rt greetings from the fish fry at serb hall in milwaukee where ted cruz, john kasich &amp; sarah palin are about to speak https
-<unirest.UnirestResponse object at 0x4d61f50>
-rt kasich to trump: im going to get a heck of a lot of your voters 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt cnns town hall featuring trump, cruz and kasich will be at milwaukees riverside theater. 7-10p tuesday. wipolitics
-<unirest.UnirestResponse object at 0x4d61e90>
-rt toledo councilman asks gov. john kasich to return tax dollars withheld by state and now part of $2 billion surplus http
-<unirest.UnirestResponse object at 0x4d61f50>
-rt "we are not at war with islam, we are at war with radical islam."kasich in minneapolis. 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt can john kasich perfect the art of criticizing donald trump on the campaign trail? via 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt when in new york city ... kasich tries to woo trump voters: i share their frustration via 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt graham backs cruz but says kasich would make a better president. 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt kasich says a politician needs to achieve three things to be successful: 1. jobs 2. jobs 3. jobs
-<unirest.UnirestResponse object at 0x4d61e90>
-rt former gop presidential candidate mitt romney to hit campaign trail for john kasich in ohio https:/
-<unirest.UnirestResponse object at 0x4d61f50>
-rt kasich: "we have challenges today  but lets not spend our time talking about whats wrong with america. lets talk abou
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt gov. john kasich expects arnold schwarzenegger to campaign with him in callyfornya before june primary 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt new- kasich for america unveils utah leadership team. utpol 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt gop longshot brings amiable candidacy to st. george: kasich wows southern utah crowd with town hall format, dr... https:/
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt breaking: john kasich brings campaign to west salem monday. wxow 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt hewitt asks cruz if hes trying to "deny" kasich the nomination. "its not me denying john kasich anything. he keeps los
-<unirest.UnirestResponse object at 0x4d61f50>
-rt kasich: whos got the record and whos got the experience...and who can beat hillary clinton? plc2016
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt kasich serves up slices at a howard beach pizzeria as the ohio governor stumps in queens: 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt heres what some trump and cruz supporters in springfield, mo., told me this morning: 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt donald trump calls on john kasich to resign: hes taking my votes 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt dont breathe in the fumes! large media contingent here in berea for john kasichs watch party tonight. live at 5. 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt while were waiting for kasich/cruz/walker/palin at serb hall, ill tweet the upcoming schedule for republican candidates. 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt john kasich enlists two operatives to wrangle delegates via 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt gop presidential candidates got more donations from lorain county donors than did dems last year. 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt a must watch. g-d bless you john kasich speaks at aipac policy conference (3-21-16) 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt 4 pinocchios for trump ad "kasich helped...lehman bros destroy the world economy." http
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt john kasich still has fewer delegates than marco rubio.
-<unirest.UnirestResponse object at 0x4d61e90>
-rt depending on which current media estimate you choose to believe, kasich needs 20-30 delegates to catch rubio and move into 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt new marquette poll for wisconsin: ted cruz: 40% donald trump: 30% john kasich: 21 ------ dems: sanders 49% clinton 45% 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt 11yo wants to know from kasich how us will stop isis. in the air/on ground because no one else will. https:/
-<unirest.UnirestResponse object at 0x4d61e90>
-rt heres that trump ad. kasich said he thought of his two twin daughters when he saw it. ad paid for by anti-trump pac http
-<unirest.UnirestResponse object at 0x4d61f50>
-rt awaiting the town hall event by governor john kasich at uvu 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt kasich vows not to be neutral in defending israel. 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt more than 100 media outlets with kasich camp in berea, oh. 13abcs coverage tonight at 11. 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt more photos: gov. john kasich speaks in sharonville 
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt in camp hill, john kasich says conservatives must focus on realistic approaches to goals. https:/
-<unirest.UnirestResponse object at 0x4d61e90>
-rt only john kasich campaign has responded to witmer questions. 
-<unirest.UnirestResponse object at 0x4d61f50>
-rt super-pac backing ted cruz blasts john kasich with $500k wisc buy for attack ad chiding ohioan for "liberal record." ht
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt breaking: college sophomore nathaniel romes attorney announced in an email that he had withdrawn the lawsuit. 
-<unirest.UnirestResponse object at 0x4d61e90>
-rt kasich becomes the first presidential candidate to schedule event on li in advance of ny primary: town hall mon. at paramo
-<unirest.UnirestResponse object at 0x4d61f50>
-rt mjs edit boards full interview with john kasich kasich2016
-<unirest.UnirestResponse object at 0x4d61ed0>
-rt john kasich backstage 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt kasich now criticizing obama decision to continue latin america trip after brussels attack.
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt river steel, inc. prepares for kasich 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt specific head to heads among registered voters: kasich 48%, clinton 39%; clinton 44%, cruz 44%; and clinton 47%, trump 37%.
-<unirest.UnirestResponse object at 0x4d7af90>
-rt specific head to head results among registered voters: sanders 46%, kasich 44%; sanders 52%, cruz, 29%; sanders, 54%, trump
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt keystone pa poll: trump 33 kasich 30 cruz 20. another example how kasich staying in a necessity for anti-trumpers 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt i dont remember cruz getting all of these questions last week when he made an effort that could have knocked off kasich i
-<unirest.UnirestResponse object at 0x4d7af90>
-rt gov. hogan on ohio gov. john kasich: out of the guys that are running, "kasichs the guy i most closely associate with." 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt inside kasichs long-shot strategy to beat trump to the gop nomination 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt ohio gov. john kasich wrongly cites harry truman for quote on dogs and dc, gets a "false" via 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt . kasich tries to reel in pa. republicans 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt gov. larry hogan still wont say if hell support trump, but said he "probably" likes kasich best. 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt trump, kasich fans in rural florida explain their votes swfl 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt check out todays opinion article featuring and ohio victories https:/
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt ahead of kasichs address at aipac2016, reviews his foreign policy positions, which tend to be hawkish. http
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt kasich wins one state and is happiest candidate ever 9newsmornings 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt group fighting kasichs decision to legalize slots-like video lottery terminals lacks standing to sue ohio 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt . sure sounds like hes endorsing johnkasich -- but so far, hes stumped for kasich but not formally endorsed him.
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt republican john kasich welcomed by supporters at town hall in wauwatosa 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt spillover from kasich event at villanova. inside, journey is playing to a packed room. 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt polls have cruz in 3rd place in the oh race. gov. kasich is 1st with trump 2nd.
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt mtp preview: kasich tells "under no circumstances" will he be vp to either trump or cruz. watch: 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt hard math: ted cruz needs 9 of 10 delegates to clinch; john kasich cant get there at all 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt kasich responds to anti-trump split the map strategy 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt john kasich in town for private fundraiser 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt ohio gov. john kasich criticizes president obama during campaign stop in wauwatosa. 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt fmr. sen. gordon humphrey now speaking for the kasich campaign. hes getting some applause, but not nearly as much as carson or
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt new day for america uses video of man being punched at trump rally in new tv ad contrasting kasich w/ trump and cruz https:
-<unirest.UnirestResponse object at 0x4d7af90>
-rt photos: kasich declares victory over trump in the ohioprimary. 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt commentary:  kasich is president that shouldve been election2016 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt moments away from the start of the town hall. water bottle = ready. kasich4us 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt romney robocall: a vote for kasich is a vote for trump 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt wisconsin ad spending entering the weekend: team anti-trump: $2.1 million team cruz: $1.5 million team kasich: $1 mill
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt tomorrow night in milwaukee: milwaukee county gop dinner with cruz &amp; kasich. no trump - hes sending sarah palin. 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt video: sen. john kasich campaigns in pa 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt kasich campaigns in native pennsylvania 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt get to know kasich &amp; sanders before you vote on tues--town hall meetings tomorrow in slc! https:/
-<unirest.UnirestResponse object at 0x4d7af90>
-rt reporter asks john kasich whats been the biggest surprise of his first national race. wrong, its actually his second.
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt kasich heads off stage, thats a wrap for kasichathofstra
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt karen kasich: im proud of what my husband has done for ohio 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt hints to kasichs reshuffled wisconsin strategy in new optimus poll. tight race statewide, kasich leading in 2 cds. https:
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt if trump wont debate, kasich wont show up either. the slc debate appears to be dead. utpol
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt room filling up at villanova, where john kasich will hold town hall at noon. 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt ot pay for kasich security detail jumps 64% amid campaign 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt john kasich holds town hall in janesville nbc15 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt crowd on their feet in packed room at villanova, anticipating john kasichs entrance. 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt rounding out the ohio newspaper endorsements: says is best gop choice. 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt kasich on pulling some wi radio ads - "not going to spend money in places where we think the results wont be great" https:/
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt ohio politics now: hes not running for the presidency of wwe kasich says of trump 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt shaun shuisham, kicker for the steelers, is here to intro kasich in hanoverton, oh (~60 miles from pittsburgh)
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt hard math: ted cruz now needs 9 of 10 delegates to win, kasich cannot clinch via 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt heres the pennsylvania secretary of state page that ids kasich as an "approved" candidate. 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt kasich tells he hasnt decided what to tell his daughters if trump is the nominee and kasich backs him. https:
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt my precinct caucus votes. cruz-60 kasich-7 trump-11 utpol utahcaucus
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt kasich calls on north korea to free ohio college student sentenced to 15 years hard labor https
-<unirest.UnirestResponse object at 0x4d7af90>
-rt gopinwi trump in gb &amp; appleton today. ted cruz in madison heidi cruz visits sheboygan &amp; fondy. john kasich is out of the st
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt kasich: gop cant realize its goals without getting dems to "join our orchestra.
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt cruz, kasich, sanders, and trump will all be in utah this weekend. details on 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt stage set in berea for governor kasichs hoped- for victory party. 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt gov. john kasich tells utahns he can win against hillary clinton 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt statements rated mostly false, false, or pants on fire false trump 78% cruz 65% kasich 33% sanders 31% clinton 28% https
-<unirest.UnirestResponse object at 0x4d7af90>
-rt so its kasich &amp; romney vs. trump &amp; christie tonight in ohio. 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt john kasich defends immigration stance at ohio rally 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt the questions at kasich town halls are increasingly are process/state of the race.
-<unirest.UnirestResponse object at 0x4d7af90>
-rt just saw one kasich ad and one cruz as within 10 minutes. its happening...
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt john kasich shifts focus to convention in nomination fight 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt the pranksters who interrupted kasich and rubio have a history of trolling politicians https:/
-<unirest.UnirestResponse object at 0x4d7af90>
-rt icymi: tells utahns he can win against via utpol htt
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt we know extreme islam is evil, but not all muslims are evil. some are fighting for us.-kasich
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt news: former utah governor michael leavitt, a romney confidant, to endorse john kasich for president, source says. utah p
-<unirest.UnirestResponse object at 0x4d7af90>
-rt milwaukee editorial board endorses john kasich for gop wisconsin primary. jspo
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt . set to campaign in madison monday night wiprimary 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt fact checking john kasichs milwaukee visit via 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt . is on stage to introduce says kasich has "a lot of the attributes" that abraham lincoln had. 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt on meet the press sunday, gop candidate john kasich said there is no chance he would consider a vp spot. 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt kasich on getting out of race: thats nuts 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt kasich pulls some ads out of wisconsin 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt mitt romney is introducing kasich at the north canton town hall. 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt riverside theater will be venue for republican prexy town hall. rumbleattheriverside via 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt kasich on trumps recent comments: "it just shows that hes really not prepared to be president of the united states
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt former gov. tommy thompson kicking off kasich town hall in waukesha. 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt rubio, kasich, chelsea clinton to be in utah this week 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt trump complains about negative ads during his golf tourney, note- there were a lot of trumpss anti kasich ads on this w
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt gov. kasich made the clickhole cut: 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt trumps nato talk stirs pot during busy day of politics; john kasich, ted cruz blast back. via 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt the kasich-romney tag team would have been hard to imagine four years ago. trump brought them together. ohprimary https:
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt in sunday night email, team kasich says theyre consulting w/ lawyers on donald trumps claims that kasich wont be on pe
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt heres the latest on utah visits. utpol 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt kasich to deliver state of the state on wednesday. 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt kasich says response to brussels incident should not involve shutting down neighborhoods but working with muslim commun
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt wsj edit: "ted cruzs distortions: his campaign targets kasich with a smear, gives trump a pass"; 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt on barrons cover - john kasich: the best pick for markets and the economy via 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt my megatuesday gop predictions:  kasich wins ohio  rubio loses everywhere  trump celebrates most (florida)  cruz sur
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt kasich at plc2016: bernies telling people we can have free college, do you think we can have free college? tell people to 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt cruz, kasich make pitch to pa. conservatives in camp hill: 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt congressman dent is ready to take the stage at kasich4us town hall in hershey 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt kasich sings praises of gov herbert
-<unirest.UnirestResponse object at 0x4d7af90>
-rt "the republican party is my vehicle and not my master" and "i just came from sagamore hill" are leading early applause lin
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt smart take from four things the ohio results tells us about primary season 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt kasichs finish on tuesday would have been enough to embarrass any lesser mortal out of the race neverkasich 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt ot pay for kasich security detail jumps 64% amid campaign via 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt kasich touts experience, electability in janesville - ohio gov. john kasich on saturday brought his presidentia... htt
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt kasich: at the convention, delegates are going to think about who i win in the fall. im the only one who can win.
-<unirest.UnirestResponse object at 0x4d7af90>
-rt kasich, competing in utah, announces endorsements there 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt a very good point regarding kasich, cruz and rule 40. 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt romney: a vote for kasich helps trumpism 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt fairly strong possibility that trump wont get to 1237 delegates on his own but would with kasichs delegates. come to y
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt mitt romney praises john kasich on campaign trail 
-<unirest.UnirestResponse object at 0x4d7afd0>
-rt photos: john kasich in hanoverton 
-<unirest.UnirestResponse object at 0x4d7af90>
-rt icymi kasich came in fourth in arizona--after rubio! 
-<unirest.UnirestResponse object at 0x4d7ae90>
-rt all eyes on ohio as john kasich tries to hold off trump, sanders goes for upset of clinton via 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt kasich says no to being a running mate on republican ticket 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt . which endorsed cruz wed, in new ad: "a vote for kasich actually helps trump." kasich pacs response: https
-<unirest.UnirestResponse object at 0x4d5df90>
-rt but hold on: brad muller, 62, qualifies his kasich support with this: "im voting for who i dislike the least." tbtprim
-<unirest.UnirestResponse object at 0x4d5de10>
-rt st george mayor jon pike just endorsed gov. kasich.
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt kasich in the jumbotron at aipac 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt kasich playlist: "put me in coach, im ready to play.
-<unirest.UnirestResponse object at 0x4d5de10>
-rt palin flops as trump surrogate in wisconsin while cruz and kasich shine 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt john kasich to appear at town hall talk in janesville on saturday 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt why the republican establishment doesnt like john kasich 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt racine county campaign stops: john kasich in burlington on saturday, clinton surrogate cory booker in racine today. https:/
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt kasich urges obama to help rescue cincinnati man from his 15-year prison sentence in north korea: 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt trump, kasich fans in rural florida explain their votes swfl 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt trump and kasich could personally visit western new york to seek the delegates of the congressional districts 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt national spotlight: to tangle in milw town hall 3/29 https
-<unirest.UnirestResponse object at 0x4d5df90>
-rt republican presidential candidate john kasich holds minneapolis rally... 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt republican john kasich campaigns on long island: republican presidential candidate john kasich made it clear t... 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt during surprise visit, tells peoria churchgoers: a vote for kasich is a vote for trump 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt governor john kasich takes the stage at the armory in janesville nbc15 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt media row at kasich event at baldwin-wallace u. near cleveland. 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt john kasich, ted cruz in pennsylvania 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt observations from the kasich, trump and cruz utah events - utpol utgop 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt cruz fights to keep steep delegate threshold for nomination -- one that was introduced to stop ron paul. 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt kasich to trump supporters: the person you have favored continues to move in an unmoored, untethered fashion.
-<unirest.UnirestResponse object at 0x4d5df90>
-rt kasich in janesville, wi says his staff told him to keep his intro shorter. "ive been meandering lately they say." 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt the gop nomination can sometimes seem like a contest to see whos most religious. so why isnt john kasich winning? https:
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt john kasich on brussels response-- 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt how do you parse this from sc sen lindsey graham: john kasich is the most electable republican [but] i dont think he 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt la developer rick caruso tapped to join republican presidential candidate john kasichs campaign: 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt "letter we found???" thats hilarious . "unearthed" days before ohio primary??? this is better than an snl skit. https:
-<unirest.UnirestResponse object at 0x4d5df90>
-rt kasich wants north korea to free college student from ohio 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt now that im in a holding room, while kasich does a greta interview, i can see the front row: suffolk gop chair john lava
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt sanders, cruz, kasich all campaigning in utah 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt "im convinced that youre going to do the right thing tomorrow," romney, appearing with kasich, tells ohio voters. https
-<unirest.UnirestResponse object at 0x4d5de10>
-rt kasichs quest for delegates moves on. ohio governor stumps in n.y., pennsylvania. https:
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt cruz is the favorite among the 750 people here. loud applause for him vs. polite applause for kasich and almost none for pal
-<unirest.UnirestResponse object at 0x4d5df90>
-rt cruz backer trent franks on the anti-trump fight: "mr. kasich could be either the hero or potentially the spoiler." http
-<unirest.UnirestResponse object at 0x4d5de10>
-rt hogan says he likes kasich, but doesnt say whether he would support trump 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt . kasichs survived b/c 1) despite losing, he wont get out 2) hes so irrelevant nobodys attacked him 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt governor john kasich comes out to wild applause 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt after reading the msnbc transcript with kasich, i have no idea why he just doesnt come out and say, "nope, not gonna vote
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt ohio politics now: lawmakers wonder where john kasichs huggable side came from 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt . spox: ron will schmooze 2/ cruz, picnic w/kasich, stump w/trump as long as it prevents fro
-<unirest.UnirestResponse object at 0x4d5de10>
-rt pennsylvania poll: trump, kasich neck-and-neck 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt sabato: trump/clinton=gop disaster. helps kasich electability argument but then theres this http
-<unirest.UnirestResponse object at 0x4d5df90>
-rt nyprimary: kasich lands in ny, vows to stay in the race via 2016elections 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt how john kasich could end up picking the next president | ap photo 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt kasich town hall in hershey about to begin. 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt john kasich forms a powerhouse national strategy team 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt poll: kasich closes on trump in pa. 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt kasich stays in race, and damages his party: bernstein: its as if his campaign strategist was a magic 8 ball.... https:/
-<unirest.UnirestResponse object at 0x4d5df90>
-rt dumptrump rally outside in dc. i havent seen cruz, sanders, clinton, kasich protesters. 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt bay ridge goper impressed by at town hall 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt . prepping for town hall in howard beach. after kasich campaigning over pizza. well be there. https:/
-<unirest.UnirestResponse object at 0x4d5df90>
-rt new poll: clinton or sanders beat trump &amp; cruz in pa, lose to rubio &amp; kasich. via 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt rt after ohio win, kasich gets early face time in pa 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt good-sized crowd waiting patiently for entry in maps museum for kasich rally 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt "im blown away by new york." kasich says he will overcome video of him eating pizza with a fork. kasichathofstra
-<unirest.UnirestResponse object at 0x4d5de10>
-rt donald trump, confident the odds are in his favor in wisconsin, wants john kasich out: 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt youdecide2016: clinton, cruz and kasich tv ads started airing today in greenbay; sanders started tues. no trump ads ri
-<unirest.UnirestResponse object at 0x4d5df90>
-rt gop candidate kasich: the main question is who can beat hillary clinton in the fall? i can. 
-<unirest.UnirestResponse object at 0x4d5de10>
-rt glenn beck gets debunked by his own website on john kasich getting campaign money from george soros 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt kasich reassures supporters as aides lay out convention plans 
-<unirest.UnirestResponse object at 0x4d5df90>
-rt protester interrupts john kasich - kasich says he "appreciates a good peaceful protest once in a while.
-<unirest.UnirestResponse object at 0x4d5de10>
-rt . kasichs campaign committee is running low on cash: 
-<unirest.UnirestResponse object at 0x4d5ddd0>
-rt looks like new polls have kasich a distant 2nd in utah, a distant 3rd in arizona.
-<unirest.UnirestResponse object at 0x4d5df90>
-rt pos kasich and nitwitmitt they both cheated in ohio....a fact ...!!!!!!
-<unirest.UnirestResponse object at 0x4ecf990>
-rt lyinted dont waste ur vote america cruz nor kasich can not get 1237 gope does not want either of them not nominees htt
-<unirest.UnirestResponse object at 0x4c4dd90>
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+USER REPORT: {}
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+USER REPORT: {'26780375': {'neg': 106, 'neutral': 79, 'pos': 36}}
+USER REPORT: {'26780375': {'neg': 106, 'neutral': 79, 'pos': 36}, '397501248': {'neg': 119, 'neutral': 117, 'pos': 37}}
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+USER REPORT: {'26780375': {'neg': 106, 'neutral': 79, 'pos': 36}, '397501248': {'neg': 119, 'neutral': 117, 'pos': 37}, '3236374370': {'neg': 0, 'neutral': 1, 'pos': 0}}
+bad tweet!
+bad tweet!
+USER REPORT: {'26780375': {'neg': 106, 'neutral': 79, 'pos': 36}, '3318120908': {'neg': 190, 'neutral': 168, 'pos': 68}, '397501248': {'neg': 119, 'neutral': 117, 'pos': 37}, '3236374370': {'neg': 0, 'neutral': 1, 'pos': 0}}
+TWEET SENTIMENT ANALYSIS FOR TOP 5 USERS
+Candidate Name: carson
+Data is collected from 3/6/2016 to 4/5/2016
+Top 5 users for this candidate are:
+26780375 221
+397501248 273
+3236374370 1
+3318120908 426
+4180736069 145
+
+USER REPORT: {}
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+USER REPORT: {'470943163': {'neg': 0, 'neutral': 1, 'pos': 0}}
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+USER REPORT: {'1400943320': {'neg': 33, 'neutral': 147, 'pos': 22}, '470943163': {'neg': 0, 'neutral': 1, 'pos': 0}}
+USER REPORT: {'4126235782': {'neg': 32, 'neutral': 317, 'pos': 84}, '1400943320': {'neg': 33, 'neutral': 147, 'pos': 22}, '470943163': {'neg': 0, 'neutral': 1, 'pos': 0}}
+USER REPORT: {'4126235782': {'neg': 32, 'neutral': 317, 'pos': 84}, '4646828540': {'neg': 0, 'neutral': 165, 'pos': 24}, '1400943320': {'neg': 33, 'neutral': 147, 'pos': 22}, '470943163': {'neg': 0, 'neutral': 1, 'pos': 0}}
+TWEET SENTIMENT ANALYSIS FOR TOP 5 USERS
+Candidate Name: bush
+Data is collected from 3/6/2016 to 4/5/2016
+Top 5 users for this candidate are:
+470943163 1
+1400943320 202
+4126235782 433
+4646828540 189
+4728621001 187
+
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+USER REPORT: {}
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+USER REPORT: {'356199275': {'neg': 263, 'neutral': 2981, 'pos': 730}}
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+bad tweet!
+USER REPORT: {'551348482': {'neg': 52, 'neutral': 285, 'pos': 37}, '356199275': {'neg': 263, 'neutral': 2981, 'pos': 730}}

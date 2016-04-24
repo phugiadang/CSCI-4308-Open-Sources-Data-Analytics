@@ -1,5 +1,5 @@
-2016-04-22
-2016-04-21
+2016-04-24
+2016-04-23
 http://elections.huffingtonpost.com/pollster/api/charts?state=AL
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-new-hampshire-presidential-republican-caucus
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-alabama-democratic-presidential-primary
@@ -161,6 +161,7 @@ http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-illinois-house
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-illinois-president-romney-vs-obama
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-illinois-gop-primary
 http://elections.huffingtonpost.com/pollster/api/charts?state=IN
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-indiana-democratic-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-indiana-presidential-republican-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=indiana-obama-job-approval
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2012-indiana-senate-republican-primary
@@ -613,6 +614,7 @@ http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-general-electi
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-general-election-cruz-vs-clinton
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-general-election-rubio-vs-clinton
 http://elections.huffingtonpost.com/pollster/api/charts?topic=2016-president-dem-primary
+http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-indiana-democratic-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-delaware-democratic-presidential-primary
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-idaho-democratic-presidential-caucus
 http://elections.huffingtonpost.com/pollster/api/polls?chart=2016-rhode-island-democratic-presidential-primary

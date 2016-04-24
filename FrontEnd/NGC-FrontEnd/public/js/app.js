@@ -67,7 +67,7 @@ app.controller('HomeController', function($scope, $location){
 
   var candidates = new FusionCharts( "FusionCharts/msline.swf",
                                         "candidateChartId", "100%", "500", "0", "0");
-			candidates.setJSONUrl("TwitterAll.json");
+			candidates.setJSONUrl("TwitterAllDaily.json");
 			candidates.render("candidatesChart");
 
   var polls = new FusionCharts( "FusionCharts/msline.swf",
