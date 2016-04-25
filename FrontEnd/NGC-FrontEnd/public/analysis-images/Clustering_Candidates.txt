@@ -2,25 +2,25 @@ CLUSTERING ANALYSIS
 Question we want to answer for this analysis is how to group the candidates based on their tweets, GDELT, and Poll datas. From the clustering result, we can see the combination of all 3 sources for each candidates and their groups.
 Clustering technique: K Means
 *Cluster 0:
--Kasich
-Twitter    33720.0
-Poll          22.0
-GDELT         16.0
--Sanders
-Twitter    112835.0
-Poll           33.0
-GDELT          17.0
+-Clinton
+Twitter    347202.0
+Poll           31.0
+GDELT          38.0
+-Cruz
+Twitter    584327.0
+Poll           38.0
+GDELT          35.0
 *Cluster 1:
 -Trump
-Twitter    548658.0
-Poll           51.0
-GDELT         138.0
+Twitter    1099628.0
+Poll            41.0
+GDELT           40.0
 *Cluster 2:
--Clinton
-Twitter    286216.0
-Poll           47.0
-GDELT          23.0
--Cruz
-Twitter    278808.0
-Poll           17.0
-GDELT          34.0
+-Kasich
+Twitter    51230.0
+Poll          17.0
+GDELT         12.0
+-Sanders
+Twitter    151321.0
+Poll           30.0
+GDELT           9.0
