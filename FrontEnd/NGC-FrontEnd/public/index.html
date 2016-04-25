@@ -41,7 +41,7 @@
     <ol class="nav nav-pills pull-right navbar-padding">
       <li class="navbar-fontsize"><dropdown ng-controller="navCtrl">
           <select class="nav-button" ng-model="currentPage" ng-change="go(currentPage)">
-             <option value="home">Republicans</option>
+             <option value="home" disabled selected>Republicans</option>
              <option value="trump">Trump</option>
              <option value="cruz">Cruz</option>
               <option value="kasich">Kasich</option>
@@ -50,17 +50,17 @@
 
         <li class="navbar-fontsize"><dropdown ng-controller="navCtrl">
           <select class="nav-button" ng-model="currentPage" ng-change="go(currentPage)">
-              <option value="home">Democrats</option>
+              <option value="home" disabled selected>Democrats</option>
               <option value="clinton">Clinton</option>
               <option value="sanders">Sanders</option>
           </select>
         </dropdown></li>
 
       <li class="navbar-fontsize nav-button"><dropdown ng-controller="navCtrl" ng-click="isCollapsed = !isCollapsed">
-          <select class="nav-button" ng-model="currentPage" ng-change="go(currentPage)">
-              <option value="home">Analysis</option>
+          <select class="nav-button" ng-model="currentPage" ng-change="go(currentPage)" placeholder="Analysis:">
+              <option value="home" disabled selected>Analysis</option>
               <option value="time_series">Time-Series</option>
-              <option value="analysis">Sentiment</option>
+              <option value="sentiment">Sentiment</option>
           </select>
         </dropdown></li>
 

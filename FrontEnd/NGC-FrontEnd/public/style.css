@@ -18,6 +18,9 @@ body {
   padding: 1% 2% 2% 2%;
   border-radius: 5px;
 }
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
 embed.ng-scope{
     width: 100%;
 }

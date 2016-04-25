@@ -34,9 +34,9 @@ var app = angular.module('ngc', ['headerCtrl', 'ngRoute', 'ui.bootstrap'])
             controller: 'kasichController',
             templateUrl: 'partials/kasich.html'
 
-        }).when('/analysis', {
-              controller: 'analysisController',
-              templateUrl: 'partials/analysis.html'
+        }).when('/sentiment', {
+              controller: 'sentimentController',
+              templateUrl: 'partials/sentiment.html'
 
         }).when('/team', {
             controller: 'teamController',
@@ -84,10 +84,10 @@ app.controller('trumpController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'daily_graph_trump.png','reporttrumpGDELTPolls.png', 'reporttrumpGDELTTwitter.png', 'reporttrumpTwitterPolls.png'
+  'Twitter_vs_GDELT_trump.png', 'daily_graph_trump.png','reporttrumpGDELTPolls.png', 'reporttrumpGDELTTwitter.png', 'reporttrumpTwitterPolls.png'
   ]
   var text = [
-    'daily_graph_trump.txt','reporttrumpGDELTPolls.txt', 'reporttrumpGDELTTwitter.txt', 'reporttrumpTwitterPolls.txt'
+    'Twitter_vs_GDELT.txt', 'daily_graph_trump.txt','reporttrumpGDELTPolls.txt', 'reporttrumpGDELTTwitter.txt', 'reporttrumpTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -128,7 +128,7 @@ app.controller('cruzController', function($scope, $location){
   'Twitter_vs_GDELT_cruz.png', 'reportcruzGDELTPolls.png', 'reportcruzGDELTTwitter.png', 'reportcruzTwitterPolls.png'
   ]
   var text = [
-  'Twitter_vs_GDELT_cruz.png', 'reportcruzGDELTPolls.txt', 'reportcruzGDELTTwitter.txt', 'reportcruzTwitterPolls.txt'
+  'Twitter_vs_GDELT.txt', 'reportcruzGDELTPolls.txt', 'reportcruzGDELTTwitter.txt', 'reportcruzTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -169,7 +169,7 @@ app.controller('kasichController', function($scope, $location){
   'Twitter_vs_GDELT_kasich.png', 'reportkasichGDELTPolls.png', 'reportkasichGDELTTwitter.png', 'reportkasichTwitterPolls.png'
   ]
   var text = [
-    'Twitter_vs_GDELT_kasich.txt', 'reportkasichGDELTPolls.txt', 'reportkasichGDELTTwitter.txt', 'reportkasichTwitterPolls.txt'
+    'Twitter_vs_GDELT.txt', 'reportkasichGDELTPolls.txt', 'reportkasichGDELTTwitter.txt', 'reportkasichTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -210,10 +210,10 @@ app.controller('sandersController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-  'daily_graph_sanders.png','reportsandersGDELTPolls.png', 'reportsandersGDELTTwitter.png', 'reportsandersTwitterPolls.png'
+  'Twitter_vs_GDELT_sanders.png', 'daily_graph_sanders.png','reportsandersGDELTPolls.png', 'reportsandersGDELTTwitter.png', 'reportsandersTwitterPolls.png'
   ]
   var text = [
-    'daily_graph_sanders.txt','reportsandersGDELTPolls.txt', 'reportsandersGDELTTwitter.txt', 'reportsandersTwitterPolls.txt'
+    'Twitter_vs_GDELT.txt', 'daily_graph_sanders.txt','reportsandersGDELTPolls.txt', 'reportsandersGDELTTwitter.txt', 'reportsandersTwitterPolls.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length;
@@ -282,7 +282,7 @@ app.controller('clintonController', function($scope, $location){
     }
   }
 });
-app.controller('analysisController', function($scope, $location){
+app.controller('sentimentController', function($scope, $location){
   $scope.message = 'Sentiment Analysis'
   $scope.myInterval = -1;
   $scope.noWrapSlides = false;
@@ -331,10 +331,10 @@ app.controller('timeSeriesController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-    'Final_Resultclinton.png', 'Final_Resultsanders.png', 'Final_Resulttrump.png'
+    'TimeSeries_clinton.png', 'TimeSeries_sanders.png', 'TimeSeries_trump.png', 'Clustering_Candidates.gif'
   ]
   var text = [
-    'Time_Series_Analysis_clinton.txt', 'Time_Series_Analysis_sanders.txt', 'Time_Series_Analysis_trump.txt'
+    'Time_Series_Analysis_clinton.txt', 'Time_Series_Analysis_sanders.txt', 'Time_Series_Analysis_trump.txt', 'Clustering_Candidates.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 100 + slides.length;
