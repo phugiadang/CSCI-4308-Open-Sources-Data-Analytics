@@ -10,7 +10,7 @@
 		<p>{{ message }}</p>
 </div>
 
-<div ng-controller="timeSeriesController" id="analysis_slides">
+<div ng-controller="sentimentController" id="analysis_slides">
     <carousel active="active" interval="myInterval">
       <slide ng-repeat="slide in slides track by slide.id" active="slide.active" index="slide.id">
         <img ng-src="{{slide.image}}">
