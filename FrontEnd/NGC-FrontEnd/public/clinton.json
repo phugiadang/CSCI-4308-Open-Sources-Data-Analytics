@@ -1,7 +1,7 @@
 
 {
     "chart": {
-        "caption": "Trump Counts",
+        "caption": "clinton Counts",
         "xaxisname": "Days",
         "showvalues": "0",
         "divlinealpha": "100",
@@ -33,7 +33,7 @@
             "dataset": [
                 {
                     "seriesname": "Tweets",
-                    "data": [{ "value": "1097896" },{ "value": "973568" },{ "value": "922590" },{ "value": "906345" },{ "value": "1037529" },{ "value": "1057611" },{ "value": "780889" },{ "value": "684928" },{ "value": "672141" },{ "value": "892380" },{ "value": "820161" },{ "value": "836040" },{ "value": "814197" },{ "value": "733468" },{ "value": "634140" },{ "value": "580753" },{ "value": "622662" },{ "value": "683258" },{ "value": "830008" },{ "value": "1114367" }
+                    "data": [{ "value": "395996" },{ "value": "336195" },{ "value": "348345" },{ "value": "296989" },{ "value": "336652" },{ "value": "491246" },{ "value": "604729" },{ "value": "526137" },{ "value": "361814" },{ "value": "403827" },{ "value": "353937" },{ "value": "381343" },{ "value": "328508" },{ "value": "342232" },{ "value": "729664" },{ "value": "367160" },{ "value": "363617" },{ "value": "429468" },{ "value": "418224" },{ "value": "690940" }
                     ]
                 }
             ]
@@ -50,7 +50,7 @@
             "dataset": [
                 {
                     "seriesname": "Poll Percentage",
-                    "data": [{ "value": "45" },{ "value": "41" },{ "value": "37" },{ "value": "39" },{ "value": "52" },{ "value": "39" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "51" },{ "value": "53" },{ "value": "53" },{ "value": "53" },{ "value": "53" },{ "value": "53" },{ "value": "55" },{ "value": "55" },{ "value": "55" },{ "value": "55" },{ "value": "55" }
+                    "data": [{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" }
                     ]
                 }
             ]
@@ -66,7 +66,7 @@
             "dataset": [
                 {
                     "seriesname": "Article Counts",
-                    "data": [{ "value": "54" },{ "value": "38" },{ "value": "87" },{ "value": "115" },{ "value": "79" },{ "value": "87" },{ "value": "57" },{ "value": "157" },{ "value": "143" },{ "value": "154" },{ "value": "185" },{ "value": "131" },{ "value": "67" },{ "value": "71" },{ "value": "55" },{ "value": "74" },{ "value": "33" },{ "value": "158" },{ "value": "406" },{ "value": "118" }
+                    "data": [{ "value": "65" },{ "value": "101" },{ "value": "131" },{ "value": "88" },{ "value": "44" },{ "value": "26" },{ "value": "77" },{ "value": "101" },{ "value": "23" },{ "value": "19" },{ "value": "41" },{ "value": "41" },{ "value": "89" },{ "value": "56" },{ "value": "124" },{ "value": "50" },{ "value": "21" },{ "value": "32" },{ "value": "80" },{ "value": "72" }
                     ]
                 }
             ]
