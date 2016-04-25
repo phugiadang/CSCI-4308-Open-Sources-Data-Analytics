@@ -43,7 +43,7 @@
             "titlepos": "right",
             "numdivlines": "14",
             "tickwidth": "10",
-            "axisonleft": "0",
+	    "axisonleft": "0",
             "sdivlineisdashed": "1",
             "color": "f8bd19",
             "divlinealpha": "30",
@@ -73,3 +73,4 @@
         }
     ]
 }
+	

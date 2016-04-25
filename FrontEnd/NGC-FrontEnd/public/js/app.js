@@ -76,8 +76,18 @@ app.controller('mainController', function($scope, $location){});
 
 //Controllers for all html pages in the partials folder
 app.controller('trumpController', function($scope, $location){
+  //Start: FusionCharts Graph Portion of JS
+
+  var trump = new FusionCharts( "FusionCharts/MultiAxisLine.swf",
+                                        "trumpId", "100%","500","0","0");
+      trump.setJSONUrl("Trump.json");
+      trump.render("trumpChart");
+
+  //End:FusionCharts Code
 
   $scope.message = 'Donald Trump Analysis'
+
+//Start: Carousel for Donald Trump, this is the same structure as all carousels on Front End
   $scope.myInterval = -1;
   $scope.noWrapSlides = false;
   $scope.active = 0;
@@ -114,9 +124,19 @@ app.controller('trumpController', function($scope, $location){
       slides[i].id = indexes.pop();
     }
   }
+  //End: Carousel Code for Trump.html, same as all other .html pages
 });
 
 app.controller('cruzController', function($scope, $location){
+
+  //Start: FusionCharts Graph Portion of JS
+
+  var cruz = new FusionCharts( "FusionCharts/MultiAxisLine.swf",
+                                        "cruzId", "100%","500","0","0");
+      cruz.setJSONUrl("Cruz.json");
+      cruz.render("cruzChart");
+
+  //End:FusionCharts Code
 
   $scope.message = 'Ted Cruz Analysis'
   $scope.myInterval = -1;
@@ -159,6 +179,15 @@ app.controller('cruzController', function($scope, $location){
 
 app.controller('kasichController', function($scope, $location){
 
+  //Start: FusionCharts Graph Portion of JS
+
+  var kasich = new FusionCharts( "FusionCharts/MultiAxisLine.swf",
+                                        "kasichId", "100%","500","0","0");
+      kasich.setJSONUrl("Kasich.json");
+      kasich.render("kasichChart");
+
+  //End:FusionCharts Code
+
   $scope.message = 'John Kasich Analysis'
   $scope.myInterval = -1;
   $scope.noWrapSlides = false;
@@ -200,10 +229,16 @@ app.controller('kasichController', function($scope, $location){
 
 app.controller('sandersController', function($scope, $location){
 
-  $scope.message = 'Bernie Sanders Analysis'
-  myChart.setJSONUrl("sandersJson.json");
-  myChart.render("chartContainer");
+  //Start: FusionCharts Graph Portion of JS
 
+  var sanders = new FusionCharts( "FusionCharts/MultiAxisLine.swf",
+                                        "sandersId", "100%","500","0","0");
+      sanders.setJSONUrl("sanders.json");
+      sanders.render("sandersChart");
+
+  //End:FusionCharts Code
+
+  $scope.message = 'Bernie Sanders Analysis'
   $scope.myInterval = -1;
   $scope.noWrapSlides = false;
   $scope.active = 0;
@@ -243,6 +278,15 @@ app.controller('sandersController', function($scope, $location){
 });
 
 app.controller('clintonController', function($scope, $location){
+
+  //Start: FusionCharts Graph Portion of JS
+
+  var clinton = new FusionCharts( "FusionCharts/MultiAxisLine.swf",
+                                        "clintonId", "100%","500","0","0");
+      clinton.setJSONUrl("clinton.json");
+      clinton.render("clintonChart");
+
+  //End:FusionCharts Code
 
   $scope.message = 'Hillary Clinton Analysis'
   $scope.myInterval = -1;
