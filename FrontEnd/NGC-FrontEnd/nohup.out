@@ -1,0 +1,6 @@
+
+> TeamOSAM@1.0.0 start /home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd
+> node server.js
+
+App listening on port 3000
+[0mGET /favicon.ico [33m404 [0m3.943 ms - 24[0m

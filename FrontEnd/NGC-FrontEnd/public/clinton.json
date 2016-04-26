@@ -19,7 +19,7 @@
     },
     "categories": [
         {
-	    "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" },{ "label": "April, 7" },{ "label": "April, 8" },{ "label": "April, 9" },{ "label": "April, 10" },{ "label": "April, 11" },{ "label": "April, 12" },{ "label": "April, 13" },{ "label": "April, 14" },{ "label": "April, 15" },{ "label": "April, 16" },{ "label": "April, 17" },{ "label": "April, 18" },{ "label": "April, 19" },{ "label": "April, 20" }
+	    "category": [{ "label": "April, 1" },{ "label": "April, 2" },{ "label": "April, 3" },{ "label": "April, 4" },{ "label": "April, 5" },{ "label": "April, 6" },{ "label": "April, 7" },{ "label": "April, 8" },{ "label": "April, 9" },{ "label": "April, 10" },{ "label": "April, 11" },{ "label": "April, 12" },{ "label": "April, 13" },{ "label": "April, 14" },{ "label": "April, 15" },{ "label": "April, 16" },{ "label": "April, 17" },{ "label": "April, 18" },{ "label": "April, 19" },{ "label": "April, 20" },{ "label": "April, 21" },{ "label": "April, 22" },{ "label": "April, 23" }
 			    ]
         }
     ],
@@ -33,7 +33,7 @@
             "dataset": [
                 {
                     "seriesname": "Tweets",
-                    "data": [{ "value": "395996" },{ "value": "336195" },{ "value": "348345" },{ "value": "296989" },{ "value": "336652" },{ "value": "491246" },{ "value": "604729" },{ "value": "526137" },{ "value": "361814" },{ "value": "403827" },{ "value": "353937" },{ "value": "381343" },{ "value": "328508" },{ "value": "342232" },{ "value": "729664" },{ "value": "367160" },{ "value": "363617" },{ "value": "429468" },{ "value": "418224" },{ "value": "690940" }
+                    "data": [{ "value": "395996" },{ "value": "336195" },{ "value": "348345" },{ "value": "296989" },{ "value": "336652" },{ "value": "491246" },{ "value": "604729" },{ "value": "526137" },{ "value": "361814" },{ "value": "403827" },{ "value": "353937" },{ "value": "381343" },{ "value": "328508" },{ "value": "342232" },{ "value": "729664" },{ "value": "367160" },{ "value": "363617" },{ "value": "429468" },{ "value": "418224" },{ "value": "690940" },{ "value": "335516" },{ "value": "338574" },{ "value": "303317" }
                     ]
                 }
             ]
@@ -50,7 +50,7 @@
             "dataset": [
                 {
                     "seriesname": "Poll Percentage",
-                    "data": [{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" }
+                    "data": [{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" },{ "value": "45" }
                     ]
                 }
             ]
@@ -66,7 +66,7 @@
             "dataset": [
                 {
                     "seriesname": "Article Counts",
-                    "data": [{ "value": "65" },{ "value": "101" },{ "value": "131" },{ "value": "88" },{ "value": "44" },{ "value": "26" },{ "value": "77" },{ "value": "101" },{ "value": "23" },{ "value": "19" },{ "value": "41" },{ "value": "41" },{ "value": "89" },{ "value": "56" },{ "value": "124" },{ "value": "50" },{ "value": "21" },{ "value": "32" },{ "value": "80" },{ "value": "72" }
+                    "data": [{ "value": "65" },{ "value": "101" },{ "value": "131" },{ "value": "88" },{ "value": "44" },{ "value": "26" },{ "value": "77" },{ "value": "101" },{ "value": "23" },{ "value": "19" },{ "value": "41" },{ "value": "41" },{ "value": "89" },{ "value": "56" },{ "value": "124" },{ "value": "50" },{ "value": "21" },{ "value": "32" },{ "value": "80" },{ "value": "72" },{ "value": "60" },{ "value": "57" },{ "value": "23" }
                     ]
                 }
             ]
