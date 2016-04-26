@@ -46,9 +46,12 @@ var app = angular.module('ngc', ['headerCtrl', 'ngRoute', 'ui.bootstrap'])
             controller: 'sponsorController',
             templateUrl: 'partials/sponsor.html'
         // If none of the above, back to the FusionCharts and description
-      }).when('/time_series', {
+        }).when('/time_series', {
             controller: 'timeSeriesController',
             templateUrl: 'partials/time_series.html'
+        }).when('/clustering', {
+              controller: 'clusteringController',
+              templateUrl: 'partials/clustering.html'
         }).otherwise({redirectTo: '/'});
 
     });
@@ -375,13 +378,53 @@ app.controller('timeSeriesController', function($scope, $location){
   var slides = $scope.slides = [];
   var currIndex = 0;
   var images = [
-    'TimeSeries_clinton.png', 'TimeSeries_sanders.png', 'TimeSeries_trump.png', 'Clustering_Candidates.gif'
+    'TimeSeries_clinton.png', 'TimeSeries_sanders.png', 'TimeSeries_trump.png'
   ]
   var text = [
-    'Time_Series_Analysis_clinton.txt', 'Time_Series_Analysis_sanders.txt', 'Time_Series_Analysis_trump.txt', 'Clustering_Candidates.txt'
+    'Time_Series_Analysis_clinton.txt', 'Time_Series_Analysis_sanders.txt', 'Time_Series_Analysis_trump.txt'
   ]
   $scope.addSlide = function() {
     var newWidth = 100 + slides.length;
+    slides.push({
+      image: '../analysis-images/' + images[currIndex],
+      text: '../analysis-images/' + text[currIndex],
+      id: currIndex++
+    });
+  };
+
+  $scope.randomize = function() {
+    var indexes = generateIndexesArray();
+    assignNewIndexesToSlides(indexes);
+  };
+
+  for (var i = 0; i < images.length; i++) {
+    $scope.addSlide();
+  }
+
+  // Randomize logic below
+
+  function assignNewIndexesToSlides(indexes) {
+    for (var i = 0, l = slides.length; i < l; i++) {
+      slides[i].id = indexes.pop();
+    }
+  }
+});
+app.controller('clusteringController', function($scope, $location){
+
+  $scope.message = 'Clustering Analysis'
+  $scope.myInterval = -1;
+  $scope.noWrapSlides = false;
+  $scope.active = 0;
+  var slides = $scope.slides = [];
+  var currIndex = 0;
+  var images = [
+  'Clustering_Candidates.gif'
+  ]
+  var text = [
+  'Clustering_Candidates.txt'
+  ]
+  $scope.addSlide = function() {
+    var newWidth = 600 + slides.length;
     slides.push({
       image: '../analysis-images/' + images[currIndex],
       text: '../analysis-images/' + text[currIndex],
