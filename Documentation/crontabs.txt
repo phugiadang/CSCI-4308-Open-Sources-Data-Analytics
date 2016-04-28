@@ -1,0 +1,27 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/home/centos/CSCI-4308-Open-Sources-Data-Analytics/OpenStack:/home/centos/dse-4.8.1/bin:/home/centos/spark-1.5.1-bin-hadoop2.6
+MAILTO=root
+HOME=/
+
+#MAILTO="bryan.connelly@colorado.edu"
+0 10 * * * python /home/centos/CSCI-4308-Open-Sources-Data-Analytics/Polls/PollPopulateDatabase.py yesterday > /home/centos/CSCI-4308-Open-Sources-Data-Analytics/Polls/DBInsertLog.txt
+2 10 * * * python /home/centos/CSCI-4308-Open-Sources-Data-Analytics/Polls/Email.py
+* * * * * ./home/centos/CSCI-4308-Open-Sources-Data-Analytics/OpenStack/tweetCount.sh
+59 23 * * * ./home/centos/CSCI-4308-Open-Sources-Data-Analytics/OpenStack/openStackTests.sh
+* * * * * ./home/centos/CSCI-4308-Open-Sources-Data-Analytics/OpenStack/restartStreaming.sh
+
+0 1 * * * ./home/centos/CSCI-4308-Open-Sources-Data-Analytics/Analysis/makeJsons.sh
+
+*/2 * * * * ./home/centos/CSCI-4308-Open-Sources-Data-Analytics/OpenStack/checkNewTweets.sh
+
+* * * * * ./home/centos/CSCI-4308-Open-Sources-Data-Analytics/OpenStack/cassTest.sh
+
+#* * * * * ./home/flush.sh
+
+#* * * * * (  sleep 30  ;  ./home/flush.sh  )
+
+#5 * * * * sudo python /home/centos/CSCI-4308-Open-Sources-Data-Analytics/DavidSeniorProj37/cronCount.py
+
+0 5 * * * ./home/centos/CSCI-4308-Open-Sources-Data-Analytics/gitPushing.sh
+
+0 1 * * * python home/centos/CSCI-4308-Open-Sources-Data-Analytics/Analysis/TwitterGDELTGraphAnalysisUpdater.py > /dev/null
