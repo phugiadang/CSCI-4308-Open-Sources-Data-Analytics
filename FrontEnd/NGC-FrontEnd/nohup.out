@@ -1,0 +1,17 @@
+
+> TeamOSAM@1.0.0 start /home/centos/CSCI-4308-Open-Sources-Data-Analytics/FrontEnd/NGC-FrontEnd
+> node server.js
+
+App listening on port 3000
+[0mGET /favicon.ico [33m404 [0m3.943 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m6.823 ms - 24[0m
+[0mGET /sandersJson.json [33m404 [0m0.915 ms - 29[0m
+[0mGET /sandersJson.json [33m404 [0m0.310 ms - 29[0m
+[0mGET /partials/rubio.html [33m404 [0m0.612 ms - 32[0m
+[0mGET /partials/analysis.html [33m404 [0m0.741 ms - 35[0m
+[0mGET /favicon.ico [33m404 [0m0.559 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.398 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.651 ms - 24[0m
+[0mGET / [33m404 [0m0.463 ms - 13[0m
+[0mGET /favicon.ico [33m404 [0m0.522 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.561 ms - 24[0m

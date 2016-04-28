@@ -1,7 +1,7 @@
 
 {
     "chart": {
-        "caption": "sanders Counts",
+        "caption": "kasich Counts",
         "xaxisname": "Days",
         "showvalues": "0",
         "divlinealpha": "100",
@@ -33,7 +33,7 @@
             "dataset": [
                 {
                     "seriesname": "Tweets",
-                    "data": [{ "value": "209771" },{ "value": "185793" },{ "value": "222266" },{ "value": "189196" },{ "value": "264860" },{ "value": "431982" },{ "value": "330927" },{ "value": "315696" },{ "value": "246471" },{ "value": "260643" },{ "value": "218058" },{ "value": "217805" },{ "value": "265672" },{ "value": "286398" },{ "value": "423826" },{ "value": "248851" },{ "value": "220381" },{ "value": "228898" },{ "value": "266720" },{ "value": "278852" },{ "value": "150949" },{ "value": "156309" },{ "value": "120100" }
+                    "data": [{ "value": "54266" },{ "value": "39319" },{ "value": "52350" },{ "value": "64046" },{ "value": "54102" },{ "value": "63374" },{ "value": "43895" },{ "value": "40580" },{ "value": "41629" },{ "value": "48563" },{ "value": "32183" },{ "value": "63455" },{ "value": "34089" },{ "value": "35476" },{ "value": "54871" },{ "value": "24021" },{ "value": "30652" },{ "value": "37092" },{ "value": "38792" },{ "value": "90124" },{ "value": "70099" },{ "value": "36243" },{ "value": "35460" }
                     ]
                 }
             ]
@@ -50,7 +50,7 @@
             "dataset": [
                 {
                     "seriesname": "Poll Percentage",
-                    "data": [{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" },{ "value": "44" }
+                    "data": [{ "value": "20" },{ "value": "19" },{ "value": "19" },{ "value": "21" },{ "value": "25" },{ "value": "19" },{ "value": "22" },{ "value": "22" },{ "value": "22" },{ "value": "25" },{ "value": "23" },{ "value": "23" },{ "value": "23" },{ "value": "23" },{ "value": "23" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" },{ "value": "21" }
                     ]
                 }
             ]
@@ -66,7 +66,7 @@
             "dataset": [
                 {
                     "seriesname": "Article Counts",
-                    "data": [{ "value": "28" },{ "value": "35" },{ "value": "53" },{ "value": "53" },{ "value": "33" },{ "value": "49" },{ "value": "64" },{ "value": "25" },{ "value": "15" },{ "value": "31" },{ "value": "14" },{ "value": "23" },{ "value": "31" },{ "value": "52" },{ "value": "205" },{ "value": "105" },{ "value": "11" },{ "value": "26" },{ "value": "50" },{ "value": "70" },{ "value": "39" },{ "value": "24" },{ "value": "17" }
+                    "data": [{ "value": "16" },{ "value": "4" },{ "value": "2" },{ "value": "24" },{ "value": "13" },{ "value": "11" },{ "value": "8" },{ "value": "6" },{ "value": "5" },{ "value": "13" },{ "value": "8" },{ "value": "19" },{ "value": "4" },{ "value": "5" },{ "value": "3" },{ "value": "0" },{ "value": "1" },{ "value": "15" },{ "value": "12" },{ "value": "35" },{ "value": "37" },{ "value": "18" },{ "value": "16" }
                     ]
                 }
             ]
