@@ -12,3 +12,6 @@ App listening on port 3000
 [0mGET /favicon.ico [33m404 [0m0.559 ms - 24[0m
 [0mGET /favicon.ico [33m404 [0m0.398 ms - 24[0m
 [0mGET /favicon.ico [33m404 [0m0.651 ms - 24[0m
+[0mGET / [33m404 [0m0.463 ms - 13[0m
+[0mGET /favicon.ico [33m404 [0m0.522 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.561 ms - 24[0m
