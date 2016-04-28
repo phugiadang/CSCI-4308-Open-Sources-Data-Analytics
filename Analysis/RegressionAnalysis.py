@@ -1,7 +1,6 @@
 from AnalysisObject import AnalysisObject
 import numpy as np
 from scipy.interpolate import *
-import scipy.stats as stats
 import math
 import matplotlib
 matplotlib.use('Agg')
@@ -95,11 +94,7 @@ class RegressionObject(AnalysisObject):
         r_squared = ssreg/sstot
         print 'R^2: ' + str(r_squared)
 
-        #other stuff for linear regression because why not
-        #slope, intercept, r_value, p_value, std_err = stats.linregress(self.x, self.y)
-
-
         plt.savefig('interpolation.jpg')
-        #plt.show()
+
     class Factory:
 	def create(self,fixed_para_one,fixed_para_two,list_para_one,list_para_two):return RegressionObject(fixed_para_one,fixed_para_two,list_para_one,list_para_two)

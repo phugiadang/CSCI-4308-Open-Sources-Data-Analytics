@@ -4,3 +4,11 @@
 
 App listening on port 3000
 [0mGET /favicon.ico [33m404 [0m3.943 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m6.823 ms - 24[0m
+[0mGET /sandersJson.json [33m404 [0m0.915 ms - 29[0m
+[0mGET /sandersJson.json [33m404 [0m0.310 ms - 29[0m
+[0mGET /partials/rubio.html [33m404 [0m0.612 ms - 32[0m
+[0mGET /partials/analysis.html [33m404 [0m0.741 ms - 35[0m
+[0mGET /favicon.ico [33m404 [0m0.559 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.398 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.651 ms - 24[0m
